@@ -101,13 +101,12 @@ contains
 
     end subroutine build_names_sub
 
-    subroutine write_header_sub ( data_type, measurements )
+    subroutine write_header_sub ( data_type, measurements, io_summary, io_sequence )
 
-        character ( len = * ), intent ( in ) :: data_type
+        integer,               intent ( out ) :: io_sequence, io_summary ! io handles
+        integer ( ip ),        intent ( in )  :: measurements
+        character ( len = * ), intent ( in )  :: data_type
 
-        integer ( ip ), intent ( in ) :: measurements
-
-        integer :: io_sequence = 0, io_summary = 0 ! io handles
 
         type ( file_names ) :: myFileNames
 
