@@ -6,23 +6,23 @@ module mSetPrecision
 
     ! kind parameters
         ! INTEGERS
-        integer, parameter        :: aint    = selected_int_kind  ( INT8 )
-        integer, parameter        :: sint    = selected_int_kind  ( INT16 )
-        integer, parameter        :: lint    = selected_int_kind  ( INT32 )
-        integer, parameter        :: zint    = selected_int_kind  ( INT64 )
+        integer, parameter :: aint = INT8
+        integer, parameter :: sint = INT16
+        integer, parameter :: lint = INT32
+        integer, parameter :: zint = INT64
 
         ! REALS
-        integer, parameter        :: sp      = selected_real_kind ( REAL32 )
-        integer, parameter        :: dp      = selected_real_kind ( REAL64 )
-        integer, parameter        :: qp      = selected_real_kind ( REAL128 )
+        integer, parameter :: sp = REAL32
+        integer, parameter :: dp = REAL64
+        integer, parameter :: qp = REAL128
 
         ! CHARACTERS
-        integer, parameter        :: def     = selected_char_kind ( 'DEFAULT' )    ! required by Fortran standard
-        integer, parameter        :: kindA   =               kind ( 'A' )          ! Metcalf, Reid, Cohen: p. 309
-        integer, parameter        :: ascii   = selected_char_kind ( 'ASCII' )      ! optional
+        integer, parameter :: def     = selected_char_kind ( 'DEFAULT' )    ! required by Fortran standard
+        integer, parameter :: kindA   =               kind ( 'A' )          ! Metcalf, Reid, Cohen: p. 309
+        integer, parameter :: ascii   = selected_char_kind ( 'ASCII' )      ! optional
 
     ! Define working precision: Hansen and Tompkins, p. 22
-    integer, parameter        :: rp = dp
-    integer, parameter        :: ip = zint
+    integer, parameter :: rp = REAL64
+    integer, parameter :: ip = INT64
 
 end module mSetPrecision

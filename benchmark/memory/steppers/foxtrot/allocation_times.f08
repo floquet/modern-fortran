@@ -1,9 +1,9 @@
 ! 3456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 32
 program allocation_times
 
-    use, intrinsic :: iso_fortran_env, only : INT64
+    !use, intrinsic :: iso_fortran_env, only : INT64
 
-    use mSetPrecision,  only : ip, rp, zint
+    use mSetPrecision,  only : ip, rp!, zint
     use mSystemInfo,    only : write_header_sub
 
     implicit none
@@ -27,12 +27,11 @@ program allocation_times
     integer :: k_sizes = 0, k_measurements = 0 ! dummy counters
 
 
-        print *, 'zint                        = ', zint
         print *, 'ip                          = ', ip
-        print *, 'selected_int_kind ( INT64 ) = ', selected_int_kind ( INT64 )
         ! sequence of array sizes
-        elements = [ ( ( 10_INT64 ** k * j, j = 1, 9 ), k = 3, 11 ) ] ! sample sizes 1000, 2000, 3000, ...
-!        elements = [ ( ( 10_ip ** power * mant, mant = 1_ip, 9_ip ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
+        !elements = [ ( ( 10_ip ** k * j, j = 1_ip, 9_ip ), k = 3_ip, 11_ip ) ] ! sample sizes 1000, 2000, 3000, ...
+        !elements = [ ( ( 10_ip ** k * j, j = 1_ip, 9_ip ), k = 3_ip, 11_ip ) ] ! sample sizes 1000, 2000, 3000, ...
+        elements = [ ( ( 10_ip ** power * mant, mant = 1_ip, 9_ip ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
         !
         ! ! create data files
         ! call write_header_sub ( data_type, measurements, io_summary, io_sequence )
