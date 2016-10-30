@@ -1,0 +1,53 @@
+program driver
+
+    use, intrinsic :: iso_fortran_env,  only : INT32
+    use mSHA,                           only : Ch
+
+    implicit none
+
+    integer, parameter  :: ip = INT32
+    character ( len = * ), parameter :: fmt1 = '( a, i20, b32.32 )'
+
+    integer ( ip )      :: myInt = 0, E = 0, F = 0, G = 0
+
+        E = 14_ip
+        F =  3_ip
+        G =  0_ip
+
+        myInt = Ch ( E, F, G )
+        write ( *, 100 ) myInt, myInt
+        write ( *, 110 ) myInt, myInt
+
+        write ( *, fmt1 ) 'iand ( E, F )', iand ( E, F ), iand ( E, F )
+        !myResult = mod ( iand ( E, F ) + iand ( not ( F ), G ), two32 )
+
+        myInt = 2147483647
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 32768
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 0
+        write ( *, 100 ) myInt, myInt
+
+        myInt = -1
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 2
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 16
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 256
+        write ( *, 100 ) myInt, myInt
+
+        myInt = 4096
+        write ( *, 100 ) myInt, myInt
+
+    100 format ( Z12, ' hexadecimal value: ', /, I12, ' decimal value', / )
+    110 format ( 'Ch( E, F, G ) = ', g0, ': ', b32.32 )
+
+    stop "program driver..."
+
+end program driver

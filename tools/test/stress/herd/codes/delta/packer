@@ -1,0 +1,5 @@
+make
+./writer_pbs
+cd lightning/
+tar -czvf light.gpu.tar.gz gpu/.
+cp light.gpu.tar.gz ~/hpc/transporter/.

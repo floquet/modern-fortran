@@ -1,0 +1,11 @@
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_precision_definitions.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_parameters_simulation.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_shared.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_axes.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_data_structures.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_format_descriptors.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_grain.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_grain_structure.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_mathematica_results.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_matrix_writer.f08
+gfortran -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5 mod_read_LAMMPS.f08

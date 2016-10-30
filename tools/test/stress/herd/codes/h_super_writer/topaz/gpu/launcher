@@ -1,0 +1,9 @@
+qsub $wdmersenne/gpu/001/topaz-gpu-001
+
+qsub $wdmersenne/gpu/002/topaz-gpu-002
+
+qsub $wdmersenne/gpu/003/topaz-gpu-003
+
+qsub $wdmersenne/gpu/004/topaz-gpu-004
+
+cd $wdmersenne

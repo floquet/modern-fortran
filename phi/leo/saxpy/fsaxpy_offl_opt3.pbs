@@ -1,0 +1,31 @@
+#! /bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=10
+#PBS -l walltime=00:10:00
+#PBS -N offl_opt3
+#PBS -q debug
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+source /opt/modules/default/init/bash
+module load PrgEnv-intel
+module load intel
+module unload atp
+module unload cray-libsci
+
+# needed to enable offload in batch job, before aprun
+source ${INTEL_PATH}/bin/compilervars.sh intel64
+
+/bin/rm -f fmic_offl_opt3
+echo "building optimized offload fsaxpy with persistent data"
+make fmic_offl_opt3
+echo " "
+echo "running the optimized offload fsaxpy with persistent data"
+export MIC_ENV_PREFIX=PHI
+export PHI_KMP_PLACETHREADS="60c,4t"
+export PHI_OMP_NUM_THREADS=240
+export PHI_KMP_AFFINITY="granularity=fine,compact"
+export OFFLOAD_REPORT=2
+aprun -cc none ./fsaxpy_offl_opt3
+
+

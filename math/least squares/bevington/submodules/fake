@@ -1,0 +1,13 @@
+# scared load order
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_precision_definitions.o mod_precision_definitions.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_parameters.o            mod_parameters.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_measurements.o          mod_measurements.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_intermediates.o         mod_intermediates.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_matrices.o              mod_matrices.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_queries.o               mod_queries.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_solns_linear.o          mod_solns_linear.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_results.o               mod_results.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_validate.o              mod_validate.f08
+gfortran -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5 -o lsq.o                       lsq.f08
+#
+gfortran -g -o lsq lsq.o  mod_parameters.o mod_measurements.o mod_intermediates.o mod_queries.o mod_matrices.o mod_results.o mod_solns_linear.o mod_validate.o mod_precision_definitions.o

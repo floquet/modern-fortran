@@ -1,0 +1,5 @@
+DGESVD Example Program Data
+    3  2                                           :Values of M (row) and N (columns)
+    1.0                     1.0
+   -0.70710678118654752440  0.70710678118654752440
+    0.0                     0.0                    :End of matrix A

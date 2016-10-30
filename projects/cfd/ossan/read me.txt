@@ -1,0 +1,57 @@
+######################################################################
+# Running OSSAN-Euler2D-Implicit for a flow over a bump.
+#
+# Follow the steps to run the bump test case.
+# (Or just run this script by typing "source readme_v0.txt".)
+#
+# NOTE: The following is for gfortran. If you use other compiler,
+#       replace "gfortran" by your compiler (ifort, g95, etc).
+#
+#
+# Katate Masatsuka, January 2013 (http://www.cfdbooks.com)
+#####################################################################
+
+! http://www.cfdbooks.com/cfdcodes.html
+
+#####################################################################
+# 1. Compile the grid generation code.
+#####################################################################
+
+gfortran -O2 -o twod_bump_irregular_grid twod_bump_irregular_grid_v0.f90
+
+#####################################################################
+# 2. Run and generate a grid
+#    Dimensions are defined in the program: 40x320 grid.
+#    It will generate the following files:
+#     bump_tecplot.dat - for viewing the grid
+#     bump.grid        - for running OSSAN Euler code
+#     bump.bcmap       - for running OSSAN Euler code
+#####################################################################
+
+./twod_bump_irregular_grid
+
+#####################################################################
+# 3. Compile OSSAN-Euler2D-Implicit
+#####################################################################
+
+gfortran -O2 -c data_package_v0.f90
+gfortran -O2 -c jacobian_v0.f90
+gfortran -O2 -c linear_solve_v0.f90
+gfortran -O2 -c euler_solver_v0.f90
+gfortran -O2 -c main_v0.f90
+gfortran -O2 -o ossan_euler2d_implicit data_package_v0.o euler_solver_v0.o jacobian_v0.o linear_solve_v0.o main_v0.o
+
+#####################################################################
+# 4. Run OSSAN-Euler2D-Implicit to compute the solution.
+#    (NOTE: All input parametetrs are specified inside the program.)
+#    With the default parameters, it will converge to machine zero
+#    at 337 iterations for the implicit scheme and 13,322 iterations
+#    for the explicit scheme.
+#####################################################################
+
+./ossan_euler2d_implicit
+
+#####################################################################
+# Explore other parameters, or compare the results with the explicit
+# scheme by modifying the input parameters in main_v0.f90. 
+#####################################################################

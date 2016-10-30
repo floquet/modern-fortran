@@ -1,0 +1,43 @@
+
+Block V: Basic constants.
+Unit values
+default   = 1.00000000
+single    = 1.00000000
+double    = 1.0000000000000000
+quadruple = 1.0000000000000000
+ 
+one third
+1 / 3 = .333333343: default precision
+1 / 3 = .333333343: single precision
+1 / 3 = .33333333333333331: double precision
+1 / 3 = .33333333333333331: quadruple precision
+ 
+one eleventh
+1 / 11 = .909090936E-01: default precision
+1 / 11 = .909090936E-01: single precision
+1 / 11 = .90909090909090912E-001: double precision
+1 / 11 = .90909090909090912E-001: quadruple precision
+ 
+fundamental constants
+pi = arccos ( -1 )
+pi = 3.1415927 Mathematica N[pi, 8]
+pi = 3.14159274 default precision
+pi = 3.14159274 single precision
+pi = 3.1415926535897932 Mathematica N[pi, 17]
+pi = 3.1415926535897931 double precision
+pi = 3.1415926535897931 quadruple precision
+ 
+e  = exp ( 0 )
+e  = 2.7182818 Mathematica N[e, 8]
+e  = 2.71828175 default precision
+e  = 2.71828175 single precision
+e  = 2.7182818284590452 Mathematica N[e, 17]
+e  = 2.7182818284590451 double precision
+e  = 2.7182818284590451 quadruple precision
+ 
+computations using pi:
+cos( pi ) = -1.00000000,         sin ( pi ) = -.874227766E-07: default precision
+cos( pi ) = -1.00000000,         sin ( pi ) = -.874227766E-07: single precision
+cos( pi ) = -1.0000000000000000, sin ( pi ) = .12246467991473532E-015: double precision
+cos( pi ) = -1.0000000000000000, sin ( pi ) = .12246467991473532E-015: quadruple precision
+ 

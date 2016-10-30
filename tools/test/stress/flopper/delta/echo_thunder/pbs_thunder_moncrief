@@ -1,0 +1,39 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -V
+#PBS -A ARLAP96070PET
+#PBS -q background
+#PBS -l select=1:ncpus=36:mpiprocs=36
+#PBS -l walltime=120:00:00
+#PBS -j oe
+
+export myProject=${fortran}'tools/test/stress/flopper/delta/echo_thunder'
+echo $myProject
+cd ${myProject}
+export gflags=${gflags_thunder}
+module switch intel-compilers/15.3.187 gcc-compilers/4.8.4
+make
+rm -rf *.o *.mod *.smod *.dSYM
+
+## Execution Block ----------------------------------------------
+# Environment Setup
+# cd to your scratch directory in /work
+cd ${WORKDIR}
+
+# create a job-specific subdirectory based on JOBID and cd to it
+JOBID=`echo ${PBS_JOBID} | cut -d '.' -f 1`
+if [ ! -d ${JOBID} ]; then
+  mkdir -p ${JOBID}
+fi
+cd ${JOBID}
+
+## Launching -----------------------------------------------------
+# copy executable from $HOME and submit it
+cp -a ${myProject}/.  .
+
+${fortran_execute_mpi}  ./flops > out.dat
+
+## Clean up -----------------------------------------------------
+# Remove temporary files
+rm -rf *.o *.mod *.smod *.dSYM
+

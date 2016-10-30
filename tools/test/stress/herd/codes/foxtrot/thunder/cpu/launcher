@@ -1,0 +1,9 @@
+qsub $wdmersenne/cpu/001/thunder_cpu_001
+
+qsub $wdmersenne/cpu/002/thunder_cpu_002
+
+qsub $wdmersenne/cpu/003/thunder_cpu_003
+
+qsub $wdmersenne/cpu/004/thunder_cpu_004
+
+cd $wdmersenne

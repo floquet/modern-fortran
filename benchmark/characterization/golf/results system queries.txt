@@ -1,0 +1,21 @@
+
+Block I: System Queries.
+home directory    = /u/dantopa.
+working directory = /lustre/home2/u/dantopa/hpc/fortran/benchmark/characterization/golf.
+date and time     = 2016-06-01  10:48:37  UCT-0500.
+
+user name                                           = dantopa
+numerical user ID of the current process            = 902108
+numerical group ID of the current process           = 775
+numerical process identifier of the current process = 15045
+
+compiler version   = GCC version 4.9.2 20141030 (Cray Inc.).
+compiler options   = -mtune=generic -march=x86-64 -auxbase-strip mod_queries.o -g -Og -Wall -Wextra -Wconversion -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = garnet02.
+invocation command = ./characterize.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/pts/10.
+terminal device 6  = /dev/pts/10.
+
+universally unique identifier (UUID) = bc9726c7-4a14-4147-9f62-65ea0abbcde4.
+

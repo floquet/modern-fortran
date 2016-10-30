@@ -1,0 +1,11 @@
+# Comment lines start with the # symbol
+# The following sets up an Compile Environment Object with gfortran as the linker.
+env = Environment( LINK = 'gfortran -framework Accelerate  -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5' )
+##env.Append( FORTRAN = 'g++ -Wall -Wextra' )
+# Add compile-time flags
+# env.Append( FORTRANFLAGS = ['-Wall', '-Wextra', '-Wconversion', '-Og', '-pedantic', '-fcheck=bounds', '-fmax-errors=5'] )
+env.Append( FORTRANFLAGS = ['-Wall', '-Wextra'] )
+# The next line of code is an array of the source files names used in the program.
+sources = [ 'mod precision definitions.f08', 'mod svd parameters.f08', 'mod read matrix file.f08', 'mod format descriptors.f08', 'mod shared.f08', 'mod matrix writer.f08', 'solver_svd.f08' ]
+# The next line is the actual code that links the executable. env.Program is generates an executable.
+objs = env.Program( 'a.out', sources )

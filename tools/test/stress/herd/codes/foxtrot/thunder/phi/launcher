@@ -1,0 +1,9 @@
+qsub $wdmersenne/phi/001/thunder_phi_001
+
+qsub $wdmersenne/phi/002/thunder_phi_002
+
+qsub $wdmersenne/phi/003/thunder_phi_003
+
+qsub $wdmersenne/phi/004/thunder_phi_004
+
+cd $wdmersenne

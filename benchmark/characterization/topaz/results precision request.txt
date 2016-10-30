@@ -1,0 +1,35 @@
+
+Block VII: Requests for precision.
+selected real kind: -1 signals precision unavailable
+p = requested precision (number of significant digits)
+return value is selected_real_kind: -1 signals precision unavailable
+p =  1:   4,   p =  2:   4,   p =  3:   4,   p =  4:   4,   p =  5:   4
+p =  6:   4,   p =  7:   8,   p =  8:   8,   p =  9:   8,   p = 10:   8
+p = 11:   8,   p = 12:   8,   p = 13:   8,   p = 14:   8,   p = 15:   8
+p = 16:  10,   p = 17:  10,   p = 18:  10,   p = 19:  16,   p = 20:  16
+p = 21:  16,   p = 22:  16,   p = 23:  16,   p = 24:  16,   p = 25:  16
+p = 26:  16,   p = 27:  16,   p = 28:  16,   p = 29:  16,   p = 30:  16
+p = 31:  16,   p = 32:  16,   p = 33:  16,   p = 34:  -1,   p = 35:  -1
+p = 36:  -1,   p = 37:  -1,   p = 38:  -1,   p = 39:  -1,   p = 40:  -1
+p = 41:  -1,   p = 42:  -1,   p = 43:  -1,   p = 44:  -1,   p = 45:  -1
+p = 46:  -1,   p = 47:  -1,   p = 48:  -1,   p = 49:  -1,   p = 50:  -1
+real_kind for maximum precision = 16
+first instance is for p = 19
+
+selected integer kind: -1 signals range unavailable
+r = requested range such that 10^(-r) < n < 10^(r)
+return value is selected_int_kind: -1 signals range unavailable
+r =  1:   1,   r =  2:   1,   r =  3:   2,   r =  4:   2,   r =  5:   4
+r =  6:   4,   r =  7:   4,   r =  8:   4,   r =  9:   4,   r = 10:   8
+r = 11:   8,   r = 12:   8,   r = 13:   8,   r = 14:   8,   r = 15:   8
+r = 16:   8,   r = 17:   8,   r = 18:   8,   r = 19:  16,   r = 20:  16
+r = 21:  16,   r = 22:  16,   r = 23:  16,   r = 24:  16,   r = 25:  16
+r = 26:  16,   r = 27:  16,   r = 28:  16,   r = 29:  16,   r = 30:  16
+r = 31:  16,   r = 32:  16,   r = 33:  16,   r = 34:  16,   r = 35:  16
+r = 36:  16,   r = 37:  16,   r = 38:  16,   r = 39:  -1,   r = 40:  -1
+r = 41:  -1,   r = 42:  -1,   r = 43:  -1,   r = 44:  -1,   r = 45:  -1
+r = 46:  -1,   r = 47:  -1,   r = 48:  -1,   r = 49:  -1,   r = 50:  -1
+
+int_kind for maximum precision = 16
+first instance is for r = 19
+

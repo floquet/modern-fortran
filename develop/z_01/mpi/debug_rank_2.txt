@@ -1,0 +1,35 @@
++ + + j = 0
+MPI_INT: MPI_BCAST sent: 123456789 ( < 2**31 - 1),  received: 123456789, ierr = 0.
+MPI_INT: rank = 2, numInt + rank = 123456791 (should be 123456789 + 2)
+MPI_INT: rank = 2, numInt + rank - rank = 2 (should be 2)
+
+MPI_INTEGER8: MPI_BCAST sent: 123456789 ( < 2**31 - 1),  received: 123456789, ierr = 0.
+MPI_INTEGER8: rank = 2, numInt + rank = 123456791 (should be 123456789 + 2)
+MPI_INTEGER8: rank = 2, numInt + rank - rank = 2 (should be 2)
+
++ + + j = 1
+MPI_INT: MPI_BCAST sent: 1234567890 ( < 2**31 - 1),  received: 1234567890, ierr = 0.
+MPI_INT: rank = 2, numInt + rank = 1234567892 (should be 1234567890 + 2)
+MPI_INT: rank = 2, numInt + rank - rank = 2 (should be 2)
+
+MPI_INTEGER8: MPI_BCAST sent: 1234567890 ( < 2**31 - 1),  received: 1234567890, ierr = 0.
+MPI_INTEGER8: rank = 2, numInt + rank = 1234567892 (should be 1234567890 + 2)
+MPI_INTEGER8: rank = 2, numInt + rank - rank = 2 (should be 2)
+
++ + + j = 2
+MPI_INT: MPI_BCAST sent: 12345678900 ( > 2**31 - 1),  received: 3755744308, ierr = 0.
+MPI_INT: rank = 2, numInt + rank = 3755744310 (should be 12345678900 + 2)
+MPI_INT: rank = 2, numInt + rank - rank = 2 (should be 2)
+
+MPI_INTEGER8: MPI_BCAST sent: 12345678900 ( > 2**31 - 1),  received: 12345678900, ierr = 0.
+MPI_INTEGER8: rank = 2, numInt + rank = 12345678902 (should be 12345678900 + 2)
+MPI_INTEGER8: rank = 2, numInt + rank - rank = 2 (should be 2)
+
++ + + j = 3
+MPI_INT: MPI_BCAST sent: 123456789000 ( > 2**31 - 1),  received: 3197704712, ierr = 0.
+MPI_INT: rank = 2, numInt + rank = 3197704714 (should be 123456789000 + 2)
+MPI_INT: rank = 2, numInt + rank - rank = 2 (should be 2)
+
+MPI_INTEGER8: MPI_BCAST sent: 123456789000 ( > 2**31 - 1),  received: 123456789000, ierr = 0.
+MPI_INTEGER8: rank = 2, numInt + rank = 123456789002 (should be 123456789000 + 2)
+MPI_INTEGER8: rank = 2, numInt + rank - rank = 2 (should be 2)

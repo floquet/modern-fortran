@@ -1,0 +1,28 @@
+ 10:03 topaz01 dantopa $ mpirun -np 2 ./lucas_idea
+numIntDomain = 1441440000
+
+MPI_INT: rank = 0, nID = 1441440000 (should be 1441440000 + 0)
+MPI_INT: rank = 0, remainder = 0 (should be 0)
+
+MPI_INT: rank = 0, nID = 1441440000 (should be 1441440000 + 0)
+MPI_INTEGER8: rank = 0, remainder = 0 (should be 0)
+
+numIntDomain = 14414400000
+
+MPI_INT: rank = 0, nID = 14414400000 (should be 14414400000 + 0)
+MPI_INT: rank = 0, remainder = 0 (should be 0)
+
+MPI_INT: rank = 0, nID = 14414400000 (should be 14414400000 + 0)
+MPI_INTEGER8: rank = 0, remainder = 0 (should be 0)
+
+MPI_INT: rank = 1, nID = 1441440001 (should be 1441440000 + 1)
+MPI_INT: rank = 1, remainder = 1 (should be 1)
+
+MPI_INT: rank = 1, nID = 1441440001 (should be 1441440000 + 1)
+MPI_INTEGER8: rank = 1, remainder = 1 (should be 1)
+
+MPI_INT: rank = 1, nID = 1529498113 (should be 1529498112 + 1)
+MPI_INT: rank = 1, remainder = 1 (should be 1)
+
+MPI_INT: rank = 1, nID = 14414400001 (should be 14414400000 + 1)
+MPI_INTEGER8: rank = 1, remainder = 1 (should be 1)

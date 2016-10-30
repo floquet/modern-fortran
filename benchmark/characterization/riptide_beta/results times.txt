@@ -1,0 +1,13 @@
+
+Block II: Check CPU and system clocks.
+system clock (implementation not standardized - compiler dependent)
+count rate = 1000: system dependent and can vary depending on the int_kind of the arguments
+count max  = 2147483647: typically [ HUGE ( count max ) = 2147483647 ]
+
+<<<<<<< HEAD
+total cpu time   = .19979999999999998E-002 s
+total clock time = .10905000000000000E-001 s
+=======
+total cpu time   = .59859999999999991E-002 s
+total clock time = .53213999999999997E-001 s
+>>>>>>> d8754854d237c2124240287e5483133b2c6316e1

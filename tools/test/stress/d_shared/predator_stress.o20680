@@ -1,0 +1,388 @@
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/20680.predator-c.SC.user to UNIX format ...
+Welcome dantopa to ~/.personal.bashrc on Predator
+/home/dantopa/.personal.bashrc: line 19: black: command not found
+/home/dantopa/hpc/fortran/tools/test/stress/d_shared
+mpif90 -c gflags_predator -o mod_averager.o mod_averager.f08
+gfortran: error: gflags_predator: No such file or directory
+make: *** [mod_averager.o] Error 1
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+mkdir: cannot create directory `/home/dantopa/hpc/transporter/Predator_predator-c': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': File exists
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-ccpu.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied
+cp: cannot create regular file `/home/dantopa/hpc/transporter/Predator_predator-cmem.txt': Permission denied

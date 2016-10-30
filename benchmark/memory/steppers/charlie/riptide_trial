@@ -1,0 +1,25 @@
+# measure memory allocation times
+source ${myGit}bash/pbs/pbs_pulse
+source ${myGit}bash/pbs/pbs_setup
+
+## Execution Block ----------------------------------------------
+echo 'executing: module switch '${compiler_default}; echo ${compiler_gcc}
+module switch intel/13.0 gcc/gnu/4.9.3
+#module switch ${compiler_default} ${compiler_gnu}
+
+echo 'gflags = '${gflags}
+echo 'compiling: gfortran ${gflags} allocation_times.f08 -o allocation_times'
+gfortran ${gflags} allocation_times.f08 -o allocation_times
+
+echo 'executing: ./allocation_times'
+./allocation_times
+
+echo 'copying: cp memtime_'${host_name}'* ${wdhpc}/transporter/folder_allocation_times/.'
+cp memtime_${host_name}* ${wdhpc}/transporter/folder_allocation_times/.
+
+echo 'ls -alh'
+ls -alh
+
+echo 'cp *.o* '${wdhpc}'/transporter/folder_allocation_times/.'
+cp *.o* ${wdhpc}/transporter/folder_allocation_times/.
+

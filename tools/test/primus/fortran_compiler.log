@@ -1,0 +1,106 @@
+[1mFortran compiler test suite on topaz(B[m
+Wed May 11 09:47:41 CDT 2016
+machine   = topaz
+directory = /p/home/dantopa/hpc/fortran/tools/test/primus
+[1mgfortran flags(B[m
+-g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5
+[1mcoarray  flags(B[m
+-g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -fcoarray=lib
+[1mgcc options(B[m
+[1mgcc version(B[m
+Using built-in specs.
+COLLECT_GCC=gcc
+COLLECT_LTO_WRAPPER=/p/home/apps/gnu_compiler/5.3.0/libexec/gcc/x86_64-unknown-linux-gnu/5.3.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /p/home/u4immtww/objdir/../gcc-5.3.0/configure --prefix=/p/home/apps/gnu_compiler/5.3.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 5.3.0 (GCC) 
+[1mgfortran version(B[m
+Using built-in specs.
+COLLECT_GCC=gfortran
+COLLECT_LTO_WRAPPER=/p/home/apps/gnu_compiler/5.3.0/libexec/gcc/x86_64-unknown-linux-gnu/5.3.0/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /p/home/u4immtww/objdir/../gcc-5.3.0/configure --prefix=/p/home/apps/gnu_compiler/5.3.0 --enable-languages=c,c++,fortran,go
+Thread model: posix
+gcc version 5.3.0 (GCC) 
+[1mopencoarrays version(B[m
+-bash: port: command not found
+[1m===   COARRAY FORTRAN(B[m
+[1m> > co_broadcast(B[m
+-bash: caf: command not found
+-bash: cafrun: command not found
+[1m> > co_sum(B[m
+-bash: caf: command not found
+-bash: cafrun: command not found
+[1m> > co_max(B[m
+-bash: caf: command not found
+-bash: cafrun: command not found
+[1m> > co_reduce(B[m
+-bash: caf: command not found
+-bash: cafrun: command not found
+[1m* * * make debug 00(B[m
+make: Entering directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_00'
+PROGRAM  = prime_density
+PRG_OBJ  = prime_density.o
+SRCS     = mod_Prime_Tools.f08 prime_density.f08
+OBJS     = mod_Prime_Tools.o prime_density.o
+MODS     = mod_Prime_Tools.f08
+MOD_OBJS = mod_Prime_Tools.o
+make: Leaving directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_00'
+[1m* * * make 00(B[m
+make: Entering directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_00'
+caf -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -fcoarray=lib -o mod_Prime_Tools.o mod_Prime_Tools.f08
+make: caf: Command not found
+make: *** [mod_Prime_Tools.o] Error 127
+make: Leaving directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_00'
+[1mcafrun -np 8 ./test_00/prime_density(B[m
+-bash: cafrun: command not found
+[1m* * * make debug 01(B[m
+make: Entering directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_01'
+PROGRAM  = apex
+PRG_OBJ  = apex.o
+SRCS     = apex.f08 mod_allocators.f08 mod_angle.f08 mod_axes.f08 mod_axes_sub_aandp.f08 mod_axes_sub_IO.f08 mod_constants.f08 mod_filehandling.f08 mod_grain.f08 mod_LSQ.f08 mod_mathematica_output.f08 mod_matrix_writer.f08 mod_parameters_simulation.f08 mod_precision_definitions.f08 mod_read_LAMMPS.f08 mod_validate_apex.f08 mod_validate_lines.f08
+OBJS     = apex.o mod_allocators.o mod_angle.o mod_axes.o mod_axes_sub_aandp.o mod_axes_sub_IO.o mod_constants.o mod_filehandling.o mod_grain.o mod_LSQ.o mod_mathematica_output.o mod_matrix_writer.o mod_parameters_simulation.o mod_precision_definitions.o mod_read_LAMMPS.o mod_validate_apex.o mod_validate_lines.o
+MODS     = mod_allocators.f08 mod_angle.f08 mod_axes.f08 mod_axes_sub_aandp.f08 mod_axes_sub_IO.f08 mod_constants.f08 mod_filehandling.f08 mod_grain.f08 mod_LSQ.f08 mod_mathematica_output.f08 mod_matrix_writer.f08 mod_parameters_simulation.f08 mod_precision_definitions.f08 mod_read_LAMMPS.f08 mod_validate_apex.f08 mod_validate_lines.f08
+MOD_OBJS = mod_allocators.o mod_angle.o mod_axes.o mod_axes_sub_aandp.o mod_axes_sub_IO.o mod_constants.o mod_filehandling.o mod_grain.o mod_LSQ.o mod_mathematica_output.o mod_matrix_writer.o mod_parameters_simulation.o mod_precision_definitions.o mod_read_LAMMPS.o mod_validate_apex.o mod_validate_lines.o
+make: Leaving directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_01'
+[1m* * * make 01(B[m
+make: Entering directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_01'
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_precision_definitions.o mod_precision_definitions.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_allocators.o mod_allocators.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_constants.o mod_constants.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_angle.o mod_angle.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_filehandling.o mod_filehandling.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_LSQ.o mod_LSQ.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_matrix_writer.o mod_matrix_writer.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_parameters_simulation.o mod_parameters_simulation.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_read_LAMMPS.o mod_read_LAMMPS.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_axes.o mod_axes.f08
+mod_axes.f08:53:8:
+
+         module subroutine export_solution_sub ( me )
+        1
+Error: Unclassifiable statement at (1)
+mod_axes.f08:54:41:
+
+             class ( axis ), target  :: me
+                                         1
+Error: Unexpected data declaration statement in INTERFACE block at (1)
+mod_axes.f08:55:11:
+
+         end subroutine export_solution_sub
+           1
+Error: Expecting END INTERFACE statement at (1)
+mod_axes.f08:57:8:
+
+         module subroutine read_members_sub ( me )
+        1
+Error: Unclassifiable statement at (1)
+mod_axes.f08:58:41:
+
+             class ( axis ), target  :: me
+                                         1
+Error: Unexpected data declaration statement in INTERFACE block at (1)
+compilation terminated due to -fmax-errors=5.
+make: *** [mod_axes.o] Error 1
+make: Leaving directory `/p/home/dantopa/hpc/fortran/tools/test/primus/test_01'

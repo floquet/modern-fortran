@@ -1,0 +1,30 @@
+&SHAPE_INFO
+ M=          1,
+ N=          1,
+ P=          1,
+ /
+&SHAPE_INFO
+ M=          2,
+ N=          2,
+ P=          2,
+ /
+&SHAPE_INFO
+ M=          4,
+ N=          4,
+ P=          4,
+ /
+&SHAPE_INFO
+ M=          8,
+ N=          8,
+ P=          8,
+ /
+&SHAPE_INFO
+ M=         16,
+ N=         16,
+ P=         16,
+ /
+&SHAPE_INFO
+ M=         32,
+ N=         32,
+ P=         32,
+ /

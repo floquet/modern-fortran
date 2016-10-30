@@ -1,0 +1,238 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 307632.thunder-b01
+whoami root
+LOG /workspace/prologue/307632.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/307632.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 307632
+Start Prologue v2.5.3 Tue May 17 10:31:33 CDT 2016 
+Warning: Permanently added 'r19i7n1.ib0.ice-x.afrl.hpc.mil,10.148.9.42' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r19i7n2.ib0.ice-x.afrl.hpc.mil,10.148.9.43' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r19i7n3.ib0.ice-x.afrl.hpc.mil,10.148.9.44' (ECDSA) to the list of known hosts.
+r19i1n1: MemFree:        123457704 kB
+r19i1n10: MemFree:        123411556 kB
+r19i1n14: MemFree:        123432672 kB
+r19i1n5: MemFree:        123438672 kB
+r19i1n12: MemFree:        120509888 kB
+r19i1n17: MemFree:        123241604 kB
+r19i1n2: MemFree:        123430216 kB
+r19i1n16: MemFree:        120504508 kB
+r19i1n6: MemFree:        123407496 kB
+r19i2n1: MemFree:        123564580 kB
+r19i2n10: MemFree:        123710380 kB
+r19i1n9: MemFree:        123364616 kB
+r19i2n11: MemFree:        123715596 kB
+r19i2n12: MemFree:        123706964 kB
+r19i1n0: MemFree:        121887888 kB
+r19i2n16: MemFree:        123691448 kB
+r19i2n2: MemFree:        123551456 kB
+r19i2n14: MemFree:        123695856 kB
+r19i2n4: MemFree:        123615816 kB
+r19i2n3: MemFree:        123557132 kB
+r19i1n13: MemFree:        123375584 kB
+r19i1n15: MemFree:        123458380 kB
+r19i1n11: MemFree:        123446856 kB
+r19i3n0: MemFree:        120550460 kB
+r19i3n1: MemFree:        120621580 kB
+r19i3n10: MemFree:        123660716 kB
+r19i1n4: MemFree:        123354708 kB
+r19i3n11: MemFree:        123673592 kB
+r19i1n3: MemFree:        123425996 kB
+r19i3n12: MemFree:        123665708 kB
+r19i3n13: MemFree:        123670244 kB
+r19i1n7: MemFree:        123430684 kB
+r19i3n15: MemFree:        123679424 kB
+r19i3n17: MemFree:        123679404 kB
+r19i3n16: MemFree:        123681508 kB
+r19i5n0: MemFree:        123604720 kB
+r19i3n7: MemFree:        123668108 kB
+r19i2n13: MemFree:        123628492 kB
+r19i2n0: MemFree:        123473008 kB
+r19i2n5: MemFree:        123706260 kB
+r19i2n15: MemFree:        123689544 kB
+r19i2n17: MemFree:        123657436 kB
+r19i5n12: MemFree:        123550900 kB
+r19i5n1: MemFree:        123594608 kB
+r19i5n15: MemFree:        123424144 kB
+r19i5n13: MemFree:        123401336 kB
+r19i5n16: MemFree:        120432604 kB
+r19i3n14: MemFree:        123676064 kB
+r19i5n17: MemFree:        122448612 kB
+r19i2n6: MemFree:        123710524 kB
+r19i5n14: MemFree:        123388652 kB
+r19i5n2: MemFree:        120523648 kB
+r19i2n7: MemFree:        123719592 kB
+r19i5n5: MemFree:        123552452 kB
+r19i2n9: MemFree:        123640604 kB
+r19i5n3: MemFree:        123377532 kB
+r19i6n0: MemFree:        123650312 kB
+r19i5n6: MemFree:        123643180 kB
+r19i5n9: MemFree:        123533412 kB
+r19i3n3: MemFree:        120586304 kB
+r19i5n10: MemFree:        123533136 kB
+r19i3n2: MemFree:        120576028 kB
+r19i3n5: MemFree:        123669608 kB
+r19i3n6: MemFree:        123665056 kB
+r19i3n4: MemFree:        123671792 kB
+r19i3n9: MemFree:        123671956 kB
+r19i6n16: MemFree:        123665372 kB
+r19i6n17: MemFree:        123665908 kB
+r19i5n11: MemFree:        123580700 kB
+r19i6n6: MemFree:        123675252 kB
+r19i6n7: MemFree:        123674408 kB
+r19i6n9: MemFree:        123656236 kB
+r19i7n15: MemFree:        123663812 kB
+r19i5n4: MemFree:        123425492 kB
+r19i7n14: MemFree:        123661956 kB
+r19i6n1: MemFree:        123662344 kB
+r19i7n2: MemFree:        123670116 kB
+r19i7n4: MemFree:        123667528 kB
+r19i5n7: MemFree:        123546060 kB
+r19i7n3: MemFree:        123675272 kB
+r19i6n13: MemFree:        123668040 kB
+r20i0n0: MemFree:        123428044 kB
+r19i6n10: MemFree:        123661224 kB
+r20i0n1: MemFree:        123684864 kB
+r19i7n5: MemFree:        123688576 kB
+r19i6n12: MemFree:        123681480 kB
+r19i6n15: MemFree:        123652336 kB
+r19i6n11: MemFree:        123673420 kB
+r19i6n14: MemFree:        123672504 kB
+r19i6n2: MemFree:        123663724 kB
+r19i6n3: MemFree:        123670252 kB
+r19i6n4: MemFree:        123672104 kB
+r19i6n5: MemFree:        123671648 kB
+r19i7n11: MemFree:        123639248 kB
+r19i7n1: MemFree:        123669800 kB
+r19i7n0: MemFree:        123674156 kB
+r19i7n12: MemFree:        123659288 kB
+r19i7n13: MemFree:        123684264 kB
+r19i7n16: MemFree:        123652404 kB
+r19i7n17: MemFree:        123676384 kB
+End Prologue v2.5.3 Tue May 17 10:31:34 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 20: black: command not found
+jobStarter
+/home/dantopa/hpc/fortran/tools/test/stress/d_shared/
+mpif90 -c  -o mod_averager.o mod_averager.f08
+mpif90 -c  -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c  -o mod_mpt_h.o mod_mpt_h.f08
+mpif90 -c  -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c  -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c  -o mod_test_suite.o mod_test_suite.f08
+mod_test_suite.f08:5.8:
+
+    use mAverager,                      only : averager
+        1
+Fatal Error: Can't open module file 'maverager.mod' for reading at (1): No such file or directory
+make: *** [mod_test_suite.o] Error 1
+MPT: Launch error on r19i1n0.ib0.ice-x.afrl.hpc.mil
+./cpu: ./cpu: cannot execute binary file
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 61108 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Tue May 17 10:31:38 CDT 2016 
+r19i1n1 max memory used for job 307632.thunder-b01 (in bytes): 34930688
+r19i1n12 max memory used for job 307632.thunder-b01 (in bytes): 34435072
+r19i1n10 max memory used for job 307632.thunder-b01 (in bytes): 35557376
+r19i1n16 max memory used for job 307632.thunder-b01 (in bytes): 34160640
+r19i1n17 max memory used for job 307632.thunder-b01 (in bytes): 34611200
+r19i1n2 max memory used for job 307632.thunder-b01 (in bytes): 34820096
+r19i1n3 max memory used for job 307632.thunder-b01 (in bytes): 34324480
+r19i1n7 max memory used for job 307632.thunder-b01 (in bytes): 35074048
+r19i1n5 max memory used for job 307632.thunder-b01 (in bytes): 34349056
+r19i1n9 max memory used for job 307632.thunder-b01 (in bytes): 35328000
+r19i2n10 max memory used for job 307632.thunder-b01 (in bytes): 34762752
+r19i1n6 max memory used for job 307632.thunder-b01 (in bytes): 34676736
+r19i2n12 max memory used for job 307632.thunder-b01 (in bytes): 35598336
+r19i2n11 max memory used for job 307632.thunder-b01 (in bytes): 34357248
+r19i2n15 max memory used for job 307632.thunder-b01 (in bytes): 34504704
+r19i1n0 max memory used for job 307632.thunder-b01 (in bytes): 1359212544
+r19i2n16 max memory used for job 307632.thunder-b01 (in bytes): 35848192
+r19i2n9 max memory used for job 307632.thunder-b01 (in bytes): 34500608
+r19i1n11 max memory used for job 307632.thunder-b01 (in bytes): 34516992
+r19i2n17 max memory used for job 307632.thunder-b01 (in bytes): 35426304
+r19i3n11 max memory used for job 307632.thunder-b01 (in bytes): 34328576
+r19i3n10 max memory used for job 307632.thunder-b01 (in bytes): 34574336
+r19i1n13 max memory used for job 307632.thunder-b01 (in bytes): 35184640
+r19i1n15 max memory used for job 307632.thunder-b01 (in bytes): 34770944
+r19i1n14 max memory used for job 307632.thunder-b01 (in bytes): 35696640
+r19i3n12 max memory used for job 307632.thunder-b01 (in bytes): 34598912
+r19i3n15 max memory used for job 307632.thunder-b01 (in bytes): 34848768
+r19i3n13 max memory used for job 307632.thunder-b01 (in bytes): 33796096
+r19i2n1 max memory used for job 307632.thunder-b01 (in bytes): 33615872
+r19i1n4 max memory used for job 307632.thunder-b01 (in bytes): 34729984
+r19i3n6 max memory used for job 307632.thunder-b01 (in bytes): 35164160
+r19i3n17 max memory used for job 307632.thunder-b01 (in bytes): 34295808
+r19i3n16 max memory used for job 307632.thunder-b01 (in bytes): 34492416
+r19i2n0 max memory used for job 307632.thunder-b01 (in bytes): 34992128
+r19i3n5 max memory used for job 307632.thunder-b01 (in bytes): 34168832
+r19i3n3 max memory used for job 307632.thunder-b01 (in bytes): 35348480
+r19i3n7 max memory used for job 307632.thunder-b01 (in bytes): 35090432
+r19i5n13 max memory used for job 307632.thunder-b01 (in bytes): 34238464
+r19i2n4 max memory used for job 307632.thunder-b01 (in bytes): 36118528
+r19i2n13 max memory used for job 307632.thunder-b01 (in bytes): 34226176
+r19i2n7 max memory used for job 307632.thunder-b01 (in bytes): 34164736
+r19i5n10 max memory used for job 307632.thunder-b01 (in bytes): 35151872
+r19i5n11 max memory used for job 307632.thunder-b01 (in bytes): 34590720
+r19i2n2 max memory used for job 307632.thunder-b01 (in bytes): 34693120
+r19i2n14 max memory used for job 307632.thunder-b01 (in bytes): 34951168
+r19i5n1 max memory used for job 307632.thunder-b01 (in bytes): 35352576
+r19i2n5 max memory used for job 307632.thunder-b01 (in bytes): 35319808
+r19i2n3 max memory used for job 307632.thunder-b01 (in bytes): 34271232
+r19i5n12 max memory used for job 307632.thunder-b01 (in bytes): 35643392
+r19i2n6 max memory used for job 307632.thunder-b01 (in bytes): 35127296
+r19i5n15 max memory used for job 307632.thunder-b01 (in bytes): 35229696
+r19i3n0 max memory used for job 307632.thunder-b01 (in bytes): 34816000
+r19i3n14 max memory used for job 307632.thunder-b01 (in bytes): 34664448
+r19i5n16 max memory used for job 307632.thunder-b01 (in bytes): 34643968
+r19i5n4 max memory used for job 307632.thunder-b01 (in bytes): 34369536
+r19i5n6 max memory used for job 307632.thunder-b01 (in bytes): 34848768
+r19i5n5 max memory used for job 307632.thunder-b01 (in bytes): 33947648
+r19i6n1 max memory used for job 307632.thunder-b01 (in bytes): 35418112
+r19i6n0 max memory used for job 307632.thunder-b01 (in bytes): 35520512
+r19i5n7 max memory used for job 307632.thunder-b01 (in bytes): 34463744
+r19i3n1 max memory used for job 307632.thunder-b01 (in bytes): 34705408
+r19i5n9 max memory used for job 307632.thunder-b01 (in bytes): 34148352
+r19i3n4 max memory used for job 307632.thunder-b01 (in bytes): 35028992
+r19i3n2 max memory used for job 307632.thunder-b01 (in bytes): 34869248
+r19i6n13 max memory used for job 307632.thunder-b01 (in bytes): 34316288
+r19i6n17 max memory used for job 307632.thunder-b01 (in bytes): 34291712
+r19i6n10 max memory used for job 307632.thunder-b01 (in bytes): 35041280
+r19i3n9 max memory used for job 307632.thunder-b01 (in bytes): 33918976
+r19i6n2 max memory used for job 307632.thunder-b01 (in bytes): 34914304
+r19i6n5 max memory used for job 307632.thunder-b01 (in bytes): 35241984
+r19i6n3 max memory used for job 307632.thunder-b01 (in bytes): 35848192
+r19i5n0 max memory used for job 307632.thunder-b01 (in bytes): 33886208
+r19i6n16 max memory used for job 307632.thunder-b01 (in bytes): 34086912
+r19i5n14 max memory used for job 307632.thunder-b01 (in bytes): 34217984
+r19i5n17 max memory used for job 307632.thunder-b01 (in bytes): 35270656
+r19i6n6 max memory used for job 307632.thunder-b01 (in bytes): 35430400
+r19i7n0 max memory used for job 307632.thunder-b01 (in bytes): 34992128
+r19i6n7 max memory used for job 307632.thunder-b01 (in bytes): 35307520
+r19i7n12 max memory used for job 307632.thunder-b01 (in bytes): 34959360
+r19i7n11 max memory used for job 307632.thunder-b01 (in bytes): 34439168
+r19i5n2 max memory used for job 307632.thunder-b01 (in bytes): 35385344
+r19i7n15 max memory used for job 307632.thunder-b01 (in bytes): 34336768
+r19i7n16 max memory used for job 307632.thunder-b01 (in bytes): 33796096
+r19i5n3 max memory used for job 307632.thunder-b01 (in bytes): 34451456
+r19i6n14 max memory used for job 307632.thunder-b01 (in bytes): 35418112
+r19i7n17 max memory used for job 307632.thunder-b01 (in bytes): 34766848
+r19i6n11 max memory used for job 307632.thunder-b01 (in bytes): 34910208
+r19i6n15 max memory used for job 307632.thunder-b01 (in bytes): 35020800
+r19i7n3 max memory used for job 307632.thunder-b01 (in bytes): 34414592
+r20i0n0 max memory used for job 307632.thunder-b01 (in bytes): 35823616
+r19i7n5 max memory used for job 307632.thunder-b01 (in bytes): 34340864
+r19i6n12 max memory used for job 307632.thunder-b01 (in bytes): 34402304
+r19i6n4 max memory used for job 307632.thunder-b01 (in bytes): 34803712
+r19i7n1 max memory used for job 307632.thunder-b01 (in bytes): 34492416
+r19i6n9 max memory used for job 307632.thunder-b01 (in bytes): 34390016
+r19i7n13 max memory used for job 307632.thunder-b01 (in bytes): 34394112
+r19i7n14 max memory used for job 307632.thunder-b01 (in bytes): 33918976
+r19i7n2 max memory used for job 307632.thunder-b01 (in bytes): 34594816
+r19i7n4 max memory used for job 307632.thunder-b01 (in bytes): 34254848
+r20i0n1 max memory used for job 307632.thunder-b01 (in bytes): 18554880
+End Epilogue v2.5.3 Tue May 17 10:31:39 CDT 2016 

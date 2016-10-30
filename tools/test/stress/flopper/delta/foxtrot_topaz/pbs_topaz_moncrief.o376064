@@ -1,0 +1,626 @@
+Start Prologue v2.5.3 Mon Jun 13 16:49:14 CDT 2016 
+r18i4n3: MemFree:        123640180 kB
+r18i4n8: MemFree:        123757412 kB
+r18i4n14: MemFree:        123860876 kB
+r18i4n10: MemFree:        123816124 kB
+r21i3n13: MemFree:        123462280 kB
+r18i4n17: MemFree:        123678352 kB
+r18i4n12: MemFree:        123890004 kB
+r18i4n6: MemFree:        123807752 kB
+r18i4n4: MemFree:        123824360 kB
+r18i4n9: MemFree:        123816768 kB
+r21i3n11: MemFree:        123620068 kB
+r21i3n17: MemFree:        123819408 kB
+r18i5n1: MemFree:        123921572 kB
+r21i3n10: MemFree:        123642760 kB
+r21i3n9: MemFree:        123653876 kB
+r18i5n0: MemFree:        124560272 kB
+r22i3n2: MemFree:        124643076 kB
+r21i3n15: MemFree:        123900060 kB
+r21i5n14: MemFree:        123889440 kB
+r18i4n13: MemFree:        123873200 kB
+r21i5n13: MemFree:        123936516 kB
+r22i3n9: MemFree:        124657728 kB
+r21i3n16: MemFree:        123964820 kB
+r19i7n15: MemFree:        123394572 kB
+r23i5n16: MemFree:        124691988 kB
+r23i5n17: MemFree:        124130108 kB
+r18i4n15: MemFree:        123817244 kB
+r18i4n16: MemFree:        123891832 kB
+r23i7n12: MemFree:        123935200 kB
+r23i6n1: MemFree:        123865744 kB
+r23i5n15: MemFree:        124113560 kB
+r23i6n0: MemFree:        123836964 kB
+r21i5n12: MemFree:        124090356 kB
+r23i7n11: MemFree:        121776904 kB
+r21i3n12: MemFree:        123623812 kB
+r23i7n14: MemFree:        123435852 kB
+r23i7n8: MemFree:        123824800 kB
+r21i5n15: MemFree:        123996784 kB
+r23i7n9: MemFree:        123445040 kB
+r23i7n17: MemFree:        123837548 kB
+r24i0n0: MemFree:        124078900 kB
+r24i0n1: MemFree:        123967740 kB
+r24i0n5: MemFree:        123935564 kB
+r24i0n13: MemFree:        123804524 kB
+r24i1n12: MemFree:        124093084 kB
+r24i0n4: MemFree:        124031984 kB
+r24i0n17: MemFree:        123933568 kB
+r24i0n11: MemFree:        123909232 kB
+r24i0n2: MemFree:        124019500 kB
+r22i3n5: MemFree:        124640880 kB
+r24i0n3: MemFree:        123808976 kB
+r24i1n3: MemFree:        123873964 kB
+r24i0n7: MemFree:        123412844 kB
+r24i0n6: MemFree:        123492108 kB
+r23i6n2: MemFree:        123862340 kB
+r24i0n9: MemFree:        123796488 kB
+r24i1n16: MemFree:        123999404 kB
+r24i0n15: MemFree:        123931292 kB
+r24i1n1: MemFree:        124078348 kB
+r24i1n0: MemFree:        124038892 kB
+r24i1n11: MemFree:        123920692 kB
+r24i1n10: MemFree:        123927816 kB
+r23i7n13: MemFree:        123966736 kB
+r24i0n14: MemFree:        123729576 kB
+r23i7n10: MemFree:        123355176 kB
+r24i1n6: MemFree:        124048432 kB
+r24i0n10: MemFree:        123803524 kB
+r24i0n12: MemFree:        123831572 kB
+r24i1n5: MemFree:        124068244 kB
+r24i0n16: MemFree:        123907312 kB
+r24i1n4: MemFree:        123828524 kB
+r24i1n9: MemFree:        124036556 kB
+r24i4n0: MemFree:        123637408 kB
+r24i1n8: MemFree:        123887608 kB
+r24i0n8: MemFree:        124005312 kB
+r24i4n15: MemFree:        122616584 kB
+r24i1n14: MemFree:        123916820 kB
+r24i4n16: MemFree:        123871152 kB
+r24i4n12: MemFree:        124028492 kB
+r24i4n2: MemFree:        124006732 kB
+r24i1n17: MemFree:        123983292 kB
+r24i1n13: MemFree:        124071340 kB
+r24i1n15: MemFree:        123989060 kB
+r24i4n3: MemFree:        123871420 kB
+r24i4n9: MemFree:        123973960 kB
+r24i1n2: MemFree:        123908620 kB
+r24i4n8: MemFree:        123743688 kB
+r24i5n15: MemFree:        117205644 kB
+r24i4n14: MemFree:        123994204 kB
+r24i1n7: MemFree:        123867236 kB
+r24i4n4: MemFree:        124004908 kB
+r24i5n16: MemFree:        123904808 kB
+r24i4n10: MemFree:        123964904 kB
+r24i4n11: MemFree:        123983008 kB
+r24i4n1: MemFree:        123852848 kB
+r24i4n5: MemFree:        123946984 kB
+r24i4n17: MemFree:        124109980 kB
+r24i4n13: MemFree:        123850808 kB
+r24i4n6: MemFree:        123999744 kB
+r24i4n7: MemFree:        124000484 kB
+End Prologue v2.5.3 Mon Jun 13 16:49:15 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 36: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 37: myprompt: command not found
+/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtrot_topaz
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_harvest_blade.o mod_harvest_blade.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_clock.o mod_timer_clock.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_test_suite.o mod_test_suite.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o flops.o flops.f08
+mpif.h:464:15: Warning: GNU Extension: Nonstandard type declaration INTEGER*8 at (1)
+mpif.h:729:1: Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:730:1: Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:732:1: Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:733:1: Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:598:37: Warning: Unused parameter ‘mpi_2double_precision’ declared at (1) [-Wunused-parameter]
+mpif.h:498:24: Warning: Unused parameter ‘mpi_2int’ declared at (1) [-Wunused-parameter]
+mpif.h:520:28: Warning: Unused parameter ‘mpi_2integer’ declared at (1) [-Wunused-parameter]
+mpif.h:519:25: Warning: Unused parameter ‘mpi_2real’ declared at (1) [-Wunused-parameter]
+mpif.h:308:32: Warning: Unused parameter ‘mpi_address_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:525:24: Warning: Unused parameter ‘mpi_aint’ declared at (1) [-Wunused-parameter]
+mpif.h:274:30: Warning: Unused parameter ‘mpi_any_source’ declared at (1) [-Wunused-parameter]
+mpif.h:280:27: Warning: Unused parameter ‘mpi_any_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:212:26: Warning: Unused parameter ‘mpi_appnum’ declared at (1) [-Wunused-parameter]
+mpif.h:16:46: Warning: Unused parameter ‘mpi_async_protects_nonblocking’ declared at (1) [-Wunused-parameter]
+mpif.h:539:24: Warning: Unused parameter ‘mpi_band’ declared at (1) [-Wunused-parameter]
+mpif.h:541:23: Warning: Unused parameter ‘mpi_bor’ declared at (1) [-Wunused-parameter]
+mpif.h:265:34: Warning: Unused parameter ‘mpi_bsend_overhead’ declared at (1) [-Wunused-parameter]
+mpif.h:543:24: Warning: Unused parameter ‘mpi_bxor’ declared at (1) [-Wunused-parameter]
+mpif.h:509:24: Warning: Unused parameter ‘mpi_byte’ declared at (1) [-Wunused-parameter]
+mpif.h:618:26: Warning: Unused parameter ‘mpi_c_bool’ declared at (1) [-Wunused-parameter]
+mpif.h:620:29: Warning: Unused parameter ‘mpi_c_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:621:36: Warning: Unused parameter ‘mpi_c_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:619:35: Warning: Unused parameter ‘mpi_c_float_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:622:41: Warning: Unused parameter ‘mpi_c_long_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:239:24: Warning: Unused parameter ‘mpi_cart’ declared at (1) [-Wunused-parameter]
+mpif.h:569:24: Warning: Unused parameter ‘mpi_char’ declared at (1) [-Wunused-parameter]
+mpif.h:589:29: Warning: Unused parameter ‘mpi_character’ declared at (1) [-Wunused-parameter]
+mpif.h:348:39: Warning: Unused parameter ‘mpi_combiner_contiguous’ declared at (1) [-Wunused-parameter]
+mpif.h:354:35: Warning: Unused parameter ‘mpi_combiner_darray’ declared at (1) [-Wunused-parameter]
+mpif.h:355:32: Warning: Unused parameter ‘mpi_combiner_dup’ declared at (1) [-Wunused-parameter]
+mpif.h:356:40: Warning: Unused parameter ‘mpi_combiner_f90_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:357:40: Warning: Unused parameter ‘mpi_combiner_f90_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:358:37: Warning: Unused parameter ‘mpi_combiner_f90_real’ declared at (1) [-Wunused-parameter]
+mpif.h:352:37: Warning: Unused parameter ‘mpi_combiner_hindexed’ declared at (1) [-Wunused-parameter]
+mpif.h:365:43: Warning: Unused parameter ‘mpi_combiner_hindexed_block’ declared at (1) [-Wunused-parameter]
+mpif.h:359:45: Warning: Unused parameter ‘mpi_combiner_hindexed_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:350:36: Warning: Unused parameter ‘mpi_combiner_hvector’ declared at (1) [-Wunused-parameter]
+mpif.h:360:44: Warning: Unused parameter ‘mpi_combiner_hvector_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:351:36: Warning: Unused parameter ‘mpi_combiner_indexed’ declared at (1) [-Wunused-parameter]
+mpif.h:361:42: Warning: Unused parameter ‘mpi_combiner_indexed_block’ declared at (1) [-Wunused-parameter]
+mpif.h:347:34: Warning: Unused parameter ‘mpi_combiner_named’ declared at (1) [-Wunused-parameter]
+mpif.h:362:36: Warning: Unused parameter ‘mpi_combiner_resized’ declared at (1) [-Wunused-parameter]
+mpif.h:353:35: Warning: Unused parameter ‘mpi_combiner_struct’ declared at (1) [-Wunused-parameter]
+mpif.h:363:43: Warning: Unused parameter ‘mpi_combiner_struct_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:364:37: Warning: Unused parameter ‘mpi_combiner_subarray’ declared at (1) [-Wunused-parameter]
+mpif.h:349:35: Warning: Unused parameter ‘mpi_combiner_vector’ declared at (1) [-Wunused-parameter]
+mpif.h:687:29: Warning: Unused parameter ‘mpi_comm_null’ declared at (1) [-Wunused-parameter]
+mpif.h:689:29: Warning: Unused parameter ‘mpi_comm_self’ declared at (1) [-Wunused-parameter]
+mpif.h:413:36: Warning: Unused parameter ‘mpi_comm_type_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:586:27: Warning: Unused parameter ‘mpi_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:606:29: Warning: Unused parameter ‘mpi_complex16’ declared at (1) [-Wunused-parameter]
+mpif.h:607:29: Warning: Unused parameter ‘mpi_complex32’ declared at (1) [-Wunused-parameter]
+mpif.h:605:28: Warning: Unused parameter ‘mpi_complex8’ declared at (1) [-Wunused-parameter]
+mpif.h:227:29: Warning: Unused parameter ‘mpi_congruent’ declared at (1) [-Wunused-parameter]
+mpif.h:624:25: Warning: Unused parameter ‘mpi_count’ declared at (1) [-Wunused-parameter]
+mpif.h:311:30: Warning: Unused parameter ‘mpi_count_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:567:33: Warning: Unused parameter ‘mpi_datatype_null’ declared at (1) [-Wunused-parameter]
+mpif.h:464:40: Warning: Unused parameter ‘mpi_displacement_current’ declared at (1) [-Wunused-parameter]
+mpif.h:240:30: Warning: Unused parameter ‘mpi_dist_graph’ declared at (1) [-Wunused-parameter]
+mpif.h:469:34: Warning: Unused parameter ‘mpi_distribute_block’ declared at (1) [-Wunused-parameter]
+mpif.h:469:57: Warning: Unused parameter ‘mpi_distribute_cyclic’ declared at (1) [-Wunused-parameter]
+mpif.h:470:59: Warning: Unused parameter ‘mpi_distribute_dflt_darg’ declared at (1) [-Wunused-parameter]
+mpif.h:470:33: Warning: Unused parameter ‘mpi_distribute_none’ declared at (1) [-Wunused-parameter]
+mpif.h:578:26: Warning: Unused parameter ‘mpi_double’ declared at (1) [-Wunused-parameter]
+mpif.h:587:34: Warning: Unused parameter ‘mpi_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:496:30: Warning: Unused parameter ‘mpi_double_int’ declared at (1) [-Wunused-parameter]
+mpif.h:585:36: Warning: Unused parameter ‘mpi_double_precision’ declared at (1) [-Wunused-parameter]
+mpif.h:95:30: Warning: Unused parameter ‘mpi_err_access’ declared at (1) [-Wunused-parameter]
+mpif.h:96:29: Warning: Unused parameter ‘mpi_err_amode’ declared at (1) [-Wunused-parameter]
+mpif.h:64:27: Warning: Unused parameter ‘mpi_err_arg’ declared at (1) [-Wunused-parameter]
+mpif.h:97:30: Warning: Unused parameter ‘mpi_err_assert’ declared at (1) [-Wunused-parameter]
+mpif.h:98:32: Warning: Unused parameter ‘mpi_err_bad_file’ declared at (1) [-Wunused-parameter]
+mpif.h:99:28: Warning: Unused parameter ‘mpi_err_base’ declared at (1) [-Wunused-parameter]
+mpif.h:52:30: Warning: Unused parameter ‘mpi_err_buffer’ declared at (1) [-Wunused-parameter]
+mpif.h:56:28: Warning: Unused parameter ‘mpi_err_comm’ declared at (1) [-Wunused-parameter]
+mpif.h:100:34: Warning: Unused parameter ‘mpi_err_conversion’ declared at (1) [-Wunused-parameter]
+mpif.h:53:29: Warning: Unused parameter ‘mpi_err_count’ declared at (1) [-Wunused-parameter]
+mpif.h:63:28: Warning: Unused parameter ‘mpi_err_dims’ declared at (1) [-Wunused-parameter]
+mpif.h:101:28: Warning: Unused parameter ‘mpi_err_disp’ declared at (1) [-Wunused-parameter]
+mpif.h:102:35: Warning: Unused parameter ‘mpi_err_dup_datarep’ declared at (1) [-Wunused-parameter]
+mpif.h:105:28: Warning: Unused parameter ‘mpi_err_file’ declared at (1) [-Wunused-parameter]
+mpif.h:103:35: Warning: Unused parameter ‘mpi_err_file_exists’ declared at (1) [-Wunused-parameter]
+mpif.h:104:35: Warning: Unused parameter ‘mpi_err_file_in_use’ declared at (1) [-Wunused-parameter]
+mpif.h:60:29: Warning: Unused parameter ‘mpi_err_group’ declared at (1) [-Wunused-parameter]
+mpif.h:69:33: Warning: Unused parameter ‘mpi_err_in_status’ declared at (1) [-Wunused-parameter]
+mpif.h:109:28: Warning: Unused parameter ‘mpi_err_info’ declared at (1) [-Wunused-parameter]
+mpif.h:106:32: Warning: Unused parameter ‘mpi_err_info_key’ declared at (1) [-Wunused-parameter]
+mpif.h:107:34: Warning: Unused parameter ‘mpi_err_info_nokey’ declared at (1) [-Wunused-parameter]
+mpif.h:108:34: Warning: Unused parameter ‘mpi_err_info_value’ declared at (1) [-Wunused-parameter]
+mpif.h:68:30: Warning: Unused parameter ‘mpi_err_intern’ declared at (1) [-Wunused-parameter]
+mpif.h:110:26: Warning: Unused parameter ‘mpi_err_io’ declared at (1) [-Wunused-parameter]
+mpif.h:111:30: Warning: Unused parameter ‘mpi_err_keyval’ declared at (1) [-Wunused-parameter]
+mpif.h:201:32: Warning: Unused parameter ‘mpi_err_lastcode’ declared at (1) [-Wunused-parameter]
+mpif.h:112:32: Warning: Unused parameter ‘mpi_err_locktype’ declared at (1) [-Wunused-parameter]
+mpif.h:113:28: Warning: Unused parameter ‘mpi_err_name’ declared at (1) [-Wunused-parameter]
+mpif.h:114:30: Warning: Unused parameter ‘mpi_err_no_mem’ declared at (1) [-Wunused-parameter]
+mpif.h:116:32: Warning: Unused parameter ‘mpi_err_no_space’ declared at (1) [-Wunused-parameter]
+mpif.h:117:36: Warning: Unused parameter ‘mpi_err_no_such_file’ declared at (1) [-Wunused-parameter]
+mpif.h:115:32: Warning: Unused parameter ‘mpi_err_not_same’ declared at (1) [-Wunused-parameter]
+mpif.h:61:26: Warning: Unused parameter ‘mpi_err_op’ declared at (1) [-Wunused-parameter]
+mpif.h:67:29: Warning: Unused parameter ‘mpi_err_other’ declared at (1) [-Wunused-parameter]
+mpif.h:70:31: Warning: Unused parameter ‘mpi_err_pending’ declared at (1) [-Wunused-parameter]
+mpif.h:118:28: Warning: Unused parameter ‘mpi_err_port’ declared at (1) [-Wunused-parameter]
+mpif.h:119:29: Warning: Unused parameter ‘mpi_err_quota’ declared at (1) [-Wunused-parameter]
+mpif.h:57:28: Warning: Unused parameter ‘mpi_err_rank’ declared at (1) [-Wunused-parameter]
+mpif.h:120:33: Warning: Unused parameter ‘mpi_err_read_only’ declared at (1) [-Wunused-parameter]
+mpif.h:58:31: Warning: Unused parameter ‘mpi_err_request’ declared at (1) [-Wunused-parameter]
+mpif.h:130:34: Warning: Unused parameter ‘mpi_err_rma_attach’ declared at (1) [-Wunused-parameter]
+mpif.h:121:36: Warning: Unused parameter ‘mpi_err_rma_conflict’ declared at (1) [-Wunused-parameter]
+mpif.h:132:34: Warning: Unused parameter ‘mpi_err_rma_flavor’ declared at (1) [-Wunused-parameter]
+mpif.h:129:33: Warning: Unused parameter ‘mpi_err_rma_range’ declared at (1) [-Wunused-parameter]
+mpif.h:131:34: Warning: Unused parameter ‘mpi_err_rma_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:122:32: Warning: Unused parameter ‘mpi_err_rma_sync’ declared at (1) [-Wunused-parameter]
+mpif.h:59:28: Warning: Unused parameter ‘mpi_err_root’ declared at (1) [-Wunused-parameter]
+mpif.h:123:31: Warning: Unused parameter ‘mpi_err_service’ declared at (1) [-Wunused-parameter]
+mpif.h:124:28: Warning: Unused parameter ‘mpi_err_size’ declared at (1) [-Wunused-parameter]
+mpif.h:125:29: Warning: Unused parameter ‘mpi_err_spawn’ declared at (1) [-Wunused-parameter]
+mpif.h:55:27: Warning: Unused parameter ‘mpi_err_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:62:32: Warning: Unused parameter ‘mpi_err_topology’ declared at (1) [-Wunused-parameter]
+mpif.h:66:32: Warning: Unused parameter ‘mpi_err_truncate’ declared at (1) [-Wunused-parameter]
+mpif.h:54:28: Warning: Unused parameter ‘mpi_err_type’ declared at (1) [-Wunused-parameter]
+mpif.h:65:31: Warning: Unused parameter ‘mpi_err_unknown’ declared at (1) [-Wunused-parameter]
+mpif.h:126:43: Warning: Unused parameter ‘mpi_err_unsupported_datarep’ declared at (1) [-Wunused-parameter]
+mpif.h:127:45: Warning: Unused parameter ‘mpi_err_unsupported_operation’ declared at (1) [-Wunused-parameter]
+mpif.h:128:27: Warning: Unused parameter ‘mpi_err_win’ declared at (1) [-Wunused-parameter]
+mpif.h:697:35: Warning: Unused parameter ‘mpi_errhandler_null’ declared at (1) [-Wunused-parameter]
+mpif.h:707:25: Warning: Unused parameter ‘mpi_error’ declared at (1) [-Wunused-parameter]
+mpif.h:698:36: Warning: Unused parameter ‘mpi_errors_are_fatal’ declared at (1) [-Wunused-parameter]
+mpif.h:699:33: Warning: Unused parameter ‘mpi_errors_return’ declared at (1) [-Wunused-parameter]
+mpif.h:449:27: Warning: Unused parameter ‘mpi_file_null’ declared at (1) [-Wunused-parameter]
+mpif.h:577:25: Warning: Unused parameter ‘mpi_float’ declared at (1) [-Wunused-parameter]
+mpif.h:495:29: Warning: Unused parameter ‘mpi_float_int’ declared at (1) [-Wunused-parameter]
+mpif.h:238:25: Warning: Unused parameter ‘mpi_graph’ declared at (1) [-Wunused-parameter]
+mpif.h:716:31: Warning: Unused parameter ‘mpi_group_empty’ declared at (1) [-Wunused-parameter]
+mpif.h:715:30: Warning: Unused parameter ‘mpi_group_null’ declared at (1) [-Wunused-parameter]
+mpif.h:208:24: Warning: Unused parameter ‘mpi_host’ declared at (1) [-Wunused-parameter]
+mpif.h:226:25: Warning: Unused parameter ‘mpi_ident’ declared at (1) [-Wunused-parameter]
+mpif.h:724:28: Warning: Unused parameter ‘mpi_info_env’ declared at (1) [-Wunused-parameter]
+mpif.h:721:29: Warning: Unused parameter ‘mpi_info_null’ declared at (1) [-Wunused-parameter]
+mpif.h:571:23: Warning: Unused parameter ‘mpi_int’ declared at (1) [-Wunused-parameter]
+mpif.h:610:27: Warning: Unused parameter ‘mpi_int16_t’ declared at (1) [-Wunused-parameter]
+mpif.h:611:27: Warning: Unused parameter ‘mpi_int32_t’ declared at (1) [-Wunused-parameter]
+mpif.h:612:27: Warning: Unused parameter ‘mpi_int64_t’ declared at (1) [-Wunused-parameter]
+mpif.h:609:26: Warning: Unused parameter ‘mpi_int8_t’ declared at (1) [-Wunused-parameter]
+mpif.h:583:27: Warning: Unused parameter ‘mpi_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:590:28: Warning: Unused parameter ‘mpi_integer1’ declared at (1) [-Wunused-parameter]
+mpif.h:604:29: Warning: Unused parameter ‘mpi_integer16’ declared at (1) [-Wunused-parameter]
+mpif.h:591:28: Warning: Unused parameter ‘mpi_integer2’ declared at (1) [-Wunused-parameter]
+mpif.h:592:28: Warning: Unused parameter ‘mpi_integer4’ declared at (1) [-Wunused-parameter]
+mpif.h:593:28: Warning: Unused parameter ‘mpi_integer8’ declared at (1) [-Wunused-parameter]
+mpif.h:302:32: Warning: Unused parameter ‘mpi_integer_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:209:22: Warning: Unused parameter ‘mpi_io’ declared at (1) [-Wunused-parameter]
+mpif.h:206:34: Warning: Unused parameter ‘mpi_keyval_invalid’ declared at (1) [-Wunused-parameter]
+mpif.h:538:24: Warning: Unused parameter ‘mpi_land’ declared at (1) [-Wunused-parameter]
+mpif.h:213:32: Warning: Unused parameter ‘mpi_lastusedcode’ declared at (1) [-Wunused-parameter]
+mpif.h:512:22: Warning: Unused parameter ‘mpi_lb’ declared at (1) [-Wunused-parameter]
+mpif.h:330:34: Warning: Unused parameter ‘mpi_lock_exclusive’ declared at (1) [-Wunused-parameter]
+mpif.h:328:31: Warning: Unused parameter ‘mpi_lock_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:588:27: Warning: Unused parameter ‘mpi_logical’ declared at (1) [-Wunused-parameter]
+mpif.h:572:24: Warning: Unused parameter ‘mpi_long’ declared at (1) [-Wunused-parameter]
+mpif.h:579:31: Warning: Unused parameter ‘mpi_long_double’ declared at (1) [-Wunused-parameter]
+mpif.h:500:35: Warning: Unused parameter ‘mpi_long_double_int’ declared at (1) [-Wunused-parameter]
+mpif.h:497:28: Warning: Unused parameter ‘mpi_long_int’ declared at (1) [-Wunused-parameter]
+mpif.h:580:29: Warning: Unused parameter ‘mpi_long_long’ declared at (1) [-Wunused-parameter]
+mpif.h:581:33: Warning: Unused parameter ‘mpi_long_long_int’ declared at (1) [-Wunused-parameter]
+mpif.h:540:23: Warning: Unused parameter ‘mpi_lor’ declared at (1) [-Wunused-parameter]
+mpif.h:542:24: Warning: Unused parameter ‘mpi_lxor’ declared at (1) [-Wunused-parameter]
+mpif.h:534:23: Warning: Unused parameter ‘mpi_max’ declared at (1) [-Wunused-parameter]
+mpif.h:452:36: Warning: Unused parameter ‘mpi_max_datarep_string’ declared at (1) [-Wunused-parameter]
+mpif.h:256:36: Warning: Unused parameter ‘mpi_max_error_string’ declared at (1) [-Wunused-parameter]
+mpif.h:289:32: Warning: Unused parameter ‘mpi_max_info_key’ declared at (1) [-Wunused-parameter]
+mpif.h:292:32: Warning: Unused parameter ‘mpi_max_info_val’ declared at (1) [-Wunused-parameter]
+mpif.h:259:46: Warning: Unused parameter ‘mpi_max_library_version_string’ declared at (1) [-Wunused-parameter]
+mpif.h:262:35: Warning: Unused parameter ‘mpi_max_object_name’ declared at (1) [-Wunused-parameter]
+mpif.h:297:33: Warning: Unused parameter ‘mpi_max_port_name’ declared at (1) [-Wunused-parameter]
+mpif.h:253:38: Warning: Unused parameter ‘mpi_max_processor_name’ declared at (1) [-Wunused-parameter]
+mpif.h:544:26: Warning: Unused parameter ‘mpi_maxloc’ declared at (1) [-Wunused-parameter]
+mpif.h:729:28: Warning: Unused parameter ‘mpi_message_no_proc’ declared at (1) [-Wunused-parameter]
+mpif.h:730:25: Warning: Unused parameter ‘mpi_message_null’ declared at (1) [-Wunused-parameter]
+mpif.h:535:23: Warning: Unused parameter ‘mpi_min’ declared at (1) [-Wunused-parameter]
+mpif.h:545:26: Warning: Unused parameter ‘mpi_minloc’ declared at (1) [-Wunused-parameter]
+mpif.h:443:29: Warning: Unused parameter ‘mpi_mode_append’ declared at (1) [-Wunused-parameter]
+mpif.h:442:29: Warning: Unused parameter ‘mpi_mode_create’ declared at (1) [-Wunused-parameter]
+mpif.h:441:38: Warning: Unused parameter ‘mpi_mode_delete_on_close’ declared at (1) [-Wunused-parameter]
+mpif.h:442:44: Warning: Unused parameter ‘mpi_mode_excl’ declared at (1) [-Wunused-parameter]
+mpif.h:316:32: Warning: Unused parameter ‘mpi_mode_nocheck’ declared at (1) [-Wunused-parameter]
+mpif.h:319:34: Warning: Unused parameter ‘mpi_mode_noprecede’ declared at (1) [-Wunused-parameter]
+mpif.h:318:30: Warning: Unused parameter ‘mpi_mode_noput’ declared at (1) [-Wunused-parameter]
+mpif.h:317:32: Warning: Unused parameter ‘mpi_mode_nostore’ declared at (1) [-Wunused-parameter]
+mpif.h:320:34: Warning: Unused parameter ‘mpi_mode_nosucceed’ declared at (1) [-Wunused-parameter]
+mpif.h:440:29: Warning: Unused parameter ‘mpi_mode_rdonly’ declared at (1) [-Wunused-parameter]
+mpif.h:440:44: Warning: Unused parameter ‘mpi_mode_rdwr’ declared at (1) [-Wunused-parameter]
+mpif.h:443:50: Warning: Unused parameter ‘mpi_mode_sequential’ declared at (1) [-Wunused-parameter]
+mpif.h:441:60: Warning: Unused parameter ‘mpi_mode_unique_open’ declared at (1) [-Wunused-parameter]
+mpif.h:440:61: Warning: Unused parameter ‘mpi_mode_wronly’ declared at (1) [-Wunused-parameter]
+mpif.h:547:25: Warning: Unused parameter ‘mpi_no_op’ declared at (1) [-Wunused-parameter]
+mpif.h:526:26: Warning: Unused parameter ‘mpi_offset’ declared at (1) [-Wunused-parameter]
+mpif.h:305:31: Warning: Unused parameter ‘mpi_offset_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:533:27: Warning: Unused parameter ‘mpi_op_null’ declared at (1) [-Wunused-parameter]
+mpif.h:467:25: Warning: Unused parameter ‘mpi_order_c’ declared at (1) [-Wunused-parameter]
+mpif.h:467:44: Warning: Unused parameter ‘mpi_order_fortran’ declared at (1) [-Wunused-parameter]
+mpif.h:510:26: Warning: Unused parameter ‘mpi_packed’ declared at (1) [-Wunused-parameter]
+mpif.h:277:29: Warning: Unused parameter ‘mpi_proc_null’ declared at (1) [-Wunused-parameter]
+mpif.h:537:24: Warning: Unused parameter ‘mpi_prod’ declared at (1) [-Wunused-parameter]
+mpif.h:584:24: Warning: Unused parameter ‘mpi_real’ declared at (1) [-Wunused-parameter]
+mpif.h:596:26: Warning: Unused parameter ‘mpi_real16’ declared at (1) [-Wunused-parameter]
+mpif.h:594:25: Warning: Unused parameter ‘mpi_real4’ declared at (1) [-Wunused-parameter]
+mpif.h:595:25: Warning: Unused parameter ‘mpi_real8’ declared at (1) [-Wunused-parameter]
+mpif.h:546:27: Warning: Unused parameter ‘mpi_replace’ declared at (1) [-Wunused-parameter]
+mpif.h:737:32: Warning: Unused parameter ‘mpi_request_null’ declared at (1) [-Wunused-parameter]
+mpif.h:268:24: Warning: Unused parameter ‘mpi_root’ declared at (1) [-Wunused-parameter]
+mpif.h:455:40: Warning: Unused parameter ‘mpi_seek_cur’ declared at (1) [-Wunused-parameter]
+mpif.h:455:54: Warning: Unused parameter ‘mpi_seek_end’ declared at (1) [-Wunused-parameter]
+mpif.h:455:26: Warning: Unused parameter ‘mpi_seek_set’ declared at (1) [-Wunused-parameter]
+mpif.h:570:25: Warning: Unused parameter ‘mpi_short’ declared at (1) [-Wunused-parameter]
+mpif.h:499:29: Warning: Unused parameter ‘mpi_short_int’ declared at (1) [-Wunused-parameter]
+mpif.h:601:31: Warning: Unused parameter ‘mpi_signed_char’ declared at (1) [-Wunused-parameter]
+mpif.h:228:27: Warning: Unused parameter ‘mpi_similar’ declared at (1) [-Wunused-parameter]
+mpif.h:705:26: Warning: Unused parameter ‘mpi_source’ declared at (1) [-Wunused-parameter]
+mpif.h:15:39: Warning: Unused parameter ‘mpi_subarrays_supported’ declared at (1) [-Wunused-parameter]
+mpif.h:14:30: Warning: Unused parameter ‘mpi_subversion’ declared at (1) [-Wunused-parameter]
+mpif.h:51:27: Warning: Unused parameter ‘mpi_success’ declared at (1) [-Wunused-parameter]
+mpif.h:536:23: Warning: Unused parameter ‘mpi_sum’ declared at (1) [-Wunused-parameter]
+mpif.h:133:37: Warning: Unused parameter ‘mpi_t_err_cannot_init’ declared at (1) [-Wunused-parameter]
+mpif.h:143:40: Warning: Unused parameter ‘mpi_t_err_cvar_set_never’ declared at (1) [-Wunused-parameter]
+mpif.h:142:42: Warning: Unused parameter ‘mpi_t_err_cvar_set_not_now’ declared at (1) [-Wunused-parameter]
+mpif.h:139:40: Warning: Unused parameter ‘mpi_t_err_invalid_handle’ declared at (1) [-Wunused-parameter]
+mpif.h:136:39: Warning: Unused parameter ‘mpi_t_err_invalid_index’ declared at (1) [-Wunused-parameter]
+mpif.h:137:38: Warning: Unused parameter ‘mpi_t_err_invalid_item’ declared at (1) [-Wunused-parameter]
+mpif.h:138:41: Warning: Unused parameter ‘mpi_t_err_invalid_session’ declared at (1) [-Wunused-parameter]
+mpif.h:135:32: Warning: Unused parameter ‘mpi_t_err_memory’ declared at (1) [-Wunused-parameter]
+mpif.h:134:41: Warning: Unused parameter ‘mpi_t_err_not_initialized’ declared at (1) [-Wunused-parameter]
+mpif.h:140:40: Warning: Unused parameter ‘mpi_t_err_out_of_handles’ declared at (1) [-Wunused-parameter]
+mpif.h:141:41: Warning: Unused parameter ‘mpi_t_err_out_of_sessions’ declared at (1) [-Wunused-parameter]
+mpif.h:146:40: Warning: Unused parameter ‘mpi_t_err_pvar_no_atomic’ declared at (1) [-Wunused-parameter]
+mpif.h:145:43: Warning: Unused parameter ‘mpi_t_err_pvar_no_startstop’ declared at (1) [-Wunused-parameter]
+mpif.h:144:39: Warning: Unused parameter ‘mpi_t_err_pvar_no_write’ declared at (1) [-Wunused-parameter]
+mpif.h:706:23: Warning: Unused parameter ‘mpi_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:207:26: Warning: Unused parameter ‘mpi_tag_ub’ declared at (1) [-Wunused-parameter]
+mpif.h:336:35: Warning: Unused parameter ‘mpi_thread_funneled’ declared at (1) [-Wunused-parameter]
+mpif.h:338:35: Warning: Unused parameter ‘mpi_thread_multiple’ declared at (1) [-Wunused-parameter]
+mpif.h:337:37: Warning: Unused parameter ‘mpi_thread_serialized’ declared at (1) [-Wunused-parameter]
+mpif.h:335:33: Warning: Unused parameter ‘mpi_thread_single’ declared at (1) [-Wunused-parameter]
+mpif.h:405:37: Warning: Unused parameter ‘mpi_typeclass_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:403:37: Warning: Unused parameter ‘mpi_typeclass_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:404:34: Warning: Unused parameter ‘mpi_typeclass_real’ declared at (1) [-Wunused-parameter]
+mpif.h:511:22: Warning: Unused parameter ‘mpi_ub’ declared at (1) [-Wunused-parameter]
+mpif.h:614:28: Warning: Unused parameter ‘mpi_uint16_t’ declared at (1) [-Wunused-parameter]
+mpif.h:615:28: Warning: Unused parameter ‘mpi_uint32_t’ declared at (1) [-Wunused-parameter]
+mpif.h:616:28: Warning: Unused parameter ‘mpi_uint64_t’ declared at (1) [-Wunused-parameter]
+mpif.h:613:27: Warning: Unused parameter ‘mpi_uint8_t’ declared at (1) [-Wunused-parameter]
+mpif.h:271:29: Warning: Unused parameter ‘mpi_undefined’ declared at (1) [-Wunused-parameter]
+mpif.h:229:27: Warning: Unused parameter ‘mpi_unequal’ declared at (1) [-Wunused-parameter]
+mpif.h:211:33: Warning: Unused parameter ‘mpi_universe_size’ declared at (1) [-Wunused-parameter]
+mpif.h:575:28: Warning: Unused parameter ‘mpi_unsigned’ declared at (1) [-Wunused-parameter]
+mpif.h:573:33: Warning: Unused parameter ‘mpi_unsigned_char’ declared at (1) [-Wunused-parameter]
+mpif.h:576:33: Warning: Unused parameter ‘mpi_unsigned_long’ declared at (1) [-Wunused-parameter]
+mpif.h:602:38: Warning: Unused parameter ‘mpi_unsigned_long_long’ declared at (1) [-Wunused-parameter]
+mpif.h:574:34: Warning: Unused parameter ‘mpi_unsigned_short’ declared at (1) [-Wunused-parameter]
+mpif.h:13:27: Warning: Unused parameter ‘mpi_version’ declared at (1) [-Wunused-parameter]
+mpif.h:600:25: Warning: Unused parameter ‘mpi_wchar’ declared at (1) [-Wunused-parameter]
+mpif.h:389:28: Warning: Unused parameter ‘mpi_win_base’ declared at (1) [-Wunused-parameter]
+mpif.h:392:37: Warning: Unused parameter ‘mpi_win_create_flavor’ declared at (1) [-Wunused-parameter]
+mpif.h:391:33: Warning: Unused parameter ‘mpi_win_disp_unit’ declared at (1) [-Wunused-parameter]
+mpif.h:420:39: Warning: Unused parameter ‘mpi_win_flavor_allocate’ declared at (1) [-Wunused-parameter]
+mpif.h:419:37: Warning: Unused parameter ‘mpi_win_flavor_create’ declared at (1) [-Wunused-parameter]
+mpif.h:421:38: Warning: Unused parameter ‘mpi_win_flavor_dynamic’ declared at (1) [-Wunused-parameter]
+mpif.h:422:37: Warning: Unused parameter ‘mpi_win_flavor_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:393:29: Warning: Unused parameter ‘mpi_win_model’ declared at (1) [-Wunused-parameter]
+mpif.h:740:28: Warning: Unused parameter ‘mpi_win_null’ declared at (1) [-Wunused-parameter]
+mpif.h:429:32: Warning: Unused parameter ‘mpi_win_separate’ declared at (1) [-Wunused-parameter]
+mpif.h:390:28: Warning: Unused parameter ‘mpi_win_size’ declared at (1) [-Wunused-parameter]
+mpif.h:430:31: Warning: Unused parameter ‘mpi_win_unified’ declared at (1) [-Wunused-parameter]
+mpif.h:210:35: Warning: Unused parameter ‘mpi_wtime_is_global’ declared at (1) [-Wunused-parameter]
+mpif.h:458:31: Warning: Unused parameter ‘mpio_request_null’ declared at (1) [-Wunused-parameter]
+mpif90  -g -o flops flops.o mod_file_handling.o mod_harvest_blade.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPI_COLL_IB_OFFLOAD (default: disabled) : disabled
+MPT: MPI_CONNECTIONS_THRESHOLD (default: 1025) : 1025
+MPT: MPI_IB_ACCELERATE_AHS (default: disabled) : disabled
+MPT: MPI_IB_EARLY_AHS (default: disabled) : disabled
+MPT: MPI_IB_COALESCE (default: disabled) : disabled
+MPT: MPI_IB_CONGESTED (default: disabled) : disabled
+MPT: MPI_IB_DCIS (default: 0) : 0
+MPT: MPI_IB_DEVS (default: ) : 
+MPT: MPI_IB_DEVS0 (default: ) : 
+MPT: MPI_IB_DEVS1 (default: ) : 
+MPT: MPI_IB_FAILOVER (default: 32) : 32
+MPT: MPI_IB_FAILOVER_RESET (default: enabled) : enabled
+MPT: MPI_IB_HYPER_LAZY (default: disabled) : disabled
+MPT: MPI_IB_IMM_UPGRADE (default: disabled) : disabled
+MPT: MPI_IB_MAX_RDMAS (default: 4) : 4
+MPT: MPI_IB_MTU (default: 2048) : 2048
+MPT: MPI_IB_NUM_QPS (default: not set) : not set
+MPT: MPI_IB_PAYLOAD (default: 16512) : 16512
+MPT: MPI_IB_PRE_CACHE (default: 0) : 0
+MPT: MPI_IB_QP_REALLOC (default: disabled) : disabled
+MPT: MPI_IB_QTIME (default: 0) : 0
+MPT: MPI_IB_RAIL0 (default: ) : 
+MPT: MPI_IB_RAIL1 (default: ) : 
+MPT: MPI_IB_RAILS (default: 1) : 1
+MPT: MPI_IB_RAILS_FLEXIBLE (default: disabled) : disabled
+MPT: MPI_IB_RECV_BUFS (default: 512) : 512
+MPT: MPI_IB_RECV_MSGS (default: 512) : 512
+MPT: MPI_IB_RNR_TIMER (default: 14) : 26
+MPT: MPI_IB_SERVICE_LEVEL (default: 0) : 1
+MPT: MPI_IB_SINGLE_COPY_BUFFER_MAX (default: 32767) : 32767
+MPT: MPI_IB_TIMEOUT (default: 18) : 22
+MPT: MPI_IB_UPGRADE_SENDS (default: 50) : 50
+MPT: MPI_IB_XRC (default: enabled) : enabled
+MPT: MPI_MEMORY_REGION_LIMIT (default: 938143004) : 938143004
+MPT: MPI_NUM_MEMORY_REGIONS (default: 1024) : 1024
+MPT: MPI_UD_ACK_TIMEOUT (default: 5) : 5
+MPT: MPI_UD_CODEL_DEBUG (default: disabled) : disabled
+MPT: MPI_UD_RECV_MSGS (default: 800) : 800
+MPT: MPI_UD_SEND_BUFFERS (default: 400) : 400
+MPT: MPI_UD_FINALIZE_TIMEOUT (default: 2) : 2
+MPT: MPI_UD_TIMEOUT (default: 20) : 20
+MPT: MPI_USE_IB (default: disabled) : disabled
+MPT: MPI_USE_TCP (default: disabled) : disabled
+MPT: MPI_USE_UD (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Start Epilogue v2.5.3 Mon Jun 13 17:10:39 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r18i4n3        0.80     0.93   117.00     0.09     7.88   125.81
+r18i4n4        0.75     0.88   117.00     0.03     7.75   125.81
+r18i4n6        0.76     0.89   117.00     0.04     7.76   125.81
+r18i4n8        0.76     0.89   117.00     0.04     7.81   125.81
+r18i4n9        0.76     0.89   117.00     0.04     7.75   125.81
+r18i4n10       0.76     0.89   117.00     0.05     7.76   125.81
+r18i4n12       0.76     0.89   117.00     0.04     7.69   125.81
+r18i4n13       0.76     0.89   117.00     0.05     7.70   125.81
+r18i4n14       0.76     0.88   117.00     0.04     7.71   125.81
+r18i4n15       0.76     0.89   117.00     0.04     7.75   125.81
+r18i4n16       0.75     0.88   117.00     0.03     7.68   125.81
+r18i4n17       0.76     0.89   117.00     0.04     7.88   125.81
+r18i5n0        0.75     0.87   117.00     0.03     7.05   125.81
+r18i5n1        0.76     0.88   117.00     0.04     7.65   125.81
+r19i7n15       0.75     0.88   117.00     0.03     8.15   125.81
+r21i3n9        0.76     0.88   117.00     0.04     7.91   125.81
+r21i3n10       0.76     0.88   117.00     0.04     7.92   125.81
+r21i3n11       0.76     0.89   117.00     0.04     7.93   125.81
+r21i3n12       0.76     0.89   117.00     0.04     7.94   125.81
+r21i3n13       0.76     0.89   117.00     0.04     8.09   125.81
+r21i3n15       0.76     0.89   117.00     0.04     7.67   125.81
+r21i3n16       0.76     0.89   117.00     0.04     7.61   125.81
+r21i3n17       0.76     0.89   117.00     0.05     7.75   125.81
+r21i5n12       0.76     0.89   117.00     0.04     7.49   125.81
+r21i5n13       0.76     0.89   117.00     0.04     7.64   125.81
+r21i5n14       0.76     0.89   117.00     0.04     7.69   125.81
+r21i5n15       0.76     0.89   117.00     0.04     7.58   125.81
+r22i3n2        0.75     0.88   117.00     0.03     6.97   125.81
+r22i3n5        0.75     0.88   117.00     0.03     6.96   125.81
+r22i3n9        0.75     0.87   117.00     0.03     6.95   125.81
+r23i5n15       0.76     0.89   117.00     0.04     7.47   125.81
+r23i5n16       0.75     0.87   117.00     0.02     6.92   125.81
+r23i5n17       0.75     0.88   117.00     0.03     7.46   125.81
+r23i6n0        0.75     0.88   117.00     0.03     7.73   125.81
+r23i6n1        0.76     0.88   117.00     0.04     7.70   125.81
+r23i6n2        0.76     0.89   117.00     0.04     7.71   125.81
+r23i7n8        0.76     0.89   117.00     0.04     7.75   125.81
+r23i7n9        0.76     0.88   117.00     0.04     8.10   125.81
+r23i7n10       0.76     0.88   117.00     0.04     8.19   125.81
+r23i7n11       0.76     0.88   117.00     0.04     9.69   125.81
+r23i7n12       0.76     0.88   117.00     0.04     7.63   125.81
+r23i7n13       0.75     0.88   117.00     0.03     7.61   125.81
+r23i7n14       0.76     0.88   117.00     0.04     8.12   125.81
+r23i7n17       0.76     0.88   117.00     0.04     7.73   125.81
+r24i0n0        0.76     0.88   117.00     0.04     7.50   125.81
+r24i0n1        0.76     0.88   117.00     0.04     7.60   125.81
+r24i0n2        0.76     0.89   117.00     0.04     7.56   125.81
+r24i0n3        0.76     0.89   117.00     0.04     7.76   125.81
+r24i0n4        0.75     0.88   117.00     0.03     7.55   125.81
+r24i0n5        0.76     0.88   117.00     0.04     7.63   125.81
+r24i0n6        0.76     0.89   117.00     0.04     8.06   125.81
+r24i0n7        0.76     0.88   117.00     0.04     8.14   125.81
+r24i0n8        0.76     0.89   117.00     0.04     7.57   125.81
+r24i0n9        0.76     0.89   117.00     0.04     7.77   125.81
+r24i0n10       0.75     0.88   117.00     0.04     7.77   125.81
+r24i0n11       0.76     0.88   117.00     0.04     7.66   125.81
+r24i0n12       0.76     0.89   117.00     0.04     7.73   125.81
+r24i0n13       0.76     0.89   117.00     0.04     7.76   125.81
+r24i0n14       0.76     0.89   117.00     0.04     7.83   125.81
+r24i0n15       0.76     0.89   117.00     0.04     7.64   125.81
+r24i0n16       0.76     0.89   117.00     0.04     7.67   125.81
+r24i0n17       0.76     0.89   117.00     0.04     7.64   125.81
+r24i1n0        0.76     0.89   117.00     0.04     7.54   125.81
+r24i1n1        0.76     0.89   117.00     0.04     7.50   125.81
+r24i1n2        0.76     0.89   117.00     0.04     7.66   125.81
+r24i1n3        0.76     0.89   117.00     0.04     7.70   125.81
+r24i1n4        0.76     0.88   117.00     0.04     7.75   125.81
+r24i1n5        0.76     0.88   117.00     0.04     7.52   125.81
+r24i1n6        0.76     0.88   117.00     0.04     7.53   125.81
+r24i1n7        0.76     0.89   117.00     0.04     7.70   125.81
+r24i1n8        0.76     0.88   117.00     0.04     7.68   125.81
+r24i1n9        0.76     0.88   117.00     0.04     7.54   125.81
+r24i1n10       0.75     0.88   117.00     0.04     7.65   125.81
+r24i1n11       0.76     0.89   117.00     0.04     7.66   125.81
+r24i1n12       0.76     0.89   117.00     0.04     7.48   125.81
+r24i1n13       0.76     0.88   117.00     0.04     7.50   125.81
+r24i1n14       0.75     0.88   117.00     0.03     7.65   125.81
+r24i1n15       0.75     0.88   117.00     0.04     7.58   125.81
+r24i1n16       0.76     0.89   117.00     0.04     7.58   125.81
+r24i1n17       0.76     0.89   117.00     0.04     7.59   125.81
+r24i4n0        0.75     0.88   117.00     0.03     7.92   125.81
+r24i4n1        0.75     0.88   117.00     0.03     7.72   125.81
+r24i4n2        0.75     0.88   117.00     0.03     7.57   125.81
+r24i4n3        0.75     0.88   117.00     0.03     7.71   125.81
+r24i4n4        0.75     0.88   117.00     0.03     7.57   125.81
+r24i4n5        0.75     0.88   117.00     0.03     7.63   125.81
+r24i4n6        0.75     0.88   117.00     0.03     7.58   125.81
+r24i4n7        0.75     0.88   117.00     0.03     7.57   125.81
+r24i4n8        0.75     0.88   117.00     0.03     7.82   125.81
+r24i4n9        0.75     0.88   117.00     0.03     7.60   125.81
+r24i4n10       0.75     0.88   117.00     0.03     7.61   125.81
+r24i4n11       0.75     0.88   117.00     0.03     7.60   125.81
+r24i4n12       0.75     0.88   117.00     0.03     7.55   125.81
+r24i4n13       0.75     0.88   117.00     0.03     7.72   125.81
+r24i4n14       0.75     0.88   117.00     0.03     7.58   125.81
+r24i4n15       0.75     0.88   117.00     0.03     8.89   125.81
+r24i4n16       0.75     0.88   117.00     0.03     7.70   125.81
+r24i4n17       0.75     0.88   117.00     0.03     7.47   125.81
+r24i5n15       0.75     0.88   117.00     0.03    14.05   125.81
+r24i5n16       0.75     0.88   117.00     0.03     7.67   125.81
+Memory summary:
+		min    0.87 GB
+		max    0.93 GB
+		ave    0.88 GB
+End Epilogue v2.5.3 Mon Jun 13 17:12:05 CDT 2016 

@@ -1,0 +1,26 @@
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/21023.predator-c.SC.user to UNIX format ...
+Welcome dantopa to ~/.personal.bashrc on Predator
+/home/dantopa/.personal.bashrc: line 25: black: command not found
+/home/dantopa/.personal.bashrc: line 26: myprompt: command not found
+/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/echo_predator
+mpif90  -c i -o mod_file_handling.o mod_file_handling.f08
+gfortran: error: i: No such file or directory
+make: *** [mod_file_handling.o] Error 1
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+At line 29 of file mod_harvest_blade.f08
+Fortran runtime error: End of record
+MPT: MPI_COMM_WORLD rank 5 has terminated without calling MPI_Finalize()
+	aborting job

@@ -1,0 +1,9 @@
+
+Returns information about the MIC/Phi device.
+
+Copy these files to a workspace that you own.
+
+Run the job using the command
+qsub micinfo.pbs
+
+

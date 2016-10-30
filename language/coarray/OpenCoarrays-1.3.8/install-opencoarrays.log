@@ -1,0 +1,70 @@
+[H[2J
+*** A default build of OpenCoarrays requires CMake 3.4.0 or later     ***
+*** and MPICH 3.1.4 wrapping GCC Fortran (gfortran) 5.3.0 or later.   ***
+*** Additionally, CMake, MPICH, and GCC have their own prerequisites. ***
+*** This script will check for most known requirements in your PATH   ***
+*** environment variable and in the default installation directory    ***
+*** to which this script installs each missing prerequisite.  The     ***
+*** script will recursively traverse the following dependency tree    ***
+*** and ask permission to download, build, and install any missing    ***
+*** prerequisites:                                                    ***
+
+cat: opencoarrays-tree.txt: No such file or directory
+
+*** All prerequisites will be downloaded to, built in, and installed in ***
+/Users/dantopa/Box Sync/fortran/coarray/OpenCoarrays-1.3.8/install_prerequisites
+*** OpenCoarrays will be installed in the above location also.        ***
+Ready to proceed? (Y/n) Y
+install.sh: Checking whether mpich executable mpif90 is in the PATH...yes.
+install.sh: Checking whether mpif90 is in the directory in which install.sh
+            installs it by default and whether the user has executable permission for it...no.
+install.sh: Checking whether mpif90 in PATH wraps gfortran... yes.
+install.sh: Checking whether mpif90 in PATH wraps gfortran version 5.3.0 or later... no
+install.sh: Updated dependency stack (top to bottom = left to right):
+( gcc mpich none )
+install.sh: Building mpich from source requires gcc.
+install.sh: Checking whether gcc executable gfortran is in the PATH...yes.
+install.sh: Checking whether gfortran is in the directory in which install.sh
+            installs it by default and whether the user has executable permission for it...no.
+install.sh: Checking whether gfortran in PATH is version 5.3.0 or later...no.
+install.sh: Updated dependency stack (top to bottom = left to right):
+( flex gcc mpich none )
+install.sh: Building gcc from source requires flex.
+install.sh: Checking whether flex is in the PATH...yes.
+install.sh: Checking whether flex is in the directory in which install.sh
+            installs it by default and whether the user has executable permission for it...no.
+install.sh: Checking whether flex in PATH is version < 2.6.0... ./check_version.sh: line 126: Apple(flex-31): syntax error in expression (error token is "(flex-31)")
+./check_version.sh: line 128: Apple(flex-31): syntax error in expression (error token is "(flex-31)")
+./check_version.sh: line 130: Apple(flex-31): syntax error in expression (error token is "(flex-31)")
+no.
+install.sh: Using the flex found in the PATH.
+install.sh: Updated dependency stack (top to bottom = left to right):
+( none gcc mpich none )
+install.sh: Remaining flex dependency stack (top to bottom = left to right):
+( gcc mpich none )
+install.sh: Ready to build gcc executable gfortran in /Users/dantopa/Box
+install.sh: Ok to download (if necessary), build, and install gcc from source? (Y/n) Y
+install.sh: Downloading, building, and installing gcc 
+install.sh: Build command: FC=gfortran CC=gcc CXX= ./build gcc --default /Users/dantopa/Box 1
+Downloading gcc 5.3.0 to the following location:
+/Users/dantopa/Box Sync/fortran/coarray/OpenCoarrays-1.3.8/install_prerequisites/gcc-5.3.0 
+Download command: ftp-url -n ftp.gnu.org:/gnu/gcc/gcc-5.3.0/gcc-5.3.0.tar.bz2
+Depending on the file size and network bandwidth, this could take several minutes or longer.build: starting anonymous download: ftp -n ftp.gnu.org... cd /gnu/gcc/gcc-5.3.0... get gcc-5.3.0.tar.bz2
+Passive mode: off; fallback to active mode: off.
+build: finished anonymous ftp
+./build: line 373: [: /Users/dantopa/Box: binary operator expected
+./build: line 373: [: /Users/dantopa/Box: binary operator expected
+Download failed. The gcc source is not in the following, expected location:
+/Users/dantopa/Box Sync/fortran/coarray/OpenCoarrays-1.3.8/install_prerequisites/gcc-5.3.0.tar.bz2
+Aborting. [exit 110]
+install.sh: Installation unsuccessful. gfortran is not in the following expected path or the user lacks executable permission for it:
+/Users/dantopa/Box/bin 
+Aborting. [exit 80]Something went wrong. Either the user lacks executable permissions for the
+OpenCoarrays compiler wrapper (caf), program launcher (cafrun), or prerequisite
+package installer (build), or these programs are not in the following, expected
+location:
+/Users/dantopa/Box Sync/fortran/coarray/OpenCoarrays-1.3.8/opencoarrays-installation/bin.
+Please review the following file for more information:
+/Users/dantopa/Box Sync/fortran/coarray/OpenCoarrays-1.3.8/opencoarrays-installation/install-opencoarrays.log
+and submit an bug report at https://github.com/sourceryinstitute/opencoarrays/issues
+[exit 100]

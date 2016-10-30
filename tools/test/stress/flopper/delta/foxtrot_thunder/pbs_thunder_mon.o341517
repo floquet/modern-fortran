@@ -1,0 +1,109 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 341517.thunder-b01
+whoami root
+LOG /workspace/prologue/341517.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/341517.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 341517
+Start Prologue v2.5.3 Wed Jun 15 02:03:50 CDT 2016 
+r20i0n9: MemFree:        122940584 kB
+End Prologue v2.5.3 Wed Jun 15 02:03:50 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 27: black: command not found
+/home/dantopa/.personal.bash_profile: line 28: myprompt: command not found
+jobStarter
+/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtrot_topaz
+ModuleCmd_Switch.c(172):ERROR:152: Module 'intel-compilers/15.3.187' is currently not loaded
+mpif90  -c  -o mod_file_handling.o mod_file_handling.f08
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpif90: line 120: ifort: command not found
+make: *** [mod_file_handling.o] Error 127
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : enabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Start Epilogue v2.5.3 Wed Jun 15 02:29:06 CDT 2016 
+Elog r20i0n9: Found leftover processes [flops] from dantopa terminating...
+r20i0n9 max memory used for job 341517.thunder-b01 (in bytes): 114495488
+End Epilogue v2.5.3 Wed Jun 15 02:29:06 CDT 2016 

@@ -1,0 +1,14 @@
+
+Returns information about the NVIDIA device.
+This information can be used for fine-tuning a
+code, such as, the choices of block size and
+the total number of threads.
+
+Copy these files to a workspace that you own.
+
+Build the executable using the command
+./compile.sh
+Run the job using the command
+qsub cudainfo.pbs
+
+

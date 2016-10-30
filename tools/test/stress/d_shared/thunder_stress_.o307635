@@ -1,0 +1,729 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 307635.thunder-b01
+whoami root
+LOG /workspace/prologue/307635.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/307635.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 307635
+Start Prologue v2.5.3 Tue May 17 10:31:44 CDT 2016 
+Warning: Permanently added 'r19i0n12.ib0.ice-x.afrl.hpc.mil,10.148.8.183' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n10.ib0.ice-x.afrl.hpc.mil,10.148.3.21' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n11.ib0.ice-x.afrl.hpc.mil,10.148.3.22' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n13.ib0.ice-x.afrl.hpc.mil,10.148.3.24' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n14.ib0.ice-x.afrl.hpc.mil,10.148.3.25' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n16.ib0.ice-x.afrl.hpc.mil,10.148.3.27' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n15.ib0.ice-x.afrl.hpc.mil,10.148.3.26' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n2.ib0.ice-x.afrl.hpc.mil,10.148.3.13' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n3.ib0.ice-x.afrl.hpc.mil,10.148.3.14' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n4.ib0.ice-x.afrl.hpc.mil,10.148.3.15' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n5.ib0.ice-x.afrl.hpc.mil,10.148.3.16' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n6.ib0.ice-x.afrl.hpc.mil,10.148.3.17' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n7.ib0.ice-x.afrl.hpc.mil,10.148.3.18' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n0.ib0.ice-x.afrl.hpc.mil,10.148.3.29' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n1.ib0.ice-x.afrl.hpc.mil,10.148.3.30' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n10.ib0.ice-x.afrl.hpc.mil,10.148.3.39' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n11.ib0.ice-x.afrl.hpc.mil,10.148.3.40' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n12.ib0.ice-x.afrl.hpc.mil,10.148.3.41' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n14.ib0.ice-x.afrl.hpc.mil,10.148.3.43' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n13.ib0.ice-x.afrl.hpc.mil,10.148.3.42' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n15.ib0.ice-x.afrl.hpc.mil,10.148.3.44' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n16.ib0.ice-x.afrl.hpc.mil,10.148.3.45' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n2.ib0.ice-x.afrl.hpc.mil,10.148.3.31' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n17.ib0.ice-x.afrl.hpc.mil,10.148.3.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n3.ib0.ice-x.afrl.hpc.mil,10.148.3.32' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n5.ib0.ice-x.afrl.hpc.mil,10.148.3.34' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n6.ib0.ice-x.afrl.hpc.mil,10.148.3.35' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n4.ib0.ice-x.afrl.hpc.mil,10.148.3.33' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n7.ib0.ice-x.afrl.hpc.mil,10.148.3.36' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i0n12.ib0.ice-x.afrl.hpc.mil,10.148.3.23' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i1n9.ib0.ice-x.afrl.hpc.mil,10.148.3.38' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n0.ib0.ice-x.afrl.hpc.mil,10.148.3.101' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n1.ib0.ice-x.afrl.hpc.mil,10.148.3.102' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n10.ib0.ice-x.afrl.hpc.mil,10.148.3.111' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n11.ib0.ice-x.afrl.hpc.mil,10.148.3.112' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n12.ib0.ice-x.afrl.hpc.mil,10.148.3.113' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n13.ib0.ice-x.afrl.hpc.mil,10.148.3.114' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n14.ib0.ice-x.afrl.hpc.mil,10.148.3.115' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n15.ib0.ice-x.afrl.hpc.mil,10.148.3.116' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n16.ib0.ice-x.afrl.hpc.mil,10.148.3.117' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n17.ib0.ice-x.afrl.hpc.mil,10.148.3.118' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n2.ib0.ice-x.afrl.hpc.mil,10.148.3.103' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n3.ib0.ice-x.afrl.hpc.mil,10.148.3.104' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n4.ib0.ice-x.afrl.hpc.mil,10.148.3.105' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n5.ib0.ice-x.afrl.hpc.mil,10.148.3.106' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n7.ib0.ice-x.afrl.hpc.mil,10.148.3.108' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n9.ib0.ice-x.afrl.hpc.mil,10.148.3.110' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i5n6.ib0.ice-x.afrl.hpc.mil,10.148.3.107' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i6n17.ib0.ice-x.afrl.hpc.mil,10.148.3.136' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n1.ib0.ice-x.afrl.hpc.mil,10.148.3.138' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n10.ib0.ice-x.afrl.hpc.mil,10.148.3.147' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n0.ib0.ice-x.afrl.hpc.mil,10.148.3.137' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n12.ib0.ice-x.afrl.hpc.mil,10.148.3.149' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n13.ib0.ice-x.afrl.hpc.mil,10.148.3.150' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n14.ib0.ice-x.afrl.hpc.mil,10.148.3.151' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n11.ib0.ice-x.afrl.hpc.mil,10.148.3.148' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n16.ib0.ice-x.afrl.hpc.mil,10.148.3.153' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n15.ib0.ice-x.afrl.hpc.mil,10.148.3.152' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n17.ib0.ice-x.afrl.hpc.mil,10.148.3.154' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n2.ib0.ice-x.afrl.hpc.mil,10.148.3.139' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n3.ib0.ice-x.afrl.hpc.mil,10.148.3.140' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n4.ib0.ice-x.afrl.hpc.mil,10.148.3.141' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n5.ib0.ice-x.afrl.hpc.mil,10.148.3.142' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n6.ib0.ice-x.afrl.hpc.mil,10.148.3.143' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n7.ib0.ice-x.afrl.hpc.mil,10.148.3.144' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r20i7n9.ib0.ice-x.afrl.hpc.mil,10.148.3.146' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n14.ib0.ice-x.afrl.hpc.mil,10.148.11.247' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n13.ib0.ice-x.afrl.hpc.mil,10.148.11.246' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n15.ib0.ice-x.afrl.hpc.mil,10.148.11.248' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n16.ib0.ice-x.afrl.hpc.mil,10.148.11.249' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n17.ib0.ice-x.afrl.hpc.mil,10.148.11.250' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i5n0.ib0.ice-x.afrl.hpc.mil,10.148.12.13' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n1.ib0.ice-x.afrl.hpc.mil,10.148.12.32' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n10.ib0.ice-x.afrl.hpc.mil,10.148.12.41' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n0.ib0.ice-x.afrl.hpc.mil,10.148.12.31' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n11.ib0.ice-x.afrl.hpc.mil,10.148.12.42' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n13.ib0.ice-x.afrl.hpc.mil,10.148.12.44' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n12.ib0.ice-x.afrl.hpc.mil,10.148.12.43' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n14.ib0.ice-x.afrl.hpc.mil,10.148.12.45' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n15.ib0.ice-x.afrl.hpc.mil,10.148.12.46' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n17.ib0.ice-x.afrl.hpc.mil,10.148.12.48' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n16.ib0.ice-x.afrl.hpc.mil,10.148.12.47' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n2.ib0.ice-x.afrl.hpc.mil,10.148.12.33' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n3.ib0.ice-x.afrl.hpc.mil,10.148.12.34' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n5.ib0.ice-x.afrl.hpc.mil,10.148.12.36' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n4.ib0.ice-x.afrl.hpc.mil,10.148.12.35' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n7.ib0.ice-x.afrl.hpc.mil,10.148.12.38' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i6n9.ib0.ice-x.afrl.hpc.mil,10.148.12.40' (ECDSA) to the list of known hosts.
+r18i0n2: MemFree:        123358372 kB
+r18i0n1: MemFree:        123341976 kB
+r18i4n10: MemFree:        123643680 kB
+r18i4n15: MemFree:        122764052 kB
+r18i0n3: MemFree:        123351056 kB
+r18i4n12: MemFree:        123655632 kB
+r20i0n10: MemFree:        122669268 kB
+r18i4n9: MemFree:        123652272 kB
+r20i0n12: MemFree:        123496476 kB
+r20i0n14: MemFree:        123616680 kB
+r19i0n12: MemFree:        123394676 kB
+r20i1n0: MemFree:        123100240 kB
+r20i0n15: MemFree:        123606944 kB
+r20i0n5: MemFree:        123512928 kB
+r20i0n6: MemFree:        123512924 kB
+r18i0n0: MemFree:        122512708 kB
+r20i0n4: MemFree:        122939396 kB
+r20i1n10: MemFree:        123338248 kB
+r20i1n14: MemFree:        123242816 kB
+r20i1n13: MemFree:        123405536 kB
+r18i4n16: MemFree:        122756676 kB
+r20i1n5: MemFree:        122979420 kB
+r20i1n11: MemFree:        123365288 kB
+r20i1n17: MemFree:        123469388 kB
+r18i4n13: MemFree:        123171628 kB
+r20i1n4: MemFree:        123298580 kB
+r18i4n14: MemFree:        123279576 kB
+r18i4n11: MemFree:        123665940 kB
+r20i1n2: MemFree:        123343168 kB
+r20i1n15: MemFree:        123416524 kB
+r20i5n11: MemFree:        123115856 kB
+r20i1n7: MemFree:        123327952 kB
+r20i0n3: MemFree:        123593172 kB
+r20i1n9: MemFree:        123299160 kB
+r20i1n6: MemFree:        123314276 kB
+r20i0n11: MemFree:        122720624 kB
+r20i0n13: MemFree:        123836652 kB
+r20i0n2: MemFree:        123367672 kB
+r20i5n13: MemFree:        120186484 kB
+r20i5n10: MemFree:        123127064 kB
+r20i5n14: MemFree:        123049636 kB
+r20i5n15: MemFree:        121647644 kB
+r20i0n16: MemFree:        123607824 kB
+r20i1n1: MemFree:        123317580 kB
+r20i5n6: MemFree:        123187260 kB
+r20i5n9: MemFree:        123056056 kB
+r20i0n7: MemFree:        121697140 kB
+r20i1n12: MemFree:        123343388 kB
+r20i5n7: MemFree:        123147008 kB
+r20i7n1: MemFree:        121613164 kB
+r20i7n12: MemFree:        122522548 kB
+r20i1n3: MemFree:        123322864 kB
+r20i7n16: MemFree:        120512692 kB
+r20i7n14: MemFree:        122942336 kB
+r20i7n15: MemFree:        123184336 kB
+r20i7n2: MemFree:        121377800 kB
+r20i1n16: MemFree:        123199768 kB
+r20i7n4: MemFree:        122317980 kB
+r20i7n9: MemFree:        122522720 kB
+r20i5n2: MemFree:        123269316 kB
+r20i5n12: MemFree:        120148868 kB
+r20i5n1: MemFree:        123275952 kB
+r20i5n0: MemFree:        122921408 kB
+r20i7n6: MemFree:        120716244 kB
+r20i7n7: MemFree:        121455348 kB
+r23i3n15: MemFree:        123642516 kB
+r20i5n17: MemFree:        121657640 kB
+r20i5n16: MemFree:        122294500 kB
+r23i5n0: MemFree:        124232848 kB
+r23i3n16: MemFree:        123632332 kB
+r23i3n13: MemFree:        123603176 kB
+r23i3n17: MemFree:        123279156 kB
+r20i5n4: MemFree:        123115864 kB
+r20i7n11: MemFree:        122586360 kB
+r20i5n3: MemFree:        123156868 kB
+r20i5n5: MemFree:        122993336 kB
+r23i6n11: MemFree:        123448420 kB
+r23i6n10: MemFree:        123605264 kB
+r23i6n13: MemFree:        123406892 kB
+r23i6n17: MemFree:        123493908 kB
+r23i6n14: MemFree:        123309828 kB
+r20i7n10: MemFree:        122548816 kB
+r20i6n17: MemFree:        122398480 kB
+r20i7n0: MemFree:        122500056 kB
+r20i7n13: MemFree:        122779420 kB
+r20i7n3: MemFree:        122456964 kB
+r20i7n17: MemFree:        120471976 kB
+r23i6n7: MemFree:        123580492 kB
+r23i6n9: MemFree:        123537332 kB
+r20i7n5: MemFree:        122444568 kB
+r23i3n14: MemFree:        123625996 kB
+r23i6n12: MemFree:        123281616 kB
+r23i6n15: MemFree:        123308536 kB
+r23i6n0: MemFree:        123563088 kB
+r23i6n16: MemFree:        123332196 kB
+r23i6n1: MemFree:        123578432 kB
+r23i6n2: MemFree:        123401808 kB
+r23i6n3: MemFree:        123554740 kB
+r23i6n4: MemFree:        123572000 kB
+r23i6n5: MemFree:        123583932 kB
+End Prologue v2.5.3 Tue May 17 10:31:44 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 20: black: command not found
+jobStarter
+/home/dantopa/hpc/fortran/tools/test/stress/d_shared/
+mpif90 -c  -o mod_averager.o mod_averager.f08
+mpif90 -c  -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c  -o mod_mpt_h.o mod_mpt_h.f08
+mpif90 -c  -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c  -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c  -o mod_test_suite.o mod_test_suite.f08
+mpif90 -c  -o mod_timestamp.o mod_timestamp.f08
+mpif90 -c  -o cpu.o cpu.f08
+mpif90 -g -o cpu cpu.o mod_averager.o mod_file_handling.o mod_mpt_h.o mod_test_suite.o mod_timer_CPU.o mod_timer_clock.o mod_timestamp.o
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : enabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPI_COLL_IB_OFFLOAD (default: disabled) : disabled
+MPT: MPI_CONNECTIONS_THRESHOLD (default: 1025) : 1025
+MPT: MPI_IB_ACCELERATE_AHS (default: disabled) : disabled
+MPT: MPI_IB_EARLY_AHS (default: disabled) : disabled
+MPT: MPI_IB_COALESCE (default: disabled) : disabled
+MPT: MPI_IB_CONGESTED (default: disabled) : disabled
+MPT: MPI_IB_DCIS (default: 0) : 0
+MPT: MPI_IB_DEVS (default: ) : 
+MPT: MPI_IB_DEVS0 (default: ) : 
+MPT: MPI_IB_DEVS1 (default: ) : 
+MPT: MPI_IB_FAILOVER (default: 32) : 32
+MPT: MPI_IB_FAILOVER_RESET (default: enabled) : enabled
+MPT: MPI_IB_HYPER_LAZY (default: disabled) : disabled
+MPT: MPI_IB_IMM_UPGRADE (default: disabled) : disabled
+MPT: MPI_IB_MAX_RDMAS (default: 4) : 4
+MPT: MPI_IB_MTU (default: 2048) : 2048
+MPT: MPI_IB_NUM_QPS (default: not set) : not set
+MPT: MPI_IB_PAYLOAD (default: 16512) : 16512
+MPT: MPI_IB_PRE_CACHE (default: 0) : 0
+MPT: MPI_IB_QP_REALLOC (default: disabled) : disabled
+MPT: MPI_IB_QTIME (default: 0) : 0
+MPT: MPI_IB_RAIL0 (default: ) : 
+MPT: MPI_IB_RAIL1 (default: ) : 
+MPT: MPI_IB_RAILS (default: 1) : 1
+MPT: MPI_IB_RAILS_FLEXIBLE (default: disabled) : disabled
+MPT: MPI_IB_RECV_BUFS (default: 512) : 512
+MPT: MPI_IB_RECV_MSGS (default: 512) : 512
+MPT: MPI_IB_RNR_TIMER (default: 14) : 26
+MPT: MPI_IB_SERVICE_LEVEL (default: 0) : 1
+MPT: MPI_IB_SINGLE_COPY_BUFFER_MAX (default: 32767) : 32767
+MPT: MPI_IB_TIMEOUT (default: 18) : 22
+MPT: MPI_IB_UPGRADE_SENDS (default: 50) : 50
+MPT: MPI_IB_XRC (default: enabled) : enabled
+MPT: MPI_MEMORY_REGION_LIMIT (default: 938143374) : 938143374
+MPT: MPI_NUM_MEMORY_REGIONS (default: 1024) : 1024
+MPT: MPI_UD_ACK_TIMEOUT (default: 5) : 5
+MPT: MPI_UD_CODEL_DEBUG (default: disabled) : disabled
+MPT: MPI_UD_RECV_MSGS (default: 800) : 800
+MPT: MPI_UD_SEND_BUFFERS (default: 400) : 400
+MPT: MPI_UD_FINALIZE_TIMEOUT (default: 2) : 2
+MPT: MPI_UD_TIMEOUT (default: 20) : 20
+MPT: MPI_USE_IB (default: disabled) : disabled
+MPT: MPI_USE_TCP (default: disabled) : disabled
+MPT: MPI_USE_UD (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00057_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00050_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00058_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00056_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00070_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00031_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00046_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00028_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00047_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00030_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00032_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00020_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00063_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00024_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00018_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00033_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00042_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00000_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00060_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00023_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00021_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00036_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00022_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00025_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00053_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00035_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00019_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00059_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00061_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00009_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00029_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00043_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00010_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00054_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00055_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00065_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00034_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00068_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00039_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00027_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00069_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00049_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00037_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00071_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00012_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00015_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00041_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00052_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00003_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00005_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00026_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00001_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00044_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00045_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00040_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00011_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00016_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00002_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00017_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00006_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00048_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00062_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00007_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00051_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00066_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00038_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00014_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00013_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00064_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n1_00067_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00004_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc/transporter/Thunder_r18i0n0_00008_stress.txt doesn't exist; new empty file will be created.
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n1_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_Thunder_r18i0n0_mem.txt': No such file or directory
+Start Epilogue v2.5.3 Tue May 17 16:38:38 CDT 2016 
+r18i0n0 max memory used for job 307635.thunder-b01 (in bytes): 2427613184
+r18i0n2 max memory used for job 307635.thunder-b01 (in bytes): 35094528
+r18i0n1 max memory used for job 307635.thunder-b01 (in bytes): 1814704128
+r18i4n10 max memory used for job 307635.thunder-b01 (in bytes): 34979840
+r18i0n3 max memory used for job 307635.thunder-b01 (in bytes): 35790848
+r18i4n14 max memory used for job 307635.thunder-b01 (in bytes): 37339136
+r18i4n16 max memory used for job 307635.thunder-b01 (in bytes): 34586624
+r18i4n11 max memory used for job 307635.thunder-b01 (in bytes): 35991552
+r18i4n13 max memory used for job 307635.thunder-b01 (in bytes): 37330944
+r18i4n9 max memory used for job 307635.thunder-b01 (in bytes): 35733504
+r19i0n12 max memory used for job 307635.thunder-b01 (in bytes): 34627584
+r20i0n11 max memory used for job 307635.thunder-b01 (in bytes): 35942400
+r18i4n15 max memory used for job 307635.thunder-b01 (in bytes): 37167104
+r20i0n12 max memory used for job 307635.thunder-b01 (in bytes): 34656256
+r20i0n2 max memory used for job 307635.thunder-b01 (in bytes): 34734080
+r20i0n13 max memory used for job 307635.thunder-b01 (in bytes): 18825216
+r20i0n14 max memory used for job 307635.thunder-b01 (in bytes): 34611200
+r20i0n7 max memory used for job 307635.thunder-b01 (in bytes): 34709504
+r20i0n16 max memory used for job 307635.thunder-b01 (in bytes): 34615296
+r20i0n5 max memory used for job 307635.thunder-b01 (in bytes): 34971648
+r20i1n11 max memory used for job 307635.thunder-b01 (in bytes): 45322240
+r20i0n6 max memory used for job 307635.thunder-b01 (in bytes): 34660352
+r20i1n1 max memory used for job 307635.thunder-b01 (in bytes): 44892160
+r20i1n0 max memory used for job 307635.thunder-b01 (in bytes): 44826624
+r20i1n10 max memory used for job 307635.thunder-b01 (in bytes): 45195264
+r20i1n12 max memory used for job 307635.thunder-b01 (in bytes): 45953024
+r18i4n12 max memory used for job 307635.thunder-b01 (in bytes): 35598336
+r20i1n14 max memory used for job 307635.thunder-b01 (in bytes): 35942400
+r20i1n4 max memory used for job 307635.thunder-b01 (in bytes): 44634112
+r20i0n10 max memory used for job 307635.thunder-b01 (in bytes): 35143680
+r20i1n5 max memory used for job 307635.thunder-b01 (in bytes): 45019136
+r20i1n17 max memory used for job 307635.thunder-b01 (in bytes): 45604864
+r20i1n2 max memory used for job 307635.thunder-b01 (in bytes): 44990464
+r20i5n12 max memory used for job 307635.thunder-b01 (in bytes): 34570240
+r20i1n7 max memory used for job 307635.thunder-b01 (in bytes): 45068288
+r20i1n6 max memory used for job 307635.thunder-b01 (in bytes): 44568576
+r20i5n17 max memory used for job 307635.thunder-b01 (in bytes): 34844672
+r20i5n10 max memory used for job 307635.thunder-b01 (in bytes): 34816000
+r20i5n11 max memory used for job 307635.thunder-b01 (in bytes): 35241984
+r20i0n15 max memory used for job 307635.thunder-b01 (in bytes): 34287616
+r20i5n14 max memory used for job 307635.thunder-b01 (in bytes): 34803712
+r20i0n3 max memory used for job 307635.thunder-b01 (in bytes): 34750464
+r20i5n1 max memory used for job 307635.thunder-b01 (in bytes): 44892160
+r20i5n0 max memory used for job 307635.thunder-b01 (in bytes): 44486656
+r20i5n15 max memory used for job 307635.thunder-b01 (in bytes): 35278848
+r20i0n4 max memory used for job 307635.thunder-b01 (in bytes): 34492416
+r20i5n5 max memory used for job 307635.thunder-b01 (in bytes): 45408256
+r20i5n7 max memory used for job 307635.thunder-b01 (in bytes): 45182976
+r20i5n3 max memory used for job 307635.thunder-b01 (in bytes): 34701312
+r20i1n13 max memory used for job 307635.thunder-b01 (in bytes): 34906112
+r20i5n6 max memory used for job 307635.thunder-b01 (in bytes): 45498368
+r20i6n17 max memory used for job 307635.thunder-b01 (in bytes): 35454976
+r20i5n4 max memory used for job 307635.thunder-b01 (in bytes): 46071808
+r20i5n9 max memory used for job 307635.thunder-b01 (in bytes): 35688448
+r20i7n0 max memory used for job 307635.thunder-b01 (in bytes): 35164160
+r20i7n11 max memory used for job 307635.thunder-b01 (in bytes): 34951168
+r20i7n10 max memory used for job 307635.thunder-b01 (in bytes): 34840576
+r20i1n16 max memory used for job 307635.thunder-b01 (in bytes): 34611200
+r20i7n15 max memory used for job 307635.thunder-b01 (in bytes): 34820096
+r20i1n15 max memory used for job 307635.thunder-b01 (in bytes): 35409920
+r20i1n3 max memory used for job 307635.thunder-b01 (in bytes): 45379584
+r20i1n9 max memory used for job 307635.thunder-b01 (in bytes): 46501888
+r20i7n17 max memory used for job 307635.thunder-b01 (in bytes): 34734080
+r20i7n14 max memory used for job 307635.thunder-b01 (in bytes): 36253696
+r20i7n13 max memory used for job 307635.thunder-b01 (in bytes): 35872768
+r20i5n13 max memory used for job 307635.thunder-b01 (in bytes): 34930688
+r20i7n5 max memory used for job 307635.thunder-b01 (in bytes): 34885632
+r23i3n13 max memory used for job 307635.thunder-b01 (in bytes): 34844672
+r20i5n16 max memory used for job 307635.thunder-b01 (in bytes): 35356672
+r20i7n6 max memory used for job 307635.thunder-b01 (in bytes): 35721216
+r20i5n2 max memory used for job 307635.thunder-b01 (in bytes): 44343296
+r23i6n1 max memory used for job 307635.thunder-b01 (in bytes): 35065856
+r23i3n15 max memory used for job 307635.thunder-b01 (in bytes): 34676736
+r23i6n0 max memory used for job 307635.thunder-b01 (in bytes): 35926016
+r23i6n12 max memory used for job 307635.thunder-b01 (in bytes): 34820096
+r20i7n12 max memory used for job 307635.thunder-b01 (in bytes): 35639296
+r23i6n10 max memory used for job 307635.thunder-b01 (in bytes): 35098624
+r20i7n1 max memory used for job 307635.thunder-b01 (in bytes): 34967552
+r20i7n16 max memory used for job 307635.thunder-b01 (in bytes): 34705408
+r20i7n3 max memory used for job 307635.thunder-b01 (in bytes): 34631680
+r20i7n2 max memory used for job 307635.thunder-b01 (in bytes): 35287040
+r20i7n4 max memory used for job 307635.thunder-b01 (in bytes): 35074048
+r20i7n7 max memory used for job 307635.thunder-b01 (in bytes): 35028992
+r20i7n9 max memory used for job 307635.thunder-b01 (in bytes): 35835904
+r23i3n14 max memory used for job 307635.thunder-b01 (in bytes): 35028992
+r23i5n0 max memory used for job 307635.thunder-b01 (in bytes): 15204352
+r23i3n17 max memory used for job 307635.thunder-b01 (in bytes): 34529280
+r23i3n16 max memory used for job 307635.thunder-b01 (in bytes): 34648064
+r23i6n14 max memory used for job 307635.thunder-b01 (in bytes): 35213312
+r23i6n11 max memory used for job 307635.thunder-b01 (in bytes): 34603008
+r23i6n13 max memory used for job 307635.thunder-b01 (in bytes): 34738176
+r23i6n16 max memory used for job 307635.thunder-b01 (in bytes): 34873344
+r23i6n17 max memory used for job 307635.thunder-b01 (in bytes): 34738176
+r23i6n15 max memory used for job 307635.thunder-b01 (in bytes): 35155968
+r23i6n2 max memory used for job 307635.thunder-b01 (in bytes): 35143680
+r23i6n4 max memory used for job 307635.thunder-b01 (in bytes): 34791424
+r23i6n9 max memory used for job 307635.thunder-b01 (in bytes): 34873344
+r23i6n7 max memory used for job 307635.thunder-b01 (in bytes): 34676736
+r23i6n3 max memory used for job 307635.thunder-b01 (in bytes): 34783232
+r23i6n5 max memory used for job 307635.thunder-b01 (in bytes): 36278272
+End Epilogue v2.5.3 Tue May 17 16:38:39 CDT 2016 

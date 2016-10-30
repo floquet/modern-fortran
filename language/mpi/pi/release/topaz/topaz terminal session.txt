@@ -1,0 +1,544 @@
+Last login: Tue Sep 13 14:01:25 on ttys024
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests—not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+NOTE: Any OS versions that do not support the full text version must state the following:
+"I've read & consent to terms in IS user agreem't."
+
+NOTE: Deviations are not permitted except as authorized by the Deputy Assistant Secretary of Defense for Information and Identity Assurance.
+Welcome rditldmt to ~/.bash_profile on ITL-DTOPA-MP
+Welcome rditldmt to ~/.bashrc on ITL-DTOPA-MP
+rditldmt@ITL-DTOPA-MP:~ $ kinit -f dantopa@HPCMP.HPC.MIL
+Password for dantopa@HPCMP.HPC.MIL:
+SAM Authentication
+Challenge from authentication server
+YubiKey Passcode:
+Warning: Your password will expire in 38 days on Sat Oct 22 10:49:51 2016
+rditldmt@ITL-DTOPA-MP:~ $ cd hpc/fortran/language/mpi/pi/release/
+rditldmt@ITL-DTOPA-MP:release $ ls
+constant_precision		mac				topaz
+constant_time			mac_mpi_examples.tar.gz		topaz_mpi_examples.tar.gz
+rditldmt@ITL-DTOPA-MP:release $ scp topaz_mpi_examples.tar.gz dantopa@topaz.erdc.hpc.mil:.
+**************************************************************
+*                          WARNING                           *
+**************************************************************
+
+  You are accessing a U.S. Government (USG) information
+  system (IS) that is provided for USG- authorized use only.
+
+  By using this IS, you consent to the following conditions:
+
+  -The USG routinely intercepts and monitors communications
+   on this IS for purposes including, but not limited to,
+   penetration testing, COMSEC monitoring, network operations
+   and defense, personnel misconduct (PM),law enforcement(LE),
+   and counterintelligence (CI) investigations.
+  -At any time, the USG may inspect and seize data stored
+   on this IS.
+  -Communications using, or data stored on, this IS are not
+   private, are subject to routine monitoring, interception,
+   and search, and may be disclosed or used for any USG
+   authorized purpose.
+  -This IS includes security measures (e.g., authentication
+   and access controls) to protect USG interests--not for
+   your personal benefit or privacy.
+  -Notwithstanding the above,using this IS does not constitute
+   consent to PM, LE or CI investigative searching or
+   monitoring of the content of privileged communications, or
+   work product,related to personal representation or services
+   by attorneys,psychotherapists,or clergy,and their
+   assistants.Such communications and work product are private
+   and confidential. See User Agreement for details.
+
+**************************************************************
+*                                                            *
+**************************************************************
+Welcome dantopa to ~/.bashrc on topaz
+topaz_mpi_examples.tar.gz                                                                         100%   60KB  60.0KB/s   00:00
+rditldmt@ITL-DTOPA-MP:release $ ssh dantopa@topaz.erdc.hpc.mil
+**************************************************************
+*                          WARNING                           *
+**************************************************************
+
+  You are accessing a U.S. Government (USG) information
+  system (IS) that is provided for USG- authorized use only.
+
+  By using this IS, you consent to the following conditions:
+
+  -The USG routinely intercepts and monitors communications
+   on this IS for purposes including, but not limited to,
+   penetration testing, COMSEC monitoring, network operations
+   and defense, personnel misconduct (PM),law enforcement(LE),
+   and counterintelligence (CI) investigations.
+  -At any time, the USG may inspect and seize data stored
+   on this IS.
+  -Communications using, or data stored on, this IS are not
+   private, are subject to routine monitoring, interception,
+   and search, and may be disclosed or used for any USG
+   authorized purpose.
+  -This IS includes security measures (e.g., authentication
+   and access controls) to protect USG interests--not for
+   your personal benefit or privacy.
+  -Notwithstanding the above,using this IS does not constitute
+   consent to PM, LE or CI investigative searching or
+   monitoring of the content of privileged communications, or
+   work product,related to personal representation or services
+   by attorneys,psychotherapists,or clergy,and their
+   assistants.Such communications and work product are private
+   and confidential. See User Agreement for details.
+
+**************************************************************
+*                                                            *
+**************************************************************
+Last login: Sat Sep 10 20:36:27 2016 from 2602:306:cf29:9b80:219:e3ff:fe0e:7ebc
+**************************************************************
+*                          WARNING                           *
+**************************************************************
+
+  You are accessing a U.S. Government (USG) information
+  system (IS) that is provided for USG- authorized use only.
+
+  By using this IS, you consent to the following conditions:
+
+  -The USG routinely intercepts and monitors communications
+   on this IS for purposes including, but not limited to,
+   penetration testing, COMSEC monitoring, network operations
+   and defense, personnel misconduct (PM),law enforcement(LE),
+   and counterintelligence (CI) investigations.
+  -At any time, the USG may inspect and seize data stored
+   on this IS.
+  -Communications using, or data stored on, this IS are not
+   private, are subject to routine monitoring, interception,
+   and search, and may be disclosed or used for any USG
+   authorized purpose.
+  -This IS includes security measures (e.g., authentication
+   and access controls) to protect USG interests--not for
+   your personal benefit or privacy.
+  -Notwithstanding the above,using this IS does not constitute
+   consent to PM, LE or CI investigative searching or
+   monitoring of the content of privileged communications, or
+   work product,related to personal representation or services
+   by attorneys,psychotherapists,or clergy,and their
+   assistants.Such communications and work product are private
+   and confidential. See User Agreement for details.
+
+**************************************************************
+*                                                            *
+**************************************************************
+
+*******************************************************************************
+*****                            ANNOUNCEMENTS                            *****
+*******************************************************************************
+
+No announcements.
+
+*******************************************************************************
+
+-------------------------------------------------------------------------------
+|  Problems, questions, comments?  Call the HPC Help Desk at 1-877-222-2039   |
+|  or send e-mail to help@helpdesk.hpc.mil.                                   |
+-------------------------------------------------------------------------------
+
+*****************************************************************************
+* System Name (Model)         Number of Nodes   Cores/Node   Avail_Mem/Node *
+* topaz (SGI ICE X)                                                         *
+*    compute                        3456            36            117 Gb    *
+*    gpu                              32            28            117 Gb    *
+*    largemem                          4            32            990 Gb    *
+*****************************************************************************
+
+             ERDC DSRC - Subproject Usage Information (in CPU Hours)
+                      As of 0105 hours CDT 13 September 2016
+             Fiscal Year 2016 (01 October 2015 - 30 September 2016)
+                  Fiscal Year Hours Remaining:  417 (  4.75%)
+
+                           Hours       Hours       Hours     Percent  Background
+System    Subproject     Allocated      Used     Remaining  Remaining Hours Used
+========= ============= =========== =========== =========== ========= ==========
+topaz     ERDCS97270PET   999999999      258701   999741298    99.97%      35108
+topaz     ARLAP96070PET   999999999      652678   999347321    99.93%          1
+
+news: diskuse_work2 diskuse_work1 diskuse_home system_info.txt
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+dantopa@topaz01.erdc.hpc.mil:~ $ ls topaz_mpi_examples.tar.gz
+topaz_mpi_examples.tar.gz
+dantopa@topaz01.erdc.hpc.mil:~ $ mkdir wil_demo
+dantopa@topaz01.erdc.hpc.mil:~ $ cp topaz_mpi_examples.tar.gz wil_demo/.
+dantopa@topaz01.erdc.hpc.mil:~ $ cd wil_demo/
+dantopa@topaz01.erdc.hpc.mil:wil_demo $ lss
+total 17K
+drwxr-----  2 dantopa 9727LPET 4.0K Sep 13 14:09 .
+drwx------ 34 dantopa 9727LPET  12K Sep 13 14:09 ..
+-rw-r-----  1 dantopa 9727LPET  60K Sep 13 14:09 topaz_mpi_examples.tar.gz
+dantopa@topaz01.erdc.hpc.mil:wil_demo $ tar -xf topaz_mpi_examples.tar.gz
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `LIBARCHIVE.creationtime'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+tar: Ignoring unknown extended header keyword `SCHILY.dev'
+tar: Ignoring unknown extended header keyword `SCHILY.ino'
+tar: Ignoring unknown extended header keyword `SCHILY.nlink'
+dantopa@topaz01.erdc.hpc.mil:wil_demo $ ls
+topaz  topaz_mpi_examples.tar.gz
+dantopa@topaz01.erdc.hpc.mil:wil_demo $ cd topaz/
+dantopa@topaz01.erdc.hpc.mil:topaz $ ls
+constant_precision  constant_time
+dantopa@topaz01.erdc.hpc.mil:topaz $ module switch compiler/intel/15.0.3 compiler/gcc/6.1.0
+dantopa@topaz01.erdc.hpc.mil:topaz $ cd constant_precision/
+dantopa@topaz01.erdc.hpc.mil:constant_precision $ ls
+makefile  mod_file_handling.f08  mod_mpt.f08  pi_constant_precision  pi_constant_precision.f08  results
+dantopa@topaz01.erdc.hpc.mil:constant_precision $ make
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_mpt.o mod_mpt.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o pi_constant_precision.o pi_constant_precision.f08
+mpif90 -g -o pi_constant_precision mod_file_handling.o mod_mpt.o pi_constant_precision.o
+dantopa@topaz01.erdc.hpc.mil:constant_precision $ qsub -l select=1:ncpus=36:mpiprocs=36 -A ERDCS97270PET -q standard -l walltime=000:10:00 -I 
+qsub: waiting for job 545175.topaz10 to start
+qsub: job 545175.topaz10 ready
+
+Start Prologue v2.5.3 Tue Sep 13 14:18:27 CDT 2016
+r11i7n16: MemFree:        124954788 kB
+End Prologue v2.5.3 Tue Sep 13 14:18:28 CDT 2016
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+dantopa@r11i7n16:~ $ cd ~/wil_demo/topaz/constant_precision/
+dantopa@r11i7n16:constant_precision $ mpirun -np 4 ./pi_constant_precision $BC_HOST
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) :
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) :
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) :
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) :
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) :
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) :
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) :
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: results/topaz_constant_precision_gnu_i8.csv doesn't exist; new empty file will be created.
+dantopa@r11i7n16:constant_precision $ mpirun -np 16 ./pi_constant_precision $BC_HOST
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) :
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) :
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) :
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) :
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) :
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) :
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) :
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+dantopa@r11i7n16:constant_precision $ mpirun -np 32 ./pi_constant_precision $BC_HOST
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) :
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) :
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) :
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) :
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) :
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) :
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) :
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+dantopa@r11i7n16:constant_precision $ cat results/topaz_constant_precision_gnu_i8.csv
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  4,  .19436439999935828E-002,  .13868218742274507E-005
+14414400,  4,  .15867492999859678E-001,  .13872873338982572E-006
+144144000,  4,  .15653978000000279,  .13873765247751635E-007
+1441440000,  4,  1.5549429530001362,  .13875363080728675E-008
+14414400000,  4,  15.588101438999956,  .13836798373745296E-009
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  16,  .74468899993007653E-003,  .13868218609047744E-005
+14414400,  16,  .45494979999602947E-002,  .13872866677644424E-006
+144144000,  16,  .45388073999902190E-001,  .13874331017404984E-007
+1441440000,  16,  .45342002699999284,  .13874892346166234E-008
+14414400000,  16,  4.5304579240000749,  .13870860016140796E-009
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  32,  .12301579999984824E-002,  .13868218617929529E-005
+14414400,  32,  .22940920000564802E-002,  .13872865434194637E-006
+144144000,  32,  .22714788000030239E-001,  .13874308368855282E-007
+1441440000,  32,  .22689651299992875,  .13875212090397326E-008
+14414400000,  32,  2.2657238900001175,  .13882850424806747E-009
+dantopa@r11i7n16:constant_precision $ exit
+logout
+
+qsub: job 545175.topaz10 completed
+dantopa@topaz01.erdc.hpc.mil:constant_precision $ exit
+logout
+Connection to topaz.erdc.hpc.mil closed.
+rditldmt@ITL-DTOPA-MP:release $

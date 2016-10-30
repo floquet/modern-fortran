@@ -1,0 +1,6 @@
+
+Array of 7 elements read in from data/primus/partition output.txt.
+
+Partitions:
+   10     12    13    12    14    12     8
+Total number of points = 81

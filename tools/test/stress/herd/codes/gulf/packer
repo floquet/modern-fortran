@@ -1,0 +1,9 @@
+export type='cpu'
+export who='lynx'
+
+rm -rf $who
+make
+./writer_pbs
+cd $who/
+tar -czvf $who.tar.gz  .
+cp $who.tar.gz ~/hpc/transporter/.

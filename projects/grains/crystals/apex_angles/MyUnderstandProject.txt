@@ -1,0 +1,78 @@
+Generated on: October 18, 2016 7:36:53 PM CDT
+                                                                     Page 1
+                         Data Dictionary Summary Report
+===============================================================================
+                                                                     Page 2
+                              File Contents Report
+===============================================================================
+                                                                     Page 3
+                      Program Unit Cross Reference Report
+===============================================================================
+                                                                     Page 4
+                         Object Cross Reference Report
+===============================================================================
+                                                                     Page 5
+                          Type Cross Reference Report
+===============================================================================
+                                                                     Page 6
+                      Include File Cross Reference Report
+===============================================================================
+                                                                     Page 7
+                            Declaration Tree Report
+===============================================================================
+                                                                     Page 8
+                         Simple Invocation Tree Report
+===============================================================================
+                                                                     Page 9
+                         Program Unit Complexity Report
+===============================================================================
+                                                                     Page 10
+                         Project Metrics Summary Report
+===============================================================================
+Classes:                      0
+Files:                       17
+Program Units:                0
+Lines:                        0
+Lines Blank:                  0
+Lines Code:                   0
+Lines Comment:                0
+Lines Inactive:               0
+Executable Statements:        0
+Declarative Statements:       0
+Ratio Comment/Code:        0.00
+                                                                     Page 11
+                              Program Unit Metrics
+===============================================================================
+                                                                     Page 12
+                                  File Metrics
+===============================================================================
+                                                                     Page 13
+                          File Average Metrics Report
+===============================================================================
+                                                                     Page 14
+                            Fortran Extension Usage
+===============================================================================
+                                                                     Page 15
+                          Implicitly Declared Objects
+===============================================================================
+                                                                     Page 16
+                           Uninitialized Items Report
+
+  Def: Items that have not been given an initial value at point of definition.
+===============================================================================
+                                                                     Page 17
+                          Unused Objects and Functions
+
+Def: A variable that is not read from, written to after declaration, 
+or passed to a function, function parameters that are unused in the function, 
+and functions that have no invocations. 
+===============================================================================
+                                                                     Page 18
+                             Unused Objects Report
+===============================================================================
+                                                                     Page 19
+                              Unused Types Report
+===============================================================================
+                                                                     Page 20
+                          Unused Program Units Report
+===============================================================================

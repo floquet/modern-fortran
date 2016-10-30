@@ -1,0 +1,102 @@
+Start Prologue v2.5.3 Fri Jun 10 14:32:16 CDT 2016 
+r21i1n7: MemFree:        123335420 kB
+r21i1n6: MemFree:        123677812 kB
+r21i1n8: MemFree:        123796240 kB
+r21i1n9: MemFree:        123800600 kB
+End Prologue v2.5.3 Fri Jun 10 14:32:17 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/p/home/dantopa/.bash_profile: line 34: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 35: myprompt: command not found
+/p/home/dantopa/codes/.pi_constant_time/mpt
+/var/spool/PBS/mom_priv/jobs/374006.topaz10.SC: line 16: cd: /p/home/dantopa/codes/.pi_constant_time/mpt: No such file or directory
+make: *** No targets specified and no makefile found.  Stop.
+cp: cannot stat `/p/home/dantopa/codes/.pi_constant_time/mpt/.': No such file or directory
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4325 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4377 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4427 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4478 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4528 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4582 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4636 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4690 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4744 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4800 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4858 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4916 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  4974 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  5032 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  5095 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  5157 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n6.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  5219 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r21i1n7.ib0.ice-x.erdc.hpc.mil
+./pi_constant_time: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  5281 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Fri Jun 10 14:32:45 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r21i1n6        0.03     0.04   117.00     0.03     7.91   125.81
+r21i1n7        0.02     0.03   117.00     0.03     8.20   125.81
+r21i1n8        0.03     0.04   117.00     0.04     7.77   125.81
+r21i1n9        0.03     0.03   117.00     0.03     7.76   125.81
+Memory summary:
+		min    0.03 GB
+		max    0.04 GB
+		ave    0.04 GB
+End Epilogue v2.5.3 Fri Jun 10 14:34:09 CDT 2016 

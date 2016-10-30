@@ -1,0 +1,14 @@
+Welcome dantopa to ~.bashrc
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/u/dantopa/.bashrc: line 54: black: command not found
+/u/dantopa/codes/pi_constant_precision
+ftn -g -c -o mod_file_handling.o mod_file_handling.f08
+ftn -g -c -o mod_mpif.o mod_mpif.f08
+ftn -g -c -o pi_constant_precision.o pi_constant_precision.f08
+ftn -g -o pi_constant_precision mod_file_handling.o mod_mpif.o pi_constant_precision.o
+Warning: results/copper_gnu.csv doesn't exist; new empty file will be created.
+apsched: claim exceeds reservation's node-count
+apsched: claim exceeds reservation's node-count

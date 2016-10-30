@@ -1,0 +1,21 @@
+
+Block I: System Queries.
+home directory    = /Users/rditldmt.
+working directory = /Users/rditldmt/Box Sync/fortran/benchmark/characterization/rditldmt.
+date and time     = 2016-04-08  19:02:30  UCT-0500.
+
+user name                                           = rditldmt
+numerical user ID of the current process            = 595980521
+numerical group ID of the current process           = 2011572450
+numerical process identifier of the current process = 37071
+
+compiler version   = GCC version 5.2.0.
+compiler options   = -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.11.4 -mtune=core2 -auxbase-strip mod_queries.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = ITL-DTOPA-MP.
+invocation command = ./characterize 10.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/ttys005.
+terminal device 6  = /dev/ttys005.
+
+universally unique identifier (UUID) = B1D77649-7778-4B01-B6D2-2B149DB5C74D.
+

@@ -1,0 +1,9 @@
+qsub $wdmersenne/cpu/001/topaz-cpu-001
+
+qsub $wdmersenne/cpu/002/topaz-cpu-002
+
+qsub $wdmersenne/cpu/003/topaz-cpu-003
+
+qsub $wdmersenne/cpu/004/topaz-cpu-004
+
+cd $wdmersenne

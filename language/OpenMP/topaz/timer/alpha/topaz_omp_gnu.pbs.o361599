@@ -1,0 +1,22 @@
+Start Prologue v2.5.3 Thu May 26 15:34:48 CDT 2016 
+r5i4n2: MemFree:        124055720 kB
+End Prologue v2.5.3 Thu May 26 15:34:49 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 27: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 28: myprompt: command not found
+/p/home/dantopa/hpc//fortran/language/OpenMP/topaz/timer/alpha
+/var/spool/PBS/mom_priv/jobs/361599.topaz10.SC: line 21: dan: command not found
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+make: *** No targets specified and no makefile found.  Stop.
+Start Epilogue v2.5.3 Thu May 26 15:36:28 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r5i4n2         0.12     0.14   117.00     0.07     7.56   125.81
+Memory summary:
+		min    0.14 GB
+		max    0.14 GB
+		ave    0.14 GB
+End Epilogue v2.5.3 Thu May 26 15:37:45 CDT 2016 

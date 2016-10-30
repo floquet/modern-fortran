@@ -1,0 +1,5 @@
+&LOCATOR
+ FILE_NAME_DOMAIN='namelist domain.nml                                             ',
+ FILE_NAME_TOY_PRESSURE='namelist toy pressure.nml                                       ',
+ FILE_NAME_TOY_DENSITY='namelist toy density.nml                                        ',
+ /

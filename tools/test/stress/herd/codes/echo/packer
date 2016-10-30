@@ -1,0 +1,6 @@
+make
+export type='cpu'
+./writer_pbs
+cd lightning/
+tar -czvf light.$type.tar.gz $type/.
+cp light.$type.tar.gz ~/hpc/transporter/.

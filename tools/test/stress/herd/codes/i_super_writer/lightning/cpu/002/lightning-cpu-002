@@ -1,0 +1,13 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q background
+#PBS -l select=1:ncpus=24:mpiprocs=24
+#PBS -l walltime=120:00:00
+#PBS -j oe
+#PBS -V 
+
+cd $wdmersenne/cpu/002/
+
+aprun ./cpu_calibrate -d > timing_results.out
+

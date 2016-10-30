@@ -1,0 +1,6 @@
+# The following sets up an Compile Environment Object with gfortran as the linker.
+env = Environment( LINK = 'gfortran -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5' )
+# The next line of code is an array of the source files names used in the program.
+sources = ['mod_precision_definitions.f08', 'mod_parameters.f08', 'mod_measurements.f08', 'mod_intermediates.f08', 'mod_matrices.f08', 'mod_queries.f08', 'mod_solns_linear.f08', 'mod_results.f08', 'mod_validate.f08', 'lsq.f08' ]
+# The next line is the actual code that links the executable. env.Program is generates an executable.
+objs = env.Program( 'a.out', sources )

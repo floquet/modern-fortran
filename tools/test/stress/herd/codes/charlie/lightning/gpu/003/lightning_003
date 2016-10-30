@@ -1,0 +1,15 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q background
+#PBS -l select=1:ncpus=10:accelerator_model=Tesla_K40s
+#PBS -l walltime=120:00:00
+#PBS -j oe
+#PBS -V 
+#PBS -N direct
+
+cd $dir_mersenne/gpu/
+cd 003/
+
+./cpu -d > timing_results.out
+

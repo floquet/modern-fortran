@@ -1,0 +1,3 @@
+MODULE mod
+INTEGER :: i=4
+END MODULE mod

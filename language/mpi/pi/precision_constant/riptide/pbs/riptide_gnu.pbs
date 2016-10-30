@@ -1,0 +1,64 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q debug
+#PBS -l select=8:ncpus=16:mpiprocs=16
+#PBS -l walltime=0:30:00
+#PBS -j oe
+
+# Both the number of nodes and processes per node are specified using the same directive as follows, where N1 is the number of nodes you are requesting and N2 is the number of MPI processes per node (must be 1, 2, 4, 8, 16, or 32):
+
+# PBS -l select=N1:ncpus=32:mpiprocs=N2
+#The value of ncpus refers to the number of physical cores available on each node, and must always be set to 32. An exception to this rule is the transfer queue, which uses the directive below:
+# PBS -l select=1:ncpus=1
+
+# queue: # debug standard background
+
+export myExecutable='pi_constant_precision'
+export myProject='/gpfs/home/dantopa/codes/pi_constant_precision/riptide/'
+echo $myProject
+cd ${myProject}
+module switch intel/13.0 gcc/4.8.2
+make
+rm -rf *.o *.temp *.mod *.smod *.dSYM
+
+## Execution Block ----------------------------------------------
+# Environment Setup
+# cd to your scratch directory in /work
+cd ${WORKDIR}
+
+# create a job-specific subdirectory based on JOBID and cd to it
+JOBID=`echo ${PBS_JOBID} | cut -d '.' -f 1`
+if [ ! -d ${JOBID} ]; then
+  mkdir -p ${JOBID}
+fi
+cd ${JOBID}
+
+## Launching -----------------------------------------------------
+# copy executable from $HOME and submit it
+cp -a ${myProject}/. .
+
+mpirun -n   8 ./$myExecutable $host_name > out.dat
+mpirun -n  16 ./$myExecutable $host_name > out.dat
+mpirun -n  24 ./$myExecutable $host_name > out.dat
+mpirun -n  32 ./$myExecutable $host_name > out.dat
+mpirun -n  40 ./$myExecutable $host_name > out.dat
+mpirun -n  48 ./$myExecutable $host_name > out.dat
+mpirun -n  56 ./$myExecutable $host_name > out.dat
+mpirun -n  64 ./$myExecutable $host_name > out.dat
+mpirun -n  72 ./$myExecutable $host_name > out.dat
+mpirun -n  80 ./$myExecutable $host_name > out.dat
+mpirun -n  88 ./$myExecutable $host_name > out.dat
+mpirun -n  96 ./$myExecutable $host_name > out.dat
+mpirun -n 104 ./$myExecutable $host_name > out.dat
+mpirun -n 112 ./$myExecutable $host_name > out.dat
+mpirun -n 120 ./$myExecutable $host_name > out.dat
+mpirun -n 128 ./$myExecutable $host_name > out.dat
+mpirun -n 136 ./$myExecutable $host_name > out.dat
+mpirun -n 144 ./$myExecutable $host_name > out.dat
+
+## Clean up -----------------------------------------------------
+# Remove temporary files
+rm -rf *.o *.temp *.mod *.smod *.dSYM
+
+# submit it to PBS for execution e.g. "qsub run.pbs"

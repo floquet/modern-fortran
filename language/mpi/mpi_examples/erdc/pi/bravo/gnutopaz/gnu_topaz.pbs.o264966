@@ -1,0 +1,56 @@
+Start Prologue v2.5.3 Mon Apr  4 21:03:37 CDT 2016 
+r16i3n17: MemFree:        121805924 kB
+r16i7n12: MemFree:        122162196 kB
+r16i7n11: MemFree:        122071120 kB
+r16i7n13: MemFree:        114438512 kB
+End Prologue v2.5.3 Mon Apr  4 21:03:39 CDT 2016 
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/p/home/dantopa/.bash_profile: line 57: black: command not found
+Welcome dantopa to gnu_topaz.pbs
+~/github/fortran/mpi/mpi_examples/erdc/pi/bravo/gnutopaz/
+/var/spool/PBS/mom_priv/jobs/264966.topaz10.SC: line 30: cd: ~/github/fortran/mpi/mpi_examples/erdc/pi/bravo/gnutopaz/: No such file or directory
+make: *** No rule to make target `clean'.  Stop.
+make: *** No targets specified and no makefile found.  Stop.
+cp: cannot stat `~/github/fortran/mpi/mpi_examples/erdc/pi/bravo/gnutopaz//constant_precision': No such file or directory
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26362 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26413 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26463 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26513 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26563 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26613 Killed                  $mpicmdline_prefix -f $paramfile
+MPT: Launch error on r16i3n17.ib0.ice-x.erdc.hpc.mil
+./constant_precision: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 26667 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Mon Apr  4 21:04:02 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r16i3n17       0.02     0.02   117.00     0.02     9.75   125.81
+r16i7n11       0.01     0.01   117.00     0.01     9.40   125.81
+r16i7n12       0.01     0.01   117.00     0.01     9.32   125.81
+r16i7n13       0.01     0.01   117.00     0.01    16.68   125.81
+Memory summary:
+		min    0.01 GB
+		max    0.02 GB
+		ave    0.01 GB
+End Epilogue v2.5.3 Mon Apr  4 21:05:21 CDT 2016 

@@ -1,0 +1,31 @@
+# https://stackoverflow.com/questions/5871780/creating-a-fortran-makefile
+# compiler
+FC := /usr/local/bin/gfortran
+
+# compile flags
+FCFLAGS = -g -c -Wall -Wextra -Wconversion -Og -pedantic -fcheck=bounds -fmax-errors=5
+# link flags
+FLFLAGS =
+
+# source files and objects
+SRCS = mod_precision_definitions.f08 mod_parameters.f08  mod_shared.f08  mod_timers.f08  mod_unit_values.f08  mod_blocks.f08  mod_allocations.f08  characterize.f08
+OBJS = mod_precision_definitions.o   mod_parameters.o    mod_shared.o    mod_timers.o    mod_unit_values.o    mod_blocks.o    mod_allocations.o    characterize.o
+
+# program name
+PROGRAM = a.out
+
+all: $(PROGRAM)
+
+$(PROGRAM): $(OBJS)
+	$(FC) $(FLFLAGS)  $^ -o $@
+
+# characterize.o: mod_allocations.o mod_blocks.o mod_parameters.o mod_precision_definitions.o, mod_shared.o, mod_timers.o, mod_unit_values.o
+# 	$(FC) $(FCFLAGS) -o $@ $<
+
+#mod_allocations.o: mod_precision_defintions.o
+
+%.o: %.f08
+	$(FC) $(FCFLAGS) -o $@ $<
+
+clean:
+	rm -f *.o *.mod

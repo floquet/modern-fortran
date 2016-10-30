@@ -1,0 +1,33 @@
+1. USE with only:
+
+Action: Protect each USE function by using the only qualifier to specify which variables and methods are pulled in.
+
+Example:
+Instead of
+    USE GLOBAL
+specify the variables and methods used
+    USE GLOBAL, only : array1, array2, function1, function2
+
+Necessity: aligns with best practices
+Benefits: prevents namespace collisions; helps identify sources, useful in debugging
+Of note: gfortran provides a flag -Wuse-without-only to encourage this practice
+
+
+2. Streamline single action IF statements
+
+Action: Reduce if ( test ) action statements to simplest form
+
+Example:
+Instead of
+	IF(INI_UVZ)THEN
+        TIME=HotStartTime
+    ENDIF
+use one line
+    IF ( INI_UVZ ) TIME = HotStartTime
+
+Necessity: cosmetic, aligns with best practices
+Benefits: reduces code volume, simpler to read
+
+3. Eliminate DO WHILE
+
+Action: 

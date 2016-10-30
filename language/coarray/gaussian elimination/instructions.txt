@@ -1,0 +1,45 @@
+All,
+ 
+Here’s a small test program for MPI and CAF.
+ 
+ 
+Program description: Gauss elimination program.
+ 
+Fortran code: attached.
+ 
+Flags 0n Fortran code:
+ 
+mpi_caf = 1 does MPI.
+mpi_caf = 2 does CAF
+ 
+Compilation:
+ 
+module swap PrgEnv-pgi PrgEnv-cray
+ftn -o gauss -O2 -h caf gauss_mpi_caf.f
+module swap PrgEnv-cray PrgEnv-pgi
+ 
+Script:
+ 
+#!/bin/ksh
+#
+#PBS -N gauss.32.out
+#PBS -l select=1:ncpus=32:mpiprocs=32
+#PBS -l walltime=01:00:00
+#PBS -A [your account]
+#PBS -q debug
+#PBS -j oe
+cd /lustre/home1/u/tracyf/caf
+aprun -n 32 ./gauss
+ 
+Output:
+ 
+If correct, all the answers should be 1.
+ 
+    1      1.00    2      1.00    3      1.00    4      1.00    5      1.00
+    6      1.00    7      1.00    8      1.00    9      1.00   10      1.00
+   50      1.00
+   91      1.00   92      1.00   93      1.00   94      1.00   95      1.00
+   96      1.00   97      1.00   98      1.00   99      1.00  100      1.00
+noproc = 32
+ 
+Fred

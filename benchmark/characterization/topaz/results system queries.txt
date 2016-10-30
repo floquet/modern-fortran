@@ -1,0 +1,21 @@
+
+Block I: System Queries.
+home directory    = /p/home/dantopa.
+working directory = /p/home/dantopa/github/fortran/benchmark/characterization/topaz.
+date and time     = 2016-04-08  19:39:50  UCT-0500.
+
+user name                                           = dantopa
+numerical user ID of the current process            = 902108
+numerical group ID of the current process           = 775
+numerical process identifier of the current process = 43266
+
+compiler version   = GCC version 5.3.0.
+compiler options   = -mtune=generic -march=x86-64 -auxbase-strip mod_queries.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = topaz03.erdc.hpc.mil.
+invocation command = ./characterize 1.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/pts/21.
+terminal device 6  = /dev/pts/21.
+
+universally unique identifier (UUID) = b6cb858e-17a0-4b4d-bf87-fcaf3eca9925.
+

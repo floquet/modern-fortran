@@ -1,0 +1,5 @@
+&COMMAND_PARAMS
+ FILE_NAME_MESH='namelist mesh primus.nml                                        ',
+ FILE_NAME_PARAM_BASE='namelist run parameters base.nml                                ',
+ FILE_NAME_PARAM_UPDATE='namelist run parameters update.nml                              ',
+ /

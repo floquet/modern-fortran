@@ -1,0 +1,885 @@
+Start Prologue v2.5.3 Mon Jun 13 15:15:36 CDT 2016 
+r20i7n8: MemFree:        123617748 kB
+r20i7n12: MemFree:        123943244 kB
+r20i7n13: MemFree:        123973840 kB
+r20i7n14: MemFree:        124011608 kB
+r20i7n11: MemFree:        124045260 kB
+r20i7n15: MemFree:        123971704 kB
+r20i7n9: MemFree:        123720488 kB
+r20i7n16: MemFree:        123697312 kB
+r20i7n17: MemFree:        123820452 kB
+r20i7n10: MemFree:        124002004 kB
+End Prologue v2.5.3 Mon Jun 13 15:15:36 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 36: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 37: myprompt: command not found
+/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtrot_topaz
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel/15.0.3' is currently not loaded
+make: Nothing to be done for `default'.
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPI_COLL_IB_OFFLOAD (default: disabled) : disabled
+MPT: MPI_CONNECTIONS_THRESHOLD (default: 1025) : 1025
+MPT: MPI_IB_ACCELERATE_AHS (default: disabled) : disabled
+MPT: MPI_IB_EARLY_AHS (default: disabled) : disabled
+MPT: MPI_IB_COALESCE (default: disabled) : disabled
+MPT: MPI_IB_CONGESTED (default: disabled) : disabled
+MPT: MPI_IB_DCIS (default: 0) : 0
+MPT: MPI_IB_DEVS (default: ) : 
+MPT: MPI_IB_DEVS0 (default: ) : 
+MPT: MPI_IB_DEVS1 (default: ) : 
+MPT: MPI_IB_FAILOVER (default: 32) : 32
+MPT: MPI_IB_FAILOVER_RESET (default: enabled) : enabled
+MPT: MPI_IB_HYPER_LAZY (default: disabled) : disabled
+MPT: MPI_IB_IMM_UPGRADE (default: disabled) : disabled
+MPT: MPI_IB_MAX_RDMAS (default: 4) : 4
+MPT: MPI_IB_MTU (default: 2048) : 2048
+MPT: MPI_IB_NUM_QPS (default: not set) : not set
+MPT: MPI_IB_PAYLOAD (default: 16512) : 16512
+MPT: MPI_IB_PRE_CACHE (default: 0) : 0
+MPT: MPI_IB_QP_REALLOC (default: disabled) : disabled
+MPT: MPI_IB_QTIME (default: 0) : 0
+MPT: MPI_IB_RAIL0 (default: ) : 
+MPT: MPI_IB_RAIL1 (default: ) : 
+MPT: MPI_IB_RAILS (default: 1) : 1
+MPT: MPI_IB_RAILS_FLEXIBLE (default: disabled) : disabled
+MPT: MPI_IB_RECV_BUFS (default: 512) : 512
+MPT: MPI_IB_RECV_MSGS (default: 512) : 512
+MPT: MPI_IB_RNR_TIMER (default: 14) : 26
+MPT: MPI_IB_SERVICE_LEVEL (default: 0) : 1
+MPT: MPI_IB_SINGLE_COPY_BUFFER_MAX (default: 32767) : 32767
+MPT: MPI_IB_TIMEOUT (default: 18) : 22
+MPT: MPI_IB_UPGRADE_SENDS (default: 50) : 50
+MPT: MPI_IB_XRC (default: enabled) : enabled
+MPT: MPI_MEMORY_REGION_LIMIT (default: 938143004) : 938143004
+MPT: MPI_NUM_MEMORY_REGIONS (default: 1024) : 1024
+MPT: MPI_UD_ACK_TIMEOUT (default: 5) : 5
+MPT: MPI_UD_CODEL_DEBUG (default: disabled) : disabled
+MPT: MPI_UD_RECV_MSGS (default: 800) : 800
+MPT: MPI_UD_SEND_BUFFERS (default: 400) : 400
+MPT: MPI_UD_FINALIZE_TIMEOUT (default: 2) : 2
+MPT: MPI_UD_TIMEOUT (default: 20) : 20
+MPT: MPI_USE_IB (default: disabled) : disabled
+MPT: MPI_USE_TCP (default: disabled) : disabled
+MPT: MPI_USE_UD (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_143.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_130.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_143.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_29.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_130.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_29.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_120.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_21.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_120.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_21.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_26.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_20.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_215.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_141.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_215.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_27.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_22.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_237.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_237.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_20.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_127.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_125.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_26.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_123.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_349.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_349.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_340.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_246.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_141.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_298.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_296.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_321.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_230.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_340.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_246.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_355.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_131.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_251.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_161.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_161.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_168.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_232.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_341.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_31.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_239.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_102.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_107.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_80.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_271.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_275.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_287.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_337.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_27.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_355.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_211.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_65.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_69.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_228.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_67.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_107.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_230.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_102.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_17.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_105.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_118.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_128.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_22.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_80.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_127.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_211.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_339.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_341.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_129.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_159.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_166.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_164.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_170.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_163.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_298.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_296.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_313.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_28.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_320.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_321.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_289.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_145.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_165.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_275.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_271.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_285.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_287.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_336.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_337.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_221.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_274.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_267.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_285.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_25.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_293.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_42.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_43.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_71.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_40.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_54.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_195.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_312.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_46.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_117.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_32.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_168.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_309.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_269.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_93.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_65.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_69.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_251.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_125.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_105.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_159.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_191.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_286.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_248.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_53.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_193.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_338.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_67.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_198.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_347.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_194.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_222.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_279.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_70.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_311.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_217.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_50.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_134.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_313.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_42.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_232.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_334.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_93.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_278.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_176.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_310.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_177.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_346.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_23.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_250.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_350.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_239.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_325.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_115.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_339.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_121.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_320.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_231.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_228.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_196.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_133.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_92.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_122.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_74.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_1.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_166.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_123.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_195.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_268.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_47.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_71.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_87.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_174.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_344.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_240.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_333.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_280.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_274.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_58.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_110.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_302.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_43.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_343.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_140.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_203.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_336.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_83.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_136.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_270.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_303.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_139.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_304.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_39.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_49.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_244.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_208.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_305.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_255.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_131.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_282.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_92.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_236.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_192.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_126.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_74.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_206.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_55.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_235.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_137.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_316.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_59.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_189.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_229.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_267.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_198.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_94.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_319.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_224.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_87.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_124.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_222.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_179.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_31.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_40.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_212.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_299.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_257.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_85.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_272.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_292.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_84.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_221.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_264.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_172.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_200.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_60.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_106.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_247.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_191.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_223.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_54.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_242.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_16.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_175.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_276.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_164.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_248.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_182.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_289.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_99.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_167.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_307.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_46.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_83.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_197.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_233.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_156.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_56.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_315.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_283.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_225.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_119.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_52.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_205.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_308.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_256.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_170.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_210.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_24.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_317.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_57.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_193.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_64.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_293.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_18.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_33.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_35.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_226.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_323.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_113.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_273.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_241.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_173.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_217.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_187.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_44.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_202.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_291.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_100.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_17.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_269.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_312.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_48.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_53.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_66.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_163.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_112.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_51.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_109.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_183.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_243.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_118.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_250.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_160.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_61.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_128.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_194.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_11.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_178.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_6.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_62.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_171.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_309.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_70.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_50.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_97.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_314.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_311.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_301.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_330.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_318.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_322.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_359.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_290.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_310.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_294.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_306.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_338.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_10.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_12.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_2.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_8.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_266.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_104.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_138.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_145.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_281.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_41.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_155.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_234.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_28.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_162.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_356.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_231.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_45.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_129.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_347.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_5.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_165.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_135.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_88.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_345.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_95.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_204.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_348.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_34.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_132.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_286.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_150.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_25.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_185.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_82.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_30.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_249.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_327.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_334.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_284.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_7.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_277.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_117.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_346.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_13.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_326.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_169.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_351.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_23.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_101.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_331.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_353.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_149.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_358.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_47.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_32.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_328.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_305.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_352.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_279.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_229.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_329.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_357.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_260.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_240.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_354.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_278.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_262.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_350.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_89.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_134.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_325.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_219.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_254.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_244.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_196.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_115.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_176.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_258.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_58.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_86.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_121.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_184.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_94.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_236.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_235.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_78.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_245.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_38.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_76.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_190.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_91.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_39.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_75.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_292.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_224.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_99.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_49.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_302.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_79.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_152.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_98.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_90.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_96.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_303.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_81.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_214.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_133.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_68.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_247.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_304.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_77.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_177.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_122.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_268.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_85.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_199.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_63.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_263.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_55.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_223.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_242.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_344.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_333.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_233.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_59.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_213.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_84.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_203.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_110.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_186.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_14.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_343.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_225.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_9.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_234.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_181.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_226.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_208.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_140.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_316.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_60.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_280.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_153.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_151.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_147.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_241.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_56.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_136.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_52.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_243.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_319.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_57.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_192.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_299.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_41.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_139.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_64.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_270.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_307.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_315.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_206.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_308.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_44.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_126.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_317.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_189.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_48.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_255.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_137.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_323.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_187.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_291.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_124.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_66.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_282.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_207.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_106.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_295.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_51.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_356.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_330.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_297.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_119.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_61.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_212.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_113.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_62.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_359.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_249.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_200.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_314.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_112.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_257.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_109.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_266.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_182.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_272.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_331.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_197.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_264.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_138.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_219.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_114.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_276.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_205.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_301.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_283.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_45.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_318.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_210.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_245.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_322.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_345.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_290.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_135.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_202.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_261.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_256.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_348.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_157.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_259.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_148.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_273.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_183.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_154.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_294.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_327.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_306.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_351.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_326.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_265.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_353.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_358.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_332.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_328.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_100.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_352.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_174.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_329.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_357.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_354.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_38.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_281.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_101.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_204.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_335.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_185.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_68.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_63.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_146.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_97.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_1.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_284.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_277.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_260.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_3.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_104.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_15.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_88.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_262.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_95.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_254.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_16.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_158.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_82.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_258.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_184.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_179.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_227.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_79.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_172.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_175.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_190.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_103.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_24.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_4.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_18.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_263.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_33.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_35.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_89.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_214.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_227.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_30.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_167.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_199.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_86.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_156.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_13.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_213.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_11.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_78.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_186.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_76.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_173.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_181.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_6.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_10.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_12.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_91.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_2.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_160.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_37.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_75.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_8.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_218.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_149.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_178.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_5.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_34.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_37.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_207.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_218.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_171.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_7.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_155.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_162.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_132.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_261.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_259.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_150.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_19.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_265.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_152.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_188.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_169.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_151.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_220.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_220.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_332.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_14.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_9.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_335.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_98.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_3.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_90.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_96.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_15.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_81.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_77.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_4.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_238.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_295.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_297.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_300.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_238.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_19.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_73.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_103.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_300.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_73.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_153.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_253.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_157.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_147.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_148.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_154.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_116.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_111.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_142.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_253.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_146.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_114.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_209.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_201.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_116.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_111.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_188.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_158.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_142.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_209.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_201.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_11_108.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_11_108.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_324.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_15_252.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_9_36.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_13_180.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_15_252.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_324.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_9_36.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_13_180.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_8_0.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_8_0.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_17_342.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_17_342.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_12_144.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_12_144.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_16_288.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_10_72.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_16_288.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_20_7_14_216.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_10_72.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_20_7_14_216.csv doesn't exist; new empty file will be created.
+Start Epilogue v2.5.3 Mon Jun 13 15:17:47 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r20i7n8        0.74     0.86   117.00     0.05     7.94   125.81
+r20i7n9        0.73     0.86   117.00     0.04     7.85   125.81
+r20i7n10       0.73     0.85   117.00     0.04     7.57   125.81
+r20i7n11       0.73     0.86   117.00     0.04     7.53   125.81
+r20i7n12       0.73     0.86   117.00     0.04     7.63   125.81
+r20i7n13       0.73     0.85   117.00     0.04     7.60   125.81
+r20i7n14       0.73     0.86   117.00     0.04     7.57   125.81
+r20i7n15       0.73     0.85   117.00     0.04     7.61   125.81
+r20i7n16       0.73     0.85   117.00     0.04     7.87   125.81
+r20i7n17       0.73     0.85   117.00     0.04     7.75   125.81
+Memory summary:
+		min    0.85 GB
+		max    0.86 GB
+		ave    0.85 GB
+End Epilogue v2.5.3 Mon Jun 13 15:19:11 CDT 2016 

@@ -1,0 +1,20 @@
+
+Block I: System Queries.
+home directory    = /Users/rditldmt.
+working directory = /Users/rditldmt/Box Sync/fortran/projects/characterization/stack.
+date and time     = 2016-02-08  13:40:52  UCT-0600.
+
+numerical user ID of the current process            = 595980521
+numerical group ID of the current process           = 2011572450
+numerical process identifier of the current process = 65368
+
+compiler version   = GCC version 5.1.0.
+compiler options   = -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.9.4 -mtune=core2 -auxbase-strip mod_queries.o -g -Og -Wall -Wextra -Wconversion -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = dan-topas-pro-2.erdc.dren.mil.
+invocation command = ./characterize 100.
+terminal device -10  =  (output file)
+terminal device 5  = /dev/ttys001.
+terminal device 6  = /dev/ttys001.
+
+universally unique identifier (UUID) = 7813C8B6-965A-49A5-A5F6-904AE3456511.
+

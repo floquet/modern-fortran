@@ -1,0 +1,104 @@
+
+Block IV: Memory allocations.
+size = MBytes * mega : 10485760 = 10 * 1048576
+
++ + + Requesting allocation of 10 megabytes
+
+attempting to allocate rank one default integer array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760
+actual total of real elements       = 10485760, 
+cpu time                            = 0.695E-01 s
+clock time                          = 0.695E-01 s
+
+attempting to allocate rank one INT8 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.450E-01 s
+clock time                          = 0.450E-01 s
+
+attempting to allocate rank one INT16 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.396E-01 s
+clock time                          = 0.396E-01 s
+
+attempting to allocate rank one INT32 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.539E-01 s
+clock time                          = 0.540E-01 s
+
+attempting to allocate rank one INT64 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760
+actual total of real elements       = 10485760, 
+cpu time                            = 0.501E-01 s
+clock time                          = 0.501E-01 s
+
+attempting to allocate rank one default real array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760.0
+actual total of real elements       = 10485760.0, 
+cpu time                            = 0.483E-01 s
+clock time                          = 0.483E-01 s
+
+attempting to allocate rank one REAL32 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760.0
+actual total of real elements       = 10485760.0, 
+cpu time                            = 0.511E-01 s
+clock time                          = 0.512E-01 s
+
+attempting to allocate rank one REAL64 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760.000000000
+actual total of real elements       = 10485760.000000000, 
+cpu time                            = 0.101E+00 s
+clock time                          = 0.101E+00 s
+
+attempting to allocate rank one REAL128 array of precision 
+expected total of all unit elements = 10485760
+actual total of all unit elements   = 10485760.000000000
+actual total of real elements       = 10485760.000000000, 
+cpu time                            = 0.586E-01 s
+clock time                          = 0.587E-01 s
+
+attempting to allocate rank one default complex array of precision 
+expected total of all unit elements = 10485760
+dot product total                   = 10485760.0
+dot product total                   = 10485760.0
+dot product total                   = 20971520.0, .00000000
+cpu time                            = 0.938E-01 s
+clock time                          = 0.945E-01 s
+
+attempting to allocate rank one REAL32 array of precision 
+expected total of all unit elements = 10485760
+dot product total                   = 10485760.0
+dot product total                   = 10485760.0
+dot product total                   = 20971520.0, .00000000
+cpu time                            = 0.909E-01 s
+clock time                          = 0.909E-01 s
+
+attempting to allocate rank one REAL64 array of precision 
+expected total of all unit elements = 10485760
+dot product total                   = 10485760.000000000
+dot product total                   = 10485760.000000000
+dot product total                   = 20971520.000000000, .0000000000000000
+cpu time                            = 0.195E+00 s
+clock time                          = 0.195E+00 s
+
+attempting to allocate rank one REAL128 array of precision 
+expected total of all unit elements = 10485760
+dot product total                   = 10485760.000000000
+dot product total                   = 10485760.000000000
+dot product total                   = 20971520.000000000, .0000000000000000
+cpu time                            = 0.194E+00 s
+clock time                          = 0.194E+00 s
+
+total cpu   time for all allocations = 1.0916969999999999 s
+total clock time for all allocations = 1.0924600000000000 s
+

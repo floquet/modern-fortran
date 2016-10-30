@@ -1,0 +1,48 @@
+
+Validation exercise for lines, case 1
+intercept,  Fortran           0.343772868880165E+01 +/-    0.320024788581389E-02
+intercept,  Mathematica       0.989893911107748E+00 +/-    0.320024788581390E-02
+Difference                    0.245E+01                   -0.260E-17
+
+gap,        Fortran           0.343772868880165E+01 +/-    0.130228854930303E-01
+gap,        Mathematica       0.343772868880165E+01 +/-    0.130228854930303E-01
+Difference                   -0.533E-14                   -0.867E-17
+
+slope,      Fortran           0.337614377841187E+00 +/-    0.165405427695299E-02
+slope,      Mathematica       0.337614377841188E+00 +/-    0.165405427695300E-02
+Difference                   -0.444E-15                   -0.152E-17
+
+ 2016-04-01 17:33:36
+
+
+Validation exercise for lines, case 2
+intercept,  Fortran          -0.207514689460427E+01 +/-    0.524305283157246E-01
+intercept,  Mathematica       0.497428148499463E+01 +/-    0.524305283157190E-01
+Difference                   -0.705E+01                    0.558E-14
+
+gap,        Fortran          -0.207514689460427E+01 +/-    0.920777913646986E-01
+gap,        Mathematica      -0.207514689460362E+01 +/-    0.920777913646888E-01
+Difference                   -0.654E-12                    0.985E-14
+
+slope,      Fortran           0.516839016591334E+01 +/-    0.521508071691429E-01
+slope,      Mathematica       0.516839016591234E+01 +/-    0.521508071691373E-01
+Difference                    0.995E-12                    0.554E-14
+
+ 2016-04-01 17:33:36
+
+
+Validation exercise for lines, case 3
+intercept,  Fortran          -0.750532255668239E+01 +/-    0.388468384065434E-02
+intercept,  Mathematica       0.123218059280430E+01 +/-    0.388468384065434E-02
+Difference                   -0.874E+01                   -0.304E-17
+
+gap,        Fortran          -0.750532255668239E+01 +/-    0.434544396699708E-01
+gap,        Mathematica      -0.750532255668240E+01 +/-    0.434544396699708E-01
+Difference                    0.142E-13                   -0.208E-16
+
+slope,      Fortran          -0.857618378765638E+00 +/-    0.378896981719881E-02
+slope,      Mathematica      -0.857618378765642E+00 +/-    0.378896981719881E-02
+Difference                    0.355E-14                   -0.217E-17
+
+ 2016-04-01 17:33:36
+

@@ -1,0 +1,11 @@
+*.dSYM
+*.o
+*.mod
+*.smod
+*.swp
+*~
+*.gz
+*.tar
+*.zip
+*.bu
+*.bu2

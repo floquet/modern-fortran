@@ -1,0 +1,25 @@
+~/.bashrc
+Welcome dantopa to ~/.mybash on leo
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/u/dantopa/.mybash: line 26: peach: command not found
+~/.profile
+building the original unoptimized code
+ftn -O3 -xhost -openmp -o fsaxpy_xeon_base fsaxpy_base.f90
+ifort: command line warning #10121: overriding '-xCORE-AVX-I' with '-xhost'
+ 
+building fsaxpy with the data alignment for Xeon
+ftn -align array64byte -O3 -xhost -openmp -o fsaxpy_xeon_opt fsaxpy_opt.f90
+ifort: command line warning #10121: overriding '-xCORE-AVX-I' with '-xhost'
+ 
+running the unoptimized code on Xeon
+ Initializing
+ Starting Compute on           10  threads
+GFlops per second =     19.445
+Application 45609 resources: utime ~102s, stime ~0s, Rss ~5892, inblocks ~4034, outblocks ~10532
+ 
+running the data aligned code on Xeon
+ Initializing
+ Starting Compute on           10  threads
+ GFlops per sec =    184.435
+Application 45610 resources: utime ~14s, stime ~0s, Rss ~5892, inblocks ~4033, outblocks ~10532

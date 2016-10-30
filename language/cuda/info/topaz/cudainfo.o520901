@@ -1,0 +1,34 @@
+Start Prologue v2.5.3 Tue Aug 23 14:29:57 CDT 2016 
+gpu24: MemFree:        125438380 kB
+End Prologue v2.5.3 Tue Aug 23 14:29:58 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/p/home/dantopa/.bash_profile: line 40: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 41: myprompt: command not found
+now in /p/home/dantopa/hpc/fortran/language/cuda/info/topaz
+ndev = 1
+There are 1 GPUs.
+Name  : Tesla K40m
+Capability  : 3 5
+Memory Global: 11520 Mb
+Memory Const : 64 Kb
+Memory Shared: 48 Kb
+Clock  : 0.745 GHz
+Processors  : 15
+Cores  : 120
+Warp  : 32
+Max Thr/Blk  : 1024
+Max Blk Size : 1024 1024 64
+Max Grid Size: 2147483647 65535 65535
+Start Epilogue v2.5.3 Tue Aug 23 14:29:59 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+gpu24          0.07     0.08   119.00     0.08     6.23   125.82
+Memory summary:
+		min    0.08 GB
+		max    0.08 GB
+		ave    0.08 GB
+End Epilogue v2.5.3 Tue Aug 23 14:30:57 CDT 2016 

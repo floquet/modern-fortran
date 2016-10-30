@@ -1,0 +1,16 @@
+Welcome dantopa to ~/.bashrc on garnet
+/u/dantopa/.bashrc: line 18: black: command not found
+/u/dantopa/hpc/fortran/tools/test/stress/flopper/delta/echo_garnet
+ftn  -c  -o mod_file_handling.o mod_file_handling.f08
+ftn  -c  -o mod_harvest_blade.o mod_harvest_blade.f08
+ftn  -c  -o mod_timer_CPU.o mod_timer_CPU.f08
+ftn  -c  -o mod_timer_clock.o mod_timer_clock.f08
+ftn  -c  -o mod_test_suite.o mod_test_suite.f08
+ftn  -c  -o flops.o flops.f08
+ftn  -g -o flops flops.o mod_file_handling.o mod_harvest_blade.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o
+
+lib-4211 : UNRECOVERABLE library error 
+  A WRITE operation tried to write a record that was too long.
+
+Encountered during a sequential formatted WRITE to an internal file (character variable)
+_pmiu_daemon(SIGCHLD): [NID 00023] [c0-0c1s4n1] [Sun Jun 12 20:40:03 2016] PE RANK 0 exit signal Aborted

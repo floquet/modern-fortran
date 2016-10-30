@@ -1,0 +1,15 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ERDCS97270PET
+#PBS -A ARLAP96070PET
+# #PBS -q debug
+# #PBS -l select=1:ncpus=36:mpiprocs=36
+# #PBS -l walltime=000:01:00
+#PBS -q standard
+#PBS -l select=1:ncpus=36:mpiprocs=36
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -V
+
+source ${myGit}bash/pbs/pbs_allocation
+

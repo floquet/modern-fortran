@@ -1,0 +1,118 @@
+
+Block IX: Accumulation tests.
+one million intervals
+interval size:
+default   precision: .999999997E-06
+single    precision: .999999997E-06
+double    precision: .99999999999999995E-006
+quadruple precision: .99999999999999995E-006
+
+accumulation values: (ideal answer = 1)
+default   precision: 1.00903893
+single    precision: 1.00903893
+double    precision: 1.0000000000079181
+quadruple precision: 1.0000000000079181
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: -.903892517E-02
+single    precision: -.903892517E-02
+double    precision: -.79181106116266164E-011
+quadruple precision: -.79181106116266164E-011
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: -9038.92480
+single    precision: -9038.92480
+double    precision: -.79181106116266164E-005
+quadruple precision: -.79181106116266164E-005
+
+total cpu   time for accumulation = .36090000000000011E-002 s
+total clock time for accumulation = .36289999999999998E-002 s
+
+
+one billion intervals
+interval size:
+default   precision: .999999972E-09
+single    precision: .999999972E-09
+double    precision: .10000000000000001E-008
+quadruple precision: .10000000000000001E-008
+
+accumulation values: (ideal answer = 1)
+default   precision: .312500000E-01
+single    precision: .312500000E-01
+double    precision: .99999999253993288
+quadruple precision: .99999999253993288
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .968750000
+single    precision: .968750000
+double    precision: .74600671196023427E-008
+quadruple precision: .74600671196023427E-008
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: 968750016.
+single    precision: 968750016.
+double    precision: 7.4600671196023418
+quadruple precision: 7.4600671196023418
+
+total cpu   time for accumulation = 3.4602939999999998 s
+total clock time for accumulation = 3.5984539999999998 s
+
+
+one 2**20 intervals
+interval size:
+default   precision: .953674316E-06
+single    precision: .953674316E-06
+double    precision: .95367431640625000E-006
+quadruple precision: .95367431640625000E-006
+
+accumulation values: (ideal answer = 1)
+default   precision: 1.00000000
+single    precision: 1.00000000
+double    precision: 1.0000000000000000
+quadruple precision: 1.0000000000000000
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .00000000
+single    precision: .00000000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: .00000000
+single    precision: .00000000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+total cpu   time for accumulation = .36589999999998568E-002 s
+total clock time for accumulation = .37480000000000000E-002 s
+
+
+one 2**30 intervals
+interval size:
+default   precision: .931322575E-09
+single    precision: .931322575E-09
+double    precision: .93132257461547852E-009
+quadruple precision: .93132257461547852E-009
+
+accumulation values: (ideal answer = 1)
+default   precision: .156250000E-01
+single    precision: .156250000E-01
+double    precision: 1.0000000000000000
+quadruple precision: 1.0000000000000000
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .984375000
+single    precision: .984375000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: .105696461E+10
+single    precision: .105696461E+10
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+total cpu   time for accumulation = 3.6935809999999996 s
+total clock time for accumulation = 3.7633760000000001 s
+
+

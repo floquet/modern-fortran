@@ -1,0 +1,9 @@
+module mPBS
+    implicit none
+
+        character ( len = * ) :: account = 'ERDCS97270PET'
+        character ( len = * ) :: queue = 'standard'
+        character ( len = * ) :: cores = 'select=1:ncpus=32:mpiprocs=32'
+        character ( len = * ) :: wall_time = '168:00:00'
+
+end module mPBS

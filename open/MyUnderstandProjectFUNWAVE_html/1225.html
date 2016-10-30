@@ -1,0 +1,260 @@
+<html><head><title>breaker.F</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/dantopa/Documents/hpc/fortran/open/FUNWAVE-TVD-master/breaker.F</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/dantopa/Documents/hpc/fortran/open/FUNWAVE-TVD-master/breaker.F";
+top.document.title  = "breaker.F";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="comment">!------------------------------------------------------------------------------------</span>
+<a name="2"><font size=-1>2     </font></a><span class="comment">!</span>
+<a name="3"><font size=-1>3     </font></a><span class="comment">!      FILE breaker.F</span>
+<a name="4"><font size=-1>4     </font></a><span class="comment">!</span>
+<a name="5"><font size=-1>5     </font></a><span class="comment">!      This file is part of the FUNWAVE-TVD program under the Simplified BSD license</span>
+<a name="6"><font size=-1>6     </font></a><span class="comment">!</span>
+<a name="7"><font size=-1>7     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="8"><font size=-1>8     </font></a><span class="comment">! </span>
+<a name="9"><font size=-1>9     </font></a><span class="comment">!    Copyright (c) 2016, FUNWAVE Development Team</span>
+<a name="10"><font size=-1>10     </font></a><span class="comment">!</span>
+<a name="11"><font size=-1>11     </font></a><span class="comment">!    (See http://www.udel.edu/kirby/programs/funwave/funwave.html</span>
+<a name="12"><font size=-1>12     </font></a><span class="comment">!     for Development Team membership)</span>
+<a name="13"><font size=-1>13     </font></a><span class="comment">!</span>
+<a name="14"><font size=-1>14     </font></a><span class="comment">!    All rights reserved.</span>
+<a name="15"><font size=-1>15     </font></a><span class="comment">!</span>
+<a name="16"><font size=-1>16     </font></a><span class="comment">!    FUNWAVE_TVD is free software: you can redistribute it and/or modify</span>
+<a name="17"><font size=-1>17     </font></a><span class="comment">!    it under the terms of the Simplified BSD License as released by</span>
+<a name="18"><font size=-1>18     </font></a><span class="comment">!    the Berkeley Software Distribution (BSD).</span>
+<a name="19"><font size=-1>19     </font></a><span class="comment">!</span>
+<a name="20"><font size=-1>20     </font></a><span class="comment">!    Redistribution and use in source and binary forms, with or without</span>
+<a name="21"><font size=-1>21     </font></a><span class="comment">!    modification, are permitted provided that the following conditions are met:</span>
+<a name="22"><font size=-1>22     </font></a><span class="comment">!</span>
+<a name="23"><font size=-1>23     </font></a><span class="comment">!    1. Redistributions of source code must retain the above copyright notice, this</span>
+<a name="24"><font size=-1>24     </font></a><span class="comment">!       list of conditions and the following disclaimer.</span>
+<a name="25"><font size=-1>25     </font></a><span class="comment">!    2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<a name="26"><font size=-1>26     </font></a><span class="comment">!    this list of conditions and the following disclaimer in the documentation</span>
+<a name="27"><font size=-1>27     </font></a><span class="comment">!    and/or other materials provided with the distribution.</span>
+<a name="28"><font size=-1>28     </font></a><span class="comment">!</span>
+<a name="29"><font size=-1>29     </font></a><span class="comment">!    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</span>
+<a name="30"><font size=-1>30     </font></a><span class="comment">!    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span>
+<a name="31"><font size=-1>31     </font></a><span class="comment">!    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<a name="32"><font size=-1>32     </font></a><span class="comment">!    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR</span>
+<a name="33"><font size=-1>33     </font></a><span class="comment">!    ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span>
+<a name="34"><font size=-1>34     </font></a><span class="comment">!    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<a name="35"><font size=-1>35     </font></a><span class="comment">!    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span>
+<a name="36"><font size=-1>36     </font></a><span class="comment">!    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span>
+<a name="37"><font size=-1>37     </font></a><span class="comment">!    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span>
+<a name="38"><font size=-1>38     </font></a><span class="comment">!    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<a name="39"><font size=-1>39     </font></a><span class="comment">!  </span>
+<a name="40"><font size=-1>40     </font></a><span class="comment">!    The views and conclusions contained in the software and documentation are those</span>
+<a name="41"><font size=-1>41     </font></a><span class="comment">!    of the authors and should not be interpreted as representing official policies,</span>
+<a name="42"><font size=-1>42     </font></a><span class="comment">!    either expressed or implied, of the FreeBSD Project.</span>
+<a name="43"><font size=-1>43     </font></a><span class="comment">!  </span>
+<a name="44"><font size=-1>44     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="45"><font size=-1>45     </font></a><span class="comment">!</span>
+<a name="46"><font size=-1>46     </font></a><span class="comment">!    WAVE_BREAKING is subroutine to do wave breaking </span>
+<a name="47"><font size=-1>47     </font></a><span class="comment">!      using the artificial eddy viscosity scheme </span>
+<a name="48"><font size=-1>48     </font></a><span class="comment">!      For the shock-capturing based breaking scheme </span>
+<a name="49"><font size=-1>49     </font></a><span class="comment">!      this subroutine is only used for</span>
+<a name="50"><font size=-1>50     </font></a><span class="comment">!      demonstration or calculating bubbles or foam as </span>
+<a name="51"><font size=-1>51     </font></a><span class="comment">!      SHOW_BREAKING = T.</span>
+<a name="52"><font size=-1>52     </font></a><span class="comment">!    </span>
+<a name="53"><font size=-1>53     </font></a><span class="comment">!    HISTORY: </span>
+<a name="54"><font size=-1>54     </font></a><span class="comment">!      11/22/2010 Fengyan Shi</span>
+<a name="55"><font size=-1>55     </font></a><span class="comment">!      04/15/2015 Fengyan Shi, added viscosity breaking</span>
+<a name="56"><font size=-1>56     </font></a><span class="comment">!      09/19/2015 YoungKwang Chio, added viscosity distribution within WaveMaker region</span>
+<a name="57"><font size=-1>57     </font></a><span class="comment">!</span>
+<a name="58"><font size=-1>58     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="59"><font size=-1>59     </font></a><span class="comment"></span>
+<a name="60"><font size=-1>60     </font></a><span class="comment"></span><span class="keyword">SUBROUTINE <a href="dictionary_W.html#1256">WAVE_BREAKING</a></span>
+<a name="61"><font size=-1>61     </font></a><span class="keyword">     USE <a href="dictionary_G.html#5">GLOBAL</a></span>
+<a name="62"><font size=-1>62     </font></a><span class="keyword">     IMPLICIT NONE</span>
+<a name="63"><font size=-1>63     </font></a><span class="keyword"></span>
+<a name="64"><font size=-1>64     </font></a><span class="keyword">      IF</span><span class="default">(<a href="dictionary_G.html#277">SHOW_BREAKING</a>)</span><span class="keyword">THEN</span>
+<a name="65"><font size=-1>65     </font></a><span class="keyword">        CALL <a href="dictionary_B.html#1226">BREAKING</a></span><span class="default">(<a href="dictionary_G.html#194">Mloc</a>,<a href="dictionary_G.html#200">Nloc</a>,<a href="dictionary_G.html#116">ETAx</a>,<a href="dictionary_G.html#117">ETAy</a>,<a href="dictionary_G.html#113">ETAT</a>,<a href="dictionary_G.html#27">Cbrk1</a>,<a href="dictionary_G.html#28">Cbrk2</a>,<a href="dictionary_G.html#142">H</a>,<a href="dictionary_G.html#193">MinDepthFrc</a>,<a href="dictionary_G.html#78">DT</a>,&amp;</span>
+<a name="66"><font size=-1>66     </font></a><span class="default">               <a href="dictionary_G.html#94">DX</a>,<a href="dictionary_G.html#96">DY</a>,<a href="dictionary_G.html#306">T_brk</a>,<a href="dictionary_G.html#11">AGE_BREAKING</a>)</span>
+<a name="67"><font size=-1>67     </font></a><span class="default"></span>
+<a name="68"><font size=-1>68     </font></a><span class="default">	</span><span class="keyword">ELSEIF</span><span class="default">( <a href="dictionary_G.html#376">WAVEMAKER_VIS</a> )</span><span class="keyword">THEN</span>
+<a name="69"><font size=-1>69     </font></a><span class="keyword">	  </span><span class="comment">! ykchoi(08.19.2015)</span>
+<a name="70"><font size=-1>70     </font></a><span class="comment">	  !</span>
+<a name="71"><font size=-1>71     </font></a><span class="comment">        </span><span class="keyword">CALL <a href="dictionary_V.html#513">VISCOSITY_WMAKER</a></span><span class="default">(<a href="dictionary_G.html#194">Mloc</a>,<a href="dictionary_G.html#200">Nloc</a>,<a href="dictionary_G.html#113">ETAT</a>,<a href="dictionary_G.html#349">visbrk</a>,<a href="dictionary_G.html#142">H</a>,<a href="dictionary_G.html#193">MinDepthFrc</a>,<a href="dictionary_G.html#94">DX</a>,<a href="dictionary_G.html#96">DY</a>)</span>
+<a name="72"><font size=-1>72     </font></a><span class="default">      </span><span class="keyword">ENDIF</span>
+<a name="73"><font size=-1>73     </font></a><span class="keyword"></span>
+<a name="74"><font size=-1>74     </font></a><span class="keyword"></span>
+<a name="75"><font size=-1>75     </font></a><span class="keyword">END SUBROUTINE <a href="dictionary_W.html#1256">WAVE_BREAKING</a></span>
+<a name="76"><font size=-1>76     </font></a><span class="keyword"></span>
+<a name="77"><font size=-1>77     </font></a><span class="keyword"></span><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="78"><font size=-1>78     </font></a><span class="comment">!</span>
+<a name="79"><font size=-1>79     </font></a><span class="comment">!    BREAKING is subroutine to calculate viscosity and breaking age</span>
+<a name="80"><font size=-1>80     </font></a><span class="comment">!    for the artificial eddy viscosity breaking scheme</span>
+<a name="81"><font size=-1>81     </font></a><span class="comment">!    </span>
+<a name="82"><font size=-1>82     </font></a><span class="comment">!    HISTORY: </span>
+<a name="83"><font size=-1>83     </font></a><span class="comment">!     11/22/2010 Fengyan Shi</span>
+<a name="84"><font size=-1>84     </font></a><span class="comment">!</span>
+<a name="85"><font size=-1>85     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="86"><font size=-1>86     </font></a><span class="comment"></span>
+<a name="87"><font size=-1>87     </font></a><span class="comment"></span><span class="keyword">SUBROUTINE <a href="dictionary_B.html#1226">BREAKING</a></span><span class="default">(<a href="dictionary_M.html#1247">M</a>,<a href="dictionary_N.html#1249">N</a>,<a href="dictionary_E.html#1244">ETAx</a>,<a href="dictionary_E.html#1245">ETAy</a>,<a href="dictionary_E.html#1243">ETAT</a>,<a href="dictionary_C.html#1236">Cbrk1</a>,<a href="dictionary_C.html#1237">Cbrk2</a>,<a href="dictionary_H.html#1246">H</a>,<a href="dictionary_M.html#1248">MinDepthFrc</a>,&amp;</span>
+<a name="88"><font size=-1>88     </font></a><span class="default">               <a href="dictionary_D.html#1238">DT</a>,<a href="dictionary_D.html#1239">DX</a>,<a href="dictionary_D.html#1241">DY</a>,<a href="dictionary_T.html#1253">T_brk</a>,<a href="dictionary_A.html#1228">AGE</a>)</span>
+<a name="89"><font size=-1>89     </font></a><span class="default">     </span><span class="keyword">USE <a href="dictionary_P.html#390">PARAM</a></span>
+<a name="90"><font size=-1>90     </font></a><span class="keyword">     USE <a href="dictionary_G.html#5">GLOBAL</a></span><span class="default">,</span><span class="keyword">ONLY </span><span class="default">: <a href="dictionary_G.html#64">Depth</a>,<a href="dictionary_G.html#206">nu_break</a>,<a href="dictionary_G.html#100">ETA</a>,<a href="dictionary_G.html#198">Nghost</a>,<a href="dictionary_G.html#384">Xc_WK</a>,<a href="dictionary_G.html#388">Yc_WK</a>,<a href="dictionary_G.html#167">Ibeg</a>,<a href="dictionary_G.html#171">Iend</a>,&amp;</span>
+<a name="91"><font size=-1>91     </font></a><span class="default">                       <a href="dictionary_G.html#177">Jbeg</a>,<a href="dictionary_G.html#178">Jend</a>,<a href="dictionary_G.html#379">Width_WK</a>,<a href="dictionary_G.html#384">Xc_WK</a>,<a href="dictionary_G.html#388">Yc_WK</a>,<a href="dictionary_G.html#389">Ywidth_WK</a>,<a href="dictionary_G.html#374">WAVEMAKER_Cbrk</a>,<a href="dictionary_G.html#205">nu_bkg</a></span>
+<a name="92"><font size=-1>92     </font></a><span class="default"></span><span class="preproc"># if </span><span class="default">defined(PARALLEL)</span>
+<a name="93"><font size=-1>93     </font></a><span class="default">     </span><span class="keyword">USE </span><span class="default">GLOBAL,</span><span class="keyword">ONLY </span><span class="default">: npx,npy</span>
+<a name="94"><font size=-1>94     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="95"><font size=-1>95     </font></a><span class="preproc">     </span><span class="keyword">IMPLICIT NONE</span>
+<a name="96"><font size=-1>96     </font></a><span class="keyword">     INTEGER</span><span class="default">,</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">IN</span><span class="default">)::<a href="dictionary_M.html#1247">M</a>,<a href="dictionary_N.html#1249">N</a></span>
+<a name="97"><font size=-1>97     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>),</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">IN</span><span class="default">)::<a href="dictionary_C.html#1236">Cbrk1</a>,<a href="dictionary_C.html#1237">Cbrk2</a>,<a href="dictionary_M.html#1248">MinDepthFrc</a>,<a href="dictionary_D.html#1238">DT</a>,<a href="dictionary_T.html#1253">T_brk</a></span>
+<a name="98"><font size=-1>98     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>) :: <a href="dictionary_C.html#1234">cap1</a>,<a href="dictionary_C.html#1235">cap2</a></span>
+<a name="99"><font size=-1>99     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>) :: <a href="dictionary_X.html#1254">xmk</a>,<a href="dictionary_Y.html#1255">ymk</a>,<a href="dictionary_D.html#1240">DXg</a>,<a href="dictionary_D.html#1242">DYg</a></span>
+<a name="100"><font size=-1>100     </font></a><span class="default"></span><span class="comment">!     REAL(SP) :: lim_breaker=0.10</span>
+<a name="101"><font size=-1>101     </font></a><span class="comment"></span><span class="preproc"># if </span><span class="default">defined (CARTESIAN)</span>
+<a name="102"><font size=-1>102     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(SP),</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">IN</span><span class="default">)::DX,DY</span>
+<a name="103"><font size=-1>103     </font></a><span class="default"></span><span class="preproc"># else</span>
+<a name="104"><font size=-1>104     </font></a><span class="preproc">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>),</span><span class="keyword">DIMENSION</span><span class="default">(<a href="dictionary_M.html#1247">M</a>,<a href="dictionary_N.html#1249">N</a>),</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">IN</span><span class="default">)::<a href="dictionary_D.html#1239">DX</a>,<a href="dictionary_D.html#1241">DY</a></span>
+<a name="105"><font size=-1>105     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="106"><font size=-1>106     </font></a><span class="preproc">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>),</span><span class="keyword">DIMENSION</span><span class="default">(<a href="dictionary_M.html#1247">M</a>,<a href="dictionary_N.html#1249">N</a>),</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">IN</span><span class="default">)::<a href="dictionary_E.html#1244">ETAx</a>,<a href="dictionary_E.html#1245">ETAy</a>,<a href="dictionary_E.html#1243">ETAt</a>,<a href="dictionary_H.html#1246">H</a></span>
+<a name="107"><font size=-1>107     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>),</span><span class="keyword">DIMENSION</span><span class="default">(<a href="dictionary_M.html#1247">M</a>,<a href="dictionary_N.html#1249">N</a>),</span><span class="keyword">INTENT</span><span class="default">(</span><span class="keyword">OUT</span><span class="default">)::<a href="dictionary_A.html#1228">AGE</a></span>
+<a name="108"><font size=-1>108     </font></a><span class="default">     </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>)::<a href="dictionary_C.html#1233">C</a>,<a href="dictionary_A.html#1232">Angle</a>,<a href="dictionary_A.html#1229">AGE1</a>,<a href="dictionary_A.html#1230">AGE2</a>,<a href="dictionary_A.html#1231">AGE3</a>,<a href="dictionary_P.html#1250">propx</a>,<a href="dictionary_P.html#1252">propy</a>,<a href="dictionary_P.html#1251">propxy</a></span>
+<a name="109"><font size=-1>109     </font></a><span class="default"></span>
+<a name="110"><font size=-1>110     </font></a><span class="default">     </span><span class="keyword">DO <a href="dictionary_P.html#664">J</a></span><span class="default">=<a href="dictionary_G.html#198">Nghost</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_N.html#1249">N</a>-<a href="dictionary_G.html#198">Nghost</a></span>
+<a name="111"><font size=-1>111     </font></a><span class="default">     </span><span class="keyword">DO <a href="dictionary_P.html#665">I</a></span><span class="default">=<a href="dictionary_G.html#198">Nghost</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_M.html#1247">M</a>-<a href="dictionary_G.html#198">Nghost</a></span>
+<a name="112"><font size=-1>112     </font></a><span class="default"></span>
+<a name="113"><font size=-1>113     </font></a><span class="default">     <a href="dictionary_P.html#670">tmp3</a>=<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_P.html#667">GRAV</a>*<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_M.html#1248">MinDepthFrc</a>,<a href="dictionary_H.html#1246">H</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)))</span>
+<a name="114"><font size=-1>114     </font></a><span class="default">     <a href="dictionary_P.html#672">tmp1</a>=<a href="dictionary_C.html#1236">Cbrk1</a>*<a href="dictionary_P.html#670">tmp3</a></span>
+<a name="115"><font size=-1>115     </font></a><span class="default">     <a href="dictionary_P.html#671">tmp2</a>=<a href="dictionary_C.html#1237">Cbrk2</a>*<a href="dictionary_P.html#670">tmp3</a></span>
+<a name="116"><font size=-1>116     </font></a><span class="default">     </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_E.html#1243">ETAt</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>).GE.<a href="dictionary_P.html#672">tmp1</a>.AND.(  &amp;</span>
+<a name="117"><font size=-1>117     </font></a><span class="default">       <a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>).EQ.<a href="dictionary_P.html#663">ZERO</a>.OR.<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>).GT.<a href="dictionary_T.html#1253">T_brk</a>))</span><span class="keyword">THEN</span>
+<a name="118"><font size=-1>118     </font></a><span class="keyword">      <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_D.html#1238">DT</a></span>
+<a name="119"><font size=-1>119     </font></a><span class="default">     </span><span class="keyword">ELSE</span>
+<a name="120"><font size=-1>120     </font></a><span class="keyword">      IF</span><span class="default">(<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>).GT.<a href="dictionary_P.html#663">ZERO</a>)</span><span class="keyword">THEN</span>
+<a name="121"><font size=-1>121     </font></a><span class="keyword">        <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)+<a href="dictionary_D.html#1238">DT</a></span>
+<a name="122"><font size=-1>122     </font></a><span class="default">      </span><span class="keyword">ELSE</span>
+<a name="123"><font size=-1>123     </font></a><span class="keyword">        <a href="dictionary_P.html#672">tmp1</a></span><span class="default">=<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_E.html#1244">ETAx</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_E.html#1244">ETAx</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)+<a href="dictionary_E.html#1245">ETAy</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_E.html#1245">ETAy</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)),<a href="dictionary_P.html#669">SMALL</a>)</span>
+<a name="124"><font size=-1>124     </font></a><span class="default">        <a href="dictionary_C.html#1233">C</a>=<a href="dictionary_M.html#413">MIN</a>(<a href="dictionary_A.html#405">ABS</a>(<a href="dictionary_E.html#1243">ETAt</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))/<a href="dictionary_P.html#672">tmp1</a>,<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_P.html#667">GRAV</a>*<a href="dictionary_A.html#405">ABS</a>(<a href="dictionary_H.html#1246">H</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))))</span>
+<a name="125"><font size=-1>125     </font></a><span class="default"></span><span class="comment">! propagation time between a dx, dy and ds</span>
+<a name="126"><font size=-1>126     </font></a><span class="comment"></span><span class="preproc"># if </span><span class="default">defined (CARTESIAN)</span>
+<a name="127"><font size=-1>127     </font></a><span class="default">        DXg=DX</span>
+<a name="128"><font size=-1>128     </font></a><span class="default">        DYg=DY</span>
+<a name="129"><font size=-1>129     </font></a><span class="default">        propxy=SQRT(DX*DX+DY*DY)/MAX(C,SMALL)</span>
+<a name="130"><font size=-1>130     </font></a><span class="default">        propx=SQRT(DX*DX)/MAX(C,SMALL)</span>
+<a name="131"><font size=-1>131     </font></a><span class="default">        propy=SQRT(DY*DY)/MAX(C,SMALL)</span>
+<a name="132"><font size=-1>132     </font></a><span class="default"></span><span class="preproc"># else</span>
+<a name="133"><font size=-1>133     </font></a><span class="preproc">        <a href="dictionary_D.html#1240">DXg</a></span><span class="default">=<a href="dictionary_D.html#1239">DX</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="134"><font size=-1>134     </font></a><span class="default">        <a href="dictionary_D.html#1242">DYg</a>=<a href="dictionary_D.html#1241">DY</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="135"><font size=-1>135     </font></a><span class="default">        <a href="dictionary_P.html#1251">propxy</a>=<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_D.html#1239">DX</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_D.html#1239">DX</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)+<a href="dictionary_D.html#1241">DY</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_D.html#1241">DY</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))/<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_C.html#1233">C</a>,<a href="dictionary_P.html#669">SMALL</a>)</span>
+<a name="136"><font size=-1>136     </font></a><span class="default">        <a href="dictionary_P.html#1250">propx</a>=<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_D.html#1239">DX</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_D.html#1239">DX</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))/<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_C.html#1233">C</a>,<a href="dictionary_P.html#669">SMALL</a>)</span>
+<a name="137"><font size=-1>137     </font></a><span class="default">        <a href="dictionary_P.html#1252">propy</a>=<a href="dictionary_S.html#393">SQRT</a>(<a href="dictionary_D.html#1241">DY</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)*<a href="dictionary_D.html#1241">DY</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))/<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_C.html#1233">C</a>,<a href="dictionary_P.html#669">SMALL</a>)</span>
+<a name="138"><font size=-1>138     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="139"><font size=-1>139     </font></a><span class="preproc">        <a href="dictionary_A.html#1232">ANGLE</a></span><span class="default">=<a href="dictionary_A.html#1227">ATAN2</a>(<a href="dictionary_E.html#1245">ETAy</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>),<a href="dictionary_E.html#1244">ETAx</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))</span>
+<a name="140"><font size=-1>140     </font></a><span class="default"></span>
+<a name="141"><font size=-1>141     </font></a><span class="default">        </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_E.html#1243">ETAt</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>).GE.<a href="dictionary_P.html#671">tmp2</a>)</span><span class="keyword">THEN</span>
+<a name="142"><font size=-1>142     </font></a><span class="keyword"></span><span class="comment">! 4 quadrants </span>
+<a name="143"><font size=-1>143     </font></a><span class="comment">! quadrant 1</span>
+<a name="144"><font size=-1>144     </font></a><span class="comment">         </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#1232">ANGLE</a>.GE.<a href="dictionary_P.html#663">ZERO</a>.AND.<a href="dictionary_A.html#1232">ANGLE</a>.LT.</span><span class="number">90.0</span><span class="default">_SP)</span><span class="keyword">THEN</span>
+<a name="145"><font size=-1>145     </font></a><span class="keyword">           <a href="dictionary_A.html#1229">AGE1</a></span><span class="default">=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>-</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="146"><font size=-1>146     </font></a><span class="default">           <a href="dictionary_A.html#1230">AGE2</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>-</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>-</span><span class="number">1</span><span class="default">)</span>
+<a name="147"><font size=-1>147     </font></a><span class="default">           <a href="dictionary_A.html#1231">AGE3</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>-</span><span class="number">1</span><span class="default">)</span>
+<a name="148"><font size=-1>148     </font></a><span class="default">           </span><span class="keyword">IF</span><span class="default">((<a href="dictionary_A.html#1229">AGE1</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1229">AGE1</a>&gt;<a href="dictionary_P.html#1250">propx</a>).OR.&amp;</span>
+<a name="149"><font size=-1>149     </font></a><span class="default">              (<a href="dictionary_A.html#1230">AGE2</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1230">AGE2</a>&gt;<a href="dictionary_P.html#1251">propxy</a>).OR.&amp;</span>
+<a name="150"><font size=-1>150     </font></a><span class="default">              (<a href="dictionary_A.html#1231">AGE3</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1231">AGE3</a>&gt;<a href="dictionary_P.html#1252">propy</a>))</span><span class="keyword">THEN</span>
+<a name="151"><font size=-1>151     </font></a><span class="keyword">            <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_D.html#1238">DT</a></span>
+<a name="152"><font size=-1>152     </font></a><span class="default">           </span><span class="keyword">ENDIF         </span>
+<a name="153"><font size=-1>153     </font></a><span class="keyword">         ENDIF</span>
+<a name="154"><font size=-1>154     </font></a><span class="keyword"></span><span class="comment">! quadrant 2</span>
+<a name="155"><font size=-1>155     </font></a><span class="comment">         </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#1232">ANGLE</a>.GE.</span><span class="number">90.0</span><span class="default">_SP.AND.<a href="dictionary_A.html#1232">ANGLE</a>.LT.</span><span class="number">180.0</span><span class="default">_SP)</span><span class="keyword">THEN</span>
+<a name="156"><font size=-1>156     </font></a><span class="keyword">           <a href="dictionary_A.html#1229">AGE1</a></span><span class="default">=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="157"><font size=-1>157     </font></a><span class="default">           <a href="dictionary_A.html#1230">AGE2</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>-</span><span class="number">1</span><span class="default">)</span>
+<a name="158"><font size=-1>158     </font></a><span class="default">           <a href="dictionary_A.html#1231">AGE3</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>-</span><span class="number">1</span><span class="default">)</span>
+<a name="159"><font size=-1>159     </font></a><span class="default">           </span><span class="keyword">IF</span><span class="default">((<a href="dictionary_A.html#1229">AGE1</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1229">AGE1</a>&gt;<a href="dictionary_P.html#1250">propx</a>).OR.&amp;</span>
+<a name="160"><font size=-1>160     </font></a><span class="default">              (<a href="dictionary_A.html#1230">AGE2</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1230">AGE2</a>&gt;<a href="dictionary_P.html#1251">propxy</a>).OR.&amp;</span>
+<a name="161"><font size=-1>161     </font></a><span class="default">              (<a href="dictionary_A.html#1231">AGE3</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1231">AGE3</a>&gt;<a href="dictionary_P.html#1252">propy</a>))</span><span class="keyword">THEN</span>
+<a name="162"><font size=-1>162     </font></a><span class="keyword">            <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_D.html#1238">DT</a></span>
+<a name="163"><font size=-1>163     </font></a><span class="default">           </span><span class="keyword">ENDIF         </span>
+<a name="164"><font size=-1>164     </font></a><span class="keyword">         ENDIF</span>
+<a name="165"><font size=-1>165     </font></a><span class="keyword"></span><span class="comment">! quadrant 3</span>
+<a name="166"><font size=-1>166     </font></a><span class="comment">         </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#1232">ANGLE</a>.GE.-</span><span class="number">180.0</span><span class="default">_SP.AND.<a href="dictionary_A.html#1232">ANGLE</a>.LT.-</span><span class="number">90.0</span><span class="default">_SP)</span><span class="keyword">THEN</span>
+<a name="167"><font size=-1>167     </font></a><span class="keyword">           <a href="dictionary_A.html#1229">AGE1</a></span><span class="default">=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="168"><font size=-1>168     </font></a><span class="default">           <a href="dictionary_A.html#1230">AGE2</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>+</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>+</span><span class="number">1</span><span class="default">)</span>
+<a name="169"><font size=-1>169     </font></a><span class="default">           <a href="dictionary_A.html#1231">AGE3</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>+</span><span class="number">1</span><span class="default">)</span>
+<a name="170"><font size=-1>170     </font></a><span class="default">           </span><span class="keyword">IF</span><span class="default">((<a href="dictionary_A.html#1229">AGE1</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1229">AGE1</a>&gt;<a href="dictionary_P.html#1250">propx</a>).OR.&amp;</span>
+<a name="171"><font size=-1>171     </font></a><span class="default">              (<a href="dictionary_A.html#1230">AGE2</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1230">AGE2</a>&gt;<a href="dictionary_P.html#1251">propxy</a>).OR.&amp;</span>
+<a name="172"><font size=-1>172     </font></a><span class="default">              (<a href="dictionary_A.html#1231">AGE3</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1231">AGE3</a>&gt;<a href="dictionary_P.html#1252">propy</a>))</span><span class="keyword">THEN</span>
+<a name="173"><font size=-1>173     </font></a><span class="keyword">            <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_D.html#1238">DT</a></span>
+<a name="174"><font size=-1>174     </font></a><span class="default">           </span><span class="keyword">ENDIF         </span>
+<a name="175"><font size=-1>175     </font></a><span class="keyword">         ENDIF</span>
+<a name="176"><font size=-1>176     </font></a><span class="keyword"></span><span class="comment">! quadrant 4</span>
+<a name="177"><font size=-1>177     </font></a><span class="comment">         </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#1232">ANGLE</a>.GE.-</span><span class="number">90.0</span><span class="default">_SP.AND.<a href="dictionary_A.html#1232">ANGLE</a>.LT.</span><span class="number">0.0</span><span class="default">_SP)</span><span class="keyword">THEN</span>
+<a name="178"><font size=-1>178     </font></a><span class="keyword">           <a href="dictionary_A.html#1229">AGE1</a></span><span class="default">=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>+</span><span class="number">1</span><span class="default">)</span>
+<a name="179"><font size=-1>179     </font></a><span class="default">           <a href="dictionary_A.html#1230">AGE2</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>-</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>+</span><span class="number">1</span><span class="default">)</span>
+<a name="180"><font size=-1>180     </font></a><span class="default">           <a href="dictionary_A.html#1231">AGE3</a>=<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>-</span><span class="number">1</span><span class="default">,<a href="dictionary_P.html#664">J</a>)</span>
+<a name="181"><font size=-1>181     </font></a><span class="default">           </span><span class="keyword">IF</span><span class="default">((<a href="dictionary_A.html#1229">AGE1</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1229">AGE1</a>&gt;<a href="dictionary_P.html#1252">propy</a>).OR.&amp;</span>
+<a name="182"><font size=-1>182     </font></a><span class="default">              (<a href="dictionary_A.html#1230">AGE2</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1230">AGE2</a>&gt;<a href="dictionary_P.html#1251">propxy</a>).OR.&amp;</span>
+<a name="183"><font size=-1>183     </font></a><span class="default">              (<a href="dictionary_A.html#1231">AGE3</a>&gt;=<a href="dictionary_D.html#1238">DT</a>.AND.<a href="dictionary_A.html#1231">AGE3</a>&gt;<a href="dictionary_P.html#1250">propx</a>))</span><span class="keyword">THEN</span>
+<a name="184"><font size=-1>184     </font></a><span class="keyword">            <a href="dictionary_A.html#1228">AGE</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_D.html#1238">DT</a></span>
+<a name="185"><font size=-1>185     </font></a><span class="default">           </span><span class="keyword">ENDIF         </span>
+<a name="186"><font size=-1>186     </font></a><span class="keyword">         ENDIF</span>
+<a name="187"><font size=-1>187     </font></a><span class="keyword"></span>
+<a name="188"><font size=-1>188     </font></a><span class="keyword">       ENDIF</span>
+<a name="189"><font size=-1>189     </font></a><span class="keyword"></span>
+<a name="190"><font size=-1>190     </font></a><span class="keyword">      ENDIF</span>
+<a name="191"><font size=-1>191     </font></a><span class="keyword">     ENDIF </span>
+<a name="192"><font size=-1>192     </font></a><span class="keyword"></span>
+<a name="193"><font size=-1>193     </font></a><span class="keyword"></span><span class="comment">! set viscosity</span>
+<a name="194"><font size=-1>194     </font></a><span class="comment"></span>
+<a name="195"><font size=-1>195     </font></a><span class="comment">! wavemaker</span>
+<a name="196"><font size=-1>196     </font></a><span class="comment"></span><span class="preproc"># if </span><span class="default">defined (PARALLEL)</span>
+<a name="197"><font size=-1>197     </font></a><span class="default">            xmk=(I-Ibeg)*DXg+npx*(M-</span><span class="number">2</span><span class="default">*Nghost)*DXg</span>
+<a name="198"><font size=-1>198     </font></a><span class="default">            ymk=(J-Jbeg)*DYg+npy*(N-</span><span class="number">2</span><span class="default">*Nghost)*DYg</span>
+<a name="199"><font size=-1>199     </font></a><span class="default"></span><span class="preproc"># else</span>
+<a name="200"><font size=-1>200     </font></a><span class="preproc">            <a href="dictionary_X.html#1254">xmk</a></span><span class="default">=(<a href="dictionary_P.html#665">I</a>-<a href="dictionary_G.html#167">Ibeg</a>)*<a href="dictionary_D.html#1240">DXg</a></span>
+<a name="201"><font size=-1>201     </font></a><span class="default">            <a href="dictionary_Y.html#1255">ymk</a>=(<a href="dictionary_P.html#664">J</a>-<a href="dictionary_G.html#177">Jbeg</a>)*<a href="dictionary_D.html#1242">DYg</a></span>
+<a name="202"><font size=-1>202     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="203"><font size=-1>203     </font></a><span class="preproc"></span>
+<a name="204"><font size=-1>204     </font></a><span class="preproc"></span><span class="comment">! wavemaker doesnt use breaker age</span>
+<a name="205"><font size=-1>205     </font></a><span class="comment"></span>
+<a name="206"><font size=-1>206     </font></a><span class="comment">    </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#405">ABS</a>(<a href="dictionary_X.html#1254">xmk</a>-<a href="dictionary_G.html#384">Xc_WK</a>)&lt;<a href="dictionary_G.html#379">Width_WK</a>.AND. &amp;</span>
+<a name="207"><font size=-1>207     </font></a><span class="default">            <a href="dictionary_A.html#405">ABS</a>(<a href="dictionary_Y.html#1255">ymk</a>-<a href="dictionary_G.html#388">Yc_WK</a>)&lt;<a href="dictionary_G.html#389">Ywidth_WK</a>/</span><span class="number">2.0</span><span class="default">_SP)</span><span class="keyword">THEN</span>
+<a name="208"><font size=-1>208     </font></a><span class="keyword"></span>
+<a name="209"><font size=-1>209     </font></a><span class="keyword">      IF</span><span class="default">(<a href="dictionary_E.html#1243">ETAt</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)&gt;<a href="dictionary_M.html#413">MIN</a>(<a href="dictionary_P.html#671">tmp2</a>,<a href="dictionary_G.html#374">WAVEMAKER_Cbrk</a>*<a href="dictionary_P.html#670">tmp3</a>))</span><span class="keyword">THEN</span>
+<a name="210"><font size=-1>210     </font></a><span class="keyword">         <a href="dictionary_C.html#1234">cap1</a></span><span class="default">=</span><span class="number">1.0</span><span class="default">*(<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_G.html#64">Depth</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>),<a href="dictionary_M.html#1248">MinDepthFrc</a>)+<a href="dictionary_G.html#100">ETA</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))</span>
+<a name="211"><font size=-1>211     </font></a><span class="default">         <a href="dictionary_G.html#206">nu_break</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_C.html#1234">cap1</a>*<a href="dictionary_G.html#374">WAVEMAKER_Cbrk</a>*<a href="dictionary_P.html#670">tmp3</a>+<a href="dictionary_G.html#205">nu_bkg</a></span>
+<a name="212"><font size=-1>212     </font></a><span class="default">      </span><span class="keyword">ELSE</span>
+<a name="213"><font size=-1>213     </font></a><span class="keyword">         <a href="dictionary_G.html#206">nu_break</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_P.html#663">ZERO</a>+<a href="dictionary_G.html#205">nu_bkg</a></span>
+<a name="214"><font size=-1>214     </font></a><span class="default">      </span><span class="keyword">ENDIF</span>
+<a name="215"><font size=-1>215     </font></a><span class="keyword"></span>
+<a name="216"><font size=-1>216     </font></a><span class="keyword">    ELSE </span><span class="comment">! outside wavemaker    </span>
+<a name="217"><font size=-1>217     </font></a><span class="comment"></span>
+<a name="218"><font size=-1>218     </font></a><span class="comment">     </span><span class="keyword">IF</span><span class="default">(<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)&gt;<a href="dictionary_P.html#663">ZERO</a>.AND.<a href="dictionary_A.html#1228">AGE</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)&lt;<a href="dictionary_T.html#1253">T_brk</a>.AND.<a href="dictionary_E.html#1243">ETAt</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)&gt;<a href="dictionary_P.html#671">tmp2</a>)</span><span class="keyword">THEN</span>
+<a name="219"><font size=-1>219     </font></a><span class="keyword">       <a href="dictionary_C.html#1234">cap1</a></span><span class="default">=</span><span class="number">1.0</span><span class="default">*(<a href="dictionary_M.html#404">MAX</a>(<a href="dictionary_G.html#64">Depth</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>),<a href="dictionary_M.html#1248">MinDepthFrc</a>)+<a href="dictionary_G.html#100">ETA</a>(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>))</span>
+<a name="220"><font size=-1>220     </font></a><span class="default"></span><span class="comment">!   note 09/17/2016</span>
+<a name="221"><font size=-1>221     </font></a><span class="comment">!   Kennedy et al used a transition for nu, the transition is basically</span>
+<a name="222"><font size=-1>222     </font></a><span class="comment">!   used to avoid instabilities. Choi and I did some tests:</span>
+<a name="223"><font size=-1>223     </font></a><span class="comment">!   1) use a static nu instead of a function of eta_t which </span>
+<a name="224"><font size=-1>224     </font></a><span class="comment">!      causes a numerical instability. However, instabilities still</span>
+<a name="225"><font size=-1>225     </font></a><span class="comment">!      occur for some 2D cases. </span>
+<a name="226"><font size=-1>226     </font></a><span class="comment">!   2) use a static nu as a function of Cbrk2. </span>
+<a name="227"><font size=-1>227     </font></a><span class="comment">!      nu_break(I,J) = cap1*tmp2 + nu_bkg</span>
+<a name="228"><font size=-1>228     </font></a><span class="comment">!      This is the setting</span>
+<a name="229"><font size=-1>229     </font></a><span class="comment">!      I used before the transition scheme. It worked well but</span>
+<a name="230"><font size=-1>230     </font></a><span class="comment">!      we should re-calibrate Cbrk2. </span>
+<a name="231"><font size=-1>231     </font></a><span class="comment">!   </span>
+<a name="232"><font size=-1>232     </font></a><span class="comment"></span><span class="preproc"># if </span><span class="default">defined (VIS_KENNEDY)</span>
+<a name="233"><font size=-1>233     </font></a><span class="default">        nu_break(I,J)=cap1*ABS(ETAt(I,J))+nu_bkg</span>
+<a name="234"><font size=-1>234     </font></a><span class="default"></span><span class="preproc"># elif </span><span class="default">defined (VIS_STATIC_TRANS)</span>
+<a name="235"><font size=-1>235     </font></a><span class="default">         nu_break(I,J)=cap1*tmp3*(Cbrk2+(Cbrk1-Cbrk2)*(T_brk-AGE(I,J))/T_brk)+nu_bkg</span>
+<a name="236"><font size=-1>236     </font></a><span class="default"></span><span class="preproc"># else</span>
+<a name="237"><font size=-1>237     </font></a><span class="preproc">        <a href="dictionary_G.html#206">nu_break</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>) = <a href="dictionary_C.html#1234">cap1</a>*<a href="dictionary_P.html#671">tmp2</a> + <a href="dictionary_G.html#205">nu_bkg</a></span>
+<a name="238"><font size=-1>238     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="239"><font size=-1>239     </font></a><span class="preproc">     </span><span class="keyword">ELSE</span>
+<a name="240"><font size=-1>240     </font></a><span class="keyword">       <a href="dictionary_G.html#206">nu_break</a></span><span class="default">(<a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>)=<a href="dictionary_P.html#663">ZERO</a>+<a href="dictionary_G.html#205">nu_bkg</a></span>
+<a name="241"><font size=-1>241     </font></a><span class="default">     </span><span class="keyword">ENDIF</span>
+<a name="242"><font size=-1>242     </font></a><span class="keyword">          </span>
+<a name="243"><font size=-1>243     </font></a><span class="keyword">   ENDIF </span><span class="comment">! end wavemaker</span>
+<a name="244"><font size=-1>244     </font></a><span class="comment"></span>
+<a name="245"><font size=-1>245     </font></a><span class="comment">     </span><span class="keyword">ENDDO</span>
+<a name="246"><font size=-1>246     </font></a><span class="keyword">     ENDDO</span>
+<a name="247"><font size=-1>247     </font></a><span class="keyword"></span>
+<a name="248"><font size=-1>248     </font></a><span class="keyword">END SUBROUTINE <a href="dictionary_B.html#1226">BREAKING</a></span>
+<a name="249"><font size=-1>249     </font></a><span class="keyword"></span>
+<a name="250"><font size=-1>250     </font></a><span class="keyword"></span>
+</pre></body></html>

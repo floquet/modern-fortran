@@ -1,0 +1,53 @@
+
+Block VI: Machine epsilon.
+
+intrinsic EPSILON ( 1 ):
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  .22204460492503131E-015
+quad precision:    .22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000002
+quad precision:    1.0000000000000002
+
+
+Moler epsilon:
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  -.22204460492503131E-015
+quad precision:    -.22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  .99999999999999978
+quad precision:    .99999999999999978
+
+
+bisection epsilon:
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  .22204460492503131E-015
+quad precision:    .22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000002
+quad precision:    1.0000000000000002
+
+
+decimation epsilon:
+default precision: .999999941E-07
+single precision:  .999999941E-07
+double precision:  .10000000000000001E-014
+quad precision:    .10000000000000001E-014
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000011
+quad precision:    1.0000000000000011

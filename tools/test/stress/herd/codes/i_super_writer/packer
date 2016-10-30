@@ -1,0 +1,10 @@
+export type='all'
+export who='lightning'
+
+rm -rf $who
+make
+./machine_pbs
+cn
+cd $who/
+tar -czvf $who.tar.gz  .
+cp $who.tar.gz ~/hpc/transporter/.

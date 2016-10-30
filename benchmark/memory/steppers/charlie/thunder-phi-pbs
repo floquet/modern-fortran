@@ -1,0 +1,13 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q PHI
+#PBS -l select=1:ncpus=28:mpiprocs=28:nmics=2
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -V
+
+# 2016 08 19 - call script from git library
+
+source ${wdmprime}/pbs_script
+

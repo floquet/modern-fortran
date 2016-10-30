@@ -1,0 +1,13 @@
+#! bin/bash
+
+# compile and run
+
+# echo 'switching modules...'
+# module switch ${compiler_default} ${compiler_gnu}
+
+echo 'compiling...'
+gfortran ${gflags} allocation_times.f08 -o allocation_times
+
+echo 'running program...'
+./allocation_times
+

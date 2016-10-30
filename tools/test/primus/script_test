@@ -1,0 +1,69 @@
+#! bin/bash
+# https://secweb.cs.odu.edu/~zeil/cs252/sum14/Lectures/compilation/pages/capturing.html
+
+export myLog='fortran_compiler.log'
+
+rm -rf $myLog
+cleaner
+# script $myLog
+
+# compiler test scripts
+echo ''
+echo ${bold}'Fortran compiler test suite on '${host_name}${normal} 2>&1 | tee -a $myLog
+date                                        2>&1 | tee -a $myLog
+echo 'machine   = '${host_name}             2>&1 | tee -a $myLog
+echo 'directory = '$(pwd)                   2>&1 | tee -a $myLog
+
+echo ${bold}'gfortran flags'${normal}       2>&1 | tee -a $myLog
+echogf                                      2>&1 | tee -a $myLog
+echo ${bold}'coarray  flags'${normal}       2>&1 | tee -a $myLog
+echocf                                      2>&1 | tee -a $myLog
+
+echo ${bold}'gcc options'${normal}          2>&1 | tee -a $myLog
+port select --list gcc
+
+echo ${bold}'gcc version'${normal}          2>&1 | tee -a $myLog
+gcc -v                                      2>&1 | tee -a $myLog
+
+echo ${bold}'gfortran version'${normal}     2>&1 | tee -a $myLog
+gfortran -v                                 2>&1 | tee -a $myLog
+
+echo ${bold}'opencoarrays version'${normal} 2>&1 | tee -a $myLog
+port list opencoarrays                      2>&1 | tee -a $myLog
+
+echo ${bold}'===   COARRAY FORTRAN'${normal} 2>&1 | tee -a $myLog
+echo ${bold}'> > co_broadcast'${normal}     2>&1 | tee -a $myLog
+cf co_array/co_broadcast                    2>&1 | tee -a $myLog
+cafrun -np 4 ./co_array/co_broadcast        2>&1 | tee -a $myLog
+
+echo ${bold}'> > co_sum'${normal}           2>&1 | tee -a $myLog
+cf co_array/deluxe_co_sum                   2>&1 | tee -a $myLog
+cafrun -np 4 ./co_array/deluxe_co_sum       2>&1 | tee -a $myLog
+
+echo ${bold}'> > co_max'${normal}           2>&1 | tee -a $myLog
+cf co_array/co_max                          2>&1 | tee -a $myLog
+cafrun -np 4 ./co_array/co_max              2>&1 | tee -a $myLog
+
+echo ${bold}'> > co_reduce'${normal}        2>&1 | tee -a $myLog
+cf co_array/co_reduce                       2>&1 | tee -a $myLog
+cafrun -np 4 ./co_array/co_reduce           2>&1 | tee -a $myLog
+
+echo ${bold}'* * * make debug 00'${normal}  2>&1 | tee -a $myLog
+make -C test_00/ debug                      2>&1 | tee -a $myLog
+
+echo ${bold}'* * * make 00'${normal}        2>&1 | tee -a $myLog
+make -C test_00/                            2>&1 | tee -a $myLog
+echo ${bold}'cafrun -np 8 ./test_00/prime_density'${normal}        2>&1 | tee -a $myLog
+cafrun -np 16 ./test_00/prime_density        2>&1 | tee -a $myLog
+
+pink
+echo ${bold}'* * * make debug 01'${normal}  2>&1 | tee -a $myLog
+make -C test_01/ debug                      2>&1 | tee -a $myLog
+
+echo ${bold}'* * * make 01'${normal}        2>&1 | tee -a $myLog
+make -C test_01/                            2>&1 | tee -a $myLog
+
+peach
+cleaner
+myprompt
+# exit

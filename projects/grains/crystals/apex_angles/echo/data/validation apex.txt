@@ -1,0 +1,24 @@
+
+Validation exercise for apex angles, case 1
+apex angle, Fortran           0.104031955595417E+01 +/-    0.180073076816964E-01
+apex angle, Mathematica       0.104031955595421E+01 +/-    0.180073076816950E-01
+Difference                   -0.426E-13                    0.138E-14
+
+ 2016-04-01 17:33:36
+
+
+Validation exercise for apex angles, case 2
+apex angle, Fortran           0.103449886538241E+01 +/-    0.293180909456640E-02
+apex angle, Mathematica       0.103449881076813E+01 +/-    0.293180909456640E-02
+Difference                    0.546E-07                    0.217E-17
+
+ 2016-04-01 17:33:36
+
+
+Validation exercise for apex angles, case 3
+apex angle, Fortran           0.104137686062484E+01 +/-    0.181214113556190E-01
+apex angle, Mathematica       0.104137686062479E+01 +/-    0.181214113556176E-01
+Difference                    0.431E-13                    0.137E-14
+
+ 2016-04-01 17:33:36
+

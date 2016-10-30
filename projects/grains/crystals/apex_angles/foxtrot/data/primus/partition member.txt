@@ -1,0 +1,14 @@
+Partition 1 has 10 members (elements 1 to 10):
+         519         520         522         555         556         589         590         591         624         625
+Partition 2 has 12 members (elements 11 to 22):
+         551         552         553         554         587         588         621         622         623         656         657         658
+Partition 3 has 13 members (elements 23 to 35):
+         582         583         584         585         586         619         620         653         654         655         688         689         690
+Partition 4 has 12 members (elements 36 to 47):
+         614         615         616         617         618         651         652         685         686         687         720         721
+Partition 5 has 14 members (elements 48 to 61):
+         613         646         648         649         650         683         684         717         718         719         752         753         754         787
+Partition 6 has 12 members (elements 62 to 73):
+         644         645         647         680         681         682         715         716         749         750         751         784
+Partition 7 has 8 members (elements 74 to 81):
+         712         713         714         747         748         781         782         783

@@ -1,0 +1,9 @@
+qsub $wdmersenne/gpu/001/thunder_gpu_001
+
+qsub $wdmersenne/gpu/002/thunder_gpu_002
+
+qsub $wdmersenne/gpu/003/thunder_gpu_003
+
+qsub $wdmersenne/gpu/004/thunder_gpu_004
+
+cd $wdmersenne

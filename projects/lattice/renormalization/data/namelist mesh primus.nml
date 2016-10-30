@@ -1,0 +1,5 @@
+&MESH_PARAMS
+ EXTENT= 4*20         ,
+ ISOTROPY= 4*1.0000000000000000       ,
+ DESCRIPTOR='sim             ',
+ /

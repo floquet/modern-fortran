@@ -1,0 +1,68 @@
+#!/bin/bash
+# http://www.erdc.hpc.mil/docs/topazPbsGuide.html#mpi1, section 8.1
+## Required PBS Directives --------------------------------------
+#PBS -A ERDCS97270PET
+#PBS -q standard
+#PBS -l select=4:ncpus=36:mpiprocs=36
+#PBS -l walltime=10:00:10
+#PBS -j oe
+
+# PBS -l select=N1:ncpus=36:mpiprocs=N2
+# The value of ncpus refers to the number of physical cores available on each node. Standard compute nodes on Topaz will require ncpus=36.
+
+# GPU nodes will require ncpus=28, plus the extra argument of ngpus=1:
+# PBS -l select=N1:ncpus=28:mpiprocs=N2:ngpus=1
+
+# Large-memory nodes will require ncpus=32 plus the extra argument of bigmem=1:
+# PBS -l select=N1:ncpus=32:mpiprocs=N2:bigmem=1
+
+# An exception to this rule is the transfer queue, which uses the directive below:
+
+# PBS -l select=1:ncpus=1
+
+# debug, standard, and background
+
+uid=$(whoami)
+echo 'Welcome' $uid 'to gnu_topaz.pbs'
+
+export myProject='~/github/fortran/mpi/mpi_examples/erdc/pi/bravo/gnutopaz/'
+echo $myProject
+cd $myProject
+module switch compiler/intel compiler/gcc
+make clean
+make
+rm -f *.o *.temp *.mod *.smod
+
+## Execution Block ----------------------------------------------
+# Environment Setup
+# cd to your scratch directory in /work
+cd ${WORKDIR}
+
+# create a job-specific subdirectory based on JOBID and cd to it
+JOBID=`echo ${PBS_JOBID} | cut -d '.' -f 1`
+if [ ! -d ${JOBID} ]; then
+  mkdir -p ${JOBID}
+fi
+cd ${JOBID}
+
+## Launching -----------------------------------------------------
+# copy executable from $HOME and submit it
+cp ${myProject}/constant_precision .
+
+# The following two lines provide an example of setting up and running
+# a CRAY MPICH parallel code built with the CRAY compiler.
+rm -f pi_topaz_gnu.txt
+mpiexec_mpt -n   2 ./constant_precision > out.dat
+mpiexec_mpt -n   4 ./constant_precision > out.dat
+mpiexec_mpt -n   8 ./constant_precision > out.dat
+mpiexec_mpt -n  16 ./constant_precision > out.dat
+mpiexec_mpt -n  32 ./constant_precision > out.dat
+mpiexec_mpt -n  64 ./constant_precision > out.dat
+mpiexec_mpt -n 128 ./constant_precision > out.dat
+
+## Clean up -----------------------------------------------------
+# Remove temporary files
+rm -f *.o *.temp *.mod *.smod
+
+# http://www.ors.hpc.mil/docs/topazPbsGuide.html
+

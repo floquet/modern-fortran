@@ -1,0 +1,28 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 304613.thunder-b01
+whoami root
+LOG /workspace/prologue/304613.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/304613.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 304613
+Start Prologue v2.5.3 Thu May 12 19:27:15 CDT 2016 
+r9i4n13: MemFree:        121926948 kB
+r9i4n14: MemFree:        116607188 kB
+End Prologue v2.5.3 Thu May 12 19:27:15 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 19: pearl_white: command not found
+jobStarter
+/p/home/dantopa/hpc/fortran/tools/test/stress/topaz
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_averager.o mod_averager.f08
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpif90: line 120: ifort: command not found
+make: *** [mod_averager.o] Error 127
+/var/spool/PBS/mom_priv/jobs/304613.thunder-b01.SC.user: line 43: mpiexec_mptmpiexec_mpt: command not found
+Start Epilogue v2.5.3 Thu May 12 19:27:16 CDT 2016 
+r9i4n13 max memory used for job 304613.thunder-b01 (in bytes): 40591360
+r9i4n14 max memory used for job 304613.thunder-b01 (in bytes): 34267136
+End Epilogue v2.5.3 Thu May 12 19:27:17 CDT 2016 

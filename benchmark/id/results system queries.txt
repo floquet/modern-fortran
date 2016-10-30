@@ -1,0 +1,20 @@
+
+Block II: System Queries.
+home directory    = /Users/rditldmt.
+working directory = /Users/rditldmt/Box Sync/fortran/benchmarks/id.
+date and time     = 2016-02-11  12:45:04  UCT-0600.
+
+numerical user ID of the current process            = 595980521
+numerical group ID of the current process           = 2011572450
+numerical process identifier of the current process = 6186
+
+compiler version   = GCC version 5.1.0.
+compiler options   = -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.9.4 -mtune=core2 -auxbase-strip mod_queries.o -g -Og -Wall -Wextra -Wconversion -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = dan-topas-pro-2.erdc.dren.mil.
+invocation command = ./a.out.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/ttys000.
+terminal device 6  = /dev/ttys000.
+
+universally unique identifier (UUID) = 2D9F4047-F6C1-4C76-AA57-26DDDCAF36B1.
+

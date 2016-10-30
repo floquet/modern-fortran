@@ -1,0 +1,32 @@
+Start Prologue v2.5.3 Fri May 13 11:01:06 CDT 2016 
+r10i0n10: MemFree:        124417420 kB
+r10i0n13: MemFree:        124439736 kB
+End Prologue v2.5.3 Fri May 13 11:01:07 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 25: pearl_white: command not found
+/p/home/dantopa/hpc/fortran/tools/test/stress/shared
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o cpu.o cpu.f08
+mpif90 -g -o cpu cpu.o mod_averager.o mod_file_handling.o mod_mpt_h.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o mod_timestamp.o
+/usr/bin/ld: cannot find mod_timer_CPU.o: No such file or directory
+/usr/bin/ld: cannot find mod_timestamp.o: No such file or directory
+collect2: error: ld returned 1 exit status
+make: *** [cpu] Error 1
+MPT: Launch error on r10i0n10.ib0.ice-x.erdc.hpc.mil
+./cpu: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 49494 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Fri May 13 11:01:10 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r10i0n10       0.04     0.05   117.00     0.04     7.19   125.81
+r10i0n13       0.02     0.02   117.00     0.02     7.15   125.81
+Memory summary:
+		min    0.02 GB
+		max    0.05 GB
+		ave    0.04 GB
+End Epilogue v2.5.3 Fri May 13 11:02:28 CDT 2016 

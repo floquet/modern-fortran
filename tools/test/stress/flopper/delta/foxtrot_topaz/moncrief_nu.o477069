@@ -1,0 +1,3228 @@
+Start Prologue v2.5.3 Sat Aug 27 11:46:46 CDT 2016 
+r24i1n5: MemFree:        124053132 kB
+End Prologue v2.5.3 Sat Aug 27 11:46:47 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 40: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 41: myprompt: command not found
+Sat Aug 27 11:46:47 CDT 2016
+    exec_vnode = (r24i1n5:ncpus=36)
+    estimated.exec_vnode = (r24i1n5:ncpus=36)
+
+* * * pbs_pulse begin * * *
+job type: PBS_BATCH
+host name: topaz01.ib0.ice-x.erdc.hpc.mil
+job name: {moncrief_nu}
+$SHELL from submission environment:  /bin/bash
+queue from which the job is executed: background
+absolute path of directory where qsub was executed: /p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtrot_topaz
+OpenMP threads per node: 1
+ensures that memory is assigned closest to the physical core where each MPI process is running: 
+number of cores per node: 36
+approximate maximum user-accessible memory per node (in integer MBytes): 121856
+MPI tasks allocated: 36
+nodes allocated: 1
+$PATH from submission environment: /usr/local/krb5/bin:/opt/pbs/13.1.0.160576/bin:/p/home/apps/sgi/mpt-2.12-sgi712r26/bin:/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.187/bin/intel64:/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.187/debugger/gdb/intel64/bin:/p/home/apps/java/1.8/bin:/usr/diags/mfg/local/diags/bin:/usr/diags/mfg/local/bin:/usr/diags/mfg/tools:/usr/diags/mfg/scripts:/usr/diags/mfg/jobs.submit:/usr/diags/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/lib64/mpi/gcc/openmpi/bin:/p/home/dantopa/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/usr/games:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/pbs/SLB:/app/unsupported/local/bin:/app/unsupported/local/fta/bin
+file of vnodes assigned to the job: /var/spool/PBS/aux/477069.topaz10
+list of vnodes assigned to the job: 
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+r24i1n5.ib0.ice-x.erdc.hpc.mil
+* * * pbs_pulse end * * *
+
+Job Id: 477069.topaz10
+    Job_Name = moncrief_nu
+    Job_Owner = dantopa@topaz01.ib0.ice-x.erdc.hpc.mil
+    resources_used.cpupercent = 0
+    resources_used.cput = 00:00:00
+    resources_used.mem = 1448kb
+    resources_used.ncpus = 36
+    resources_used.vmem = 12784kb
+    resources_used.walltime = 00:00:02
+    job_state = R
+    queue = background
+    server = topaz10
+    Account_Name = ERDCS97270PET
+    Checkpoint = u
+    ctime = Mon Aug 15 14:54:21 2016
+    Error_Path = topaz01.ib0.ice-x.erdc.hpc.mil:/p/home/dantopa/hpc/fortran/too
+	ls/test/stress/flopper/delta/foxtrot_topaz/moncrief_nu.e477069
+    exec_host = r24i1n5/0*36
+    exec_vnode = (r24i1n5:ncpus=36)
+    Hold_Types = n
+    Join_Path = oe
+    Keep_Files = n
+    Mail_Points = n
+    mtime = Sat Aug 27 11:46:47 2016
+    Output_Path = topaz01.ib0.ice-x.erdc.hpc.mil:/p/home/dantopa/hpc/fortran/to
+	ols/test/stress/flopper/delta/foxtrot_topaz/moncrief_nu.o477069
+    Priority = 0
+    qtime = Mon Aug 15 14:54:21 2016
+    Rerunable = False
+    Resource_List.application = OMIT_
+    Resource_List.bias = 0
+    Resource_List.mpiprocs = 36
+    Resource_List.ncpus = 36
+    Resource_List.nodect = 1
+    Resource_List.paws = 0
+    Resource_List.place = scatter
+    Resource_List.select = 1:ncpus=36:mpiprocs=36:vnode=r24i1n5
+    Resource_List.walltime = 04:00:00
+    stime = Sat Aug 27 11:46:46 2016
+    session_id = 33474
+    jobdir = /p/home/dantopa
+    substate = 42
+    Variable_List = I_MPI_CC=icc,ARCHIVE_HOST=gold.erdc.hpc.mil,
+	time_day_shrink=-l min_walltime=00:30:00 -l max_walltime=24:00:00 -l w
+	alltime=24:00:00,
+	TBBROOT=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.
+	187/tbb,
+	fortran_compiler_flags_mpi_gnu=-g -ffpe-trap=denormal -fbacktrace -Wal
+	l -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedu
+	re -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fm
+	ax-errors=5,results=/p/home/dantopa/results/atoms,JOBID=not_PBS,
+	megordon=dantopa@gordon.navydsrc.hpc.mil,
+	time_week=-l walltime=168:00:00,PBS_O_LANG=en_US.UTF-8,
+	wdmersenne=/p/work1/dantopa/mersenne,XCURSOR_THEME=crystalwhite,
+	melightning=dantopa@lightning.afrl.hpc.mil,KRB5HOME=/usr/local/krb5,
+	SHELL=/bin/bash,
+	MIC_LD_LIBRARY_PATH=/p/home/apps/intel/parallel_studio_2015_u3/compose
+	r_xe_2015.3.187/ipp/lib/mic:/p/home/apps/intel/parallel_studio_2015_u3/
+	composer_xe_2015.3.187/tbb/lib/mic:/p/home/apps/intel/parallel_studio_2
+	015_u3/composer_xe_2015.3.187/mkl/lib/mic:/p/home/apps/intel/parallel_s
+	tudio_2015_u3/composer_xe_2015.3.187/mpirt/lib/mic:/p/home/apps/intel/p
+	arallel_studio_2015_u3/composer_xe_2015.3.187/compiler/lib/mic,
+	bash_file=.bash_profile,
+	XDG_DATA_DIRS=/usr/share:/etc/opt/kde3/share:/opt/kde3/share,
+	LESS=-M -I,meuserdc=dantopa@us.erdc.hpc.mil,HISTSIZE=1000,
+	fortran=/p/home/dantopa/hpc/fortran/,CSI_HOME=/app,
+	LESS_ADVANCED_PREPROCESSOR=no,
+	MANPATH=/usr/local/krb5/share/man:/opt/pbs/13.1.0.160576/man:/p/home/a
+	pps/sgi/mpt-2.12-sgi712r26/man:/p/home/apps/intel/parallel_studio_2015_
+	u3/composer_xe_2015.3.187/debugger/gdb/intel64/share/man:/p/home/apps/i
+	ntel/parallel_studio_2015_u3/composer_xe_2015.3.187/man/en_US:/p/home/a
+	pps/java/1.8/man:/usr/lib64/mpi/gcc/openmpi/share/man:/p/home/dantopa/m
+	an:/usr/local/man:/usr/local/share/man:/usr/share/man:/opt/c3/man:/opt/
+	sgi/share/man:/app/unsupported/local/man:/app/unsupported/local/fta/man
+	:/usr/share/catman:/usr/catman:/usr/man,
+	fortran_execute_mpi=mpiexec_mpt,JAVA_HOME=/p/home/apps/java/1.8,
+	PROFILEREAD=true,fortran_compiler_caf=caf,
+	fortran_compiler_gnu=gfortran,mespirit=dantopa@spirit.afrl.hpc.mil,
+	ARCHIVE_HOME=/erdc1/dantopa,
+	FPATH=/p/home/apps/sgi/mpt-2.12-sgi712r26/include,MPIF90_F90=ifort,
+	MPSCP_BLOCKED_FILE=/app/unsupported/local/etc/mpscp_blocked_ports,
+	meusors=dantopa@us.ors.hpc.mil,SDK_HOME=/usr/lib64/jvm/java,
+	MKLROOT=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.
+	187/mkl,CXX=icpc,HOSTNAME=topaz01.erdc.hpc.mil,MPI_FASTSTART=0,
+	host_name=topaz,MAIL=/var/mail/dantopa,MACHTYPE=x86_64-suse-linux,
+	gflags=-g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversio
+	n-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wus
+	e-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5,
+	JAVA_ROOT=/p/home/apps/java/1.8,MINICOM=-c on,OSCAR_HOME=/opt/oscar,
+	metopaz=dantopa@topaz.erdc.hpc.mil,LESSOPEN=lessopen.sh %s,
+	PBS_O_LOGNAME=dantopa,
+	CPATH=/p/home/apps/sgi/mpt-2.12-sgi712r26/include:/p/home/apps/intel/p
+	arallel_studio_2015_u3/composer_xe_2015.3.187/ipp/include:/p/home/apps/
+	intel/parallel_studio_2015_u3/composer_xe_2015.3.187/tbb/include:/p/hom
+	e/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.187/mkl/include
+	,USER=dantopa,INPUTRC=/etc/inputrc,
+	PS1=\\[\\033[00;35m\\]\\u\\[\\033[00m\\]@\\[\\033[00;35m\\]\\H\\[\\033
+	[00m\\]:\\[\\033[00;33m\\]\\W\\[\\033[00m\\] $\\033[00;36m,
+	I_MPI_F77=ifort,PET_HOME=/app/unsupported/PETtools/CE,
+	fortran_compiler_flags_gnu=-g -ffpe-trap=denormal -fbacktrace -Wall -W
+	aliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -
+	Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-e
+	rrors=5,_MODULESBEGINENV_=/p/home/dantopa/.modulesbeginenv,
+	JDK_HOME=/usr/lib64/jvm/java,LANGUAGE=en_US.UTF-8,SHLVL=1,
+	meriptide=dantopa@riptide.mhpcc.hpc.mil,LOADEDMODULE=,
+	fortran_compiler_flags_cray=-g -fbacktrace,
+	PBS_O_PATH=/usr/local/krb5/bin:/opt/pbs/13.1.0.160576/bin:/p/home/apps
+	/sgi/mpt-2.12-sgi712r26/bin:/p/home/apps/intel/parallel_studio_2015_u3/
+	composer_xe_2015.3.187/bin/intel64:/p/home/apps/intel/parallel_studio_2
+	015_u3/composer_xe_2015.3.187/debugger/gdb/intel64/bin:/p/home/apps/jav
+	a/1.8/bin:/usr/diags/mfg/local/diags/bin:/usr/diags/mfg/local/bin:/usr/
+	diags/mfg/tools:/usr/diags/mfg/scripts:/usr/diags/mfg/jobs.submit:/usr/
+	diags/bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/lib64/mpi/gcc/openmpi/bin:/p/
+	home/dantopa/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/b
+	in:/usr/games:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/pbs/SLB:/
+	app/unsupported/local/bin:/app/unsupported/local/fta/bin,
+	MODULESHOME=/p/home/apps/modules_dest/Modules/3.2.10,
+	wdhpc=/p/home/dantopa/hpc,JAVA_BINDIR=/p/home/apps/java/1.8/bin,
+	fortran_compiler_mpi_gnu=mpif90,
+	INFOPATH=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3
+	.187/debugger/gdb/intel64/share/info:/usr/local/info:/usr/share/info:/u
+	sr/info,DAAC_HOME=/app/DAAC,PBS_O_HOST=topaz01.ib0.ice-x.erdc.hpc.mil,
+	JAVA_PATH=/p/home/apps/java/1.8,ENV=/etc/bash.bashrc,
+	PROJECTS_HOME=/app/unsupported,mekilrain=dantopa@kilrain.navo.hpc.mil,
+	LS_OPTIONS=-N --color=none -T 0,
+	INCLUDE=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.
+	187/mkl/include/intel64/ilp64,XNLSPATH=/usr/share/X11/nls,
+	PBS_O_MAIL=/var/mail/dantopa,_=/opt/pbs/13.1.0.160576/bin/qsub,
+	MODULEPATH=/p/home/apps/modules_dest/Modules/versions:/p/home/apps/mod
+	ules_dest/Modules/$MODULE_VERSION/modulefiles:/p/home/apps/modules_dest
+	/Modules/modulefiles:/p/home/apps/modulefiles/devel:/p/home/apps/module
+	files/modulefiles:/p/home/apps/modulefiles/apps:/p/home/apps/modulefile
+	s/unsupported:/p/home/apps/test/modules,BC_HOST=topaz,
+	SSH_CONNECTION=134.164.40.45 60349 140.31.13.242 22,
+	XDG_CONFIG_DIRS=/etc/xdg,I_MPI_CXX=icpc,JAVA_VERSION=1.8,
+	KRB5_HOME=/usr/local/krb5,WINDOWMANAGER=/usr/bin/gnome,BC_NODE_ALLOC=1,
+	MPSCP_PORTS=tcp[9000-9999],COLORTERM=1,
+	_LMFILES_=/p/home/apps/modulefiles/apps/java/1.8:/p/home/apps/modulefi
+	les/devel/compiler/intel/15.0.3:/p/home/apps/modulefiles/devel/mpi/sgim
+	pt/2.12-11218:/p/home/apps/modulefiles/modulefiles/pbs/13.1.0.160576,
+	PAGER=less,ACCOUNT=ERDCS97270PET,MODULE_VERSION=3.2.10,
+	INTEL_LICENSE_FILE=/p/home/apps/intel/parallel_studio_2015_u3/server.l
+	ic,meusnavo=dantopa@us.navo.hpc.mil,ncpus=36,
+	QT_SYSTEM_DIR=/usr/share/desktop-data,I_MPI_F90=ifort,
+	IPPROOT=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.
+	187/ipp,mecopper=dantopa@copper.ors.hpc.mil,HOME=/p/home/dantopa,
+	time_week_shrink=-l min_walltime=000:30:00 -l max_walltime=168:00:00 -
+	l walltime=168:00:00,melynx=dantopa@lynx.ors.hpc.mil,
+	LD_LIBRARY_PATH=/p/home/apps/sgi/mpt-2.12-sgi712r26/lib:/p/home/apps/i
+	ntel/parallel_studio_2015_u3/composer_xe_2015.3.187/ipp/lib/intel64:/p/
+	home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.187/tbb/lib/
+	intel64/gcc4.1:/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2
+	015.3.187/mkl/lib/intel64:/p/home/apps/intel/parallel_studio_2015_u3/co
+	mposer_xe_2015.3.187/compiler/lib/mic:/p/home/apps/intel/parallel_studi
+	o_2015_u3/composer_xe_2015.3.187/mpirt/lib/intel64:/p/home/apps/intel/p
+	arallel_studio_2015_u3/composer_xe_2015.3.187/compiler/lib/intel64:/usr
+	/lib64/mpi/gcc/openmpi/lib64,LANG=en_US.UTF-8,
+	BASH_FUNC_module%%=() {  eval `/p/home/apps/modules_dest/Modules/$MODU
+	LE_VERSION/bin/modulecmd bash $*`; },
+	fortran_compiler_flags_caf=-g -ffpe-trap=denormal -fbacktrace -Wall -W
+	aliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -
+	Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-e
+	rrors=5 -fcoarray=lib,
+	NLSPATH=/p/home/apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.
+	187/ipp/lib/intel64/locale/en_US/%N:/p/home/apps/intel/parallel_studio_
+	2015_u3/composer_xe_2015.3.187/mkl/lib/intel64/locale/en_US/%N:/p/home/
+	apps/intel/parallel_studio_2015_u3/composer_xe_2015.3.187/compiler/lib/
+	intel64/locale/en_US/%N,G_BROKEN_FILENAMES=1,
+	SAMPLES_HOME=/usr/local/cac/Example_Codes,F90=ifort,
+	PBS_O_WORKDIR=/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/de
+	lta/foxtrot_topaz,TMPDIR=/p/work1/dantopa,
+	cflags=-g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversio
+	n-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wus
+	e-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -fcoarray=li
+	b,OSTYPE=linux,myPrime=/p/home/dantopa/hpc/bash/mprime,
+	methunder=dantopa@thunder.afrl.hpc.mil,
+	C3_RSH=ssh -oConnectTimeout=10 -oForwardX11=no,
+	crayflags=-g -fbacktrace,PBS_O_SYSTEM=Linux,BC_MPI_TASKS_ALLOC=36,
+	BC_CORES_PER_NODE=36,CC=icc,NNTPSERVER=news,
+	INTEL_PYTHONHOME=/p/home/apps/intel/parallel_studio_2015_u3/composer_x
+	e_2015.3.187/debugger/python/intel64,CSHEDIT=emacs,
+	G_FILENAME_ENCODING=@locale\,UTF-8\,ISO-8859-15\,CP1252,
+	mepredator=dantopa@predator.afrl.hpc.mil,HOST=topaz01.erdc.hpc.mil,
+	MPT_VERSION=2.12,LIBRARY_PATH=/p/home/apps/sgi/mpt-2.12-sgi712r26/lib,
+	myBash=/p/home/dantopa/hpc/bash,
+	meconrad=dantopa@conrad.navydsrc.hpc.mil,F77=ifort,
+	account=ERDCS97270PET,FROM_HEADER=,LESSCLOSE=lessclose.sh %s %s,
+	SSH_TTY=/dev/pts/1,meshepard=dantopa@shepard.navydsrc.hpc.mil,
+	MPSCP_CONFIG_FILENAME=/app/unsupported/local/etc/mpscp_config.topaz01,
+	CVS_RSH=ssh,FTAINFOFILE=/app/unsupported/local/fta/etc/ftainfo,
+	MPICXX_CXX=icpc,time_day=-l walltime=24:00:00,
+	JRE_HOME=/p/home/apps/java/1.8/jre,XKEYSYMDB=/usr/share/X11/XKeysymDB,
+	mpiprocs=36,meusafrl=dantopa@us.afrl.hpc.mil,uid=dantopa,
+	meusarl=dantopa@us.arl.hpc.mil,vol=/p/home/dantopa/,
+	PBS_O_HOME=/p/home/dantopa,mehaise=dantopa@haise.navo.hpc.mil,
+	HOSTTYPE=x86_64,SSH_CLIENT=134.164.40.45 60349 22,LOGNAME=dantopa,
+	BC_MEM_PER_NODE=121856,
+	PATH=/usr/local/krb5/bin:/opt/pbs/13.1.0.160576/bin:/p/home/apps/sgi/m
+	pt-2.12-sgi712r26/bin:/p/home/apps/intel/parallel_studio_2015_u3/compos
+	er_xe_2015.3.187/bin/intel64:/p/home/apps/intel/parallel_studio_2015_u3
+	/composer_xe_2015.3.187/debugger/gdb/intel64/bin:/p/home/apps/java/1.8/
+	bin:/usr/diags/mfg/local/diags/bin:/usr/diags/mfg/local/bin:/usr/diags/
+	mfg/tools:/usr/diags/mfg/scripts:/usr/diags/mfg/jobs.submit:/usr/diags/
+	bin:/opt/sgi/sbin:/opt/sgi/bin:/usr/lib64/mpi/gcc/openmpi/bin:/p/home/d
+	antopa/bin:/usr/local/bin:/usr/bin:/bin:/usr/bin/X11:/usr/X11R6/bin:/us
+	r/games:/opt/c3/bin:/usr/lib/mit/bin:/usr/lib/mit/sbin:/pbs/SLB:/app/un
+	supported/local/bin:/app/unsupported/local/fta/bin,
+	fortran_execute_caf=cafrun,PETTT_HOME=/app/unsupported/PETtools/CE,
+	mearmstrong=dantopa@armstrong.navydsrc.hpc.mil,MORE=-sl,
+	TERM=xterm-256color,meleo=dantopa@leo.ors.hpc.mil,
+	myGit=/p/home/dantopa/hpc/,meusmhpcc=dantopa@us.mhpcc.hpc.mil,
+	MPICC_CC=icc,fortran_compiler_mpi_cray=ftn,
+	COST_HOME=/app/unsupported/COST,MODULE_VERSION_STACK=3.2.10,
+	megarnet=dantopa@garnet.erdc.hpc.mil,
+	INFODIR=/usr/local/info:/usr/share/info:/usr/info,
+	PBS_O_SHELL=/bin/bash,CPU=x86_64,I_MPI_FC=ifort,
+	MPI_ROOT=/p/home/apps/sgi/mpt-2.12-sgi712r26,KRB5CCNAME=PIPE:1023,
+	dir_mersenne=/p/home/dantopa/hpc/cpu_characterization/hpc/topaz,
+	LESSKEY=/etc/lesskey.bin,fortran_execute_cray=aprun,
+	WORKDIR2=/p/work2/dantopa,CENTER=/p/cwfs/dantopa,
+	WORKDIR=/p/work1/dantopa,DISPLAY=140.31.13.242:12.0,
+	PYTHONSTARTUP=/etc/pythonstart,
+	OLDPWD=/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta,
+	LOADEDMODULES=java/1.8:compiler/intel/15.0.3:mpi/sgimpt/2.12-11218:pbs
+	/13.1.0.160576,
+	LS_COLORS=no=00:fi=00:di=01;34:ln=00;36:pi=40;33:so=01;35:do=01;35:bd=
+	40;33;01:cd=40;33;01:or=41;33;01:ex=00;32:*.cmd=00;32:*.exe=01;32:*.com
+	=01;32:*.bat=01;32:*.btm=01;32:*.dll=01;32:*.tar=00;31:*.tbz=00;31:*.tg
+	z=00;31:*.rpm=00;31:*.deb=00;31:*.arj=00;31:*.taz=00;31:*.lzh=00;31:*.l
+	zma=00;31:*.zip=00;31:*.zoo=00;31:*.z=00;31:*.Z=00;31:*.gz=00;31:*.bz2=
+	00;31:*.tb2=00;31:*.tz2=00;31:*.tbz2=00;31:*.avi=01;35:*.bmp=01;35:*.fl
+	i=01;35:*.gif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mng=01;35:*.mov=01;35:*.
+	mpg=01;35:*.pcx=01;35:*.pbm=01;35:*.pgm=01;35:*.png=01;35:*.ppm=01;35:*
+	.tga=01;35:*.tif=01;35:*.xbm=01;35:*.xpm=01;35:*.dl=01;35:*.gl=01;35:*.
+	wmv=01;35:*.aiff=00;32:*.au=00;32:*.mid=00;32:*.mp3=00;32:*.ogg=00;32:*
+	.voc=00;32:*.wav=00;32:,PBS_O_QUEUE=background,
+	PWD=/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtro
+	t_topaz,meexcalibur=dantopa@excalibur.arl.hpc.mil
+    comment = Job run at Sat Aug 27 at 11:46 on (r24i1n5:ncpus=36)
+    etime = Mon Aug 15 14:54:21 2016
+    run_count = 1
+    eligible_time = 284:51:55
+    Submit_arguments = moncrief_nu
+    pset = switch=r24i1s0
+    estimated.exec_vnode = (r24i1n5:ncpus=36)
+    estimated.start_time = Sat Sep  3 17:00:00 2016
+    project = _pbs_project_default
+
+processor	: 0
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 0
+cpu cores	: 18
+apicid		: 0
+initial apicid	: 0
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 1
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 1
+cpu cores	: 18
+apicid		: 2
+initial apicid	: 2
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 2
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 2
+cpu cores	: 18
+apicid		: 4
+initial apicid	: 4
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 3
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 3
+cpu cores	: 18
+apicid		: 6
+initial apicid	: 6
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 4
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 4
+cpu cores	: 18
+apicid		: 8
+initial apicid	: 8
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 5
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 8
+cpu cores	: 18
+apicid		: 16
+initial apicid	: 16
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 6
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 9
+cpu cores	: 18
+apicid		: 18
+initial apicid	: 18
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 7
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 10
+cpu cores	: 18
+apicid		: 20
+initial apicid	: 20
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 8
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 11
+cpu cores	: 18
+apicid		: 22
+initial apicid	: 22
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 9
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 16
+cpu cores	: 18
+apicid		: 32
+initial apicid	: 32
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 10
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 17
+cpu cores	: 18
+apicid		: 34
+initial apicid	: 34
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 11
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 18
+cpu cores	: 18
+apicid		: 36
+initial apicid	: 36
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 12
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 19
+cpu cores	: 18
+apicid		: 38
+initial apicid	: 38
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 13
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 20
+cpu cores	: 18
+apicid		: 40
+initial apicid	: 40
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 14
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 24
+cpu cores	: 18
+apicid		: 48
+initial apicid	: 48
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 15
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 25
+cpu cores	: 18
+apicid		: 50
+initial apicid	: 50
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 16
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 26
+cpu cores	: 18
+apicid		: 52
+initial apicid	: 52
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 17
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 27
+cpu cores	: 18
+apicid		: 54
+initial apicid	: 54
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 18
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 0
+cpu cores	: 18
+apicid		: 64
+initial apicid	: 64
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 19
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 1
+cpu cores	: 18
+apicid		: 66
+initial apicid	: 66
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 20
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 2
+cpu cores	: 18
+apicid		: 68
+initial apicid	: 68
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 21
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 3
+cpu cores	: 18
+apicid		: 70
+initial apicid	: 70
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 22
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 4
+cpu cores	: 18
+apicid		: 72
+initial apicid	: 72
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 23
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 8
+cpu cores	: 18
+apicid		: 80
+initial apicid	: 80
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 24
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 9
+cpu cores	: 18
+apicid		: 82
+initial apicid	: 82
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 25
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 10
+cpu cores	: 18
+apicid		: 84
+initial apicid	: 84
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 26
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 11
+cpu cores	: 18
+apicid		: 86
+initial apicid	: 86
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 27
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 16
+cpu cores	: 18
+apicid		: 96
+initial apicid	: 96
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 28
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 17
+cpu cores	: 18
+apicid		: 98
+initial apicid	: 98
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 29
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 18
+cpu cores	: 18
+apicid		: 100
+initial apicid	: 100
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 30
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 19
+cpu cores	: 18
+apicid		: 102
+initial apicid	: 102
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 31
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 20
+cpu cores	: 18
+apicid		: 104
+initial apicid	: 104
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 32
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 24
+cpu cores	: 18
+apicid		: 112
+initial apicid	: 112
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 33
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 25
+cpu cores	: 18
+apicid		: 114
+initial apicid	: 114
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 34
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 26
+cpu cores	: 18
+apicid		: 116
+initial apicid	: 116
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 35
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 27
+cpu cores	: 18
+apicid		: 118
+initial apicid	: 118
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 36
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 0
+cpu cores	: 18
+apicid		: 1
+initial apicid	: 1
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 37
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 1
+cpu cores	: 18
+apicid		: 3
+initial apicid	: 3
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 38
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 2
+cpu cores	: 18
+apicid		: 5
+initial apicid	: 5
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 39
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 3
+cpu cores	: 18
+apicid		: 7
+initial apicid	: 7
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 40
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 4
+cpu cores	: 18
+apicid		: 9
+initial apicid	: 9
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 41
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 8
+cpu cores	: 18
+apicid		: 17
+initial apicid	: 17
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 42
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 9
+cpu cores	: 18
+apicid		: 19
+initial apicid	: 19
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 43
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 10
+cpu cores	: 18
+apicid		: 21
+initial apicid	: 21
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 44
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 11
+cpu cores	: 18
+apicid		: 23
+initial apicid	: 23
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 45
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 16
+cpu cores	: 18
+apicid		: 33
+initial apicid	: 33
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 46
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 17
+cpu cores	: 18
+apicid		: 35
+initial apicid	: 35
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 47
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 18
+cpu cores	: 18
+apicid		: 37
+initial apicid	: 37
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 48
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 19
+cpu cores	: 18
+apicid		: 39
+initial apicid	: 39
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 49
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 20
+cpu cores	: 18
+apicid		: 41
+initial apicid	: 41
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 50
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 24
+cpu cores	: 18
+apicid		: 49
+initial apicid	: 49
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 51
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 25
+cpu cores	: 18
+apicid		: 51
+initial apicid	: 51
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 52
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 26
+cpu cores	: 18
+apicid		: 53
+initial apicid	: 53
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 53
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 0
+siblings	: 36
+core id		: 27
+cpu cores	: 18
+apicid		: 55
+initial apicid	: 55
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.77
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 54
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 0
+cpu cores	: 18
+apicid		: 65
+initial apicid	: 65
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 55
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 1
+cpu cores	: 18
+apicid		: 67
+initial apicid	: 67
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 56
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 2
+cpu cores	: 18
+apicid		: 69
+initial apicid	: 69
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 57
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 3
+cpu cores	: 18
+apicid		: 71
+initial apicid	: 71
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 58
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 4
+cpu cores	: 18
+apicid		: 73
+initial apicid	: 73
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 59
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 8
+cpu cores	: 18
+apicid		: 81
+initial apicid	: 81
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 60
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 9
+cpu cores	: 18
+apicid		: 83
+initial apicid	: 83
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 61
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 10
+cpu cores	: 18
+apicid		: 85
+initial apicid	: 85
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 62
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 11
+cpu cores	: 18
+apicid		: 87
+initial apicid	: 87
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 63
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 16
+cpu cores	: 18
+apicid		: 97
+initial apicid	: 97
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 64
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 17
+cpu cores	: 18
+apicid		: 99
+initial apicid	: 99
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 65
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 18
+cpu cores	: 18
+apicid		: 101
+initial apicid	: 101
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 66
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 19
+cpu cores	: 18
+apicid		: 103
+initial apicid	: 103
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 67
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 20
+cpu cores	: 18
+apicid		: 105
+initial apicid	: 105
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 68
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 24
+cpu cores	: 18
+apicid		: 113
+initial apicid	: 113
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 69
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 25
+cpu cores	: 18
+apicid		: 115
+initial apicid	: 115
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 70
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 26
+cpu cores	: 18
+apicid		: 117
+initial apicid	: 117
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+processor	: 71
+vendor_id	: GenuineIntel
+cpu family	: 6
+model		: 63
+model name	: Intel(R) Xeon(R) CPU E5-2699 v3 @ 2.30GHz
+stepping	: 2
+microcode	: 54
+cpu MHz		: 2301.000
+cache size	: 23040 KB
+physical id	: 1
+siblings	: 36
+core id		: 27
+cpu cores	: 18
+apicid		: 119
+initial apicid	: 119
+fpu		: yes
+fpu_exception	: yes
+cpuid level	: 15
+wp		: yes
+flags		: fpu vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp lm constant_tsc arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 fma cx16 xtpr pdcm pcid dca sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm ida arat epb xsaveopt pln pts dtherm tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 avx2 smep bmi2 erms invpcid
+bogomips	: 4599.89
+clflush size	: 64
+cache_alignment	: 64
+address sizes	: 46 bits physical, 48 bits virtual
+power management:
+
+MemTotal:       131926360 kB
+MemFree:        124052508 kB
+Buffers:               0 kB
+Cached:          2755064 kB
+SwapCached:            0 kB
+Active:           122020 kB
+Inactive:        2737508 kB
+Active(anon):     121708 kB
+Inactive(anon):  2736988 kB
+Active(file):        312 kB
+Inactive(file):      520 kB
+Unevictable:        3276 kB
+Mlocked:            3276 kB
+SwapTotal:             0 kB
+SwapFree:              0 kB
+Dirty:                40 kB
+Writeback:             0 kB
+AnonPages:        102396 kB
+Mapped:            11704 kB
+Shmem:           2754228 kB
+Slab:            1349660 kB
+SReclaimable:     110636 kB
+SUnreclaim:      1239024 kB
+KernelStack:        8592 kB
+PageTables:         5836 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:    65963180 kB
+Committed_AS:    2976168 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:     2524076 kB
+VmallocChunk:   34256485076 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:     12288 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+DirectMap4k:      192512 kB
+DirectMap2M:     7081984 kB
+DirectMap1G:    126877696 kB
+/p/home/dantopa/hpc/fortran/tools/test/stress/flopper/delta/foxtrot_topaz
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_harvest_blade.o mod_harvest_blade.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_clock.o mod_timer_clock.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_test_suite.o mod_test_suite.f08
+mpif90  -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o flops.o flops.f08
+mpif.h:464:15:
+
+Warning: GNU Extension: Nonstandard type declaration INTEGER*8 at (1)
+mpif.h:729:1:
+
+Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:730:1:
+
+Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:732:1:
+
+Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:733:1:
+
+Warning: Nonconforming tab character at (1) [-Wtabs]
+mpif.h:598:37:
+
+Warning: Unused parameter ‘mpi_2double_precision’ declared at (1) [-Wunused-parameter]
+mpif.h:498:24:
+
+Warning: Unused parameter ‘mpi_2int’ declared at (1) [-Wunused-parameter]
+mpif.h:520:28:
+
+Warning: Unused parameter ‘mpi_2integer’ declared at (1) [-Wunused-parameter]
+mpif.h:519:25:
+
+Warning: Unused parameter ‘mpi_2real’ declared at (1) [-Wunused-parameter]
+mpif.h:308:32:
+
+Warning: Unused parameter ‘mpi_address_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:525:24:
+
+Warning: Unused parameter ‘mpi_aint’ declared at (1) [-Wunused-parameter]
+mpif.h:274:30:
+
+Warning: Unused parameter ‘mpi_any_source’ declared at (1) [-Wunused-parameter]
+mpif.h:280:27:
+
+Warning: Unused parameter ‘mpi_any_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:212:26:
+
+Warning: Unused parameter ‘mpi_appnum’ declared at (1) [-Wunused-parameter]
+mpif.h:16:46:
+
+Warning: Unused parameter ‘mpi_async_protects_nonblocking’ declared at (1) [-Wunused-parameter]
+mpif.h:539:24:
+
+Warning: Unused parameter ‘mpi_band’ declared at (1) [-Wunused-parameter]
+mpif.h:541:23:
+
+Warning: Unused parameter ‘mpi_bor’ declared at (1) [-Wunused-parameter]
+mpif.h:265:34:
+
+Warning: Unused parameter ‘mpi_bsend_overhead’ declared at (1) [-Wunused-parameter]
+mpif.h:543:24:
+
+Warning: Unused parameter ‘mpi_bxor’ declared at (1) [-Wunused-parameter]
+mpif.h:509:24:
+
+Warning: Unused parameter ‘mpi_byte’ declared at (1) [-Wunused-parameter]
+mpif.h:618:26:
+
+Warning: Unused parameter ‘mpi_c_bool’ declared at (1) [-Wunused-parameter]
+mpif.h:620:29:
+
+Warning: Unused parameter ‘mpi_c_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:621:36:
+
+Warning: Unused parameter ‘mpi_c_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:619:35:
+
+Warning: Unused parameter ‘mpi_c_float_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:622:41:
+
+Warning: Unused parameter ‘mpi_c_long_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:239:24:
+
+Warning: Unused parameter ‘mpi_cart’ declared at (1) [-Wunused-parameter]
+mpif.h:569:24:
+
+Warning: Unused parameter ‘mpi_char’ declared at (1) [-Wunused-parameter]
+mpif.h:589:29:
+
+Warning: Unused parameter ‘mpi_character’ declared at (1) [-Wunused-parameter]
+mpif.h:348:39:
+
+Warning: Unused parameter ‘mpi_combiner_contiguous’ declared at (1) [-Wunused-parameter]
+mpif.h:354:35:
+
+Warning: Unused parameter ‘mpi_combiner_darray’ declared at (1) [-Wunused-parameter]
+mpif.h:355:32:
+
+Warning: Unused parameter ‘mpi_combiner_dup’ declared at (1) [-Wunused-parameter]
+mpif.h:356:40:
+
+Warning: Unused parameter ‘mpi_combiner_f90_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:357:40:
+
+Warning: Unused parameter ‘mpi_combiner_f90_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:358:37:
+
+Warning: Unused parameter ‘mpi_combiner_f90_real’ declared at (1) [-Wunused-parameter]
+mpif.h:352:37:
+
+Warning: Unused parameter ‘mpi_combiner_hindexed’ declared at (1) [-Wunused-parameter]
+mpif.h:365:43:
+
+Warning: Unused parameter ‘mpi_combiner_hindexed_block’ declared at (1) [-Wunused-parameter]
+mpif.h:359:45:
+
+Warning: Unused parameter ‘mpi_combiner_hindexed_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:350:36:
+
+Warning: Unused parameter ‘mpi_combiner_hvector’ declared at (1) [-Wunused-parameter]
+mpif.h:360:44:
+
+Warning: Unused parameter ‘mpi_combiner_hvector_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:351:36:
+
+Warning: Unused parameter ‘mpi_combiner_indexed’ declared at (1) [-Wunused-parameter]
+mpif.h:361:42:
+
+Warning: Unused parameter ‘mpi_combiner_indexed_block’ declared at (1) [-Wunused-parameter]
+mpif.h:347:34:
+
+Warning: Unused parameter ‘mpi_combiner_named’ declared at (1) [-Wunused-parameter]
+mpif.h:362:36:
+
+Warning: Unused parameter ‘mpi_combiner_resized’ declared at (1) [-Wunused-parameter]
+mpif.h:353:35:
+
+Warning: Unused parameter ‘mpi_combiner_struct’ declared at (1) [-Wunused-parameter]
+mpif.h:363:43:
+
+Warning: Unused parameter ‘mpi_combiner_struct_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:364:37:
+
+Warning: Unused parameter ‘mpi_combiner_subarray’ declared at (1) [-Wunused-parameter]
+mpif.h:349:35:
+
+Warning: Unused parameter ‘mpi_combiner_vector’ declared at (1) [-Wunused-parameter]
+mpif.h:687:29:
+
+Warning: Unused parameter ‘mpi_comm_null’ declared at (1) [-Wunused-parameter]
+mpif.h:689:29:
+
+Warning: Unused parameter ‘mpi_comm_self’ declared at (1) [-Wunused-parameter]
+mpif.h:413:36:
+
+Warning: Unused parameter ‘mpi_comm_type_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:586:27:
+
+Warning: Unused parameter ‘mpi_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:606:29:
+
+Warning: Unused parameter ‘mpi_complex16’ declared at (1) [-Wunused-parameter]
+mpif.h:607:29:
+
+Warning: Unused parameter ‘mpi_complex32’ declared at (1) [-Wunused-parameter]
+mpif.h:605:28:
+
+Warning: Unused parameter ‘mpi_complex8’ declared at (1) [-Wunused-parameter]
+mpif.h:227:29:
+
+Warning: Unused parameter ‘mpi_congruent’ declared at (1) [-Wunused-parameter]
+mpif.h:624:25:
+
+Warning: Unused parameter ‘mpi_count’ declared at (1) [-Wunused-parameter]
+mpif.h:311:30:
+
+Warning: Unused parameter ‘mpi_count_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:567:33:
+
+Warning: Unused parameter ‘mpi_datatype_null’ declared at (1) [-Wunused-parameter]
+mpif.h:464:40:
+
+Warning: Unused parameter ‘mpi_displacement_current’ declared at (1) [-Wunused-parameter]
+mpif.h:240:30:
+
+Warning: Unused parameter ‘mpi_dist_graph’ declared at (1) [-Wunused-parameter]
+mpif.h:469:34:
+
+Warning: Unused parameter ‘mpi_distribute_block’ declared at (1) [-Wunused-parameter]
+mpif.h:469:57:
+
+Warning: Unused parameter ‘mpi_distribute_cyclic’ declared at (1) [-Wunused-parameter]
+mpif.h:470:59:
+
+Warning: Unused parameter ‘mpi_distribute_dflt_darg’ declared at (1) [-Wunused-parameter]
+mpif.h:470:33:
+
+Warning: Unused parameter ‘mpi_distribute_none’ declared at (1) [-Wunused-parameter]
+mpif.h:578:26:
+
+Warning: Unused parameter ‘mpi_double’ declared at (1) [-Wunused-parameter]
+mpif.h:587:34:
+
+Warning: Unused parameter ‘mpi_double_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:496:30:
+
+Warning: Unused parameter ‘mpi_double_int’ declared at (1) [-Wunused-parameter]
+mpif.h:585:36:
+
+Warning: Unused parameter ‘mpi_double_precision’ declared at (1) [-Wunused-parameter]
+mpif.h:95:30:
+
+Warning: Unused parameter ‘mpi_err_access’ declared at (1) [-Wunused-parameter]
+mpif.h:96:29:
+
+Warning: Unused parameter ‘mpi_err_amode’ declared at (1) [-Wunused-parameter]
+mpif.h:64:27:
+
+Warning: Unused parameter ‘mpi_err_arg’ declared at (1) [-Wunused-parameter]
+mpif.h:97:30:
+
+Warning: Unused parameter ‘mpi_err_assert’ declared at (1) [-Wunused-parameter]
+mpif.h:98:32:
+
+Warning: Unused parameter ‘mpi_err_bad_file’ declared at (1) [-Wunused-parameter]
+mpif.h:99:28:
+
+Warning: Unused parameter ‘mpi_err_base’ declared at (1) [-Wunused-parameter]
+mpif.h:52:30:
+
+Warning: Unused parameter ‘mpi_err_buffer’ declared at (1) [-Wunused-parameter]
+mpif.h:56:28:
+
+Warning: Unused parameter ‘mpi_err_comm’ declared at (1) [-Wunused-parameter]
+mpif.h:100:34:
+
+Warning: Unused parameter ‘mpi_err_conversion’ declared at (1) [-Wunused-parameter]
+mpif.h:53:29:
+
+Warning: Unused parameter ‘mpi_err_count’ declared at (1) [-Wunused-parameter]
+mpif.h:63:28:
+
+Warning: Unused parameter ‘mpi_err_dims’ declared at (1) [-Wunused-parameter]
+mpif.h:101:28:
+
+Warning: Unused parameter ‘mpi_err_disp’ declared at (1) [-Wunused-parameter]
+mpif.h:102:35:
+
+Warning: Unused parameter ‘mpi_err_dup_datarep’ declared at (1) [-Wunused-parameter]
+mpif.h:105:28:
+
+Warning: Unused parameter ‘mpi_err_file’ declared at (1) [-Wunused-parameter]
+mpif.h:103:35:
+
+Warning: Unused parameter ‘mpi_err_file_exists’ declared at (1) [-Wunused-parameter]
+mpif.h:104:35:
+
+Warning: Unused parameter ‘mpi_err_file_in_use’ declared at (1) [-Wunused-parameter]
+mpif.h:60:29:
+
+Warning: Unused parameter ‘mpi_err_group’ declared at (1) [-Wunused-parameter]
+mpif.h:69:33:
+
+Warning: Unused parameter ‘mpi_err_in_status’ declared at (1) [-Wunused-parameter]
+mpif.h:109:28:
+
+Warning: Unused parameter ‘mpi_err_info’ declared at (1) [-Wunused-parameter]
+mpif.h:106:32:
+
+Warning: Unused parameter ‘mpi_err_info_key’ declared at (1) [-Wunused-parameter]
+mpif.h:107:34:
+
+Warning: Unused parameter ‘mpi_err_info_nokey’ declared at (1) [-Wunused-parameter]
+mpif.h:108:34:
+
+Warning: Unused parameter ‘mpi_err_info_value’ declared at (1) [-Wunused-parameter]
+mpif.h:68:30:
+
+Warning: Unused parameter ‘mpi_err_intern’ declared at (1) [-Wunused-parameter]
+mpif.h:110:26:
+
+Warning: Unused parameter ‘mpi_err_io’ declared at (1) [-Wunused-parameter]
+mpif.h:111:30:
+
+Warning: Unused parameter ‘mpi_err_keyval’ declared at (1) [-Wunused-parameter]
+mpif.h:201:32:
+
+Warning: Unused parameter ‘mpi_err_lastcode’ declared at (1) [-Wunused-parameter]
+mpif.h:112:32:
+
+Warning: Unused parameter ‘mpi_err_locktype’ declared at (1) [-Wunused-parameter]
+mpif.h:113:28:
+
+Warning: Unused parameter ‘mpi_err_name’ declared at (1) [-Wunused-parameter]
+mpif.h:114:30:
+
+Warning: Unused parameter ‘mpi_err_no_mem’ declared at (1) [-Wunused-parameter]
+mpif.h:116:32:
+
+Warning: Unused parameter ‘mpi_err_no_space’ declared at (1) [-Wunused-parameter]
+mpif.h:117:36:
+
+Warning: Unused parameter ‘mpi_err_no_such_file’ declared at (1) [-Wunused-parameter]
+mpif.h:115:32:
+
+Warning: Unused parameter ‘mpi_err_not_same’ declared at (1) [-Wunused-parameter]
+mpif.h:61:26:
+
+Warning: Unused parameter ‘mpi_err_op’ declared at (1) [-Wunused-parameter]
+mpif.h:67:29:
+
+Warning: Unused parameter ‘mpi_err_other’ declared at (1) [-Wunused-parameter]
+mpif.h:70:31:
+
+Warning: Unused parameter ‘mpi_err_pending’ declared at (1) [-Wunused-parameter]
+mpif.h:118:28:
+
+Warning: Unused parameter ‘mpi_err_port’ declared at (1) [-Wunused-parameter]
+mpif.h:119:29:
+
+Warning: Unused parameter ‘mpi_err_quota’ declared at (1) [-Wunused-parameter]
+mpif.h:57:28:
+
+Warning: Unused parameter ‘mpi_err_rank’ declared at (1) [-Wunused-parameter]
+mpif.h:120:33:
+
+Warning: Unused parameter ‘mpi_err_read_only’ declared at (1) [-Wunused-parameter]
+mpif.h:58:31:
+
+Warning: Unused parameter ‘mpi_err_request’ declared at (1) [-Wunused-parameter]
+mpif.h:130:34:
+
+Warning: Unused parameter ‘mpi_err_rma_attach’ declared at (1) [-Wunused-parameter]
+mpif.h:121:36:
+
+Warning: Unused parameter ‘mpi_err_rma_conflict’ declared at (1) [-Wunused-parameter]
+mpif.h:132:34:
+
+Warning: Unused parameter ‘mpi_err_rma_flavor’ declared at (1) [-Wunused-parameter]
+mpif.h:129:33:
+
+Warning: Unused parameter ‘mpi_err_rma_range’ declared at (1) [-Wunused-parameter]
+mpif.h:131:34:
+
+Warning: Unused parameter ‘mpi_err_rma_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:122:32:
+
+Warning: Unused parameter ‘mpi_err_rma_sync’ declared at (1) [-Wunused-parameter]
+mpif.h:59:28:
+
+Warning: Unused parameter ‘mpi_err_root’ declared at (1) [-Wunused-parameter]
+mpif.h:123:31:
+
+Warning: Unused parameter ‘mpi_err_service’ declared at (1) [-Wunused-parameter]
+mpif.h:124:28:
+
+Warning: Unused parameter ‘mpi_err_size’ declared at (1) [-Wunused-parameter]
+mpif.h:125:29:
+
+Warning: Unused parameter ‘mpi_err_spawn’ declared at (1) [-Wunused-parameter]
+mpif.h:55:27:
+
+Warning: Unused parameter ‘mpi_err_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:62:32:
+
+Warning: Unused parameter ‘mpi_err_topology’ declared at (1) [-Wunused-parameter]
+mpif.h:66:32:
+
+Warning: Unused parameter ‘mpi_err_truncate’ declared at (1) [-Wunused-parameter]
+mpif.h:54:28:
+
+Warning: Unused parameter ‘mpi_err_type’ declared at (1) [-Wunused-parameter]
+mpif.h:65:31:
+
+Warning: Unused parameter ‘mpi_err_unknown’ declared at (1) [-Wunused-parameter]
+mpif.h:126:43:
+
+Warning: Unused parameter ‘mpi_err_unsupported_datarep’ declared at (1) [-Wunused-parameter]
+mpif.h:127:45:
+
+Warning: Unused parameter ‘mpi_err_unsupported_operation’ declared at (1) [-Wunused-parameter]
+mpif.h:128:27:
+
+Warning: Unused parameter ‘mpi_err_win’ declared at (1) [-Wunused-parameter]
+mpif.h:697:35:
+
+Warning: Unused parameter ‘mpi_errhandler_null’ declared at (1) [-Wunused-parameter]
+mpif.h:707:25:
+
+Warning: Unused parameter ‘mpi_error’ declared at (1) [-Wunused-parameter]
+mpif.h:698:36:
+
+Warning: Unused parameter ‘mpi_errors_are_fatal’ declared at (1) [-Wunused-parameter]
+mpif.h:699:33:
+
+Warning: Unused parameter ‘mpi_errors_return’ declared at (1) [-Wunused-parameter]
+mpif.h:449:27:
+
+Warning: Unused parameter ‘mpi_file_null’ declared at (1) [-Wunused-parameter]
+mpif.h:577:25:
+
+Warning: Unused parameter ‘mpi_float’ declared at (1) [-Wunused-parameter]
+mpif.h:495:29:
+
+Warning: Unused parameter ‘mpi_float_int’ declared at (1) [-Wunused-parameter]
+mpif.h:238:25:
+
+Warning: Unused parameter ‘mpi_graph’ declared at (1) [-Wunused-parameter]
+mpif.h:716:31:
+
+Warning: Unused parameter ‘mpi_group_empty’ declared at (1) [-Wunused-parameter]
+mpif.h:715:30:
+
+Warning: Unused parameter ‘mpi_group_null’ declared at (1) [-Wunused-parameter]
+mpif.h:208:24:
+
+Warning: Unused parameter ‘mpi_host’ declared at (1) [-Wunused-parameter]
+mpif.h:226:25:
+
+Warning: Unused parameter ‘mpi_ident’ declared at (1) [-Wunused-parameter]
+mpif.h:724:28:
+
+Warning: Unused parameter ‘mpi_info_env’ declared at (1) [-Wunused-parameter]
+mpif.h:721:29:
+
+Warning: Unused parameter ‘mpi_info_null’ declared at (1) [-Wunused-parameter]
+mpif.h:571:23:
+
+Warning: Unused parameter ‘mpi_int’ declared at (1) [-Wunused-parameter]
+mpif.h:610:27:
+
+Warning: Unused parameter ‘mpi_int16_t’ declared at (1) [-Wunused-parameter]
+mpif.h:611:27:
+
+Warning: Unused parameter ‘mpi_int32_t’ declared at (1) [-Wunused-parameter]
+mpif.h:612:27:
+
+Warning: Unused parameter ‘mpi_int64_t’ declared at (1) [-Wunused-parameter]
+mpif.h:609:26:
+
+Warning: Unused parameter ‘mpi_int8_t’ declared at (1) [-Wunused-parameter]
+mpif.h:583:27:
+
+Warning: Unused parameter ‘mpi_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:590:28:
+
+Warning: Unused parameter ‘mpi_integer1’ declared at (1) [-Wunused-parameter]
+mpif.h:604:29:
+
+Warning: Unused parameter ‘mpi_integer16’ declared at (1) [-Wunused-parameter]
+mpif.h:591:28:
+
+Warning: Unused parameter ‘mpi_integer2’ declared at (1) [-Wunused-parameter]
+mpif.h:592:28:
+
+Warning: Unused parameter ‘mpi_integer4’ declared at (1) [-Wunused-parameter]
+mpif.h:593:28:
+
+Warning: Unused parameter ‘mpi_integer8’ declared at (1) [-Wunused-parameter]
+mpif.h:302:32:
+
+Warning: Unused parameter ‘mpi_integer_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:209:22:
+
+Warning: Unused parameter ‘mpi_io’ declared at (1) [-Wunused-parameter]
+mpif.h:206:34:
+
+Warning: Unused parameter ‘mpi_keyval_invalid’ declared at (1) [-Wunused-parameter]
+mpif.h:538:24:
+
+Warning: Unused parameter ‘mpi_land’ declared at (1) [-Wunused-parameter]
+mpif.h:213:32:
+
+Warning: Unused parameter ‘mpi_lastusedcode’ declared at (1) [-Wunused-parameter]
+mpif.h:512:22:
+
+Warning: Unused parameter ‘mpi_lb’ declared at (1) [-Wunused-parameter]
+mpif.h:330:34:
+
+Warning: Unused parameter ‘mpi_lock_exclusive’ declared at (1) [-Wunused-parameter]
+mpif.h:328:31:
+
+Warning: Unused parameter ‘mpi_lock_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:588:27:
+
+Warning: Unused parameter ‘mpi_logical’ declared at (1) [-Wunused-parameter]
+mpif.h:572:24:
+
+Warning: Unused parameter ‘mpi_long’ declared at (1) [-Wunused-parameter]
+mpif.h:579:31:
+
+Warning: Unused parameter ‘mpi_long_double’ declared at (1) [-Wunused-parameter]
+mpif.h:500:35:
+
+Warning: Unused parameter ‘mpi_long_double_int’ declared at (1) [-Wunused-parameter]
+mpif.h:497:28:
+
+Warning: Unused parameter ‘mpi_long_int’ declared at (1) [-Wunused-parameter]
+mpif.h:580:29:
+
+Warning: Unused parameter ‘mpi_long_long’ declared at (1) [-Wunused-parameter]
+mpif.h:581:33:
+
+Warning: Unused parameter ‘mpi_long_long_int’ declared at (1) [-Wunused-parameter]
+mpif.h:540:23:
+
+Warning: Unused parameter ‘mpi_lor’ declared at (1) [-Wunused-parameter]
+mpif.h:542:24:
+
+Warning: Unused parameter ‘mpi_lxor’ declared at (1) [-Wunused-parameter]
+mpif.h:534:23:
+
+Warning: Unused parameter ‘mpi_max’ declared at (1) [-Wunused-parameter]
+mpif.h:452:36:
+
+Warning: Unused parameter ‘mpi_max_datarep_string’ declared at (1) [-Wunused-parameter]
+mpif.h:256:36:
+
+Warning: Unused parameter ‘mpi_max_error_string’ declared at (1) [-Wunused-parameter]
+mpif.h:289:32:
+
+Warning: Unused parameter ‘mpi_max_info_key’ declared at (1) [-Wunused-parameter]
+mpif.h:292:32:
+
+Warning: Unused parameter ‘mpi_max_info_val’ declared at (1) [-Wunused-parameter]
+mpif.h:259:46:
+
+Warning: Unused parameter ‘mpi_max_library_version_string’ declared at (1) [-Wunused-parameter]
+mpif.h:262:35:
+
+Warning: Unused parameter ‘mpi_max_object_name’ declared at (1) [-Wunused-parameter]
+mpif.h:297:33:
+
+Warning: Unused parameter ‘mpi_max_port_name’ declared at (1) [-Wunused-parameter]
+mpif.h:253:38:
+
+Warning: Unused parameter ‘mpi_max_processor_name’ declared at (1) [-Wunused-parameter]
+mpif.h:544:26:
+
+Warning: Unused parameter ‘mpi_maxloc’ declared at (1) [-Wunused-parameter]
+mpif.h:729:28:
+
+Warning: Unused parameter ‘mpi_message_no_proc’ declared at (1) [-Wunused-parameter]
+mpif.h:730:25:
+
+Warning: Unused parameter ‘mpi_message_null’ declared at (1) [-Wunused-parameter]
+mpif.h:535:23:
+
+Warning: Unused parameter ‘mpi_min’ declared at (1) [-Wunused-parameter]
+mpif.h:545:26:
+
+Warning: Unused parameter ‘mpi_minloc’ declared at (1) [-Wunused-parameter]
+mpif.h:443:29:
+
+Warning: Unused parameter ‘mpi_mode_append’ declared at (1) [-Wunused-parameter]
+mpif.h:442:29:
+
+Warning: Unused parameter ‘mpi_mode_create’ declared at (1) [-Wunused-parameter]
+mpif.h:441:38:
+
+Warning: Unused parameter ‘mpi_mode_delete_on_close’ declared at (1) [-Wunused-parameter]
+mpif.h:442:44:
+
+Warning: Unused parameter ‘mpi_mode_excl’ declared at (1) [-Wunused-parameter]
+mpif.h:316:32:
+
+Warning: Unused parameter ‘mpi_mode_nocheck’ declared at (1) [-Wunused-parameter]
+mpif.h:319:34:
+
+Warning: Unused parameter ‘mpi_mode_noprecede’ declared at (1) [-Wunused-parameter]
+mpif.h:318:30:
+
+Warning: Unused parameter ‘mpi_mode_noput’ declared at (1) [-Wunused-parameter]
+mpif.h:317:32:
+
+Warning: Unused parameter ‘mpi_mode_nostore’ declared at (1) [-Wunused-parameter]
+mpif.h:320:34:
+
+Warning: Unused parameter ‘mpi_mode_nosucceed’ declared at (1) [-Wunused-parameter]
+mpif.h:440:29:
+
+Warning: Unused parameter ‘mpi_mode_rdonly’ declared at (1) [-Wunused-parameter]
+mpif.h:440:44:
+
+Warning: Unused parameter ‘mpi_mode_rdwr’ declared at (1) [-Wunused-parameter]
+mpif.h:443:50:
+
+Warning: Unused parameter ‘mpi_mode_sequential’ declared at (1) [-Wunused-parameter]
+mpif.h:441:60:
+
+Warning: Unused parameter ‘mpi_mode_unique_open’ declared at (1) [-Wunused-parameter]
+mpif.h:440:61:
+
+Warning: Unused parameter ‘mpi_mode_wronly’ declared at (1) [-Wunused-parameter]
+mpif.h:547:25:
+
+Warning: Unused parameter ‘mpi_no_op’ declared at (1) [-Wunused-parameter]
+mpif.h:526:26:
+
+Warning: Unused parameter ‘mpi_offset’ declared at (1) [-Wunused-parameter]
+mpif.h:305:31:
+
+Warning: Unused parameter ‘mpi_offset_kind’ declared at (1) [-Wunused-parameter]
+mpif.h:533:27:
+
+Warning: Unused parameter ‘mpi_op_null’ declared at (1) [-Wunused-parameter]
+mpif.h:467:25:
+
+Warning: Unused parameter ‘mpi_order_c’ declared at (1) [-Wunused-parameter]
+mpif.h:467:44:
+
+Warning: Unused parameter ‘mpi_order_fortran’ declared at (1) [-Wunused-parameter]
+mpif.h:510:26:
+
+Warning: Unused parameter ‘mpi_packed’ declared at (1) [-Wunused-parameter]
+mpif.h:277:29:
+
+Warning: Unused parameter ‘mpi_proc_null’ declared at (1) [-Wunused-parameter]
+mpif.h:537:24:
+
+Warning: Unused parameter ‘mpi_prod’ declared at (1) [-Wunused-parameter]
+mpif.h:584:24:
+
+Warning: Unused parameter ‘mpi_real’ declared at (1) [-Wunused-parameter]
+mpif.h:596:26:
+
+Warning: Unused parameter ‘mpi_real16’ declared at (1) [-Wunused-parameter]
+mpif.h:594:25:
+
+Warning: Unused parameter ‘mpi_real4’ declared at (1) [-Wunused-parameter]
+mpif.h:595:25:
+
+Warning: Unused parameter ‘mpi_real8’ declared at (1) [-Wunused-parameter]
+mpif.h:546:27:
+
+Warning: Unused parameter ‘mpi_replace’ declared at (1) [-Wunused-parameter]
+mpif.h:737:32:
+
+Warning: Unused parameter ‘mpi_request_null’ declared at (1) [-Wunused-parameter]
+mpif.h:268:24:
+
+Warning: Unused parameter ‘mpi_root’ declared at (1) [-Wunused-parameter]
+mpif.h:455:40:
+
+Warning: Unused parameter ‘mpi_seek_cur’ declared at (1) [-Wunused-parameter]
+mpif.h:455:54:
+
+Warning: Unused parameter ‘mpi_seek_end’ declared at (1) [-Wunused-parameter]
+mpif.h:455:26:
+
+Warning: Unused parameter ‘mpi_seek_set’ declared at (1) [-Wunused-parameter]
+mpif.h:570:25:
+
+Warning: Unused parameter ‘mpi_short’ declared at (1) [-Wunused-parameter]
+mpif.h:499:29:
+
+Warning: Unused parameter ‘mpi_short_int’ declared at (1) [-Wunused-parameter]
+mpif.h:601:31:
+
+Warning: Unused parameter ‘mpi_signed_char’ declared at (1) [-Wunused-parameter]
+mpif.h:228:27:
+
+Warning: Unused parameter ‘mpi_similar’ declared at (1) [-Wunused-parameter]
+mpif.h:705:26:
+
+Warning: Unused parameter ‘mpi_source’ declared at (1) [-Wunused-parameter]
+mpif.h:15:39:
+
+Warning: Unused parameter ‘mpi_subarrays_supported’ declared at (1) [-Wunused-parameter]
+mpif.h:14:30:
+
+Warning: Unused parameter ‘mpi_subversion’ declared at (1) [-Wunused-parameter]
+mpif.h:51:27:
+
+Warning: Unused parameter ‘mpi_success’ declared at (1) [-Wunused-parameter]
+mpif.h:536:23:
+
+Warning: Unused parameter ‘mpi_sum’ declared at (1) [-Wunused-parameter]
+mpif.h:133:37:
+
+Warning: Unused parameter ‘mpi_t_err_cannot_init’ declared at (1) [-Wunused-parameter]
+mpif.h:143:40:
+
+Warning: Unused parameter ‘mpi_t_err_cvar_set_never’ declared at (1) [-Wunused-parameter]
+mpif.h:142:42:
+
+Warning: Unused parameter ‘mpi_t_err_cvar_set_not_now’ declared at (1) [-Wunused-parameter]
+mpif.h:139:40:
+
+Warning: Unused parameter ‘mpi_t_err_invalid_handle’ declared at (1) [-Wunused-parameter]
+mpif.h:136:39:
+
+Warning: Unused parameter ‘mpi_t_err_invalid_index’ declared at (1) [-Wunused-parameter]
+mpif.h:137:38:
+
+Warning: Unused parameter ‘mpi_t_err_invalid_item’ declared at (1) [-Wunused-parameter]
+mpif.h:138:41:
+
+Warning: Unused parameter ‘mpi_t_err_invalid_session’ declared at (1) [-Wunused-parameter]
+mpif.h:135:32:
+
+Warning: Unused parameter ‘mpi_t_err_memory’ declared at (1) [-Wunused-parameter]
+mpif.h:134:41:
+
+Warning: Unused parameter ‘mpi_t_err_not_initialized’ declared at (1) [-Wunused-parameter]
+mpif.h:140:40:
+
+Warning: Unused parameter ‘mpi_t_err_out_of_handles’ declared at (1) [-Wunused-parameter]
+mpif.h:141:41:
+
+Warning: Unused parameter ‘mpi_t_err_out_of_sessions’ declared at (1) [-Wunused-parameter]
+mpif.h:146:40:
+
+Warning: Unused parameter ‘mpi_t_err_pvar_no_atomic’ declared at (1) [-Wunused-parameter]
+mpif.h:145:43:
+
+Warning: Unused parameter ‘mpi_t_err_pvar_no_startstop’ declared at (1) [-Wunused-parameter]
+mpif.h:144:39:
+
+Warning: Unused parameter ‘mpi_t_err_pvar_no_write’ declared at (1) [-Wunused-parameter]
+mpif.h:706:23:
+
+Warning: Unused parameter ‘mpi_tag’ declared at (1) [-Wunused-parameter]
+mpif.h:207:26:
+
+Warning: Unused parameter ‘mpi_tag_ub’ declared at (1) [-Wunused-parameter]
+mpif.h:336:35:
+
+Warning: Unused parameter ‘mpi_thread_funneled’ declared at (1) [-Wunused-parameter]
+mpif.h:338:35:
+
+Warning: Unused parameter ‘mpi_thread_multiple’ declared at (1) [-Wunused-parameter]
+mpif.h:337:37:
+
+Warning: Unused parameter ‘mpi_thread_serialized’ declared at (1) [-Wunused-parameter]
+mpif.h:335:33:
+
+Warning: Unused parameter ‘mpi_thread_single’ declared at (1) [-Wunused-parameter]
+mpif.h:405:37:
+
+Warning: Unused parameter ‘mpi_typeclass_complex’ declared at (1) [-Wunused-parameter]
+mpif.h:403:37:
+
+Warning: Unused parameter ‘mpi_typeclass_integer’ declared at (1) [-Wunused-parameter]
+mpif.h:404:34:
+
+Warning: Unused parameter ‘mpi_typeclass_real’ declared at (1) [-Wunused-parameter]
+mpif.h:511:22:
+
+Warning: Unused parameter ‘mpi_ub’ declared at (1) [-Wunused-parameter]
+mpif.h:614:28:
+
+Warning: Unused parameter ‘mpi_uint16_t’ declared at (1) [-Wunused-parameter]
+mpif.h:615:28:
+
+Warning: Unused parameter ‘mpi_uint32_t’ declared at (1) [-Wunused-parameter]
+mpif.h:616:28:
+
+Warning: Unused parameter ‘mpi_uint64_t’ declared at (1) [-Wunused-parameter]
+mpif.h:613:27:
+
+Warning: Unused parameter ‘mpi_uint8_t’ declared at (1) [-Wunused-parameter]
+mpif.h:271:29:
+
+Warning: Unused parameter ‘mpi_undefined’ declared at (1) [-Wunused-parameter]
+mpif.h:229:27:
+
+Warning: Unused parameter ‘mpi_unequal’ declared at (1) [-Wunused-parameter]
+mpif.h:211:33:
+
+Warning: Unused parameter ‘mpi_universe_size’ declared at (1) [-Wunused-parameter]
+mpif.h:575:28:
+
+Warning: Unused parameter ‘mpi_unsigned’ declared at (1) [-Wunused-parameter]
+mpif.h:573:33:
+
+Warning: Unused parameter ‘mpi_unsigned_char’ declared at (1) [-Wunused-parameter]
+mpif.h:576:33:
+
+Warning: Unused parameter ‘mpi_unsigned_long’ declared at (1) [-Wunused-parameter]
+mpif.h:602:38:
+
+Warning: Unused parameter ‘mpi_unsigned_long_long’ declared at (1) [-Wunused-parameter]
+mpif.h:574:34:
+
+Warning: Unused parameter ‘mpi_unsigned_short’ declared at (1) [-Wunused-parameter]
+mpif.h:13:27:
+
+Warning: Unused parameter ‘mpi_version’ declared at (1) [-Wunused-parameter]
+mpif.h:600:25:
+
+Warning: Unused parameter ‘mpi_wchar’ declared at (1) [-Wunused-parameter]
+mpif.h:389:28:
+
+Warning: Unused parameter ‘mpi_win_base’ declared at (1) [-Wunused-parameter]
+mpif.h:392:37:
+
+Warning: Unused parameter ‘mpi_win_create_flavor’ declared at (1) [-Wunused-parameter]
+mpif.h:391:33:
+
+Warning: Unused parameter ‘mpi_win_disp_unit’ declared at (1) [-Wunused-parameter]
+mpif.h:420:39:
+
+Warning: Unused parameter ‘mpi_win_flavor_allocate’ declared at (1) [-Wunused-parameter]
+mpif.h:419:37:
+
+Warning: Unused parameter ‘mpi_win_flavor_create’ declared at (1) [-Wunused-parameter]
+mpif.h:421:38:
+
+Warning: Unused parameter ‘mpi_win_flavor_dynamic’ declared at (1) [-Wunused-parameter]
+mpif.h:422:37:
+
+Warning: Unused parameter ‘mpi_win_flavor_shared’ declared at (1) [-Wunused-parameter]
+mpif.h:393:29:
+
+Warning: Unused parameter ‘mpi_win_model’ declared at (1) [-Wunused-parameter]
+mpif.h:740:28:
+
+Warning: Unused parameter ‘mpi_win_null’ declared at (1) [-Wunused-parameter]
+mpif.h:429:32:
+
+Warning: Unused parameter ‘mpi_win_separate’ declared at (1) [-Wunused-parameter]
+mpif.h:390:28:
+
+Warning: Unused parameter ‘mpi_win_size’ declared at (1) [-Wunused-parameter]
+mpif.h:430:31:
+
+Warning: Unused parameter ‘mpi_win_unified’ declared at (1) [-Wunused-parameter]
+mpif.h:210:35:
+
+Warning: Unused parameter ‘mpi_wtime_is_global’ declared at (1) [-Wunused-parameter]
+mpif.h:458:31:
+
+Warning: Unused parameter ‘mpio_request_null’ declared at (1) [-Wunused-parameter]
+mpif90  -g -o flops flops.o mod_file_handling.o mod_harvest_blade.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_29.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_29.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_19.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_19.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_16.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_16.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_23.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_23.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_17.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_17.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_4.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_33.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_4.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_33.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_20.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_20.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_7.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_7.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_21.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_21.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_8.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_8.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_1.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_10.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_1.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_10.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_6.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_6.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_30.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_30.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_14.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_14.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_22.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_22.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_2.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_2.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_5.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_5.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_12.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_13.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_15.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_35.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_12.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_13.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_15.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_35.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_25.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_25.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_24.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_24.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_9.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_34.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_9.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_34.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_3.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_3.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_26.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_26.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_27.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_27.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_32.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_32.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_31.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_31.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_11.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_11.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_18.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_18.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_28.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_28.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/summary_topaz_test_001_24_1_5_0.csv doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/atoms/rawdata_topaz_test_001_24_1_5_0.csv doesn't exist; new empty file will be created.
+Start Epilogue v2.5.3 Sat Aug 27 12:08:13 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r24i1n5        0.14     0.17   117.00     0.11     7.56   125.81
+Memory summary:
+		min    0.17 GB
+		max    0.17 GB
+		ave    0.17 GB
+End Epilogue v2.5.3 Sat Aug 27 12:09:38 CDT 2016 

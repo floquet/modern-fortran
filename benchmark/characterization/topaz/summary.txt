@@ -1,0 +1,448 @@
+F O R T R A N   2 0 0 8   C O M P I L E R   T E S T   S U I T E
+
+                          Daniel Topa
+                  daniel.topa@engilitycorp.com
+
+                      HPCMPO PETTT program
+                          ACE on-site
+                           2016 04 08
+
+
+Block I: System Queries.
+home directory    = /p/home/dantopa.
+working directory = /p/home/dantopa/github/fortran/benchmark/characterization/topaz.
+date and time     = 2016-04-08  19:39:50  UCT-0500.
+
+user name                                           = dantopa
+numerical user ID of the current process            = 902108
+numerical group ID of the current process           = 775
+numerical process identifier of the current process = 43266
+
+compiler version   = GCC version 5.3.0.
+compiler options   = -mtune=generic -march=x86-64 -auxbase-strip mod_queries.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = topaz03.erdc.hpc.mil.
+invocation command = ./characterize 1.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/pts/21.
+terminal device 6  = /dev/pts/21.
+
+universally unique identifier (UUID) = 587f97d9-b35d-4078-b610-86a5bbe670c8.
+
+
+Block II: Check CPU and system clocks.
+system clock (implementation not standardized - compiler dependent)
+count rate = 1000: system dependent and can vary depending on the int_kind of the arguments
+count max  = 2147483647: typically [ HUGE ( count max ) = 2147483647 ]
+
+total cpu time   = .40000000000000001E-002 s
+total clock time = .62586000000000003E-001 s
+
+Block III: Characterization of data types.
+REAL variables characterization
+REAL                         default         single                   double                quadruple
+KIND value:                        4              4                        8                       10
+bytes:                             4              4                        8                        8
+digits:                           24             24                       53                       53
+precision:                         6              6                       15                       15
+range:                            37             37                      307                      307
+radix:                             2              2                        2                        2
+maximum exponent:                128            128                     1024                     1024
+minimum exponent:               -125           -125                    -1021                    -1021
+epsilon:               .119209290E-06  .119209290E-06  .22204460492503131E-015  .22204460492503131E-015
+tiny:                  .117549435E-37  .117549435E-37  .22250738585072014E-307  .22250738585072014E-307
+huge:                  .340282347E+39  .340282347E+39  .17976931348623157E+309  .17976931348623157E+309
+
+INTEGER variables characterization
+INTEGER                         INT8          INT16                     INT32                    INT64
+KIND value:                        1              2                        4                        8
+bytes:                             4              4                        4                        4
+digits:                           31             31                       31                       31
+range:                             9              9                        9                        9
+radix:                             2              2                        2                        2
+
+
+Block IV: ISO Fortran environment variables.
+use ISO_FORTRAN_ENV
+
+IO units
+INPUT_UNIT  = 5: preconnected standard input  unit
+OUTPUT_UNIT = 6: preconnected standard output unit
+ERROR_UNIT  = 0: preconnected output unit for error reporting
+IOSTAT return values 
+IOSTAT_END  = -1: end-of-file signal
+IOSTAT_EOR  = -2: end-of-record signal
+storage sizes
+CHARACTER_STORAGE_SIZE =  8: Size in bits of the character storage unit
+NUMERIC_STORAGE_SIZE   = 32: Size in bits of the numeric storage unit
+FILE_STORAGE_SIZE      =  8: Size in bits of the file storage unit
+
+real kind types REAL(bits) = kind type value
+REAL32 = 4, REAL64 = 8, REAL128 = 10
+
+integer kind types: INT(bits) = kind type value
+INT8 = 1, INT16 = 2, INT32 = 4, INT64 = 8
+
+
+Block V: Basic constants.
+Unit values
+default   = 1.00000000
+single    = 1.00000000
+double    = 1.0000000000000000
+quadruple = 1.0000000000000000
+ 
+one third
+1 / 3 = .333333343: default precision
+1 / 3 = .333333343: single precision
+1 / 3 = .33333333333333331: double precision
+1 / 3 = .33333333333333331: quadruple precision
+ 
+one eleventh
+1 / 11 = .909090936E-01: default precision
+1 / 11 = .909090936E-01: single precision
+1 / 11 = .90909090909090912E-001: double precision
+1 / 11 = .90909090909090912E-001: quadruple precision
+ 
+fundamental constants
+pi = arccos ( -1 )
+pi = 3.1415927 Mathematica N[pi, 8]
+pi = 3.14159274 default precision
+pi = 3.14159274 single precision
+pi = 3.1415926535897932 Mathematica N[pi, 17]
+pi = 3.1415926535897931 double precision
+pi = 3.1415926535897931 quadruple precision
+ 
+e  = exp ( 0 )
+e  = 2.7182818 Mathematica N[e, 8]
+e  = 2.71828175 default precision
+e  = 2.71828175 single precision
+e  = 2.7182818284590452 Mathematica N[e, 17]
+e  = 2.7182818284590451 double precision
+e  = 2.7182818284590451 quadruple precision
+ 
+computations using pi:
+cos( pi ) = -1.00000000,         sin ( pi ) = -.874227766E-07: default precision
+cos( pi ) = -1.00000000,         sin ( pi ) = -.874227766E-07: single precision
+cos( pi ) = -1.0000000000000000, sin ( pi ) = .12246467991473532E-015: double precision
+cos( pi ) = -1.0000000000000000, sin ( pi ) = .12246467991473532E-015: quadruple precision
+ 
+
+Block VI: Machine epsilon.
+
+intrinsic EPSILON ( 1 ):
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  .22204460492503131E-015
+quad precision:    .22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000002
+quad precision:    1.0000000000000002
+
+
+Moler epsilon:
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  -.22204460492503131E-015
+quad precision:    -.22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  .99999999999999978
+quad precision:    .99999999999999978
+
+
+bisection epsilon:
+default precision: .119209290E-06
+single precision:  .119209290E-06
+double precision:  .22204460492503131E-015
+quad precision:    .22204460492503131E-015
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000002
+quad precision:    1.0000000000000002
+
+
+decimation epsilon:
+default precision: .999999941E-07
+single precision:  .999999941E-07
+double precision:  .10000000000000001E-014
+quad precision:    .10000000000000001E-014
+
+EPSILON TEST: 1 + epsilon = ?
+default precision: 1.00000012
+single precision:  1.00000012
+double precision:  1.0000000000000011
+quad precision:    1.0000000000000011
+
+Block VII: Requests for precision.
+selected real kind: -1 signals precision unavailable
+p = requested precision (number of significant digits)
+return value is selected_real_kind: -1 signals precision unavailable
+p =  1:   4,   p =  2:   4,   p =  3:   4,   p =  4:   4,   p =  5:   4
+p =  6:   4,   p =  7:   8,   p =  8:   8,   p =  9:   8,   p = 10:   8
+p = 11:   8,   p = 12:   8,   p = 13:   8,   p = 14:   8,   p = 15:   8
+p = 16:  10,   p = 17:  10,   p = 18:  10,   p = 19:  16,   p = 20:  16
+p = 21:  16,   p = 22:  16,   p = 23:  16,   p = 24:  16,   p = 25:  16
+p = 26:  16,   p = 27:  16,   p = 28:  16,   p = 29:  16,   p = 30:  16
+p = 31:  16,   p = 32:  16,   p = 33:  16,   p = 34:  -1,   p = 35:  -1
+p = 36:  -1,   p = 37:  -1,   p = 38:  -1,   p = 39:  -1,   p = 40:  -1
+p = 41:  -1,   p = 42:  -1,   p = 43:  -1,   p = 44:  -1,   p = 45:  -1
+p = 46:  -1,   p = 47:  -1,   p = 48:  -1,   p = 49:  -1,   p = 50:  -1
+real_kind for maximum precision = 16
+first instance is for p = 19
+
+selected integer kind: -1 signals range unavailable
+r = requested range such that 10^(-r) < n < 10^(r)
+return value is selected_int_kind: -1 signals range unavailable
+r =  1:   1,   r =  2:   1,   r =  3:   2,   r =  4:   2,   r =  5:   4
+r =  6:   4,   r =  7:   4,   r =  8:   4,   r =  9:   4,   r = 10:   8
+r = 11:   8,   r = 12:   8,   r = 13:   8,   r = 14:   8,   r = 15:   8
+r = 16:   8,   r = 17:   8,   r = 18:   8,   r = 19:  16,   r = 20:  16
+r = 21:  16,   r = 22:  16,   r = 23:  16,   r = 24:  16,   r = 25:  16
+r = 26:  16,   r = 27:  16,   r = 28:  16,   r = 29:  16,   r = 30:  16
+r = 31:  16,   r = 32:  16,   r = 33:  16,   r = 34:  16,   r = 35:  16
+r = 36:  16,   r = 37:  16,   r = 38:  16,   r = 39:  -1,   r = 40:  -1
+r = 41:  -1,   r = 42:  -1,   r = 43:  -1,   r = 44:  -1,   r = 45:  -1
+r = 46:  -1,   r = 47:  -1,   r = 48:  -1,   r = 49:  -1,   r = 50:  -1
+
+int_kind for maximum precision = 16
+first instance is for r = 19
+
+
+Block VIII: Character set kind requests.
+default     =    1
+kind( 'A' ) =    1
+ASCII       =    1: American Standard Code for Information Interchange
+EBCDIC      =   -1: Extended Binary Coded Decimal Interchange Code
+UNICODE     =   -1: UNICODE consortium
+ISO_10646   =    4: ISO/IEC 10646 UCS-4
+ISO-8859-7  =   -1: ISO/IEC 8859-7: Latin/Greek alphabet
+Guobiao     =   -1: Chinese (Mainland, Singapore)
+GB18030     =   -1: Chinese (Current Guobiao version)
+Big5        =   -1: Chinese (Taiwan, Hong Kong, Macau
+UTF-8       =   -1: UCS Transformation Format—8-bit
+one million intervals
+interval size:
+default   precision: .999999997E-06
+single    precision: .999999997E-06
+double    precision: .99999999999999995E-006
+quadruple precision: .99999999999999995E-006
+
+accumulation values: (ideal answer = 1)
+default   precision: 1.00903893
+single    precision: 1.00903893
+double    precision: 1.0000000000079181
+quadruple precision: 1.0000000000079181
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: -.903892517E-02
+single    precision: -.903892517E-02
+double    precision: -.79181106116266164E-011
+quadruple precision: -.79181106116266164E-011
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: -9038.92480
+single    precision: -9038.92480
+double    precision: -.79181106116266164E-005
+quadruple precision: -.79181106116266164E-005
+
+total cpu   time for accumulation = .39999999999995595E-002 s
+total clock time for accumulation = .35200000000000001E-002 s
+
+
+one billion intervals
+interval size:
+default   precision: .999999972E-09
+single    precision: .999999972E-09
+double    precision: .10000000000000001E-008
+quadruple precision: .10000000000000001E-008
+
+accumulation values: (ideal answer = 1)
+default   precision: .312500000E-01
+single    precision: .312500000E-01
+double    precision: .99999999253993288
+quadruple precision: .99999999253993288
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .968750000
+single    precision: .968750000
+double    precision: .74600671196023427E-008
+quadruple precision: .74600671196023427E-008
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: 968750016.
+single    precision: 968750016.
+double    precision: 7.4600671196023418
+quadruple precision: 7.4600671196023418
+
+total cpu   time for accumulation = 3.4602160000000008 s
+total clock time for accumulation = 3.4671840000000000 s
+
+
+one 2**20 intervals
+interval size:
+default   precision: .953674316E-06
+single    precision: .953674316E-06
+double    precision: .95367431640625000E-006
+quadruple precision: .95367431640625000E-006
+
+accumulation values: (ideal answer = 1)
+default   precision: 1.00000000
+single    precision: 1.00000000
+double    precision: 1.0000000000000000
+quadruple precision: 1.0000000000000000
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .00000000
+single    precision: .00000000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: .00000000
+single    precision: .00000000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+total cpu   time for accumulation = .0000000000000000 s
+total clock time for accumulation = .36690000000000000E-002 s
+
+
+one 2**30 intervals
+interval size:
+default   precision: .931322575E-09
+single    precision: .931322575E-09
+double    precision: .93132257461547852E-009
+quadruple precision: .93132257461547852E-009
+
+accumulation values: (ideal answer = 1)
+default   precision: .156250000E-01
+single    precision: .156250000E-01
+double    precision: 1.0000000000000000
+quadruple precision: 1.0000000000000000
+
+accumulation errors: 1 - increment size * number of increments (ideal answer = 0)
+default   precision: .984375000
+single    precision: .984375000
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+relative errors in accumulation (expressed in terms of the increment)
+default   precision: .105696461E+10
+single    precision: .105696461E+10
+double    precision: .0000000000000000
+quadruple precision: .0000000000000000
+
+total cpu   time for accumulation = 3.7202329999999986 s
+total clock time for accumulation = 3.7280650000000000 s
+
+
+
+Block X: Memory allocations.
+size = MBytes * mega : 1048576 = 1 * 1048576
+
++ + + Requesting allocation of 1 megabytes
+
+attempting to allocate rank one default integer array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576
+actual total of real elements       = 1048576, 
+cpu time                            = 0.000E+00 s
+clock time                          = 0.248E-02 s
+
+attempting to allocate rank one INT8 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.228E-02 s
+
+attempting to allocate rank one INT16 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.000E+00 s
+clock time                          = 0.223E-02 s
+
+attempting to allocate rank one INT32 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 0
+actual total of real elements       = 0, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.227E-02 s
+
+attempting to allocate rank one INT64 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576
+actual total of real elements       = 1048576, 
+cpu time                            = 0.000E+00 s
+clock time                          = 0.225E-02 s
+
+attempting to allocate rank one default real array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576.00
+actual total of real elements       = 1048576.00, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.319E-02 s
+
+attempting to allocate rank one REAL32 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576.00
+actual total of real elements       = 1048576.00, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.316E-02 s
+
+attempting to allocate rank one REAL64 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576.0000000000
+actual total of real elements       = 1048576.0000000000, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.323E-02 s
+
+attempting to allocate rank one REAL128 array of precision 
+expected total of all unit elements = 1048576
+actual total of all unit elements   = 1048576.0000000000
+actual total of real elements       = 1048576.0000000000, 
+cpu time                            = 0.400E-02 s
+clock time                          = 0.313E-02 s
+
+attempting to allocate rank one default complex array of precision 
+expected total of all unit elements = 1048576
+sum total                           = 1048576.00
+sum total                           = 1048576.00
+dot product total                   = 2097152.00, .00000000
+cpu time                            = 0.400E-02 s
+clock time                          = 0.483E-02 s
+
+attempting to allocate rank one REAL32 array of precision 
+expected total of all unit elements = 1048576
+sum total                           = 1048576.00
+sum total                           = 1048576.00
+dot product total                   = 2097152.00, .00000000
+cpu time                            = 0.400E-02 s
+clock time                          = 0.484E-02 s
+
+attempting to allocate rank one REAL64 array of precision 
+expected total of all unit elements = 1048576
+sum total                           = 1048576.0000000000
+sum total                           = 1048576.0000000000
+dot product total                   = 2097152.0000000000, .0000000000000000
+cpu time                            = 0.400E-02 s
+clock time                          = 0.486E-02 s
+
+attempting to allocate rank one REAL128 array of precision 
+expected total of all unit elements = 1048576
+sum total                           = 1048576.0000000000
+sum total                           = 1048576.0000000000
+dot product total                   = 2097152.0000000000, .0000000000000000
+cpu time                            = 0.400E-02 s
+clock time                          = 0.460E-02 s
+
+total cpu   time for all allocations = .40003000000000455E-001 s
+total clock time for all allocations = .43841999999999999E-001 s
+

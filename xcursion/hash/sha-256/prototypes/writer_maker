@@ -1,0 +1,3 @@
+gfortran -c $gflags -o mod_file_handling.o mod_file_handling.f08
+gfortran -c $gflags -o hex_writer.o hex_writer.f08
+gfortran $gflag -o hex_writer hex_writer.o mod_file_handling.o  

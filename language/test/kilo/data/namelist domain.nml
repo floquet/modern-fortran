@@ -1,0 +1,5 @@
+&DOMAIN
+ NUM_INTERVALS=                   5,
+ DOMAIN_A=  0.0000000000000000     ,
+ DOMAIN_B=  1.0000000000000000     ,
+ /

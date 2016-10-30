@@ -1,0 +1,6 @@
+# Compiled source #
+###################
+*.o
+*.f90
+*.mod
+mytvd

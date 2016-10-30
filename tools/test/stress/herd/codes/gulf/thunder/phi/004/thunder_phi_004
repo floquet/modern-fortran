@@ -1,0 +1,14 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q PHI
+#PBS -l select=1:ncpus=28:mpiprocs=28:nmics=2
+#PBS -l walltime=120:00:00
+#PBS -j oe
+#PBS -N direct
+#PBS -V 
+
+cd $wdmersenne/phi/004/
+
+./cpu_measure -d > timing_results.out
+

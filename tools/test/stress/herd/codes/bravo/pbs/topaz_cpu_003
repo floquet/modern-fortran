@@ -1,0 +1,13 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ERDCS97270PET
+#PBS -q background
+#PBS -l select=1:ncpus=36:mpiprocs=36
+#PBS -l walltime=4:00:00
+#PBS -j oe
+
+cd $dir_mersenne
+cd 003/
+
+./cpu_characterization -d > timing_results.out
+

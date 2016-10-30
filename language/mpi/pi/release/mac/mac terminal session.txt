@@ -1,0 +1,73 @@
+Last login: Tue Sep 13 08:46:44 on ttys010
+You are accessing a U.S. Government (USG) Information System (IS) that is provided for USG-authorized use only.
+
+By using this IS (which includes any device attached to this IS), you consent to the following conditions:
+
+-The USG routinely intercepts and monitors communications on this IS for purposes including, but not limited to, penetration testing, COMSEC monitoring, network operations and defense, personnel misconduct (PM), law enforcement (LE), and counterintelligence (CI) investigations.
+
+-At any time, the USG may inspect and seize data stored on this IS.
+
+-Communications using, or data stored on, this IS are not private, are subject to routine monitoring, interception, and search, and may be disclosed or used for any USG-authorized purpose.
+
+-This IS includes security measures (e.g., authentication and access controls) to protect USG interests—not for your personal benefit or privacy.
+
+-Notwithstanding the above, using this IS does not constitute consent to PM, LE or CI investigative searching or monitoring of the content of privileged communications, or work product, related to personal representation or services by attorneys, psychotherapists, or clergy, and their assistants. Such communications and work product are private and confidential. See User Agreement for details."
+
+NOTE: Any OS versions that do not support the full text version must state the following:
+"I've read & consent to terms in IS user agreem't."
+
+NOTE: Deviations are not permitted except as authorized by the Deputy Assistant Secretary of Defense for Information and Identity Assurance.
+Welcome rditldmt to ~/.bash_profile on ITL-DTOPA-MP
+Welcome rditldmt to ~/.bashrc on ITL-DTOPA-MP
+rditldmt@ITL-DTOPA-MP:~ $ cd ~/hpc/fortran/language/mpi/pi/release/mac/
+rditldmt@ITL-DTOPA-MP:mac $ lss
+total 0
+drwxr-xr-x  4 rditldmt  staff   136B Sep 13 09:31 .
+drwxr-xr-x  6 rditldmt  staff   204B Sep 13 08:51 ..
+drwxr-xr-x  7 rditldmt  staff   238B Sep 13 09:08 constant_precision
+drwxr-xr-x  7 rditldmt  staff   238B Sep 13 09:18 constant_time
+rditldmt@ITL-DTOPA-MP:mac $ cd constant_precision/
+rditldmt@ITL-DTOPA-MP:constant_precision $ date
+Tue Sep 13 09:40:54 CDT 2016
+rditldmt@ITL-DTOPA-MP:constant_precision $ make
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -Wuse-without-only -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -Wuse-without-only -o pi_constant_precision.o pi_constant_precision.f08
+mpif90 -g -o pi_constant_precision mod_file_handling.o pi_constant_precision.o
+rditldmt@ITL-DTOPA-MP:constant_precision $ mpirun -np 2 ./pi_constant_precision 'MacPro'
+Warning: results/MacPro_constant_precision_gnu_i8.csv doesn't exist; new empty file will be created.
+rditldmt@ITL-DTOPA-MP:constant_precision $ mpirun -np 4 ./pi_constant_precision 'MacPro'
+rditldmt@ITL-DTOPA-MP:constant_precision $ cat results/MacPro_constant_precision_gnu_i8.csv 
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  2,  0.15969631960615516E-001,  0.13868218622370421E-005
+14414400,  2,  0.88573014014400542E-001,  0.13872869786268893E-006
+144144000,  2,  0.89029629703145474,  0.13874279503056641E-007
+1441440000,  2,  8.8621826390735805,  0.13874754678511181E-008
+14414400000,  2,  86.830251477076672,  0.13891421346556854E-009
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  4,  0.90307520003989339E-002,  0.13868218742274507E-005
+14414400,  4,  0.76732011977583170E-001,  0.13872873338982572E-006
+144144000,  4,  0.55627537099644542,  0.13873765247751635E-007
+1441440000,  4,  5.4635136749129742,  0.13875363080728675E-008
+14414400000,  4,  53.769814657978714,  0.13836798373745296E-009
+rditldmt@ITL-DTOPA-MP:constant_precision $ cd ../constant_time/
+rditldmt@ITL-DTOPA-MP:constant_time $ make
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -Wuse-without-only -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -Wuse-without-only -o pi_constant_time.o pi_constant_time.f08
+mpif90 -g -o pi_constant_time mod_file_handling.o pi_constant_time.o
+rditldmt@ITL-DTOPA-MP:constant_time $ mpirun -np 2 ./pi_constant_time 'MacPro'
+Warning: results/MacPro_constant_time_gnu_i8.csv doesn't exist; new empty file will be created.
+rditldmt@ITL-DTOPA-MP:constant_time $ mpirun -np 4 ./pi_constant_time 'MacPro'
+rditldmt@ITL-DTOPA-MP:constant_time $ cat results/MacPro_constant_time_gnu_i8.csv 
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  2,  0.23243793984875083E-001,  0.69351032960796033E-006
+14414400,  2,  0.19003702502232045,  0.69367381172469322E-007
+144144000,  2,  1.7302071138983592,  0.69371695055053806E-008
+1441440000,  2,  16.905176713014953,  0.69394490154195410E-009
+14414400000,  2,  166.51410169794690,  0.57759974581017559E-009
+integration intervals,  MPI procs,  cpu time,  precision
+1441440,  4,  0.27617190033197403E-001,  0.34679043636742790E-006
+14414400,  4,  0.22791229200083762,  0.34684989991262682E-007
+144144000,  4,  2.2476226730505005,  0.34687146488465714E-008
+1441440000,  4,  20.558308450970799,  0.34677150040351989E-009
+14414400000,  4,  169.24855081096757,  0.32076297173944113E-009
+rditldmt@ITL-DTOPA-MP:constant_time $ 

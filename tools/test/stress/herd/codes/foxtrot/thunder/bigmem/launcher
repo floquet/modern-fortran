@@ -1,0 +1,9 @@
+qsub $wdmersenne/bigmem/001/thunder_bigmem_001
+
+qsub $wdmersenne/bigmem/002/thunder_bigmem_002
+
+qsub $wdmersenne/bigmem/003/thunder_bigmem_003
+
+qsub $wdmersenne/bigmem/004/thunder_bigmem_004
+
+cd $wdmersenne

@@ -1,0 +1,9 @@
+~/.bashrc
+Welcome dantopa to ~/.mybash on leo
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/u/dantopa/.mybash: line 26: peach: command not found
+~/.profile
+/var//opt/cray/alps/spool/45612/micinfo.sh: line 2: /opt/intel/mic/bin/micinfo: No such file or directory
+Application 45612 exit codes: 127
+Application 45612 resources: utime ~0s, stime ~0s, Rss ~4076, inblocks ~20, outblocks ~0

@@ -1,0 +1,9 @@
+qsub $wdmersenne/big/001/topaz-big-001
+
+qsub $wdmersenne/big/002/topaz-big-002
+
+qsub $wdmersenne/big/003/topaz-big-003
+
+qsub $wdmersenne/big/004/topaz-big-004
+
+cd $wdmersenne

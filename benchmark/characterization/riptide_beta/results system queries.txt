@@ -1,0 +1,42 @@
+
+Block I: System Queries.
+<<<<<<< HEAD
+home directory    = /gpfs/home/dantopa.
+working directory = /gpfs/home/dantopa/github/fortran/benchmark/characterization/riptide_alpha.
+date and time     = 2016-04-19  05:46:38  UCT-1000.
+
+user name                                           = dantopa
+numerical user ID of the current process            = 906453
+numerical group ID of the current process           = 107792
+numerical process identifier of the current process = 7928
+
+compiler version   = GCC version 4.8.2.
+compiler options   = -mtune=generic -march=x86-64 -auxbase-strip mod_queries.o -g -Wall -Wextra -Wconversion -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = riptide04.
+invocation command = ./characterize 10.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/pts/2.
+terminal device 6  = /dev/pts/2.
+
+universally unique identifier (UUID) = 8c6f7d10-fc56-49f8-b26f-cc93c286693c.
+=======
+home directory    = /Users/rditldmt.
+working directory = /Users/rditldmt/Box Sync/fortran/benchmark/characterization/riptide_alpha.
+date and time     = 2016-02-26  13:36:04  UCT-0600.
+
+user name                                           = rditldmt
+numerical user ID of the current process            = 595980521
+numerical group ID of the current process           = 2011572450
+numerical process identifier of the current process = 78499
+
+compiler version   = GCC version 5.1.0.
+compiler options   = -fPIC -mmacosx-version-min=10.9.4 -mtune=core2 -Og -Wall -Wextra -Wconversion -Wpedantic -fcheck=bounds -fmax-errors=5.
+host system        = dan-topas-pro-2.erdc.dren.mil.
+invocation command = ./a.out.
+terminal device 6  =  (output file)
+terminal device 5  = /dev/ttys008.
+terminal device 6  = /dev/ttys008.
+
+universally unique identifier (UUID) = 38611FFD-5A66-4ECC-997C-AFE5BE5B5CC3.
+>>>>>>> d8754854d237c2124240287e5483133b2c6316e1
+

@@ -1,0 +1,61 @@
+Start Prologue v2.5.3 Thu Jun  2 06:35:27 CDT 2016 
+r24i7n17: MemFree:        123733248 kB
+r19i5n0: MemFree:        124022764 kB
+End Prologue v2.5.3 Thu Jun  2 06:35:28 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 27: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 28: myprompt: command not found
+/p/home/dantopa/hpc//fortran/language/OpenMP/topaz/pi/
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel/' is currently not loaded
+/usr/lib64/gcc/x86_64-suse-linux/4.3/../../../../x86_64-suse-linux/bin/ld:pi_omp.f08: file format not recognized; treating as linker script
+/usr/lib64/gcc/x86_64-suse-linux/4.3/../../../../x86_64-suse-linux/bin/ld:pi_omp.f08:1: syntax error
+collect2: ld returned 1 exit status
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 43: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 45: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 47: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 49: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 51: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 53: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 55: ./a.out: No such file or directory
+
+real	0m0.001s
+user	0m0.000s
+sys	0m0.000s
+/var/spool/PBS/mom_priv/jobs/365776.topaz10.SC: line 63: i: command not found
+Start Epilogue v2.5.3 Thu Jun  2 06:35:28 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r19i5n0        0.01     0.02   117.00     0.02     7.54   125.81
+r24i7n17       0.02     0.02   117.00     0.02     7.81   125.81
+Memory summary:
+		min    0.02 GB
+		max    0.02 GB
+		ave    0.02 GB
+End Epilogue v2.5.3 Thu Jun  2 06:36:46 CDT 2016 

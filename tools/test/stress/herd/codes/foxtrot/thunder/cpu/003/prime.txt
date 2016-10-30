@@ -1,0 +1,20 @@
+V24OptionsConverted=1
+WGUID_version=2
+StressTester=0
+UsePrimenet=1
+DialUp=0
+V5UserID=dantopa
+WorkPreference=0
+OutputIterations=1000000
+ResultsFileIterations=999999999
+DiskWriteTime=15
+NetworkRetryTime=2
+NetworkRetryTime2=15
+DaysOfWork=5
+DaysBetweenCheckins=          1
+NumBackupFiles=3
+SilentVictory=1
+
+[PrimeNet]
+Debug=0
+ProxyHost=

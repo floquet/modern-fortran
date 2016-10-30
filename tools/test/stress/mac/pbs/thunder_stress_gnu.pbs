@@ -1,0 +1,55 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q standard
+<<<<<<< HEAD
+#PBS -l select=2:ncpus=36:mpiprocs=36
+=======
+#PBS -l select=100:ncpus=36:mpiprocs=36
+>>>>>>> b55ff2259f36705faf34d4f296c30b54e7a97547
+#PBS -l walltime=24:00:00
+#PBS -j oe
+#PBS -V
+
+# PBS -l select=N1:ncpus=36:mpiprocs=N2
+# The value of ncpus refers to the number of physical cores available on each node. Standard compute nodes on Topaz will require ncpus=36.
+
+# An exception to this rule is the transfer queue, which uses the directive below:
+# PBS -l select=1:ncpus=1
+
+# queue: # debug standard background
+
+<<<<<<< HEAD
+export myProject='/p/home/dantopa/hpc/fortran/tools/test/stress/d_shared/'
+=======
+export myProject=${myGit}'fortran/tools/test/stress/d_shared/'
+>>>>>>> b55ff2259f36705faf34d4f296c30b54e7a97547
+echo $myProject
+cd ${myProject}
+export gflags=${gflags_thunder}
+module switch intel-compilers/15.3.187 gcc-compilers/4.8.4
+make
+rm -rf *.o *.mod *.smod *.dSYM
+
+## Execution Block ----------------------------------------------
+# Environment Setup
+# cd to your scratch directory in /work
+cd ${WORKDIR}
+
+# create a job-specific subdirectory based on JOBID and cd to it
+JOBID=`echo ${PBS_JOBID} | cut -d '.' -f 1`
+if [ ! -d ${JOBID} ]; then
+  mkdir -p ${JOBID}
+fi
+cd ${JOBID}
+
+## Launching -----------------------------------------------------
+# copy executable from $HOME and submit it
+cp -a ${myProject}/. .
+
+${fortran_execute_mpi} -n 72 ./cpu > out.dat
+
+## Clean up -----------------------------------------------------
+# Remove temporary files
+rm -rf *.o *.mod *.smod *.dSYM
+

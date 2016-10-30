@@ -1,0 +1,6 @@
+
+Array of 14 elements read in from data/secundus/partition output.txt.
+
+Partitions:
+    3      5     5     6     7     7     7     8     7     7     8     5     5     3
+Total number of points = 83

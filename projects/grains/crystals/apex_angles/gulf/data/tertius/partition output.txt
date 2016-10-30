@@ -1,0 +1,6 @@
+
+Array of 13 elements read in from data/tertius/partition output.txt.
+
+Partitions:
+    3      6     6     7     7     7     7     8     7     7     7     6     5
+Total number of points = 83

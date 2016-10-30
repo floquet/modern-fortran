@@ -1,0 +1,103 @@
+<html><head><title>mod_param.F</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<link rel="stylesheet" type="text/css" href="sourcestyles.css" />
+</head><body link="blue" vlink="blue">
+<h3>File: /Users/dantopa/Documents/hpc/fortran/open/FUNWAVE-TVD-master/mod_param.F</h3>
+<SCRIPT>
+defaultStatus = "File: /Users/dantopa/Documents/hpc/fortran/open/FUNWAVE-TVD-master/mod_param.F";
+top.document.title  = "mod_param.F";
+</SCRIPT>
+<pre><span class="default"></span><a name="1"><font size=-1>1     </font></a><span class="default"></span><span class="comment">!------------------------------------------------------------------------------------</span>
+<a name="2"><font size=-1>2     </font></a><span class="comment">!</span>
+<a name="3"><font size=-1>3     </font></a><span class="comment">!      FILE mod_param.F</span>
+<a name="4"><font size=-1>4     </font></a><span class="comment">!</span>
+<a name="5"><font size=-1>5     </font></a><span class="comment">!      This file is part of the FUNWAVE-TVD program under the Simplified BSD license</span>
+<a name="6"><font size=-1>6     </font></a><span class="comment">!</span>
+<a name="7"><font size=-1>7     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="8"><font size=-1>8     </font></a><span class="comment">! </span>
+<a name="9"><font size=-1>9     </font></a><span class="comment">!    Copyright (c) 2016, FUNWAVE Development Team</span>
+<a name="10"><font size=-1>10     </font></a><span class="comment">!</span>
+<a name="11"><font size=-1>11     </font></a><span class="comment">!    (See http://www.udel.edu/kirby/programs/funwave/funwave.html</span>
+<a name="12"><font size=-1>12     </font></a><span class="comment">!     for Development Team membership)</span>
+<a name="13"><font size=-1>13     </font></a><span class="comment">!</span>
+<a name="14"><font size=-1>14     </font></a><span class="comment">!    All rights reserved.</span>
+<a name="15"><font size=-1>15     </font></a><span class="comment">!</span>
+<a name="16"><font size=-1>16     </font></a><span class="comment">!    FUNWAVE_TVD is free software: you can redistribute it and/or modify</span>
+<a name="17"><font size=-1>17     </font></a><span class="comment">!    it under the terms of the Simplified BSD License as released by</span>
+<a name="18"><font size=-1>18     </font></a><span class="comment">!    the Berkeley Software Distribution (BSD).</span>
+<a name="19"><font size=-1>19     </font></a><span class="comment">!</span>
+<a name="20"><font size=-1>20     </font></a><span class="comment">!    Redistribution and use in source and binary forms, with or without</span>
+<a name="21"><font size=-1>21     </font></a><span class="comment">!    modification, are permitted provided that the following conditions are met:</span>
+<a name="22"><font size=-1>22     </font></a><span class="comment">!</span>
+<a name="23"><font size=-1>23     </font></a><span class="comment">!    1. Redistributions of source code must retain the above copyright notice, this</span>
+<a name="24"><font size=-1>24     </font></a><span class="comment">!       list of conditions and the following disclaimer.</span>
+<a name="25"><font size=-1>25     </font></a><span class="comment">!    2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<a name="26"><font size=-1>26     </font></a><span class="comment">!    this list of conditions and the following disclaimer in the documentation</span>
+<a name="27"><font size=-1>27     </font></a><span class="comment">!    and/or other materials provided with the distribution.</span>
+<a name="28"><font size=-1>28     </font></a><span class="comment">!</span>
+<a name="29"><font size=-1>29     </font></a><span class="comment">!    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot; AND</span>
+<a name="30"><font size=-1>30     </font></a><span class="comment">!    ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED</span>
+<a name="31"><font size=-1>31     </font></a><span class="comment">!    WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<a name="32"><font size=-1>32     </font></a><span class="comment">!    DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR</span>
+<a name="33"><font size=-1>33     </font></a><span class="comment">!    ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES</span>
+<a name="34"><font size=-1>34     </font></a><span class="comment">!    (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;</span>
+<a name="35"><font size=-1>35     </font></a><span class="comment">!    LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND</span>
+<a name="36"><font size=-1>36     </font></a><span class="comment">!    ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT</span>
+<a name="37"><font size=-1>37     </font></a><span class="comment">!    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS</span>
+<a name="38"><font size=-1>38     </font></a><span class="comment">!    SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<a name="39"><font size=-1>39     </font></a><span class="comment">!  </span>
+<a name="40"><font size=-1>40     </font></a><span class="comment">!    The views and conclusions contained in the software and documentation are those</span>
+<a name="41"><font size=-1>41     </font></a><span class="comment">!    of the authors and should not be interpreted as representing official policies,</span>
+<a name="42"><font size=-1>42     </font></a><span class="comment">!    either expressed or implied, of the FreeBSD Project.</span>
+<a name="43"><font size=-1>43     </font></a><span class="comment">!  </span>
+<a name="44"><font size=-1>44     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="45"><font size=-1>45     </font></a><span class="comment">!</span>
+<a name="46"><font size=-1>46     </font></a><span class="comment">!    PARAM is the module to define all fixed parameters</span>
+<a name="47"><font size=-1>47     </font></a><span class="comment">!    </span>
+<a name="48"><font size=-1>48     </font></a><span class="comment">!    HISTORY: </span>
+<a name="49"><font size=-1>49     </font></a><span class="comment">!      05/01/2010 Fengyan Shi</span>
+<a name="50"><font size=-1>50     </font></a><span class="comment">!          the module is updated corresponding to modifications in subroutines</span>
+<a name="51"><font size=-1>51     </font></a><span class="comment">!-------------------------------------------------------------------------------------</span>
+<a name="52"><font size=-1>52     </font></a><span class="comment"></span>
+<a name="53"><font size=-1>53     </font></a><span class="comment"></span><span class="keyword">MODULE <a href="dictionary_P.html#390">PARAM</a></span>
+<a name="54"><font size=-1>54     </font></a><span class="keyword"></span><span class="preproc"># if </span><span class="default">defined PARALLEL</span>
+<a name="55"><font size=-1>55     </font></a><span class="default">       </span><span class="keyword">USE </span><span class="default">MPI</span>
+<a name="56"><font size=-1>56     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="57"><font size=-1>57     </font></a><span class="preproc">       </span><span class="keyword">IMPLICIT NONE</span>
+<a name="58"><font size=-1>58     </font></a><span class="keyword"></span>
+<a name="59"><font size=-1>59     </font></a><span class="keyword"></span><span class="preproc"># if </span><span class="default">defined DOUBLE_PRECISION </span>
+<a name="60"><font size=-1>60     </font></a><span class="default">       </span><span class="keyword">INTEGER</span><span class="default">, </span><span class="keyword">PARAMETER</span><span class="default">::SP=</span><span class="number">8</span>
+<a name="61"><font size=-1>61     </font></a><span class="number"></span><span class="preproc"># if </span><span class="default">defined PARALLEL</span>
+<a name="62"><font size=-1>62     </font></a><span class="default">       </span><span class="keyword">INTEGER</span><span class="default">, </span><span class="keyword">PARAMETER</span><span class="default">::MPI_SP=MPI_DOUBLE_PRECISION</span>
+<a name="63"><font size=-1>63     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="64"><font size=-1>64     </font></a><span class="preproc"># else</span>
+<a name="65"><font size=-1>65     </font></a><span class="preproc">       </span><span class="keyword">INTEGER</span><span class="default">, </span><span class="keyword">PARAMETER</span><span class="default">::<a href="dictionary_P.html#391">SP</a>=<a href="dictionary_S.html#1345">SELECTED_REAL_KIND</a>(</span><span class="number">6</span><span class="default">,</span><span class="number">30</span><span class="default">)</span>
+<a name="66"><font size=-1>66     </font></a><span class="default"></span><span class="preproc"># if </span><span class="default">defined PARALLEL</span>
+<a name="67"><font size=-1>67     </font></a><span class="default">       </span><span class="keyword">INTEGER</span><span class="default">, </span><span class="keyword">PARAMETER</span><span class="default">::MPI_SP=MPI_REAL</span>
+<a name="68"><font size=-1>68     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="69"><font size=-1>69     </font></a><span class="preproc"># endif</span>
+<a name="70"><font size=-1>70     </font></a><span class="preproc"></span>
+<a name="71"><font size=-1>71     </font></a><span class="preproc"></span><span class="comment">! define parameters</span>
+<a name="72"><font size=-1>72     </font></a><span class="comment">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">::<a href="dictionary_P.html#666">pi</a>=</span><span class="number">3.141592653</span>
+<a name="73"><font size=-1>73     </font></a><span class="number">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">::<a href="dictionary_P.html#1272">R_earth</a> = </span><span class="number">6371000.0</span><span class="default">_SP</span>
+<a name="74"><font size=-1>74     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">::<a href="dictionary_P.html#669">SMALL</a>=</span><span class="number">0.000001</span><span class="default">_SP</span>
+<a name="75"><font size=-1>75     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">::<a href="dictionary_P.html#1273">LARGE</a>=</span><span class="number">100000.0</span><span class="default">_SP</span>
+<a name="76"><font size=-1>76     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">:: <a href="dictionary_P.html#667">grav</a>=</span><span class="number">9.81</span><span class="default">_SP</span>
+<a name="77"><font size=-1>77     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">:: <a href="dictionary_P.html#663">zero</a> = </span><span class="number">0.0</span><span class="default">_SP</span>
+<a name="78"><font size=-1>78     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">:: <a href="dictionary_P.html#1346">RHO_AW</a> = </span><span class="number">0.0012041</span><span class="default">_SP</span>
+<a name="79"><font size=-1>79     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>), </span><span class="keyword">PARAMETER</span><span class="default">:: <a href="dictionary_P.html#673">DEG2RAD</a> = </span><span class="number">0.0175</span><span class="default">_SP</span>
+<a name="80"><font size=-1>80     </font></a><span class="default"></span>
+<a name="81"><font size=-1>81     </font></a><span class="default"></span><span class="comment">! some global variables</span>
+<a name="82"><font size=-1>82     </font></a><span class="comment">       </span><span class="keyword">INTEGER </span><span class="default">:: <a href="dictionary_P.html#665">I</a>,<a href="dictionary_P.html#664">J</a>,<a href="dictionary_P.html#668">K</a></span>
+<a name="83"><font size=-1>83     </font></a><span class="default">       </span><span class="keyword">INTEGER </span><span class="default">:: <a href="dictionary_P.html#1322">itmp1</a>,<a href="dictionary_P.html#1323">itmp2</a>,<a href="dictionary_P.html#1324">itmp3</a>,<a href="dictionary_P.html#1325">itmp4</a>,<a href="dictionary_P.html#1326">itmp5</a></span>
+<a name="84"><font size=-1>84     </font></a><span class="default">       </span><span class="keyword">REAL</span><span class="default">(<a href="dictionary_P.html#391">SP</a>):: <a href="dictionary_P.html#672">tmp1</a>,<a href="dictionary_P.html#671">tmp2</a>,<a href="dictionary_P.html#670">tmp3</a>,<a href="dictionary_P.html#788">tmp4</a>,<a href="dictionary_P.html#1347">tmp5</a></span>
+<a name="85"><font size=-1>85     </font></a><span class="default"></span>
+<a name="86"><font size=-1>86     </font></a><span class="default"></span><span class="preproc"># if </span><span class="default">defined (ITERATION)</span>
+<a name="87"><font size=-1>87     </font></a><span class="default"></span><span class="comment">! give a maximum iteration number of 2 like in Nwogu </span>
+<a name="88"><font size=-1>88     </font></a><span class="comment">       </span><span class="keyword">INTEGER </span><span class="default">:: ITER_NUM = </span><span class="number">2</span>
+<a name="89"><font size=-1>89     </font></a><span class="number">       </span><span class="keyword">REAL</span><span class="default">(SP) :: ERRORi = </span><span class="number">0.0001</span><span class="default">_SP</span>
+<a name="90"><font size=-1>90     </font></a><span class="default"></span><span class="preproc"># endif</span>
+<a name="91"><font size=-1>91     </font></a><span class="preproc"></span>
+<a name="92"><font size=-1>92     </font></a><span class="preproc"></span><span class="keyword">END MODULE <a href="dictionary_P.html#390">PARAM</a></span>
+<a name="93"><font size=-1>93     </font></a><span class="keyword"></span>
+</pre></body></html>

@@ -1,0 +1,36 @@
+Start Prologue v2.5.3 Mon Jun  6 19:49:25 CDT 2016 
+r16i5n15: MemFree:        124017904 kB
+End Prologue v2.5.3 Mon Jun  6 19:49:26 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 30: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 31: myprompt: command not found
+/p/home/dantopa/hpc//fortran/tools/test/stress/flopper/delta/
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+Currently Loaded Modulefiles:
+  1) java/1.8                3) mpi/sgimpt/2.12-11218
+  2) compiler/gcc/5.3.0      4) pbs/13.1.0.160576
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_harvest_blade.o mod_harvest_blade.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_test_suite.o mod_test_suite.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o flops.o flops.f08
+f951: Fatal Error: Reading module ‘mpi’ at line 1 column 2: Unexpected EOF
+compilation terminated.
+make: *** [flops.o] Error 1
+MPT: Launch error on r16i5n15.ib0.ice-x.erdc.hpc.mil
+./cpu: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393: 27868 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Mon Jun  6 19:49:44 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r16i5n15       0.04     0.05   117.00     0.05     7.62   125.81
+Memory summary:
+		min    0.05 GB
+		max    0.05 GB
+		ave    0.05 GB
+End Epilogue v2.5.3 Mon Jun  6 19:51:01 CDT 2016 

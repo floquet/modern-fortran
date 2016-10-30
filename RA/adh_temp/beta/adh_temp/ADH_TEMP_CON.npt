@@ -1,0 +1,29 @@
+! TEMP - Inputs 
+! NOTICE: no tab; comma is used to separate items; ! refers to comments; content in '' can not be changed; derived variables and pathways which are turned on but not computed will not be output since their values are 0. 
+
+! State Variables
+  'TwaterC',    ON        ! Water Temperature (oC)
+  'TsedC',      ON        ! Sediment Temperature (oC)
+
+! Pathway ON/OFF
+  'Temperature'
+    'q_net',            ON      ! Net heat flux (W/m2)
+    'q_solar',          ON      ! Solar radiation flux (W/m2)
+    'q_latent',         ON      ! Latent heat flux (W/m2)
+    'q_sensible',       ON      ! Sensible heat flux (W/m2)
+    'q_longwave_up',    ON      ! Back (upwelling) longwave radiation flux (W/m2)
+    'q_longwave_down',  ON      ! Atmospheric (downwelling) longwave radiation flux (W/m2)
+    'q_sediment',       ON      ! Sediment-water heat flux (W/m2)
+    'TeqC',             ON      ! Equilibrium temperature (oC)
+    'Ta-Tw',            ON      ! Difference between air and water temperature (oC)
+    'Esat-Eair',        ON      ! Difference between saturated and current vapor pressure (mb)
+
+! WQ parameter region
+  2
+
+! TEMP Parameters
+  'Temperature' 
+    'h2',      0.1,      0.0,   0.123,    0.0,      .false.    ! Sediment layer thickness (m)
+    'pb',      1600.0,   0.0,   1800.0,   0.0,      .false.    ! Sediment bulk density (kg/m3)
+    'Cps',     1674.72,  0.0,   1673.0,   0.0,      .false.    ! Sediment specific heat capacity (J/kg/m3)
+    'alphas',  0.0432,   0.0,   0.0437,   0.0,      .false.    ! Sediment thermal diffusivity (m2/d)

@@ -1,0 +1,34 @@
+Start Prologue v2.5.3 Fri May 13 11:01:06 CDT 2016 
+r19i6n14: MemFree:        124400844 kB
+r19i6n15: MemFree:        124402220 kB
+End Prologue v2.5.3 Fri May 13 11:01:07 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 25: pearl_white: command not found
+/p/home/dantopa/hpc/fortran/tools/test/stress/shared
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_averager.o mod_averager.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_mpt_h.o mod_mpt_h.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_test_suite.o mod_test_suite.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timestamp.o mod_timestamp.f08
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o cpu.o cpu.f08
+mpif90 -g -o cpu cpu.o mod_averager.o mod_file_handling.o mod_mpt_h.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o mod_timestamp.o
+MPT: Launch error on r19i6n14.ib0.ice-x.erdc.hpc.mil
+./cpu: No such file or directory
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  1053 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Fri May 13 11:01:08 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r19i6n14       0.07     0.09   117.00     0.06     7.21   125.81
+r19i6n15       0.03     0.03   117.00     0.03     7.18   125.81
+Memory summary:
+		min    0.03 GB
+		max    0.09 GB
+		ave    0.06 GB
+End Epilogue v2.5.3 Fri May 13 11:02:25 CDT 2016 

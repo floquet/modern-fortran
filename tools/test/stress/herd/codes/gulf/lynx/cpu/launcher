@@ -1,0 +1,9 @@
+qsub $wdmersenne/cpu/001/lynx_cpu_001
+
+qsub $wdmersenne/cpu/002/lynx_cpu_002
+
+qsub $wdmersenne/cpu/003/lynx_cpu_003
+
+qsub $wdmersenne/cpu/004/lynx_cpu_004
+
+cd $wdmersenne

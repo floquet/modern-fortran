@@ -1,0 +1,37 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q parallel
+#PBS -l select=1:ncpus=16:mpiprocs=16
+#PBS -l walltime=18:00:00
+#PBS -j oe
+
+source ${myGit}bash/pbs/pbs_pulse
+
+## Execution Block ----------------------------------------------
+echo ''
+echo 'module list:'
+module list
+echo ''
+
+echo 'executing: module switch'
+echo 'switching compiler_default: '${compiler_default}
+echo 'with compiler_gnu: '${compiler_gnu}
+module switch ${compiler_default} ${compiler_gnu}
+
+echo ''
+echo 'cd '${PBS_O_WORKDIR}
+cd ${PBS_O_WORKDIR}
+
+echo ''
+echo 'gflags = '${gflags}
+echo ''
+echo 'compiling: gfortran ${gflags} allocation_times.f08 -o allocation_times'
+gfortran ${gflags} allocation_times.f08 -o allocation_times
+
+echo ''
+echo 'run: '${run}
+echo 'executing: ${run} ./allocation_times'
+${run} ./allocation_times
+echo ''
+

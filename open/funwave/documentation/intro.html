@@ -1,0 +1,276 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0084)http://hmf.enseeiht.fr/travaux/CD0203/travaux/optmfn/micp/reports/s21bma2/fctmt2.htm -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+   
+   <meta name="Author" content="default">
+   <meta name="GENERATOR" content="Mozilla/4.08 [fr] (WinNT; I) [Netscape]">
+   <title>intro</title>
+</head>
+<body text="#000000" bgcolor="#FFCC00" link="#0000EF" vlink="#59188E" alink="#FF0000">
+
+<center><font color="#3333FF"><font size="+4">Running simulations with Funwave</font></font>
+<br><font color="#3333FF"><font size="+3">(a step by step method)</font></font></center>
+
+<hr>
+<p><i>Here is presented a procedure to run FUNWAVE with your own input
+datas. Each step is completed by a concrete case chosen by our binom (see
+<font color="#0000FF">example</font>).</i>
+<br>&nbsp;
+<br>&nbsp;
+</p><p><font size="+2">I. A look on the software organisation : focus on files
+that have to be modified for running your simulations</font>
+</p><p>&nbsp;&nbsp;&nbsp; Funwave does not have any graphical interface for
+input datas. The user has to find the useful files to enter his datas but
+also to visualize his results. These files are quite the only to be modified.
+In the following scheme, they are colored in red.
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+</p><center>
+<p><img src="./intro_files/architect2.jpg" height="935" width="789">
+</p><p>Scheme.1 : a basic software organigram</p></center>
+
+<br>&nbsp;
+<p><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</p><p><font size="+2">II. How to run your own simulations :</font>
+<br>&nbsp;
+<br>&nbsp;
+</p><p><i><font color="#0000FF">Advice</font> : In order to get clear with&nbsp;
+your own data, copy the already existing EXAMPLE4.1 as a new directory.
+You can then keep the all useful files and entering your own parameters.</i>
+<br>&nbsp;
+<br>&nbsp;
+</p><p><font size="+1">1) Fill your input files step by step</font>
+</p><ul>
+<li>
+<a name="fond"></a><b><font color="#FF0000"><font size="+0">Create and enter
+your bathymetry</font></font></b> : as shown in scheme.1, <b><i><font color="#000000">Init</font></i>
+</b>opens
+and reads the water depth file <font color="#000000"><b><i>profondeur.data
+(f1n)</i></b>.</font>Originally, a Fortran program reads the some of the
+control parameter file<b> <i><font color="#000000">funwave1d.data</font></i></b>.
+It then generates one of the four examples depth grid. However you <u>can
+create your own profile</u> with a Fortran or Matlab program. After writing
+it, make sure that it is writed in <b><i><font color="#000000">profondeur.data
+(f1n)</font></i></b></li>
+</ul>
+
+<blockquote><img src="./intro_files/exclam.gif" height="32" width="32"><i><font color="#0000FF">Caution</font></i>
+: Make sure that the memory allocation is then enough. For this, go to
+<b><font color="#000000"><i>param.h</i>&nbsp;</font></b>
+and check that
+<i>iq</i> is greater than the number of points (mx) you
+generated with your program. Moreover, be careful that <i>mx </i>in <font color="#000000"><b><i>funwave1d.data</i></b>is
+now really equal to the number of points generated.</font>
+<p><i><font color="#0000FF">Example</font> : writing a simple Matlab program
+<b><font color="#000000"><a href="http://hmf.enseeiht.fr/travaux/CD0203/travaux/optmfn/micp/reports/s21bma2/appendix.htm">fond.m</a></font></b>,
+an artificial reef was generated (see graph.1). This profile created a
+990 points grid. It was then necessary to increase the iq value (70 000)&nbsp;
+in <b><font color="#000000">param.h</font></b> and precise mx (990) in
+<font color="#000000"><b>funwave1d.data</b>.</font></i>
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<br>
+</p><center>
+<p><img src="./intro_files/fond.jpg" height="420" width="560"></p></center>
+</blockquote>
+
+<center>Graph.1 : depth profile genrated by&nbsp; <i><font color="#000000"><b>fond.m</b>.
+As expected by the program, the water depth is positive defined</font></i></center>
+
+<ul>
+<li>
+<b><font color="#FF0000">Enter the initial water depth and velocity components
+values </font>: </b>these input datas are contained in <b><i><font color="#000000">initw.data
+(f2n)</font></i></b>. The Fortran program <b><i><font color="#000000">initw.f</font></i></b>allows
+to generate these values. By default they are all equal to zero.</li>
+</ul>
+
+<blockquote><img src="./intro_files/exclam.gif" height="32" width="32"><font color="#0000FF"><i>Caution</i>,
+e<i>xample
+</i></font><i><font color="#000000">variables were set zero.
+However it was necesary to adapt initw.data to the new number of points
+generated in <b>profondeur.data</b> (990). In order to get at least mx
+points quickly, following commands were done with Unix:</font></i>
+<p><i><font color="#000000">- nota: initw.data cointained initially W lines
+of zeros, instead of the X required. Let's modified its size:</font></i>
+</p><p><i><font color="#000000">- cat initw.data &gt; new.data create a new file
+similar to initw.data</font></i>
+</p><p><i><font color="#000000">- cat new.data &gt;&gt; new.data doubles the size
+of new data (command repeated to get 2084 points &gt;&gt; mx = 990)</font></i>
+</p><p><i><font color="#000000">- kill initw.data and "recall" new.data initw.data</font></i>
+</p><p><i><font color="#000000">A suficient size file was then created for
+our initial values.</font></i></p></blockquote>
+
+<ul>
+<li>
+<b><font color="#FF0000">Generate and enter the time series of source function
+amplitude</font>: </b>here you can choose to enter a spectrum (imeth=1)
+or to enter an time series of measured water depth (imeth=2). In both case
+these input datas are contained in <b><i><font color="#000000">random1d.mk
+(f3n)</font></i></b>. The Fortran program <b><i><font color="#000000">1dsource.f</font></i></b>
+allows to generate these values. Moreover a separate input data file <b><i><font color="#000000">1dsource
+.data</font></i></b> is required to run <i><font color="#000000"><b>1dsource.f</b>.</font></i></li>
+</ul>
+
+<blockquote><i><font color="#000000">&nbsp;</font><font color="#0000FF">Example
+</font><font color="#000000">:
+in <b>1dsource .data</b>, we specify</font></i>
+<p><i>in $data0</i>
+</p><p><i><font color="#000000">imeth = 1 to select the generate the source
+function time series by entering an input spectrum of the water depth</font></i>
+</p><p><i><font color="#000000">in $data1</font></i>
+</p><p><i><font color="#000000">f1 = 5 and f2n = 5 are respectively our lowest
+and higest freqsuency components to be used in the spectrum</font></i>
+</p><p><i><font color="#000000">nf = 1 is the number of frequency components
+between f1 and f2n</font></i>
+</p><p><i><font color="#000000">e.g. we choose to generate monochromatic wave
+in order to simplify our study</font></i>
+</p><p><a name="1dsource"></a><i><font color="#000000">Nota :<a href="http://hmf.enseeiht.fr/travaux/CD0203/travaux/optmfn/micp/reports/s21bma2/appendix.htm#app1dsour">
+1dsource.data</a> is shown </font>as it can be found in the software. <font color="#000000">If
+imeth = 2 would&nbsp; have been chosen, an input time series of measured
+water deepth would have been required. In this case, control parameters
+which have to be specified in $data2 </font>are explained.</i>
+<br>&nbsp;
+<br>&nbsp;</p></blockquote>
+
+<ul>
+<li>
+<b><font color="#FF0000">Fill the other general parameters</font> : <i><font color="#000000">funwave1d.data</font></i></b>
+contains control parameters which are used through the program. Some of
+them are used by the input files mentioned above and have to be carefully
+filled, see the following example. Other will be used for the output files
+(see paragrph 2) ) and lasts would be required for a more advanced used
+of the software.</li>
+</ul>
+
+<blockquote><i><font color="#0000FF">Example </font></i><font color="#000000">:
+control parameters that have to be modified in <b><i>funwave1d.data
+</i></b>according
+to our input files :</font>
+<p><font color="#000000">a0 = 1.5 is the input wave amplitudes in metre</font>
+</p><p><font color="#000000">h0 = 5 is the constant water depth in meters over
+the wave generation</font>
+</p><p><font color="#000000">tpd = 9 is the wave period for chronomatic waves</font>
+</p><p><font color="#000000">dx = 0.00001 is the space discretization in meters
+for the x direction (ours is obviously very small but necessary according
+to the problems coped encountered)</font>
+</p><p><font color="#000000">mx = 990 number of grid point in the x direction</font>
+</p><p><font color="#000000">nt = 40 000 number of time step to the program
+to run</font>
+</p><p><font color="#000000">f1n, f2n, f3n check that these input files are
+corectly refered (<b><i>profondeur.data, initw.data, r2d470.dat)</i></b></font>
+</p><p><font color="#000000">cbrk = 1.2 is a typical value for wave breaking
+inequations</font>
+</p><p>cb_bt = 0 bottom friction
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;</p></blockquote>
+<font size="+1">2) Control the different kinds of result storages thanks
+with the input file funwave1d.data</font>
+<p>&nbsp;&nbsp;&nbsp; Indeed, some paramaters located in <b><i>funwave1d.data
+</i></b>allow
+the user to control the <b>time steps for the spatial profiles</b>, or
+the <b>gage location for the time series</b>. There are finally four output
+files which can be controlled.
+</p><ul>
+<li>
+<b><font color="#FF0000">What king of datas can I register? In which files
+are they located? How can I can control them?</font></b></li>
+</ul>
+
+<table border="" width="100%">
+<tbody><tr>
+<td align="CENTER" width="33%"><b>Type of datas</b></td>
+
+<td align="CENTER" width="25%"><b>File names</b></td>
+
+<td align="CENTER" width="42%"><b>Parameters in <i>funwave1d.data </i>allowing
+to control this file&nbsp;</b></td>
+</tr>
+
+<tr>
+<td align="LEFT" width="33%">time series of the water depth elevation for
+specified gages</td>
+
+<td align="CENTER" width="25%">f4n = <b>etats.out</b></td>
+
+<td align="LEFT" width="42%">in $data2 : <b>ngage</b> specifies the gage
+number and <b>ixg</b> their locations&nbsp;</td>
+</tr>
+
+<tr>
+<td align="LEFT" width="33%">time series of x direction velocity</td>
+
+<td align="CENTER" width="25%">f5n = <b>temp.out</b></td>
+
+<td align="LEFT" width="42%">&nbsp;</td>
+</tr>
+
+<tr>
+<td align="LEFT" width="33%">spatial profile of the water depth at 6 time
+steps specified</td>
+
+<td align="CENTER" width="25%">f6n = <b>etaxs.out</b></td>
+
+<td align="LEFT" width="42%">in $data2 : <b>itg</b> (6 values) specifies
+the time steps where spatial profiles are stored</td>
+</tr>
+
+<tr>
+<td align="LEFT" width="33%">spatial profile for a specified interval time&nbsp;</td>
+
+<td align="CENTER" width="25%">f7n = <b>etaxt.out</b></td>
+
+<td align="LEFT" width="42%">in $data1 : <b>itbgn</b>, <b>itend</b>,<b> itdel
+</b>specify
+the beginning, ending and interval numbers of time step</td>
+</tr>
+</tbody></table>
+
+<br>&nbsp;
+<blockquote><a name="fun"></a><i><font color="#0000FF">Example</font> :
+all the paramaters mentionned above were modified. <a href="http://hmf.enseeiht.fr/travaux/CD0203/travaux/optmfn/micp/reports/s21bma2/appendix.htm#appfun">funwave1d.data</a>
+allows to have a look on this input file as it can be found in the software.
+Notice that parameters mentionned in the paragraph 1) have been filled.
+Resting&nbsp; parameters were set at their first values.</i></blockquote>
+
+<br>&nbsp;
+<br>&nbsp;
+<p><font size="+1">3) Run the program</font>
+</p><blockquote><i>Before running the program, being located in FUNWAVE1D,
+<b>compile</b>
+all the Fortan files. You have to be sured that FUNWAVE will use your new
+directory datas : <b>enter into the directory you created</b> and run the
+program by using the command</i>
+<br><b><i>../initw</i></b>
+<br><b><i>../1dsource</i></b>
+<br><b><i>../funwave</i></b></blockquote>
+<font size="+1">4) How to visualize the results</font>
+<p>The matlab output interface proposed in funwave was not so easy to use.
+We chose the <b>xmgr</b> plotting software to view the output files. Final
+results are presented with Excel.
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+
+
+</p></body></html>

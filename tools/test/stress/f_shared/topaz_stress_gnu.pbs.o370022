@@ -1,0 +1,149 @@
+Start Prologue v2.5.3 Mon Jun  6 19:52:41 CDT 2016 
+r2i2n0: MemFree:        123303952 kB
+End Prologue v2.5.3 Mon Jun  6 19:52:42 CDT 2016 
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bashrc on topaz
+Welcome dantopa to ~/.bash_profile on topaz
+/p/home/dantopa/.bash_profile: line 30: pearl_white: command not found
+/p/home/dantopa/.bash_profile: line 31: myprompt: command not found
+/p/home/dantopa/hpc//fortran/tools/test/stress/f_shared/
+/var/spool/PBS/mom_priv/jobs/370022.topaz10.SC: line 22: dan: command not found
+ModuleCmd_Switch.c(172):ERROR:152: Module 'compiler/intel' is currently not loaded
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_averager.o mod_averager.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_mpt_h.o mod_mpt_h.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_test_suite.o mod_test_suite.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_timestamp.o mod_timestamp.f08
+mpif90 -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -o cpu.o cpu.f08
+mpif90 -g -o cpu cpu.o mod_averager.o mod_file_handling.o mod_mpt_h.o mod_test_suite.o mod_timer_clock.o mod_timer_CPU.o mod_timestamp.o
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : disabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00017_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00008_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00015_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00000_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00006_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00013_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00032_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00005_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00011_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00014_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00012_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00002_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00016_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00001_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00010_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00007_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00034_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00033_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00009_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00003_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00004_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00019_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00026_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00020_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00024_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00023_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00025_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00030_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00031_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00018_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00021_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00028_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00027_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00029_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00022_stress.txt doesn't exist; new empty file will be created.
+Warning: /p/home/dantopa/results/times/topaz_r2i2n0_00035_stress.txt doesn't exist; new empty file will be created.
+=>> PBS: job killed: walltime 3614 exceeded limit 3600
+Start Epilogue v2.5.3 Mon Jun  6 20:52:57 CDT 2016 
+Memory usage reported in GB
+               % of     user     user     user    total    total
+Node          limit      max    limit  current  current     phys
+r2i2n0         0.84     0.98   117.00     0.08     8.31   125.81
+Memory summary:
+		min    0.98 GB
+		max    0.98 GB
+		ave    0.98 GB
+End Epilogue v2.5.3 Mon Jun  6 20:54:15 CDT 2016 

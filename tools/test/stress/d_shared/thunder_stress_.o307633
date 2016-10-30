@@ -1,0 +1,332 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 307633.thunder-b01
+whoami root
+LOG /workspace/prologue/307633.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/307633.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 307633
+Start Prologue v2.5.3 Tue May 17 10:31:49 CDT 2016 
+Warning: Permanently added 'r22i2n0.ib0.ice-x.afrl.hpc.mil,10.148.11.71' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n1.ib0.ice-x.afrl.hpc.mil,10.148.11.72' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n10.ib0.ice-x.afrl.hpc.mil,10.148.11.81' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n11.ib0.ice-x.afrl.hpc.mil,10.148.11.82' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n12.ib0.ice-x.afrl.hpc.mil,10.148.11.83' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n13.ib0.ice-x.afrl.hpc.mil,10.148.11.84' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n14.ib0.ice-x.afrl.hpc.mil,10.148.11.85' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n15.ib0.ice-x.afrl.hpc.mil,10.148.11.86' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n16.ib0.ice-x.afrl.hpc.mil,10.148.11.87' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n17.ib0.ice-x.afrl.hpc.mil,10.148.11.88' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n2.ib0.ice-x.afrl.hpc.mil,10.148.11.73' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n3.ib0.ice-x.afrl.hpc.mil,10.148.11.74' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n4.ib0.ice-x.afrl.hpc.mil,10.148.11.75' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n5.ib0.ice-x.afrl.hpc.mil,10.148.11.76' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n6.ib0.ice-x.afrl.hpc.mil,10.148.11.77' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n7.ib0.ice-x.afrl.hpc.mil,10.148.11.78' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i2n9.ib0.ice-x.afrl.hpc.mil,10.148.11.80' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n0.ib0.ice-x.afrl.hpc.mil,10.148.11.89' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n1.ib0.ice-x.afrl.hpc.mil,10.148.11.90' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n10.ib0.ice-x.afrl.hpc.mil,10.148.11.99' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n11.ib0.ice-x.afrl.hpc.mil,10.148.11.100' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n12.ib0.ice-x.afrl.hpc.mil,10.148.11.101' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n14.ib0.ice-x.afrl.hpc.mil,10.148.11.103' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n13.ib0.ice-x.afrl.hpc.mil,10.148.11.102' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n15.ib0.ice-x.afrl.hpc.mil,10.148.11.104' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n16.ib0.ice-x.afrl.hpc.mil,10.148.11.105' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n17.ib0.ice-x.afrl.hpc.mil,10.148.11.106' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n2.ib0.ice-x.afrl.hpc.mil,10.148.11.91' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n3.ib0.ice-x.afrl.hpc.mil,10.148.11.92' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n4.ib0.ice-x.afrl.hpc.mil,10.148.11.93' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n5.ib0.ice-x.afrl.hpc.mil,10.148.11.94' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n7.ib0.ice-x.afrl.hpc.mil,10.148.11.96' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n0.ib0.ice-x.afrl.hpc.mil,10.148.11.143' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n9.ib0.ice-x.afrl.hpc.mil,10.148.11.98' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n1.ib0.ice-x.afrl.hpc.mil,10.148.11.144' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n10.ib0.ice-x.afrl.hpc.mil,10.148.11.153' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n11.ib0.ice-x.afrl.hpc.mil,10.148.11.154' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n12.ib0.ice-x.afrl.hpc.mil,10.148.11.155' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n13.ib0.ice-x.afrl.hpc.mil,10.148.11.156' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n15.ib0.ice-x.afrl.hpc.mil,10.148.11.158' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n16.ib0.ice-x.afrl.hpc.mil,10.148.11.159' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n17.ib0.ice-x.afrl.hpc.mil,10.148.11.160' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n14.ib0.ice-x.afrl.hpc.mil,10.148.11.157' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n2.ib0.ice-x.afrl.hpc.mil,10.148.11.145' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n3.ib0.ice-x.afrl.hpc.mil,10.148.11.146' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n4.ib0.ice-x.afrl.hpc.mil,10.148.11.147' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n5.ib0.ice-x.afrl.hpc.mil,10.148.11.148' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n6.ib0.ice-x.afrl.hpc.mil,10.148.11.149' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n7.ib0.ice-x.afrl.hpc.mil,10.148.11.150' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i6n9.ib0.ice-x.afrl.hpc.mil,10.148.11.152' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n1.ib0.ice-x.afrl.hpc.mil,10.148.11.162' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n0.ib0.ice-x.afrl.hpc.mil,10.148.11.161' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n10.ib0.ice-x.afrl.hpc.mil,10.148.11.171' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n11.ib0.ice-x.afrl.hpc.mil,10.148.11.172' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n12.ib0.ice-x.afrl.hpc.mil,10.148.11.173' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n13.ib0.ice-x.afrl.hpc.mil,10.148.11.174' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n14.ib0.ice-x.afrl.hpc.mil,10.148.11.175' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n15.ib0.ice-x.afrl.hpc.mil,10.148.11.176' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n17.ib0.ice-x.afrl.hpc.mil,10.148.11.178' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n16.ib0.ice-x.afrl.hpc.mil,10.148.11.177' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n2.ib0.ice-x.afrl.hpc.mil,10.148.11.163' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n3.ib0.ice-x.afrl.hpc.mil,10.148.11.164' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i3n6.ib0.ice-x.afrl.hpc.mil,10.148.11.95' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n4.ib0.ice-x.afrl.hpc.mil,10.148.11.165' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n6.ib0.ice-x.afrl.hpc.mil,10.148.11.167' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n9.ib0.ice-x.afrl.hpc.mil,10.148.11.170' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n7.ib0.ice-x.afrl.hpc.mil,10.148.11.168' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i1n0.ib0.ice-x.afrl.hpc.mil,10.148.11.197' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n1.ib0.ice-x.afrl.hpc.mil,10.148.11.216' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n0.ib0.ice-x.afrl.hpc.mil,10.148.11.215' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n10.ib0.ice-x.afrl.hpc.mil,10.148.11.225' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n11.ib0.ice-x.afrl.hpc.mil,10.148.11.226' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n12.ib0.ice-x.afrl.hpc.mil,10.148.11.227' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n13.ib0.ice-x.afrl.hpc.mil,10.148.11.228' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n14.ib0.ice-x.afrl.hpc.mil,10.148.11.229' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n15.ib0.ice-x.afrl.hpc.mil,10.148.11.230' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n16.ib0.ice-x.afrl.hpc.mil,10.148.11.231' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n17.ib0.ice-x.afrl.hpc.mil,10.148.11.232' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n2.ib0.ice-x.afrl.hpc.mil,10.148.11.217' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n3.ib0.ice-x.afrl.hpc.mil,10.148.11.218' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n5.ib0.ice-x.afrl.hpc.mil,10.148.11.220' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n6.ib0.ice-x.afrl.hpc.mil,10.148.11.221' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n4.ib0.ice-x.afrl.hpc.mil,10.148.11.219' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n7.ib0.ice-x.afrl.hpc.mil,10.148.11.222' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i2n9.ib0.ice-x.afrl.hpc.mil,10.148.11.224' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n0.ib0.ice-x.afrl.hpc.mil,10.148.11.233' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n1.ib0.ice-x.afrl.hpc.mil,10.148.11.234' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n10.ib0.ice-x.afrl.hpc.mil,10.148.11.243' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n11.ib0.ice-x.afrl.hpc.mil,10.148.11.244' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r22i7n5.ib0.ice-x.afrl.hpc.mil,10.148.11.166' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n12.ib0.ice-x.afrl.hpc.mil,10.148.11.245' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n2.ib0.ice-x.afrl.hpc.mil,10.148.11.235' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n3.ib0.ice-x.afrl.hpc.mil,10.148.11.236' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n4.ib0.ice-x.afrl.hpc.mil,10.148.11.237' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n5.ib0.ice-x.afrl.hpc.mil,10.148.11.238' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n6.ib0.ice-x.afrl.hpc.mil,10.148.11.239' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n7.ib0.ice-x.afrl.hpc.mil,10.148.11.240' (ECDSA) to the list of known hosts.
+Warning: Permanently added 'r23i3n9.ib0.ice-x.afrl.hpc.mil,10.148.11.242' (ECDSA) to the list of known hosts.
+r21i7n16: MemFree:        123077076 kB
+r22i2n10: MemFree:        122806316 kB
+r22i2n1: MemFree:        122968864 kB
+r22i2n13: MemFree:        123065328 kB
+r22i2n0: MemFree:        122681408 kB
+r21i7n17: MemFree:        123300368 kB
+r22i2n12: MemFree:        122918624 kB
+r22i2n11: MemFree:        123076176 kB
+r22i2n16: MemFree:        123114168 kB
+r22i2n17: MemFree:        122986288 kB
+r22i2n7: MemFree:        123875032 kB
+r22i2n9: MemFree:        123855472 kB
+r22i2n6: MemFree:        123044172 kB
+r22i3n1: MemFree:        123377892 kB
+r22i3n13: MemFree:        123194288 kB
+r22i3n0: MemFree:        123155480 kB
+r22i3n11: MemFree:        123227648 kB
+r22i3n12: MemFree:        123011132 kB
+r22i3n14: MemFree:        123003452 kB
+r22i3n15: MemFree:        123063676 kB
+r22i3n4: MemFree:        123035868 kB
+r22i3n2: MemFree:        123134064 kB
+r22i3n6: MemFree:        123225500 kB
+r22i6n10: MemFree:        123427660 kB
+r22i3n7: MemFree:        122998616 kB
+r22i2n14: MemFree:        122965068 kB
+r22i3n3: MemFree:        123251564 kB
+r22i2n15: MemFree:        123003576 kB
+r22i6n17: MemFree:        123534632 kB
+r22i2n4: MemFree:        122678904 kB
+r22i6n14: MemFree:        123248012 kB
+r22i6n16: MemFree:        123243332 kB
+r22i6n13: MemFree:        123084672 kB
+r22i6n4: MemFree:        123069396 kB
+r22i2n2: MemFree:        122787372 kB
+r22i2n5: MemFree:        123892220 kB
+r22i2n3: MemFree:        122931632 kB
+r22i6n5: MemFree:        120519012 kB
+r22i3n10: MemFree:        123076436 kB
+r22i6n6: MemFree:        122929020 kB
+r22i7n1: MemFree:        123235180 kB
+r22i3n16: MemFree:        123008556 kB
+r22i3n17: MemFree:        122937616 kB
+r22i7n13: MemFree:        123167552 kB
+r22i7n16: MemFree:        123374108 kB
+r22i7n10: MemFree:        123123708 kB
+r22i7n15: MemFree:        123297696 kB
+r22i3n5: MemFree:        123309752 kB
+r22i7n4: MemFree:        123343964 kB
+r22i7n2: MemFree:        122859016 kB
+r22i3n9: MemFree:        123182068 kB
+r22i7n17: MemFree:        123283316 kB
+r22i7n5: MemFree:        123060944 kB
+r22i6n11: MemFree:        122998056 kB
+r22i6n1: MemFree:        122761536 kB
+r22i6n0: MemFree:        122738116 kB
+r22i7n3: MemFree:        123190580 kB
+r22i7n6: MemFree:        122948588 kB
+r22i6n12: MemFree:        123210308 kB
+r22i6n15: MemFree:        123085404 kB
+r23i1n0: MemFree:        124214728 kB
+r23i2n1: MemFree:        122853716 kB
+r22i6n2: MemFree:        122796212 kB
+r22i7n9: MemFree:        123185532 kB
+r22i6n3: MemFree:        122975880 kB
+r23i2n12: MemFree:        122832736 kB
+r23i2n17: MemFree:        122825552 kB
+r23i2n15: MemFree:        122830876 kB
+r22i6n7: MemFree:        122546388 kB
+r23i2n4: MemFree:        122821240 kB
+r23i2n5: MemFree:        122839244 kB
+r22i6n9: MemFree:        123060208 kB
+r22i7n0: MemFree:        122861256 kB
+r22i7n11: MemFree:        123328108 kB
+r23i2n3: MemFree:        122840564 kB
+r23i2n2: MemFree:        122848392 kB
+r23i2n6: MemFree:        122835556 kB
+r22i7n14: MemFree:        123171608 kB
+r23i3n0: MemFree:        123576244 kB
+r22i7n12: MemFree:        123225332 kB
+r23i3n1: MemFree:        123593628 kB
+r23i3n5: MemFree:        123598404 kB
+r23i3n3: MemFree:        123605180 kB
+r22i7n7: MemFree:        123012832 kB
+r23i3n12: MemFree:        123607160 kB
+r23i2n0: MemFree:        122745704 kB
+r23i2n10: MemFree:        122829404 kB
+r23i3n7: MemFree:        123605868 kB
+r23i2n11: MemFree:        122827280 kB
+r23i2n13: MemFree:        122810976 kB
+r23i2n14: MemFree:        122834636 kB
+r23i2n9: MemFree:        122820200 kB
+r23i2n16: MemFree:        122828224 kB
+r23i2n7: MemFree:        122836060 kB
+r23i3n10: MemFree:        123602228 kB
+r23i3n4: MemFree:        123591552 kB
+r23i3n11: MemFree:        123606268 kB
+r23i3n2: MemFree:        123584820 kB
+r23i3n6: MemFree:        123610868 kB
+r23i3n9: MemFree:        123609200 kB
+End Prologue v2.5.3 Tue May 17 10:31:49 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 20: black: command not found
+jobStarter
+/home/dantopa/hpc/fortran/tools/test/stress/d_shared/
+mpif90 -c  -o mod_file_handling.o mod_file_handling.f08
+mpif90 -c  -o mod_mpt_h.o mod_mpt_h.f08
+mpif90 -c  -o mod_timer_CPU.o mod_timer_CPU.f08
+mpif90 -c  -o mod_timer_clock.o mod_timer_clock.f08
+mpif90 -c  -o mod_test_suite.o mod_test_suite.f08
+mod_test_suite.f08:5.8:
+
+    use mAverager,                      only : averager
+        1
+Fatal Error: Can't open module file 'maverager.mod' for reading at (1): No such file or directory
+make: *** [mod_test_suite.o] Error 1
+MPT: Launch error on r21i7n16.ib0.ice-x.afrl.hpc.mil
+./cpu: ./cpu: cannot execute binary file
+MPT ERROR: could not run executable
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpiexec_mpt: line 393:  3379 Killed                  $mpicmdline_prefix -f $paramfile
+Start Epilogue v2.5.3 Tue May 17 10:31:55 CDT 2016 
+r22i2n1 max memory used for job 307633.thunder-b01 (in bytes): 35442688
+r22i2n0 max memory used for job 307633.thunder-b01 (in bytes): 34369536
+r22i2n11 max memory used for job 307633.thunder-b01 (in bytes): 34553856
+r22i2n10 max memory used for job 307633.thunder-b01 (in bytes): 34398208
+r22i2n16 max memory used for job 307633.thunder-b01 (in bytes): 34115584
+r22i2n12 max memory used for job 307633.thunder-b01 (in bytes): 34607104
+r22i2n2 max memory used for job 307633.thunder-b01 (in bytes): 34590720
+r21i7n17 max memory used for job 307633.thunder-b01 (in bytes): 35098624
+r22i2n13 max memory used for job 307633.thunder-b01 (in bytes): 34402304
+r22i2n14 max memory used for job 307633.thunder-b01 (in bytes): 34062336
+r22i2n5 max memory used for job 307633.thunder-b01 (in bytes): 14413824
+r22i3n1 max memory used for job 307633.thunder-b01 (in bytes): 34627584
+r22i2n17 max memory used for job 307633.thunder-b01 (in bytes): 34222080
+r22i2n4 max memory used for job 307633.thunder-b01 (in bytes): 34566144
+r22i2n9 max memory used for job 307633.thunder-b01 (in bytes): 14114816
+r21i7n16 max memory used for job 307633.thunder-b01 (in bytes): 116215808
+r22i3n0 max memory used for job 307633.thunder-b01 (in bytes): 34508800
+r22i2n7 max memory used for job 307633.thunder-b01 (in bytes): 14573568
+r22i3n15 max memory used for job 307633.thunder-b01 (in bytes): 34615296
+r22i3n11 max memory used for job 307633.thunder-b01 (in bytes): 34320384
+r22i3n13 max memory used for job 307633.thunder-b01 (in bytes): 35074048
+r22i3n16 max memory used for job 307633.thunder-b01 (in bytes): 34643968
+r22i3n17 max memory used for job 307633.thunder-b01 (in bytes): 34222080
+r22i3n14 max memory used for job 307633.thunder-b01 (in bytes): 34340864
+r22i2n15 max memory used for job 307633.thunder-b01 (in bytes): 34516992
+r22i3n4 max memory used for job 307633.thunder-b01 (in bytes): 34619392
+r22i3n5 max memory used for job 307633.thunder-b01 (in bytes): 34267136
+r22i6n1 max memory used for job 307633.thunder-b01 (in bytes): 34738176
+r22i3n9 max memory used for job 307633.thunder-b01 (in bytes): 34856960
+r22i3n2 max memory used for job 307633.thunder-b01 (in bytes): 35020800
+r22i3n7 max memory used for job 307633.thunder-b01 (in bytes): 34562048
+r22i3n6 max memory used for job 307633.thunder-b01 (in bytes): 34967552
+r22i6n13 max memory used for job 307633.thunder-b01 (in bytes): 34742272
+r22i2n6 max memory used for job 307633.thunder-b01 (in bytes): 34684928
+r22i6n14 max memory used for job 307633.thunder-b01 (in bytes): 34209792
+r22i6n10 max memory used for job 307633.thunder-b01 (in bytes): 35004416
+r22i2n3 max memory used for job 307633.thunder-b01 (in bytes): 34607104
+r22i3n12 max memory used for job 307633.thunder-b01 (in bytes): 34476032
+r22i6n3 max memory used for job 307633.thunder-b01 (in bytes): 33968128
+r22i6n17 max memory used for job 307633.thunder-b01 (in bytes): 35061760
+r22i6n2 max memory used for job 307633.thunder-b01 (in bytes): 34619392
+r22i6n16 max memory used for job 307633.thunder-b01 (in bytes): 34349056
+r22i3n10 max memory used for job 307633.thunder-b01 (in bytes): 34361344
+r22i6n15 max memory used for job 307633.thunder-b01 (in bytes): 33931264
+r22i6n4 max memory used for job 307633.thunder-b01 (in bytes): 35323904
+r22i6n9 max memory used for job 307633.thunder-b01 (in bytes): 33775616
+r22i6n7 max memory used for job 307633.thunder-b01 (in bytes): 34283520
+r22i7n0 max memory used for job 307633.thunder-b01 (in bytes): 34406400
+r22i6n6 max memory used for job 307633.thunder-b01 (in bytes): 34754560
+r22i7n12 max memory used for job 307633.thunder-b01 (in bytes): 34430976
+r22i7n11 max memory used for job 307633.thunder-b01 (in bytes): 34390016
+r22i3n3 max memory used for job 307633.thunder-b01 (in bytes): 34201600
+r22i7n1 max memory used for job 307633.thunder-b01 (in bytes): 34578432
+r22i7n13 max memory used for job 307633.thunder-b01 (in bytes): 34197504
+r22i7n16 max memory used for job 307633.thunder-b01 (in bytes): 34324480
+r22i7n10 max memory used for job 307633.thunder-b01 (in bytes): 34635776
+r22i7n4 max memory used for job 307633.thunder-b01 (in bytes): 34512896
+r22i7n3 max memory used for job 307633.thunder-b01 (in bytes): 34385920
+r22i7n14 max memory used for job 307633.thunder-b01 (in bytes): 34770944
+r22i7n17 max memory used for job 307633.thunder-b01 (in bytes): 34508800
+r22i7n15 max memory used for job 307633.thunder-b01 (in bytes): 35516416
+r22i7n5 max memory used for job 307633.thunder-b01 (in bytes): 34508800
+r22i6n11 max memory used for job 307633.thunder-b01 (in bytes): 34123776
+r22i6n0 max memory used for job 307633.thunder-b01 (in bytes): 35667968
+r22i7n6 max memory used for job 307633.thunder-b01 (in bytes): 34516992
+r23i1n0 max memory used for job 307633.thunder-b01 (in bytes): 15212544
+r22i7n7 max memory used for job 307633.thunder-b01 (in bytes): 34091008
+r23i2n0 max memory used for job 307633.thunder-b01 (in bytes): 34373632
+r22i7n9 max memory used for job 307633.thunder-b01 (in bytes): 33886208
+r22i6n12 max memory used for job 307633.thunder-b01 (in bytes): 35409920
+r23i2n11 max memory used for job 307633.thunder-b01 (in bytes): 33992704
+r23i2n10 max memory used for job 307633.thunder-b01 (in bytes): 34201600
+r23i2n12 max memory used for job 307633.thunder-b01 (in bytes): 34852864
+r23i2n14 max memory used for job 307633.thunder-b01 (in bytes): 34603008
+r23i2n13 max memory used for job 307633.thunder-b01 (in bytes): 34766848
+r22i6n5 max memory used for job 307633.thunder-b01 (in bytes): 34672640
+r23i2n17 max memory used for job 307633.thunder-b01 (in bytes): 34631680
+r23i2n15 max memory used for job 307633.thunder-b01 (in bytes): 34443264
+r23i2n3 max memory used for job 307633.thunder-b01 (in bytes): 34537472
+r23i2n6 max memory used for job 307633.thunder-b01 (in bytes): 34324480
+r22i7n2 max memory used for job 307633.thunder-b01 (in bytes): 34230272
+r23i2n7 max memory used for job 307633.thunder-b01 (in bytes): 34664448
+r23i3n1 max memory used for job 307633.thunder-b01 (in bytes): 34947072
+r23i3n2 max memory used for job 307633.thunder-b01 (in bytes): 34500608
+r23i3n12 max memory used for job 307633.thunder-b01 (in bytes): 33935360
+r23i3n9 max memory used for job 307633.thunder-b01 (in bytes): 34033664
+r23i2n1 max memory used for job 307633.thunder-b01 (in bytes): 34074624
+r23i3n3 max memory used for job 307633.thunder-b01 (in bytes): 34492416
+r23i2n2 max memory used for job 307633.thunder-b01 (in bytes): 33972224
+r23i3n5 max memory used for job 307633.thunder-b01 (in bytes): 34414592
+r23i2n5 max memory used for job 307633.thunder-b01 (in bytes): 34484224
+r23i2n16 max memory used for job 307633.thunder-b01 (in bytes): 34586624
+r23i2n4 max memory used for job 307633.thunder-b01 (in bytes): 34242560
+r23i2n9 max memory used for job 307633.thunder-b01 (in bytes): 34291712
+r23i3n11 max memory used for job 307633.thunder-b01 (in bytes): 34832384
+r23i3n0 max memory used for job 307633.thunder-b01 (in bytes): 34750464
+r23i3n10 max memory used for job 307633.thunder-b01 (in bytes): 34484224
+r23i3n4 max memory used for job 307633.thunder-b01 (in bytes): 34193408
+r23i3n7 max memory used for job 307633.thunder-b01 (in bytes): 33447936
+r23i3n6 max memory used for job 307633.thunder-b01 (in bytes): 34668544
+End Epilogue v2.5.3 Tue May 17 10:31:56 CDT 2016 

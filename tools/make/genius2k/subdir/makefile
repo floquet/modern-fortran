@@ -1,0 +1,43 @@
+# Start of the makefile
+# Defining variables
+objects = global.o main.o function1.o subroutine1.o
+f08comp = gfortran
+cflags = -c -Wall -Wextra -Wconversion -pedantic -fcheck=bounds -fmax-errors=5
+switch = -Og
+# Makefile
+exec: $(objects)
+	$(f08comp) -o exec $(switch) $(objects)
+global.mod: global.o global.f08
+	$(f08comp) $(cflags) $(switch) global.f08
+global.o: global.f08
+	$(f08comp) $(cflags) $(switch) global.f08
+main.o: global.mod main.f08
+	$(f08comp) $(cflags) $(switch) main.f08
+function1.o: global.mod function1.f08
+	$(f08comp) $(cflags) $(switch) function1.f08
+%.o: %.f08
+	$(f08comp) $(cflags) $(switch) $<
+# Cleaning everything
+clean:
+	rm *.mod
+	rm *.o
+	rm $(objects)
+# End of the makefile
+
+# http://genius2k.is-programmer.com/posts/40301.html
+
+# dan-topas-pro-2:genius2k rditldmt$ date
+# Fri Jan 29 10:29:54 CST 2016
+# dan-topas-pro-2:genius2k rditldmt$ pwd
+# /Users/rditldmt/Box Sync/fortran/demos/make/genius2k
+# dan-topas-pro-2:genius2k rditldmt$ make
+# gfortran $(cflags) -Og global.f08
+# gfortran $(cflags) -Og main.f08
+# gfortran $(cflags) -Og function1.f08
+# gfortran -o execname -Og global.o main.o function1.o subroutine1.o
+# dan-topas-pro-2:genius2k rditldmt$ ./execname
+# y = 16.0000000
+#
+# subroutine1 = 17.0000000
+#
+# STOP Execution complete for main.f08

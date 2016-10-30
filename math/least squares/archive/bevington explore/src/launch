@@ -1,0 +1,2 @@
+f90_mod_deps.py --output lsq.deps --dep-re "(mod_.*)"  --dep-template ".\1.mod" --mod-re "(.*)" --mod-template ".\1.mod" lsq.f08
+f90_mod_deps.py --output src/lsq.deps --dep-re "(mod_.*)" --dep-template "src/\1.mod" --mod-re "(.*)" --mod-template "src/\1.mod" src/lsq.f08

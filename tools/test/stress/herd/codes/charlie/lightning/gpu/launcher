@@ -1,0 +1,18 @@
+cd $dir_mersenne/gpu/
+cd 001/
+qsub lightning_001
+
+cd $dir_mersenne/gpu/
+cd 002/
+qsub lightning_002
+
+cd $dir_mersenne/gpu/
+cd 003/
+qsub lightning_003
+
+cd $dir_mersenne/gpu/
+cd 004/
+qsub lightning_004
+
+cd $dir_mersenne/
+

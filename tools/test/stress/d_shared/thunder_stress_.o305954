@@ -1,0 +1,440 @@
+EUID 0
+WORKSPACE /workspace
+PBS_HOME /var/spool/PBS
+JOB_ID 305954.thunder-b01
+whoami root
+LOG /workspace/prologue/305954.thunder-b01
+whoami root
+file workspace /workspace: symbolic link to `/p/work1/workspace'
+file /p /p: directory
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/305954.thunder-b01.SC.user to UNIX format ...
+JOBID  QSTAT_OUT 305954
+Start Prologue v2.5.3 Fri May 13 18:09:36 CDT 2016 
+r16i4n15: MemFree:        121871192 kB
+r16i4n16: MemFree:        123020868 kB
+End Prologue v2.5.3 Fri May 13 18:09:36 CDT 2016 
+Welcome dantopa to ~/.personal.bash_profile on Thunder
+/home/dantopa/.personal.bash_profile: line 20: black: command not found
+jobStarter
+/p/home/dantopa/hpc/fortran/tools/test/stress/d_shared/
+ModuleCmd_Switch.c(172):ERROR:152: Module 'intel-compilers/15.3.187' is currently not loaded
+mpif90 -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -O -pedantic -fcheck=bounds -fmax-errors=5 -o mod_averager.o mod_averager.f08
+/p/home/apps/sgi/mpt-2.12-sgi712r26/bin/mpif90: line 120: ifort: command not found
+make: *** [mod_averager.o] Error 127
+	MPT Environmental Settings
+MPT: MPI_ARRAY (default: ) : 
+MPT: MPI_BUFFER_MAX (default: not set) : not set
+MPT: MPI_BUFS_LIMIT (default: 32) : 32
+MPT: MPI_BUFS_PER_PROC (default: 128) : 128
+MPT: MPI_CHECK_ARGS (default: disabled) : disabled
+MPT: MPI_CLOCKSOURCE (default: ) : 
+MPT: MPI_COLL_A2A_FRAG (default: 2097152) : 2097152
+MPT: MPI_COLL_CLUSTER_OPT (default: enabled) : enabled
+MPT: MPI_COLL_GATHERV (default: 65536) : 65536
+MPT: MPI_COLL_LEADERS (default: enabled) : enabled
+MPT: MPI_COLL_NUMA_THRESHOLD (default: 4) : 4
+MPT: MPI_COLL_OPT (default: enabled) : enabled
+MPT: MPI_COLL_OPT_VERBOSE (default: disabled) : disabled
+MPT: MPI_COLL_PREREG (default: enabled) : enabled
+MPT: MPI_COLL_RED_RB_MIN (default: 16384) : 16384
+MPT: MPI_COLL_REPRODUCIBLE (default: disabled) : disabled
+MPT: MPI_COLL_SYNC (default: not set) : not set
+MPT: MPI_COMM_MAX (default: 256) : 256
+MPT: MPI_COREDUMP (default: FIRST) : FIRST
+MPT: MPI_COREDUMP_DEBUGGER (default: gdb) : gdb
+MPT: MPI_CPR (default: disabled) : disabled
+MPT: MPI_CUDA_BUFFER_MAX (default: 10485760) : 10485760
+MPT: MPI_DEFAULT_SINGLE_COPY_BUFFER_MAX (default: 2000) : 2000
+MPT: MPI_DEFAULT_SINGLE_COPY_OFF (default: 0) : 0
+MPT: MPI_DIR (default: ) : 
+MPT: MPI_DISPLAY_SETTINGS (default: disabled) : enabled
+MPT: MPI_DSM_CPULIST (default: not set) : not set
+MPT: MPI_DSM_DISTRIBUTE (default: enabled) : enabled
+MPT: MPI_DSM_OFF (default: disabled) : disabled
+MPT: MPI_DSM_VERBOSE (default: disabled) : disabled
+MPT: MPI_GATHER_RANKS (default: enabled) : enabled
+MPT: MPI_GROUP_MAX (default: 32) : 32
+MPT: MPI_GRU_BUFFER_MAX (default: 32768) : 32768
+MPT: MPI_GRU_CBS (default: 0) : 0
+MPT: MPI_GRU_ENABLED (default: disabled) : disabled
+MPT: MPI_GRU_GAMIR_GET (default: enabled) : enabled
+MPT: MPI_GRU_SIG_INTERVAL (default: 5) : 5
+MPT: MPI_HUGEPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_HUGEPAGE_MSGS (default: disabled) : disabled
+MPT: MPI_LAUNCH_TIMEOUT (default: 20) : 20
+MPT: MPI_MAP_POWER2 (default: 0) : 0
+MPT: MPI_MAPPED_HEAP_SIZE (default: not set) : not set
+MPT: MPI_MAPPED_STACK_SIZE (default: not set) : not set
+MPT: MPI_MEM_ALIGN (default: 0) : 0
+MPT: MPI_MEMMAP_OFF (default: disabled) : enabled
+MPT: MPI_MSG_RETRIES (default: 200000) : 200000
+MPT: MPI_MSG_MEM (default: not set) : not set
+MPT: MPI_NAP (default: not set) : not set
+MPT: MPI_NUM_QUICKS (default: 8) : 8
+MPT: MPI_PREFAULT_HEAP (default: 0) : 0
+MPT: MPI_QUERYABLE (default: disabled) : disabled
+MPT: MPI_REQUEST_DEBUG (default: disabled) : disabled
+MPT: MPI_REQUEST_MAX (default: 16384) : 16384
+MPT: MPI_RESET_PATH (default: ) : 
+MPT: MPI_SHARED_NEIGHBORHOOD (default: BLADE) : BLADE
+MPT: MPI_SHEPHERD (default: disabled) : disabled
+MPT: MPI_SIGTRAP (default: disabled) : disabled
+MPT: MPI_STATS (default: disabled) : disabled
+MPT: MPI_STATS_FILE (default: ) : 
+MPT: MPI_STATUS_SIGNAL (default: not set) : not set
+MPT: MPI_SUPERPAGE_HEAP_SPACE (default: 0) : 0
+MPT: MPI_SYSLOG_COPY (default: disabled) : disabled
+MPT: MPI_TYPE_DEPTH (default: 14) : 14
+MPT: MPI_TYPE_MAX (default: 8192) : 8192
+MPT: MPI_UNBUFFERED_STDIO (default: disabled) : disabled
+MPT: MPI_UNIVERSE (default: ) : 
+MPT: MPI_UNIVERSE_SIZE (default: 0) : 0
+MPT: MPI_USE_CUDA (default: disabled) : disabled
+MPT: MPI_USE_GRU (default: disabled) : disabled
+MPT: MPI_USE_XPMEM (default: disabled) : disabled
+MPT: MPI_VERBOSE (default: disabled) : disabled
+MPT: MPI_VERBOSE2 (default: disabled) : disabled
+MPT: MPI_WATCHDOG_TIMER (default: 10) : 10
+MPT: MPI_WIN_MODE (default: DEFAULT) : DEFAULT
+MPT: MPI_WORLD_MAP (default: ) : 
+MPT: MPI_XPMEM_ENABLED (default: enabled) : enabled
+MPT: MPI_XPMEM_SHARED (default: enabled) : enabled
+MPT: MPI_COLL_IB_OFFLOAD (default: disabled) : disabled
+MPT: MPI_CONNECTIONS_THRESHOLD (default: 1025) : 1025
+MPT: MPI_IB_ACCELERATE_AHS (default: disabled) : disabled
+MPT: MPI_IB_EARLY_AHS (default: disabled) : disabled
+MPT: MPI_IB_COALESCE (default: disabled) : disabled
+MPT: MPI_IB_CONGESTED (default: disabled) : disabled
+MPT: MPI_IB_DCIS (default: 0) : 0
+MPT: MPI_IB_DEVS (default: ) : 
+MPT: MPI_IB_DEVS0 (default: ) : 
+MPT: MPI_IB_DEVS1 (default: ) : 
+MPT: MPI_IB_FAILOVER (default: 32) : 32
+MPT: MPI_IB_FAILOVER_RESET (default: enabled) : enabled
+MPT: MPI_IB_HYPER_LAZY (default: disabled) : disabled
+MPT: MPI_IB_IMM_UPGRADE (default: disabled) : disabled
+MPT: MPI_IB_MAX_RDMAS (default: 4) : 4
+MPT: MPI_IB_MTU (default: 2048) : 2048
+MPT: MPI_IB_NUM_QPS (default: not set) : not set
+MPT: MPI_IB_PAYLOAD (default: 16512) : 16512
+MPT: MPI_IB_PRE_CACHE (default: 0) : 0
+MPT: MPI_IB_QP_REALLOC (default: disabled) : disabled
+MPT: MPI_IB_QTIME (default: 0) : 0
+MPT: MPI_IB_RAIL0 (default: ) : 
+MPT: MPI_IB_RAIL1 (default: ) : 
+MPT: MPI_IB_RAILS (default: 1) : 1
+MPT: MPI_IB_RAILS_FLEXIBLE (default: disabled) : disabled
+MPT: MPI_IB_RECV_BUFS (default: 512) : 512
+MPT: MPI_IB_RECV_MSGS (default: 512) : 512
+MPT: MPI_IB_RNR_TIMER (default: 14) : 26
+MPT: MPI_IB_SERVICE_LEVEL (default: 0) : 1
+MPT: MPI_IB_SINGLE_COPY_BUFFER_MAX (default: 32767) : 32767
+MPT: MPI_IB_TIMEOUT (default: 18) : 22
+MPT: MPI_IB_UPGRADE_SENDS (default: 50) : 50
+MPT: MPI_IB_XRC (default: enabled) : enabled
+MPT: MPI_MEMORY_REGION_LIMIT (default: 938143374) : 938143374
+MPT: MPI_NUM_MEMORY_REGIONS (default: 1024) : 1024
+MPT: MPI_UD_ACK_TIMEOUT (default: 5) : 5
+MPT: MPI_UD_CODEL_DEBUG (default: disabled) : disabled
+MPT: MPI_UD_RECV_MSGS (default: 800) : 800
+MPT: MPI_UD_SEND_BUFFERS (default: 400) : 400
+MPT: MPI_UD_FINALIZE_TIMEOUT (default: 2) : 2
+MPT: MPI_UD_TIMEOUT (default: 20) : 20
+MPT: MPI_USE_IB (default: disabled) : disabled
+MPT: MPI_USE_TCP (default: disabled) : disabled
+MPT: MPI_USE_UD (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ (default: disabled) : disabled
+MPT: MPIO_DIRECT_WRITE (default: disabled) : disabled
+MPT: MPIO_DIRECT_READ_CHUNK_SIZE (default: 0) : 0
+MPT: MPIO_DIRECT_WRITE_CHUNK_SIZE (default: 0) : 0
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00071_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00052_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00070_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00060_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00069_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00057_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00019_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00056_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00021_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00035_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00018_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00048_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00028_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00009_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00026_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00025_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00024_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00007_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00006_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00014_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00000_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00016_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00001_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00023_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00008_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00030_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00003_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00066_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00033_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00065_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00027_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00031_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00058_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00064_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00029_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00055_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00054_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00034_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00042_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00022_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00017_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00004_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00032_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00068_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00011_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00062_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00039_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00013_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00067_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00005_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00037_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00010_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00012_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00050_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00015_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00045_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00041_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00046_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00051_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00049_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00044_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00040_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00061_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00038_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00059_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00020_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00053_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00063_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n15_00002_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00047_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00036_stress.txt doesn't exist; new empty file will be created.
+Warning: /home/dantopa/hpc//transporter/Thunder_r16i4n16_00043_stress.txt doesn't exist; new empty file will be created.
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+mkdir: cannot create directory `info': File exists
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00019_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00057_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00056_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00021_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00070_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00052_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00065_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00064_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00071_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00069_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00060_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00055_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00066_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00068_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00046_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00041_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00035_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00022_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00058_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00024_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00003_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00039_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00033_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00031_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00054_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00061_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00038_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00062_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00004_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00026_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00067_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00006_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00053_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00045_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00050_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00051_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00044_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00040_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00049_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00009_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00059_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00014_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00013_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00037_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00000_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00047_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00029_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00030_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00018_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00007_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00036_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00008_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00012_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00028_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00017_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00027_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00034_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00048_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00032_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00016_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00042_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00063_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00023_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00010_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00011_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00001_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00043_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00015_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00025_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00005_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00002_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00020_cpu.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00071_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00070_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00065_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00057_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00069_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00019_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00056_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00052_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00064_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00060_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00055_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00068_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00058_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00046_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00041_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00066_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00039_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00054_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00061_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00021_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00038_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00062_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00037_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00067_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00045_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00053_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00044_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00049_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00059_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00047_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00051_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00050_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00048_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00042_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00036_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00040_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00063_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n16_00043_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00022_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00031_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00035_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00004_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00026_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00003_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00033_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00013_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00024_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00000_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00027_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00014_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00006_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00008_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00023_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00010_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00012_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00017_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00009_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00032_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00034_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00029_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00030_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00018_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00007_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00028_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00001_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00015_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00005_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00011_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00016_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00020_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00025_mem.txt': No such file or directory
+cp: cannot create regular file `/info/info_/home/dantopa/hpc//transporter/Thunder_r16i4n15_00002_mem.txt': No such file or directory
+Start Epilogue v2.5.3 Fri May 13 19:20:22 CDT 2016 
+r16i4n15 max memory used for job 305954.thunder-b01 (in bytes): 1820794880
+r16i4n16 max memory used for job 305954.thunder-b01 (in bytes): 1813954560
+End Epilogue v2.5.3 Fri May 13 19:20:23 CDT 2016 

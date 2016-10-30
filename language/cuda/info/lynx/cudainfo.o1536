@@ -1,0 +1,19 @@
+Welcome dantopa to ~/.mybash on lynx
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/u/dantopa/.mybash: line 24: peach: command not found
+/u/dantopa/.mybash: line 25: myprompt: command not found
+There are 1 GPUs.
+Name  : Tesla K20X
+Capability  : 3 5
+Memory Global: 5760 Mb
+Memory Const : 64 Kb
+Memory Shared: 48 Kb
+Clock  : 0.732 GHz
+Processors  : 14
+Cores  : 112
+Warp  : 32
+Max Thr/Blk  : 1024
+Max Blk Size : 1024 1024 64
+Max Grid Size: 2147483647 65535 65535
+Application 57162 resources: utime ~0s, stime ~0s, Rss ~84904, inblocks ~356, outblocks ~954

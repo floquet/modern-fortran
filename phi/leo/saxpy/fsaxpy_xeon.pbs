@@ -1,0 +1,27 @@
+#! /bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=10
+#PBS -l walltime=00:10:00
+#PBS -N xeon
+#PBS -q debug
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+source /opt/modules/default/init/bash
+module load PrgEnv-intel
+
+/bin/rm -f fxeon_base fxeon_opt
+echo "building the original unoptimized code"
+make fxeon_base
+echo " "
+echo "building fsaxpy with the data alignment for Xeon"
+make fxeon_opt
+echo " "
+echo "running the unoptimized code on Xeon"
+export OMP_NUM_THREADS=10
+aprun -cc none ./fsaxpy_xeon_base
+echo " "
+echo "running the data aligned code on Xeon"
+aprun -cc none ./fsaxpy_xeon_opt
+
+

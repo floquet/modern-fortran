@@ -1,0 +1,22 @@
+
+Block V: ISO Fortran environment variables.
+use ISO_FORTRAN_ENV
+
+IO units
+INPUT_UNIT  = 5: preconnected standard input  unit
+OUTPUT_UNIT = 6: preconnected standard output unit
+ERROR_UNIT  = 0: preconnected output unit for error reporting
+IOSTAT return values 
+IOSTAT_END  = -1: end-of-file signal
+IOSTAT_EOR  = -2: end-of-record signal
+storage sizes
+CHARACTER_STORAGE_SIZE =  8: Size in bits of the character storage unit
+NUMERIC_STORAGE_SIZE   = 32: Size in bits of the numeric storage unit
+FILE_STORAGE_SIZE      =  8: Size in bits of the file storage unit
+
+real kind types REAL(bits) = kind type value
+REAL32 = 4, REAL64 = 8, REAL128 = 10
+
+integer kind types: INT(bits) = kind type value
+INT8 = 1, INT16 = 2, INT32 = 4, INT64 = 8
+

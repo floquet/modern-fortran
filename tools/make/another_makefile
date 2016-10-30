@@ -1,0 +1,21 @@
+# Start of the makefile
+# Defining variables
+objects = ThisModule.o test_maker.o
+f08comp = gfortran
+switch = -Og
+# Makefile
+execname: $(objects)
+	$(f08comp) -o execname $(switch) $(objects)
+ThisModule.mod: ThisModule.o ThisModule.f08
+	$(f08comp) -Wall $(switch) ThisModule.f08
+ThisModule.o: ThisModule.f08
+	$(f08comp) -Wall $(switch) ThisModule.f08
+test_maker.o: ThisModule.mod test_maker.f08
+	$(f08comp) -Wall $(switch) test_maker.f08
+%.o: %.f08
+	$(f08comp) -Wall $(switch) $<
+# Cleaning everything
+clean:
+	rm ThisModule.mod
+	rm $(objects)
+# End of the makefile

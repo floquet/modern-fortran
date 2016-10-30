@@ -1,0 +1,13 @@
+
+Block VIII: Character set kind requests.
+default     =    1
+kind( 'A' ) =    1
+ASCII       =    1: American Standard Code for Information Interchange
+EBCDIC      =   -1: Extended Binary Coded Decimal Interchange Code
+UNICODE     =   -1: UNICODE consortium
+ISO_10646   =    4: ISO/IEC 10646 UCS-4
+ISO-8859-7  =   -1: ISO/IEC 8859-7: Latin/Greek alphabet
+Guobiao     =   -1: Chinese (Mainland, Singapore)
+GB18030     =   -1: Chinese (Current Guobiao version)
+Big5        =   -1: Chinese (Taiwan, Hong Kong, Macau
+UTF-8       =   -1: UCS Transformation Format—8-bit

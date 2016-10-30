@@ -1,0 +1,9 @@
+qsub $wdmersenne/cpu/001/lightning-cpu-001
+
+qsub $wdmersenne/cpu/002/lightning-cpu-002
+
+qsub $wdmersenne/cpu/003/lightning-cpu-003
+
+qsub $wdmersenne/cpu/004/lightning-cpu-004
+
+cd $wdmersenne

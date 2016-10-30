@@ -1,0 +1,11 @@
+#! /bin/bash
+#PBS -l select=1:ncpus=10:mpiprocs=10
+#PBS -q debug
+#PBS -l walltime=00:05:00
+#PBS -N micinfo
+#PBS -j oe
+
+cd $PBS_O_WORKDIR
+
+aprun -n 1 ./micinfo.sh
+

@@ -1,0 +1,41 @@
+<html><head><title>Program Unit Cross Reference [W]</title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/></head><body bgcolor="#ffffff" TEXT="#000000"><h2>Program Unit Cross Reference</h2><hr><pre>
+</pre><table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td><a href="progunit_xref_A.html">A</a></td><td><a href="progunit_xref_B.html">B</a></td><td><a href="progunit_xref_C.html">C</a></td><td><a href="progunit_xref_D.html">D</a></td><td><a href="progunit_xref_E.html">E</a></td><td><a href="progunit_xref_F.html">F</a></td><td><a href="progunit_xref_G.html">G</a></td><td><a href="progunit_xref_H.html">H</a></td><td><a href="progunit_xref_I.html">I</a></td><td>J</td><td>K</td><td><a href="progunit_xref_L.html">L</a></td><td><a href="progunit_xref_M.html">M</a></td><td><a href="progunit_xref_N.html">N</a></td><td><a href="progunit_xref_O.html">O</a></td><td><a href="progunit_xref_P.html">P</a></td><td>Q</td><td><a href="progunit_xref_R.html">R</a></td><td><a href="progunit_xref_S.html">S</a></td><td><a href="progunit_xref_T.html">T</a></td><td><a href="progunit_xref_U.html">U</a></td><td><a href="progunit_xref_V.html">V</a></td><td><a href="progunit_xref_W.html">W</a></td><td>X</td><td>Y</td><td>Z</td></tr></table><pre>
+
+<a href="dictionary_W.html#1328">wall_time_secs(REAL INTENT(OUT) tcurrent)</a><a name="1328"> </a>   (Subroutine)
+    Define   [<a href="1530.html#370">misc.F, 370</a>]             misc.F
+    Call   [<a href="1327.html#177">main.F, 177</a>]               <a href="dictionary_F.html#1337">FUNWAVE_TVD</a>
+    Call   [<a href="1327.html#279">main.F, 279</a>]               <a href="dictionary_F.html#1337">FUNWAVE_TVD</a>
+
+<a href="dictionary_W.html#1256">WAVE_BREAKING</a><a name="1256"> </a>   (Subroutine)
+    Define   [<a href="1225.html#60">breaker.F, 60</a>]           breaker.F
+    Call   [<a href="1327.html#233">main.F, 233</a>]               <a href="dictionary_F.html#1337">FUNWAVE_TVD</a>
+
+<a href="dictionary_W.html#922">WAVE_SPEED(INTEGER INTENT(IN) M,INTEGER INTENT(IN) N,INTEGER INTENT(IN) M1,INTEGER INTENT(IN) N1,REAL (SP)(M1,N) INTENT(IN) UL,REAL (SP)(M1,N) INTENT(IN) UR,REAL (SP)(M,N1) INTENT(IN) VL,REAL (SP)(M,N1) INTENT(IN) VR,REAL (SP)(M1,N) INTENT(IN) HxL,REAL (SP)(M1,N) INTENT(IN) HxR,REAL (SP)(M,N1) INTENT(IN) HyL,REAL (SP)(M,N1) INTENT(IN) HyR,REAL (SP)(M1,N) INTENT(OUT) SxL,REAL (SP)(M1,N) INTENT(OUT) SxR,REAL (SP)(M,N1) INTENT(OUT) SyL,REAL (SP)(M,N1) INTENT(OUT) SyR,INTEGER INTENT(IN) M,INTEGER INTENT(IN) N,INTEGER INTENT(IN) M1,INTEGER INTENT(IN) N1,REAL (SP)(M1,N) INTENT(IN) UL,REAL (SP)(M1,N) INTENT(IN) UR,REAL (SP)(M,N1) INTENT(IN) VL,REAL (SP)(M,N1) INTENT(IN) VR,REAL (SP)(M1,N) INTENT(IN) HxL,REAL (SP)(M1,N) INTENT(IN) HxR,REAL (SP)(M,N1) INTENT(IN) HyL,REAL (SP)(M,N1) INTENT(IN) HyR,REAL (SP)(M1,N) INTENT(OUT) SxL,REAL (SP)(M1,N) INTENT(OUT) SxR,REAL (SP)(M,N1) INTENT(OUT) SyL,REAL (SP)(M,N1) INTENT(OUT) SyR)</a><a name="922"> </a>   (Subroutine)
+    Define   [<a href="1111.html#306">fluxes_21v.F, 306</a>]       fluxes_21v.F
+    Define   [<a href="920.html#317">fluxes.F, 317</a>]           fluxes.F
+    Call   [<a href="920.html#70">fluxes.F, 70</a>]              <a href="dictionary_F.html#1062">FLUXES</a>
+    Call   [<a href="920.html#76">fluxes.F, 76</a>]              <a href="dictionary_F.html#1062">FLUXES</a>
+    Call   [<a href="1111.html#59">fluxes_21v.F, 59</a>]          <a href="dictionary_F.html#1062">FLUXES</a>
+    Call   [<a href="1111.html#65">fluxes_21v.F, 65</a>]          <a href="dictionary_F.html#1062">FLUXES</a>
+
+<a href="dictionary_W.html#527">WAVEMAKER_INITIALIZATION</a><a name="527"> </a>   (Subroutine)
+    Define   [<a href="392.html#55">wavemaker.F, 55</a>]         wavemaker.F
+    Call   [<a href="1257.html#803">init.F, 803</a>]               <a href="dictionary_I.html#1268">INITIALIZATION</a>
+
+<a href="dictionary_W.html#397">WK_WAVEMAKER_2D_SPECTRAL_DATA(INTEGER INTENT(IN) NumFreq,INTEGER INTENT(IN) NumDir,REAL (SP)(NumFreq) INTENT(IN) Freq,REAL (SP)(NumDir) INTENT(IN) DireD,REAL (SP)(NumFreq,NumDir) INTENT(IN) WAVE_COMP,REAL (SP) INTENT(IN) PeakPeriod,REAL (SP) INTENT(IN) H_gen,REAL (SP) INTENT(IN) delta,REAL (SP)(NumFreq,NumDir) INTENT(OUT) D_gen,REAL (SP)(NumFreq,NumDir) INTENT(OUT) beta_gen,REAL (SP)(NumFreq,NumDir) INTENT(OUT) rlamda,REAL (SP) INTENT(OUT) width)</a><a name="397"> </a>   (Subroutine)
+    Define   [<a href="392.html#337">wavemaker.F, 337</a>]        wavemaker.F
+    Call   [<a href="392.html#215">wavemaker.F, 215</a>]          <a href="dictionary_W.html#527">WAVEMAKER_INITIALIZATION</a>
+
+<a href="dictionary_W.html#401">WK_WAVEMAKER_IRREGULAR_WAVE(INTEGER INTENT(IN) mfreq,INTEGER INTENT(IN) mtheta,REAL (SP) INTENT(IN) delta,REAL (SP) INTENT(IN) h_gen,REAL (SP) INTENT(IN) fm,REAL (SP) INTENT(IN) fmax,REAL (SP) INTENT(IN) fmin,REAL (SP) INTENT(IN) gamma_spec,REAL (SP) INTENT(IN) Hmo,REAL (SP) INTENT(IN) theta_input,REAL (SP) INTENT(IN) sigma_theta_input,REAL (SP)(mfreq,mtheta) INTENT(OUT) rlamda,REAL (SP)(mfreq) INTENT(OUT) beta_gen,REAL (SP)(mfreq,mtheta) INTENT(OUT) D_gen,REAL (SP)(mfreq,mtheta) INTENT(OUT) phi1,REAL (SP) INTENT(OUT) width,REAL (SP)(mfreq) INTENT(OUT) omgn,LOGICAL INTENT(IN) Periodic,REAL (SP) INTENT(IN) DY,INTEGER INTENT(IN) Nglob)</a><a name="401"> </a>   (Subroutine)
+    Define   [<a href="392.html#1021">wavemaker.F, 1021</a>]       wavemaker.F
+    Call   [<a href="392.html#293">wavemaker.F, 293</a>]          <a href="dictionary_W.html#527">WAVEMAKER_INITIALIZATION</a>
+
+<a href="dictionary_W.html#395">WK_WAVEMAKER_REGULAR_WAVE(REAL (SP) INTENT(IN) Tperiod,REAL (SP) INTENT(IN) AMP_WK,REAL (SP) INTENT(IN) Theta_WK,REAL (SP) INTENT(IN) H_gen,REAL (SP) INTENT(IN) delta,REAL (SP) INTENT(OUT) D_gen,REAL (SP) INTENT(OUT) rlamda,REAL (SP) INTENT(OUT) beta_gen,REAL (SP) INTENT(OUT) width)</a><a name="395"> </a>   (Subroutine)
+    Define   [<a href="392.html#1292">wavemaker.F, 1292</a>]       wavemaker.F
+    Call   [<a href="392.html#188">wavemaker.F, 188</a>]          <a href="dictionary_W.html#527">WAVEMAKER_INITIALIZATION</a>
+
+<a href="dictionary_W.html#400">WK_WAVEMAKER_TIME_SERIES(INTEGER INTENT(IN) NumWaveComp,REAL (SP)(NumWaveComp,3) INTENT(IN) WAVE_COMP,REAL (SP) INTENT(IN) PeakPeriod,REAL (SP) INTENT(IN) H_gen,REAL (SP) INTENT(IN) delta,REAL (SP)(NumWaveComp) INTENT(OUT) D_gen,REAL (SP)(NumWaveComp) INTENT(OUT) beta_gen,REAL (SP) INTENT(OUT) width)</a><a name="400"> </a>   (Subroutine)
+    Define   [<a href="392.html#1340">wavemaker.F, 1340</a>]       wavemaker.F
+    Call   [<a href="392.html#265">wavemaker.F, 265</a>]          <a href="dictionary_W.html#527">WAVEMAKER_INITIALIZATION</a>
+</pre><hr>
+<table BORDER CELLPADDING=4><tr><td>Non-Alpha</td><td><a href="progunit_xref_A.html">A</a></td><td><a href="progunit_xref_B.html">B</a></td><td><a href="progunit_xref_C.html">C</a></td><td><a href="progunit_xref_D.html">D</a></td><td><a href="progunit_xref_E.html">E</a></td><td><a href="progunit_xref_F.html">F</a></td><td><a href="progunit_xref_G.html">G</a></td><td><a href="progunit_xref_H.html">H</a></td><td><a href="progunit_xref_I.html">I</a></td><td>J</td><td>K</td><td><a href="progunit_xref_L.html">L</a></td><td><a href="progunit_xref_M.html">M</a></td><td><a href="progunit_xref_N.html">N</a></td><td><a href="progunit_xref_O.html">O</a></td><td><a href="progunit_xref_P.html">P</a></td><td>Q</td><td><a href="progunit_xref_R.html">R</a></td><td><a href="progunit_xref_S.html">S</a></td><td><a href="progunit_xref_T.html">T</a></td><td><a href="progunit_xref_U.html">U</a></td><td><a href="progunit_xref_V.html">V</a></td><td><a href="progunit_xref_W.html">W</a></td><td>X</td><td>Y</td><td>Z</td></tr></table></body></html>

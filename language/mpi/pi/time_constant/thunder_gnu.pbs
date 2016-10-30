@@ -1,0 +1,60 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q standard
+#PBS -l select=4:ncpus=36:mpiprocs=36
+#PBS -l walltime=10:00:10
+#PBS -j oe
+
+# PBS -l select=N1:ncpus=36:mpiprocs=N2
+# The value of ncpus refers to the number of physical cores available on each node. Standard compute nodes on Topaz will require ncpus=36.
+
+# queue: # debug standard background
+export myProject='/home/dantopa/codes/.pi_constant_time/mpt/'
+echo $myProject
+cd ${myProject}
+module switch intel-compilers/15.3.187 gcc-compilers/4.8.4
+make
+rm -f *.o *.temp *.mod *.smod
+
+## Execution Block ----------------------------------------------
+# Environment Setup
+# cd to your scratch directory in /work
+cd ${WORKDIR}
+
+# create a job-specific subdirectory based on JOBID and cd to it
+JOBID=`echo ${PBS_JOBID} | cut -d '.' -f 1`
+if [ ! -d ${JOBID} ]; then
+  mkdir -p ${JOBID}
+fi
+cd ${JOBID}
+
+## Launching -----------------------------------------------------
+# copy executable from $HOME and submit it
+cp -a ${myProject}/. .
+
+mpiexec_mpt -n   8 ./pi_constant_time ${host_name} > out.dat
+mpiexec_mpt -n  16 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  24 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  32 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  40 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  48 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  56 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  64 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  72 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  80 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  88 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n  96 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 104 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 112 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 120 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 128 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 136 ./pi_constant_time $host_name > out.dat
+mpiexec_mpt -n 144 ./pi_constant_time $host_name > out.dat
+
+## Clean up -----------------------------------------------------
+# Remove temporary files
+rm -f *.o *.temp *.mod *.smod
+
+# http://www.erdc.hpc.mil/docs/topazPbsGuide.html
+# submit it to PBS for execution e.g. "qsub run.pbs"

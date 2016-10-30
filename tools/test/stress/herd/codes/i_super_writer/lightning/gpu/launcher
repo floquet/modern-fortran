@@ -1,0 +1,9 @@
+qsub $wdmersenne/gpu/001/lightning-gpu-001
+
+qsub $wdmersenne/gpu/002/lightning-gpu-002
+
+qsub $wdmersenne/gpu/003/lightning-gpu-003
+
+qsub $wdmersenne/gpu/004/lightning-gpu-004
+
+cd $wdmersenne
