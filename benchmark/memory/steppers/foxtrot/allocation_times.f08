@@ -4,7 +4,7 @@ program allocation_times
     !use, intrinsic :: iso_fortran_env, only : INT64
 
     use mAllocationTimes,   only : record_allocation_times, measurements
-    use mSetPrecision,      only : ip, rp
+    use mSetPrecision,      only : ip!, rp
     use mSystemInfo,        only : write_header_sub
 
     implicit none
@@ -30,7 +30,7 @@ program allocation_times
 
         do k_sizes = 1, numElements ! loop over sample sizes
             do k_measurements = 1, measurements ! repeat measurement
-                call record_allocation_times ( array_size = elements ( k_sizes ), io = io_summary, deltat = clock_count_delta )
+                call record_allocation_times ( array_size = elements ( k_sizes ), io = io_summary )
             end do ! k_measurements: repeat measurements
         end do ! k_sizes array size
 

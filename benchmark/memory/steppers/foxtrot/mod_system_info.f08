@@ -83,7 +83,6 @@ contains
     subroutine build_names_sub ( me )
 
         class ( file_names ), target :: me
-        character ( len = * ), intent ( in ) :: data_type
 
         character ( len = 512 ) :: stem_name
 
@@ -102,20 +101,17 @@ contains
 
     end subroutine build_names_sub
 
-    subroutine write_header_sub ( measurements, io_summary, io_sequence )
+    subroutine write_header_sub ( io_summary, io_sequence )
 
         integer,               intent ( out ) :: io_sequence, io_summary ! io handles
-        integer,               intent ( in )  :: measurements
-        character ( len = * ), intent ( in )  :: data_type
 
         integer                               :: io_version, io_status
         character ( len = * ), parameter      :: file_fortran_version = 'fortran_version.txt'
         character ( len = 512 )               :: str_fortran_version  = '', io_message
 
-
         type ( file_names ) :: myFileNames
 
-            call myFileNames % build_names ( data_type )
+            call myFileNames % build_names ( )
 
             print *, 'myFileNames % myDir            = ', trim ( myFileNames % myDir ), '.'
             print *, 'myFileNames % FileNameSummary  = ', trim ( myFileNames % FileNameSummary ), '.'

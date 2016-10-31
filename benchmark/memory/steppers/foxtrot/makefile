@@ -58,4 +58,4 @@ $(PRG_OBJ) : $(MOD_OBJS)
 mod_file_handling.o         :
 mod_set_precision.o         :
 mod_allocation_times.o      : mod_set_precision.o
-mod_system_info.o           : mod_set_precision.o mod_filehandling.o mod_allocation_times.o
+mod_system_info.o           : mod_set_precision.o mod_file_handling.o mod_allocation_times.o
