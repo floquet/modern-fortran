@@ -15,7 +15,7 @@ program allocation_times
     ! derived parameters
     integer ( ip ), parameter :: numElements = ( power_hi - power_lo + 1 ) * 9 ! list length for array sizes
 
-    character ( len = * ), parameter :: data_type = 'R64'
+    character ( len = * ), parameter :: data_type = 'R64' ! match rp
 
     ! variables
     ! rank 1
@@ -26,6 +26,9 @@ program allocation_times
     real ( rp ) :: total_gbytes = 0_rp
 
     integer ( ip ) :: mant = 0_ip, power = 0_ip ! controls elements
+    integer ( ip )    :: clock_count_start = 0, clock_count_stop = 0, &
+                         global_start      = 0, global_stop      = 0, &
+                         clock_count_rate  = 0, clock_count_max  = 0, clock_count_delta = 0
     integer        :: io_summary = 0, io_sequence = 0
     integer        :: k_sizes = 0, k_measurements = 0 ! dummy counters
 
@@ -36,7 +39,7 @@ program allocation_times
 
         do k_sizes = 1, numElements ! loop over sample sizes
             do k_measurements = 1, measurements ! repeat measurement
-                call record_allocation_times ( how_many_elements, io_summary, io_sequence, clock_count_delta )
+                call record_allocation_times ( array_size = elements ( k_sizes ), io = io_summary, deltat = clock_count_delta )
                 ticks_clock ( k_measurements ) = real ( clock_count_delta, rp )
             end do ! k_measurements: repeat measurements
         end do ! k_sizes array size
@@ -45,25 +48,28 @@ program allocation_times
 
 end program allocation_times
 
-subroutine record_allocation_times ( how_many_elements, io_summary, io_sequence )
+subroutine record_allocation_times ( array_size, io, deltat )
 
-    integer ( ip ), intent ( in ) :: how_many_elements
-    integer,        intent ( in ) :: io_summary, io_sequence
+    integer ( ip ), intent ( in )  :: array_size
+    integer,        intent ( in )  :: io
 
-    real ( rp ),   intent ( out ) :: clock_count_delta
+    integer ( ip ), intent ( out ) :: deltat
 
-        total_gbytes = real ( elements ( k_sizes ) * storage_size ( 1.0_rp ), rp ) / real ( 8 * gigabytes, rp )
+    integer :: stat
+    character ( len = 512 ) :: errmsg
+
+        total_gbytes = real ( array_size * storage_size ( 1.0_rp ), rp ) / real ( 8 * gigabytes, rp )
 
         do j = 1, measurements ! repeat measurement
             call system_clock ( clock_count_start )
 
-                allocate ( array ( how_many_elements ), stat = stat, errmsg = errmsg )
+                allocate ( array ( array_size ), stat = stat, errmsg = errmsg )
                 if ( stat /= 0 ) then
-                    write ( myIO, 100 ) ''
-                    write ( myIO, 110 ) how_many_elements, total_bytes, prec_type
-                    write ( myIO, 120 ) trim ( errmsg )
-                    write ( myIO, 130 ) stat
-                    flush ( myIO )
+                    write ( io, 100 ) ''
+                    write ( io, 110 ) array_size, total_gbytes, prec_type
+                    write ( io, 120 ) trim ( errmsg )
+                    write ( io, 130 ) stat
+                    flush ( io )
                     stop 'fatal program error during allocation'
                 end if
 
@@ -71,16 +77,21 @@ subroutine record_allocation_times ( how_many_elements, io_summary, io_sequence 
 
                 deallocate ( array, stat = stat, errmsg = errmsg )
                 if ( stat /= 0 ) then
-                    write ( myIO, 100 ) 'de'
-                    write ( myIO, 110 ) how_many_elements, total_bytes, prec_type
-                    write ( myIO, 120 ) trim ( errmsg )
-                    write ( myIO, 130 ) stat
-                    flush ( myIO )
+                    write ( io, 100 ) 'de'
+                    write ( io, 110 ) array_size, total_gbytes, prec_type
+                    write ( io, 120 ) trim ( errmsg )
+                    write ( io, 130 ) stat
+                    flush ( io )
                     stop 'fatal program error during decallocation'
                 end if
 
             call system_clock ( clock_count_stop )
-            clock_count_delta = clock_count_stop - clock_count_start
+            deltat = clock_count_stop - clock_count_start
         end do ! repeat measurement
+
+    100 format ( 'Mortal error during ', A, 'allocation...' )
+    110 format ( 'requested size is ', I15, ' elements (', I10,' GB); kind = ', A )
+    120 format ( 'errmsg = ', I10, '.' )
+    130 format ( 'stat = ', A )
 
 end subroutine record_allocation_times
