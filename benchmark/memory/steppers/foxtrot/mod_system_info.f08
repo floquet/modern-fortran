@@ -1,9 +1,9 @@
-! 3456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 32
+! 3456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 23456789 023456789 123456789 223456789 32
 module mSystemInfo
 
     use, intrinsic :: iso_fortran_env,  only : compiler_version, compiler_options
 
-    use mFileHandling,                  only : safeopen_writereplace
+    use mFileHandling,                  only : safeopen_writereplace, safeopen_readonly
     use mSetPrecision,                  only : ip
 
     implicit none ! protects all methods in scope (module and submodules)
@@ -107,6 +107,10 @@ contains
         integer,               intent ( in )  :: measurements
         character ( len = * ), intent ( in )  :: data_type
 
+        integer                               :: io_version, io_status
+        character ( len = * ), parameter      :: file_fortran_version = 'fortran_version.txt'
+        character ( len = 512 )               :: str_fortran_version  = '', io_message
+
 
         type ( file_names ) :: myFileNames
 
@@ -118,24 +122,39 @@ contains
 
             io_summary  = safeopen_writereplace ( myFileNames % FileNameSummary )
             io_sequence = safeopen_writereplace ( myFileNames % FileNameSequence )
+            !io_version  = safeopen_readonly     ( file_fortran_version )
 
-            write ( io_summary, 100 ) compiler_version ( )
-            write ( io_summary, 110 ) compiler_options ( )
-            !write ( io_summary, 120 ) myDate ( 1 : 4 ), myDate ( 5 : 6 ), myDate ( 7 : 8 ), myTime ( 1 : 2 ), myTime ( 3 : 4 ), myTime ( 5 :)
-            write ( io_summary, 125 ) trim ( myFileNames % thisEnvVar % machine_name ), trim ( myFileNames % thisSysInfo % host )
-            write ( io_summary, 130 ) trim ( myFileNames % thisSysInfo % run_cmd )
+            ! grab command line output for gfortran --version
+            write ( io_summary, '( ''gfortran --version:'' )' )
+            call execute_command_line ( 'gfortran --version >> ' // file_fortran_version )
+            io_version = safeopen_readonly ( file_fortran_version )
+            do
+                read  ( unit = io_version, fmt = 100, iostat = io_status, iomsg = io_message ) str_fortran_version
+                if ( io_status /= 0 ) exit ! EOF
+                write ( unit = io_summary, fmt = 100 ) trim ( str_fortran_version )
+            end do
+            call execute_command_line ( 'rm ' // file_fortran_version ) ! clean up and remove file
 
-            write ( io_summary, 200 ) measurements
-            write ( io_summary, 210 )
+            write ( io_summary, 110 ) compiler_version ( )
+            write ( io_summary, 120 ) compiler_options ( )
 
-        100 format ( 'Fortran compiler version: ', A )
-        110 format ( 'Fortran compiler options: ', A, / )
+            write ( io_summary, 200 ) trim ( myFileNames % thisEnvVar % machine_name ), trim ( myFileNames % thisSysInfo % host )
+            write ( io_summary, 210 ) trim ( myFileNames % thisSysInfo % run_cmd )
 
-        125 format ( 'Machine: ', A, ', node: ', A )
-        130 format ( "Program launched via ", A, ".", / )
+            write ( io_summary, 300 ) measurements
+            write ( io_summary, 310 ) trim ( myFileNames % FileNameSequence )
+            write ( io_summary, 320 )
 
-        200 format ( 'Number of times each measurement is repeated: ', I5 )
-        210 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max', / )
+        100 format ( A )
+        110 format ( /, 'Fortran compiler version: ', A )
+        120 format (    'Fortran compiler options: ', A, / )
+
+        200 format ( 'Machine: ', A, ', node: ', A )
+        210 format ( "Program launched via ", A, ".", / )
+
+        300 format ( 'Number of times each measurement is repeated: ', I5 )
+        310 format ( 'Measurements written to file ', A, / )
+        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max', / )
 
     end subroutine write_header_sub
 
