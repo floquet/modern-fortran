@@ -1,3 +1,0 @@
-Fortran compiler version: GCC version 7.0.0 20161023 (experimental)
-Fortran compiler options: -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.11.6 -mtune=core2 -auxbase-strip mod_system_info.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wpedantic -ffpe-trap=denormal -fbacktrace -fcheck=bounds -fmax-errors=5
-
