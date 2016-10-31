@@ -5,6 +5,7 @@ module mSystemInfo
 
     use mFileHandling,                  only : safeopen_writereplace, safeopen_readonly
     use mSetPrecision,                  only : ip
+    use mAllocationTimes,               only : data_type, measurements
 
     implicit none ! protects all methods in scope (module and submodules)
 
@@ -79,7 +80,7 @@ contains
 
     end subroutine get_system_var_sub
 
-    subroutine build_names_sub ( me, data_type )
+    subroutine build_names_sub ( me )
 
         class ( file_names ), target :: me
         character ( len = * ), intent ( in ) :: data_type
@@ -101,7 +102,7 @@ contains
 
     end subroutine build_names_sub
 
-    subroutine write_header_sub ( data_type, measurements, io_summary, io_sequence )
+    subroutine write_header_sub ( measurements, io_summary, io_sequence )
 
         integer,               intent ( out ) :: io_sequence, io_summary ! io handles
         integer,               intent ( in )  :: measurements

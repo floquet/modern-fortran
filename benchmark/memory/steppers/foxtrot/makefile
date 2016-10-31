@@ -57,6 +57,5 @@ $(PRG_OBJ) : $(MOD_OBJS)
 # Blocks and allocations depends on shared
 mod_file_handling.o         :
 mod_set_precision.o         :
-mod_system_info.o           :
-# mod_angle.o                 : mod_precision_definitions.o mod_constants.o
-# mod_axes.o                  : mod_precision_definitions.o mod_constants.o mod_allocators.o mod_filehandling.o mod_LSQ.o mod_matrix_writer.o mod_parameters_simulation.o mod_read_LAMMPS.o
+mod_allocation_times.o      : mod_set_precision.o
+mod_system_info.o           : mod_set_precision.o mod_filehandling.o mod_allocation_times.o
