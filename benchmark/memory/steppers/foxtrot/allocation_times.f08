@@ -3,13 +3,13 @@ program allocation_times
 
     !use, intrinsic :: iso_fortran_env, only : INT64
 
-    use mSetPrecision,  only : ip, rp!, zint
+    use mSetPrecision,  only : ip, rp
     use mSystemInfo,    only : write_header_sub
 
     implicit none
 
     ! independent parameters
-    integer ( ip ), parameter :: measurements = 3 ! repeat measurements
+    integer, parameter :: measurements = 3 ! repeat measurements
     integer ( ip ), parameter :: power_lo = 3, power_hi = 11 ! decadel range
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
     ! derived parameters
@@ -21,31 +21,27 @@ program allocation_times
     ! rank 1
     integer ( ip ), dimension ( 1 : numElements ) :: elements
     ! rank 0
-    integer ( ip ) :: mant = 0_ip, power = 0_ip, j = 0, k = 0 ! controls elements
-    integer :: io_summary = 0, io_sequence = 0
-    integer :: total_gbytes = 0
-    integer :: k_sizes = 0, k_measurements = 0 ! dummy counters
+    real ( rp ) :: total_gbytes = 0_rp
 
+    integer ( ip ) :: mant = 0_ip, power = 0_ip ! controls elements
+    integer        :: io_summary = 0, io_sequence = 0
+    integer        :: k_sizes = 0, k_measurements = 0 ! dummy counters
 
-        print *, 'ip                          = ', ip
-        ! sequence of array sizes
-        !elements = [ ( ( 10_ip ** k * j, j = 1_ip, 9_ip ), k = 3_ip, 11_ip ) ] ! sample sizes 1000, 2000, 3000, ...
-        !elements = [ ( ( 10_ip ** k * j, j = 1_ip, 9_ip ), k = 3_ip, 11_ip ) ] ! sample sizes 1000, 2000, 3000, ...
         elements = [ ( ( 10_ip ** power * mant, mant = 1_ip, 9_ip ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
-        !
-        ! ! create data files
-        ! call write_header_sub ( data_type, measurements, io_summary, io_sequence )
-        !
-        ! do k_sizes = 1, numElements ! loop over sample sizes
-        !     total_gbytes = elements ( k_sizes ) * storage_size ( 1.0, rp ) / 8 / gigabytes
-        !     print *, 'k_sizes = ', k_sizes, '; total_gbytes = ', total_gbytes
-        !     ! do k_measurements = 1, measurements ! repeat measurement
-        !     !     call allocation ( clicks )
+        print *, 'elements = ', elements
+        ! create data files
+        call write_header_sub ( data_type, measurements, io_summary, io_sequence )
+
+        do k_sizes = 1, numElements ! loop over sample sizes
+            total_gbytes = real ( elements ( k_sizes ) * storage_size ( 1.0, rp ) * 8, rp ) / real ( gigabytes, rp )
+            print *, 'k_sizes = ', k_sizes, '; total_gbytes = ', total_gbytes
+            ! do k_measurements = 1, measurements ! repeat measurement
+            !     call allocation ( clicks )
         !     !     time ( k_measurements ) = clicks
         !     ! end do ! j repeat measurement
         !     ! time
         !     ! call max-min ()
-        ! end do ! k_sizes array size
+        end do ! k_sizes array size
 
         stop 'execution completed for allocation_times ...'
 

@@ -5,11 +5,6 @@ module mSetPrecision
     implicit none
 
     ! kind parameters
-        ! INTEGERS
-        integer, parameter :: aint = INT8
-        integer, parameter :: sint = INT16
-        integer, parameter :: lint = INT32
-        integer, parameter :: zint = INT64
 
         ! REALS
         integer, parameter :: sp = REAL32
