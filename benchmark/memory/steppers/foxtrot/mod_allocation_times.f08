@@ -7,33 +7,76 @@ module mAllocationTimes
     integer,        parameter :: measurements = 3 ! repeat measurements
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
 
-    integer ( ip ) :: clock_count_start = 0, clock_count_stop = 0, &
-                      global_start      = 0, global_stop      = 0, &
-                      clock_count_rate  = 0, clock_count_max  = 0, clock_count_delta = 0
     ! rank 1
     real ( rp ) :: ticks_clock = 0.0_rp
 
     character ( len = * ), parameter :: data_type = 'R64' ! match rp
 
+    type :: ticks
+        integer ( ip ) :: start, stop, rate, max, delta
+    contains
+        private
+        procedure, public :: record_allocation_times => record_allocation_times_sub
+    end type ticks
+
+    type :: seconds
+        real ( rp ), dimension ( 1 : measurements ) :: sequence
+        real ( rp ) :: mean, variance, max, min
+    contains
+        private
+        procedure, public :: analyze_seconds => analyze_seconds_sub
+    end type seconds
+
+    private :: record_allocation_times_sub, analyze_seconds_sub
+
 contains
 
-    subroutine record_allocation_times ( array_size, io )
+    subroutine master_loop ( array_size, io )
 
         integer ( ip ), intent ( in )  :: array_size
         integer,        intent ( in )  :: io
 
+        type ( ticks )   :: myTicks
+        type ( seconds ) :: mySeconds
+
+            ! info for ticks -> seconds
+            call system_clock ( COUNT = myTicks % stop, COUNT_RATE =  myTicks % rate, COUNT_MAX = myTicks % max )
+
+            call myTicks % record_allocation_times ( array_size, io, mySeconds % sequence )
+
+            call mySeconds % analyze_seconds ( myTicks )
+
+    end subroutine master_loop
+
+    subroutine analyze_seconds_sub ( thoseTicks )
+
+        class ( seconds ), target :: me
+
+        type ( ticks ), intent ( in ) :: thoseTicks
+
+            print *, 'inside analyze_seconds_sub'
+
+    end subroutine analyze_seconds_sub
+
+    subroutine record_allocation_times_sub ( me, array_size, io )
+
+        class ( ticks ), target :: me
+
+        integer ( ip ), intent ( in ) :: array_size
+        integer,        intent ( in ) :: io
+
         ! rank 1
-        real ( rp ), allocatable, dimension ( : ) :: array
+        real ( rp ), allocatable, dimension ( : )                :: array
         real ( rp ),              dimension ( 1 : measurements ) :: ticks_clock
         ! rank 0
-        real ( rp )              :: total_gbytes
-        integer                  :: k_measurements, stat
-        character ( len = 512 )  :: errmsg
+        real ( rp )             :: total_gbytes
+        integer                 :: k_measurements, stat
+        character ( len = 512 ) :: errmsg
 
             total_gbytes = real ( array_size * storage_size ( 1.0_rp ), rp ) / real ( 8 * gigabytes, rp )
 
             do k_measurements = 1, measurements ! repeat measurement
-                call system_clock ( clock_count_start )
+                call system_clock ( COUNT = me % start )
 
                     allocate ( array ( array_size ), stat = stat, errmsg = errmsg )
                     if ( stat /= 0 ) then
@@ -57,8 +100,8 @@ contains
                         stop 'fatal program error during decallocation'
                     end if
 
-                call system_clock ( clock_count_stop )
-                ticks_clock ( k_measurements ) = real ( clock_count_stop - clock_count_start, rp )
+                call system_clock ( COUNT = me % stop )
+                me % sequence ( k_measurements ) = real ( me % stop - me % start, rp )
             end do ! k_measurement repeat measurement
 
         100 format ( 'Mortal error during ', A, 'allocation...' )
@@ -66,6 +109,6 @@ contains
         120 format ( 'errmsg = ', I10, '.' )
         130 format ( 'stat = ', A )
 
-    end subroutine record_allocation_times
+    end subroutine record_allocation_times_sub
 
 end module mAllocationTimes
