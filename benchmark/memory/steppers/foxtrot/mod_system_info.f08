@@ -115,9 +115,9 @@ contains
             p => null ()
             call myFileNames % build_names ( )
 
-            print *, 'myFileNames % myDir            = ', trim ( myFileNames % myDir ), '.'
-            print *, 'myFileNames % FileNameSummary  = ', trim ( myFileNames % FileNameSummary ), '.'
-            print *, 'myFileNames % FileNameSequence = ', trim ( myFileNames % FileNameSequence ), '.'
+            ! print *, 'myFileNames % myDir            = ', trim ( myFileNames % myDir ), '.'
+            ! print *, 'myFileNames % FileNameSummary  = ', trim ( myFileNames % FileNameSummary ), '.'
+            ! print *, 'myFileNames % FileNameSequence = ', trim ( myFileNames % FileNameSequence ), '.'
 
             io_summary  = safeopen_writereplace ( myFileNames % FileNameSummary )
             io_sequence = safeopen_writereplace ( myFileNames % FileNameSequence )

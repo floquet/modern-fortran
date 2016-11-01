@@ -22,7 +22,7 @@ program allocation_times
     integer        :: k_sizes = 0                     ! dummy counters
 
         elements = [ ( ( 10_ip ** power * mant, mant = 1_ip, 9_ip ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
-        print *, 'elements = ', elements
+        !print *, 'elements = ', elements
 
         call write_header_sub ( io_summary, io_sequence ) ! create files for data and results
 

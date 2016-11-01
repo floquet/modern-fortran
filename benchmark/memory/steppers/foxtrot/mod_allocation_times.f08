@@ -46,7 +46,7 @@ contains
 
             call myTicks % record_allocation_times ( array_size, io_summary, mySeconds )
 
-            call mySeconds % analyze_seconds ( myTicks )
+            call mySeconds % analyze_seconds ( )
 
             call post_results ( myTicks, mySeconds, io_summary, io_sequence )
 
@@ -80,11 +80,11 @@ contains
 
     end subroutine post_results
 
-    subroutine analyze_seconds_sub ( me, thoseTicks )
+    subroutine analyze_seconds_sub ( me )
 
         class ( seconds ), target :: me
 
-        type ( ticks ), intent ( in ) :: thoseTicks
+        !type ( ticks ), intent ( in ) :: thoseTicks
 
         real ( rp ) :: sum_squares_ave, root
 
@@ -99,7 +99,7 @@ contains
             if ( root < 5.0_rp * epsilon ( 1.0_rp ) ) root = 0.0_rp ! avoid sqrt of a negative number
             me % variance = sqrt ( root )
 
-            print *, 'inside analyze_seconds_sub: array_size = ', thoseTicks % array_size, '; GB = ', thoseTicks % total_gbytes
+            !print *, 'inside analyze_seconds_sub: array_size = ', thoseTicks % array_size, '; GB = ', thoseTicks % total_gbytes
 
     end subroutine analyze_seconds_sub
 
