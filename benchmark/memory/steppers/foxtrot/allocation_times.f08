@@ -1,8 +1,6 @@
 ! 3456789 123456789 223456789 323456789 423456789 523456789 623456789 723456789 823456789 923456789 023456789 123456789 223456789 32
 program allocation_times
 
-    !use, intrinsic :: iso_fortran_env, only : INT64
-
     use mAllocationTimes,   only : master_loop
     use mSetPrecision,      only : ip
     use mSystemInfo,        only : write_header_sub

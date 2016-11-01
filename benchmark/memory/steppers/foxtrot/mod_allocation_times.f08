@@ -8,7 +8,7 @@ module mAllocationTimes
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
 
     ! rank 1
-    real ( rp ) :: ticks_clock = 0.0_rp
+    !real ( rp ) :: ticks_clock = 0.0_rp
 
     character ( len = * ), parameter :: data_type = 'R64' ! match rp
 
@@ -55,29 +55,28 @@ contains
     subroutine post_results ( thoseTicks, thoseSeconds, io_summary, io_sequence )
 
         integer, intent ( in ) :: io_summary, io_sequence
+        integer :: k
 
         type ( ticks )   :: thoseTicks
         type ( seconds ) :: thoseSeconds
 
-        character ( len = * ), parameter :: fmt_gb = 'E15.5', fmt_time = 'E15.3', fmt_elem = 'I15', spc = "', '"
-        character ( len = 32 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
+        character ( len = * ), parameter :: fmt_gb = 'E17.8', fmt_time = 'E15.5', fmt_elem = 'I15'
+        character ( len = 128 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
 
-            print *, fmt_elem, spc, fmt_gb, spc, fmt_time, spc, fmt_time
-            write ( fmt_str, 110 ) measurements - 1, fmt_time
-            print *, 'fmt_str = ', fmt_str
+            write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
+            write ( unit = io_summary, fmt = trim ( fmt_str ) ) thoseTicks % array_size, thoseTicks % total_gbytes, &
+                thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
 
-            write ( io_summary, fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
-                                          thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
-
-            write ( fmt_str, 200 ) fmt_elem, fmt_time, fmt_time
-            print *, 'fmt_str = ', fmt_str
+            ! list the sequence of recorded times
+            write ( fmt_str, 200 ) fmt_elem, fmt_gb, fmt_time, measurements - 1, fmt_time
+            !print *, 'fmt_str = ', trim ( fmt_str ), '!'
             !write ( io_sequence, 210 ) thoseTicks % array_size, thoseTicks % total_gbytes, thoseSeconds % sequence
 
-        !100 format ( fmt_elem, ', ', fmt_gb, ', ', fmt_time, 3( ', ', fmt_time ) )
-        !110 format ( '( ', A, ', ', A, ', ', A, ', 3( ", ", ', A, ' )' )
-        !110 format ( "( ", g0, "( ", g0, ", ", g0,"X ) )" )
-        110 format ( "( ", g0, "( ', ', ", g0, " ) )" )
-        200 format ( '( ', A, ', ', A, ', ', g0, '( ', ", ", g0, A, ') )' )
+            write ( unit = io_sequence, fmt = fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
+                                                      ( thoseSeconds % sequence ( k ), k = 1, measurements )
+
+        100 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', "3 ( ', ', ", g0, " ) )" )
+        200 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
 
     end subroutine post_results
 
