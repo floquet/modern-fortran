@@ -13,7 +13,9 @@ module mAllocationTimes
     character ( len = * ), parameter :: data_type = 'R64' ! match rp
 
     type :: ticks
+        integer ( ip ) :: array_size
         integer ( ip ) :: start, stop, rate, max, delta
+        real ( rp )    :: total_gbytes
     contains
         private
         procedure, public :: record_allocation_times => record_allocation_times_sub
@@ -31,10 +33,10 @@ module mAllocationTimes
 
 contains
 
-    subroutine master_loop ( array_size, io )
+    subroutine master_loop ( array_size, io_summary, io_sequence )
 
         integer ( ip ), intent ( in )  :: array_size
-        integer,        intent ( in )  :: io
+        integer,        intent ( in )  :: io_summary, io_sequence
 
         type ( ticks )   :: myTicks
         type ( seconds ) :: mySeconds
@@ -42,46 +44,90 @@ contains
             ! info for ticks -> seconds
             call system_clock ( COUNT = myTicks % stop, COUNT_RATE =  myTicks % rate, COUNT_MAX = myTicks % max )
 
-            call myTicks % record_allocation_times ( array_size, io, mySeconds % sequence )
+            call myTicks % record_allocation_times ( array_size, io_summary, mySeconds )
 
             call mySeconds % analyze_seconds ( myTicks )
 
+            call post_results ( myTicks, mySeconds, io_summary, io_sequence )
+
     end subroutine master_loop
 
-    subroutine analyze_seconds_sub ( thoseTicks )
+    subroutine post_results ( thoseTicks, thoseSeconds, io_summary, io_sequence )
+
+        integer, intent ( in ) :: io_summary, io_sequence
+
+        type ( ticks )   :: thoseTicks
+        type ( seconds ) :: thoseSeconds
+
+        character ( len = * ), parameter :: fmt_gb = 'E15.5', fmt_time = 'E15.3', fmt_elem = 'I15', spc = "', '"
+        character ( len = 32 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
+
+            print *, fmt_elem, spc, fmt_gb, spc, fmt_time, spc, fmt_time
+            write ( fmt_str, 110 ) measurements - 1, fmt_time
+            print *, 'fmt_str = ', fmt_str
+
+            write ( io_summary, fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
+                                          thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
+
+            write ( fmt_str, 200 ) fmt_elem, fmt_time, fmt_time
+            print *, 'fmt_str = ', fmt_str
+            !write ( io_sequence, 210 ) thoseTicks % array_size, thoseTicks % total_gbytes, thoseSeconds % sequence
+
+        !100 format ( fmt_elem, ', ', fmt_gb, ', ', fmt_time, 3( ', ', fmt_time ) )
+        !110 format ( '( ', A, ', ', A, ', ', A, ', 3( ", ", ', A, ' )' )
+        !110 format ( "( ", g0, "( ", g0, ", ", g0,"X ) )" )
+        110 format ( "( ", g0, "( ', ', ", g0, " ) )" )
+        200 format ( '( ', A, ', ', A, ', ', g0, '( ', ", ", g0, A, ') )' )
+
+    end subroutine post_results
+
+    subroutine analyze_seconds_sub ( me, thoseTicks )
 
         class ( seconds ), target :: me
 
         type ( ticks ), intent ( in ) :: thoseTicks
 
-            print *, 'inside analyze_seconds_sub'
+        real ( rp ) :: sum_squares_ave, root
+
+            me % max = maxval ( me % sequence )
+            me % min = minval ( me % sequence )
+
+            ! mean and variance
+            me % mean       = sum ( me % sequence ) / real ( measurements, rp )
+
+            sum_squares_ave = dot_product ( me % sequence, me % sequence ) / real ( measurements, rp )
+            root   = sum_squares_ave - me % mean ** 2
+            if ( root < 5.0_rp * epsilon ( 1.0_rp ) ) root = 0.0_rp ! avoid sqrt of a negative number
+            me % variance = sqrt ( root )
+
+            print *, 'inside analyze_seconds_sub: array_size = ', thoseTicks % array_size, '; GB = ', thoseTicks % total_gbytes
 
     end subroutine analyze_seconds_sub
 
-    subroutine record_allocation_times_sub ( me, array_size, io )
+    subroutine record_allocation_times_sub ( me, array_size, io, thoseSeconds )
 
         class ( ticks ), target :: me
 
-        integer ( ip ), intent ( in ) :: array_size
-        integer,        intent ( in ) :: io
+        type ( seconds ), intent ( out ) :: thoseSeconds
+        integer ( ip ),   intent ( in )  :: array_size
+        integer,          intent ( in )  :: io
 
         ! rank 1
         real ( rp ), allocatable, dimension ( : )                :: array
-        real ( rp ),              dimension ( 1 : measurements ) :: ticks_clock
         ! rank 0
-        real ( rp )             :: total_gbytes
         integer                 :: k_measurements, stat
         character ( len = 512 ) :: errmsg
 
-            total_gbytes = real ( array_size * storage_size ( 1.0_rp ), rp ) / real ( 8 * gigabytes, rp )
+            me % array_size   = array_size
+            me % total_gbytes = real ( me % array_size * storage_size ( 1.0_rp ), rp ) / real ( 8 * gigabytes, rp )
 
             do k_measurements = 1, measurements ! repeat measurement
                 call system_clock ( COUNT = me % start )
 
-                    allocate ( array ( array_size ), stat = stat, errmsg = errmsg )
+                    allocate ( array ( me % array_size ), stat = stat, errmsg = errmsg )
                     if ( stat /= 0 ) then
                         write ( io, 100 ) ''
-                        write ( io, 110 ) array_size, total_gbytes, data_type
+                        write ( io, 110 ) me % array_size, me % total_gbytes, data_type
                         write ( io, 120 ) trim ( errmsg )
                         write ( io, 130 ) stat
                         flush ( io )
@@ -93,7 +139,7 @@ contains
                     deallocate ( array, stat = stat, errmsg = errmsg )
                     if ( stat /= 0 ) then
                         write ( io, 100 ) 'de'
-                        write ( io, 110 ) array_size, total_gbytes, data_type
+                        write ( io, 110 ) me % array_size, me % total_gbytes, data_type
                         write ( io, 120 ) trim ( errmsg )
                         write ( io, 130 ) stat
                         flush ( io )
@@ -101,7 +147,7 @@ contains
                     end if
 
                 call system_clock ( COUNT = me % stop )
-                me % sequence ( k_measurements ) = real ( me % stop - me % start, rp )
+                thoseSeconds % sequence ( k_measurements ) = real ( me % stop - me % start, rp )  / real ( me % rate, rp ) ! sec
             end do ! k_measurement repeat measurement
 
         100 format ( 'Mortal error during ', A, 'allocation...' )
