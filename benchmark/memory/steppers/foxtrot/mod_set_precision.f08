@@ -17,7 +17,7 @@ module mSetPrecision
         integer, parameter :: ascii   = selected_char_kind ( 'ASCII' )      ! optional
 
     ! Define working precision: Hansen and Tompkins, p. 22
-    integer, parameter :: rp = REAL64
+    integer, parameter :: rp = REAL32
     integer, parameter :: ip = INT64
 
 end module mSetPrecision

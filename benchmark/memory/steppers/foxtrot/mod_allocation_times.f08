@@ -4,13 +4,13 @@ module mAllocationTimes
 
     implicit none
 
-    integer,        parameter :: measurements = 15 ! repeat measurements
+    integer,        parameter :: measurements = 5 ! repeat measurements
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
 
     ! rank 1
     !real ( rp ) :: ticks_clock = 0.0_rp
 
-    character ( len = * ), parameter :: data_type = 'R64' ! match rp
+    character ( len = * ), parameter :: data_type = 'R32' ! match rp
 
     type :: ticks
         integer ( ip ) :: array_size
