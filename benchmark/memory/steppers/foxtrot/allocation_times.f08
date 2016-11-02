@@ -17,12 +17,11 @@ program allocation_times
     ! rank 1
     integer ( ip ), dimension ( 1 : numElements ) :: elements
     ! rank 0
-    integer ( ip ) :: mant = 0_ip, power = 0_ip       ! controls elements
+    integer ( ip ) :: mant = 0, power = 0             ! controls elements
     integer        :: io_summary = 0, io_sequence = 0 ! io handles
     integer        :: k_sizes = 0                     ! dummy counters
 
-        elements = [ ( ( 10_ip ** power * mant, mant = 1_ip, 9_ip ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
-        !print *, 'elements = ', elements
+        elements = [ ( ( 10_ip ** power * mant, mant = 1, 9 ), power = power_lo, power_hi ) ] ! sample sizes 1000, 2000, 3000, ...
 
         call write_header_sub ( io_summary, io_sequence ) ! create files for data and results
 

@@ -63,17 +63,17 @@ contains
         character ( len = * ), parameter :: fmt_gb = 'E17.8', fmt_time = 'E15.5', fmt_elem = 'I15'
         character ( len = 128 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
 
+            ! summary data
             write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
             write ( unit = io_summary, fmt = trim ( fmt_str ) ) thoseTicks % array_size, thoseTicks % total_gbytes, &
                 thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
+            flush ( io_summary )
 
             ! list the sequence of recorded times
             write ( fmt_str, 200 ) fmt_elem, fmt_gb, fmt_time, measurements - 1, fmt_time
-            !print *, 'fmt_str = ', trim ( fmt_str ), '!'
-            !write ( io_sequence, 210 ) thoseTicks % array_size, thoseTicks % total_gbytes, thoseSeconds % sequence
-
             write ( unit = io_sequence, fmt = fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
                                                       ( thoseSeconds % sequence ( k ), k = 1, measurements )
+            flush ( io_sequence )
 
         100 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', "3 ( ', ', ", g0, " ) )" )
         200 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
@@ -98,8 +98,6 @@ contains
             root   = sum_squares_ave - me % mean ** 2
             if ( root < 5.0_rp * epsilon ( 1.0_rp ) ) root = 0.0_rp ! avoid sqrt of a negative number
             me % variance = sqrt ( root )
-
-            !print *, 'inside analyze_seconds_sub: array_size = ', thoseTicks % array_size, '; GB = ', thoseTicks % total_gbytes
 
     end subroutine analyze_seconds_sub
 

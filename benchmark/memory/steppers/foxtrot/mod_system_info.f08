@@ -39,7 +39,6 @@ module mSystemInfo
     end type file_names
 
     private :: get_system_var_sub, get_env_var_sub, build_names_sub
-    !procedure, public :: build_names => build_names_sub
 
 contains
 
@@ -115,13 +114,8 @@ contains
             p => null ()
             call myFileNames % build_names ( )
 
-            ! print *, 'myFileNames % myDir            = ', trim ( myFileNames % myDir ), '.'
-            ! print *, 'myFileNames % FileNameSummary  = ', trim ( myFileNames % FileNameSummary ), '.'
-            ! print *, 'myFileNames % FileNameSequence = ', trim ( myFileNames % FileNameSequence ), '.'
-
             io_summary  = safeopen_writereplace ( myFileNames % FileNameSummary )
             io_sequence = safeopen_writereplace ( myFileNames % FileNameSequence )
-            !io_version  = safeopen_readonly     ( file_fortran_version )
 
             ! grab command line output for gfortran --version
             write ( io_summary, '( ''gfortran --version:'' )' )
