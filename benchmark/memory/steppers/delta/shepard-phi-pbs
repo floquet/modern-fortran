@@ -1,0 +1,12 @@
+#!/bin/bash
+## Required PBS Directives --------------------------------------
+#PBS -A ARLAP96070PET
+#PBS -q phi
+#PBS -l select=1:ncpus=10:mpiprocs=10
+#PBS -l min_walltime=000:30:00
+#PBS -l max_walltime=168:00:00
+#PBS -l     walltime=24:00:00
+#PBS -j oe
+
+source ${myGit}bash/pbs/allocation_pbs
+
