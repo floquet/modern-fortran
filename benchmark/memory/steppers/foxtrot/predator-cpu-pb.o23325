@@ -1,0 +1,48 @@
+dos2unix: converting file /var/spool/PBS/mom_priv/jobs/23325.predator-c.SC.user to UNIX format ...
+/opt/pbs/scripts/prologue-brent: line 351: /opt/pbs/scripts/allocation/start: No such file or directory
+Welcome dantopa to ~/.personal.bashrc on predator
+/home/dantopa/.personal.bashrc: line 33: black: command not found
+/home/dantopa/.personal.bashrc: line 34: myprompt: command not found
+
+* * * pbs_pulse begin * * *
+
+PBS environment variables
+23325.predator-c: PBS_JOBID
+predator-cpu-pb: PBS_JOBNAME - job name from user
+predator.afrl.hpc.mil: PBS_O_HOST - host name where qsub was launched
+/bin/bash: PBS_O_SHELL - value of $ SHELL
+/home/dantopa/hpc/fortran/benchmark/memory/steppers/foxtrot: PBS_O_WORKDIR - absolute path of directory where qsub was executed
+/usr/local/krb5/bin:/usr/local/ossh/bin:/app/sgi/mpt/mpt-2.11/bin:/app/intel/vtune_amplifier_xe/2012.0.032/bin64:/app/intel/inspector_xe/2012.0.032/bin64:/app/intel/2012.0.032/bin:/usr/lib64/qt-3.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/sbin:/opt/pbs/default/bin:/home/dantopa/bin:/home/dantopa/bin/x86_64:/hafs_x86_64:/hafs_x86_64/bin:/usr/bin/X11:/usr/local/bin:/usr/local/jre/bin:.: PBS_O_PATH from submission environment
+PBS_BATCH: PBS_ENVIRONMENT - job type
+standard: PBS_QUEUE - which queue?
+/var/spool/PBS/aux/23325.predator-c: PBS_NODEFILE - file of assigned vnodes
+PBS_BATCH: PBS_ENVIRONMENT - interactive or batch
+
+other environment variables
+: HOST - node
+/home/dantopa: HOME - absolute path, home directory
+/workspace/dantopa: WORKDIR - absolute path, work directory
+/p/cwfs/dantopa: CENTER - directory on the Center-Wide File System (CWFS)
+Predator: BC_HOST - generic name
+1024: BC_CORES_PER_NODE - number of cores per node
+4004719: BC_MEM_PER_NODE - approximate maximum user-accessible memory per node (integer MBytes)
+8: BC_MPI_TASKS_ALLOC - MPI tasks allocated
+1: BC_NODE_ALLOC - nodes allocated
+1: OMP_NUM_THREADS - OpenMP threads per node
+1: MPI_DSM_DISTRIBUTE - ensures memory is assigned closest to physical core where each MPI process runs
+
+https://www.erdc.hpc.mil/docs/topazPbsGuide.html#envVars
+
+* * * pbs_pulse end * * *
+
+-bash: line 1: 45007 Killed                  /var/spool/PBS/mom_priv/jobs/23325.predator-c.SC
+
+module list:
+
+Job 23325.predator-c process(es) killed by system out-of-memory (OOM) killer:
+Nov  2 00:02:46 UV00000146-P000 kernel: 23325.predator- invoked oom-killer: gfp_mask=0x200da, order=0, oom_adj=0, oom_score_adj=0
+Nov  2 00:02:46 UV00000146-P000 kernel: 23325.predator- cpuset=23325.predator-c mems_allowed=111
+Nov  2 00:02:46 UV00000146-P000 kernel: Pid: 45015, comm: 23325.predator- Tainted: P           -- ------------    2.6.32-573.hz100.el6.x86_64 #1
+chgrp: missing operand after `/workspace/PBS/ooms/23325.predator-c'
+Try `chgrp --help' for more information.
+/usr/bin/timeout: failed to run command `/opt/pbs/scripts/allocation/finish': No such file or directory
