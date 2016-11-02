@@ -48,7 +48,7 @@ contains
 
             call get_environment_variable ( "wdhpc",       me % wdhpc )         ! e.g. root for git repos
             call get_environment_variable ( "JOBID",       me % pbs_jobnumber ) ! e.g. topaz-big-pbs
-            call get_environment_variable ( "BC_HOST",     me % machine_name )  ! e.g. topaz
+            call get_environment_variable ( "host_name",   me % machine_name )  ! e.g. topaz
             call get_environment_variable ( "PBS_JOBID",   me % pbs_jobid )     ! e.g. 123456
             call get_environment_variable ( "PBS_JOBNAME", me % pbs_jobname )   ! e.g. topaz-big-pbs
 
@@ -91,6 +91,7 @@ contains
 
             ! /p/home/dantopa/hpc/transporter/memtimes/topaz
             me % myDir = trim ( me % thisEnvVar % wdhpc ) // myPath // trim ( me % thisEnvVar % machine_name ) // '/'
+            call execute_command_line ( 'mkdir ' // trim ( me % myDir ) )
             ! topaz_lmem02_R64_596879
             stem_name = trim ( me % thisEnvVar % machine_name ) // '_' // trim ( me % thisSysInfo % host ) // '_' // &
                         data_type // '_' // trim ( me % thisEnvVar % pbs_jobnumber )
