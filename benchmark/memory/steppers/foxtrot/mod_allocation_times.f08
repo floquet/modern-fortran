@@ -148,7 +148,7 @@ contains
             end do ! k_measurement repeat measurement
 
         100 format ( 'Mortal error during ', A, 'allocation...' )
-        110 format ( 'requested size is ', I15, ' elements (', I10,' GB); kind = ', A )
+        110 format ( 'requested size is ', I15, ' elements (', F15.5,' GB); kind = ', A )
         120 format ( 'errmsg = ', I10, '.' )
         130 format ( 'stat = ', A )
 
