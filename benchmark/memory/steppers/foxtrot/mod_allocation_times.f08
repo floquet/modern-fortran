@@ -4,7 +4,7 @@ module mAllocationTimes
 
     implicit none
 
-    integer,        parameter :: measurements = 3 ! repeat measurements
+    integer,        parameter :: measurements = 15 ! repeat measurements
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
 
     ! rank 1
