@@ -149,8 +149,8 @@ contains
 
         100 format ( 'Mortal error during ', A, 'allocation...' )
         110 format ( 'requested size is ', I15, ' elements (', F15.5,' GB); kind = ', A )
-        120 format ( 'errmsg = ', I10, '.' )
-        130 format ( 'stat = ', A )
+        120 format ( 'errmsg = ', A, '.' )
+        130 format ( 'stat = ', I10 )
 
     end subroutine record_allocation_times_sub
 
