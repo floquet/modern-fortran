@@ -30,16 +30,15 @@ module mSystemInfo
     end type system_info
 
     type :: file_names
-        character ( len = 512 ) :: myDir, FileNameSummary, FileNameSequence
-        type ( environment_variables ):: thisEnvVar
-        type ( system_info )          :: thisSysInfo
+        character ( len = 512 )        :: myDir, FileNameSummary, FileNameSequence
+        type ( environment_variables ) :: thisEnvVar
+        type ( system_info )           :: thisSysInfo
     contains
         private
         procedure, public :: build_names => build_names_sub
     end type file_names
 
     private :: get_system_var_sub, get_env_var_sub, build_names_sub
-    !procedure, public :: build_names => build_names_sub
 
 contains
 
@@ -109,17 +108,14 @@ contains
         character ( len = * ), parameter      :: file_fortran_version = 'fortran_version.txt'
         character ( len = 512 )               :: str_fortran_version  = '', io_message
 
-        type ( file_names ) :: myFileNames
+        type ( file_names ), target  :: myFileNames
+        type ( file_names ), pointer :: p
 
+            p => null ()
             call myFileNames % build_names ( )
-
-            print *, 'myFileNames % myDir            = ', trim ( myFileNames % myDir ), '.'
-            print *, 'myFileNames % FileNameSummary  = ', trim ( myFileNames % FileNameSummary ), '.'
-            print *, 'myFileNames % FileNameSequence = ', trim ( myFileNames % FileNameSequence ), '.'
 
             io_summary  = safeopen_writereplace ( myFileNames % FileNameSummary )
             io_sequence = safeopen_writereplace ( myFileNames % FileNameSequence )
-            !io_version  = safeopen_readonly     ( file_fortran_version )
 
             ! grab command line output for gfortran --version
             write ( io_summary, '( ''gfortran --version:'' )' )
@@ -135,8 +131,17 @@ contains
             write ( io_summary, 110 ) compiler_version ( )
             write ( io_summary, 120 ) compiler_options ( )
 
-            write ( io_summary, 200 ) trim ( myFileNames % thisEnvVar % machine_name ), trim ( myFileNames % thisSysInfo % host )
-            write ( io_summary, 210 ) trim ( myFileNames % thisSysInfo % run_cmd )
+            p => myFileNames
+                write ( io_summary, 200 ) trim ( p % thisEnvVar % machine_name ), trim ( p % thisSysInfo % host )
+
+                write ( io_summary, 210 ) trim ( p % thisEnvVar % pbs_jobid )
+                write ( io_summary, 220 ) trim ( p % thisEnvVar % pbs_jobname )
+                write ( io_summary, 230 ) trim ( p % thisEnvVar % pbs_jobnumber )
+
+                write ( io_summary, 240 ) trim ( p % thisSysInfo % run_cmd )
+                write ( io_summary, 250 ) p % thisSysInfo % year, p % thisSysInfo % month, p % thisSysInfo % day, &
+                                          p % thisSysInfo % hour, p % thisSysInfo % min,   p % thisSysInfo % sec
+            p => null( )
 
             write ( io_summary, 300 ) measurements
             write ( io_summary, 310 ) trim ( myFileNames % FileNameSequence )
@@ -147,7 +152,11 @@ contains
         120 format (    'Fortran compiler options: ', A, / )
 
         200 format ( 'Machine: ', A, ', node: ', A )
-        210 format ( "Program launched via ", A, ".", / )
+        210 format ( 'PBS job ID:     ', A )
+        220 format ( 'PBS job name:   ', A )
+        230 format ( 'PBS job number: ', A )
+        240 format ( "Program launched via ", A, "." )
+        250 format ( "Date: ", A, " - ", A, " - ", A, ", time: ", A, ":", A, ":", A, / )
 
         300 format ( 'Number of times each measurement is repeated: ', I5 )
         310 format ( 'Measurements written to file ', A, / )
