@@ -8,7 +8,7 @@ program allocation_times
     implicit none
 
     ! independent parameters
-    integer ( ip ), parameter :: power_lo = 3, power_hi = 11 ! decadel range
+    integer ( ip ), parameter :: power_lo = 3, power_hi = 3 ! decadel range
     ! derived parameters
     integer ( ip ), parameter :: numElements = ( power_hi - power_lo + 1 ) * 9 ! list length for array sizes
 

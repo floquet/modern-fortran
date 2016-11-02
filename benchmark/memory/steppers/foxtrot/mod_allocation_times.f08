@@ -65,18 +65,20 @@ contains
 
             ! summary data
             write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
+            !print *, 'fmt_str = ', fmt_str
             write ( unit = io_summary, fmt = trim ( fmt_str ) ) thoseTicks % array_size, thoseTicks % total_gbytes, &
                 thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
             flush ( io_summary )
 
             ! list the sequence of recorded times
             write ( fmt_str, 200 ) fmt_elem, fmt_gb, fmt_time, measurements - 1, fmt_time
+            !print *, 'fmt_str = ', fmt_str
             write ( unit = io_sequence, fmt = fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
                                                       ( thoseSeconds % sequence ( k ), k = 1, measurements )
             flush ( io_sequence )
 
-        100 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', "3 ( ', ', ", g0, " ) )" )
-        200 format ( "( ", g0, ", 2X, ", g0, ", 2X, ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
+        100 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ',    "3 ( ', ', ", g0, " ) )" )
+        200 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
 
     end subroutine post_results
 
