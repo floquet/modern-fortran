@@ -10,7 +10,7 @@ module mAllocationTimes
     ! rank 1
     !real ( rp ) :: ticks_clock = 0.0_rp
 
-    character ( len = * ), parameter :: data_type = 'R32' ! match rp
+    character ( len = * ), parameter :: data_type = 'R64' ! match rp
 
     type :: ticks
         integer ( ip ) :: array_size
