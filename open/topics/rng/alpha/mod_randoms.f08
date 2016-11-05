@@ -4,12 +4,12 @@
 
 module mRandoms
 
-    use, intrinsic :: iso_fortran_env, only : ip ! can't be changed gracefullt
+    use, intrinsic :: iso_fortran_env, only : INT64 ! can't be changed gracefullt
     use mSetPrecision,                 only : rp
 
     implicit NONE
 
-    integer, parameter, private :: ip = ip ! large integers in this scope
+    integer, parameter, private :: ip = INT64 ! large integers in this scope
 
     integer,        private          :: k = 0              ! counter for this scope
     integer ( ip ), private          :: alloc_status  = 0  ! error handling
@@ -20,12 +20,18 @@ module mRandoms
     !public bindings
 contains ! methods: subroutines and functions
 
-    function byte_flipper ( normal ) result ( byte_flipped )
-        integer :: nBytes
-        nBytes = bit_size ( normal ) / 8 ! count bytes
-        do k = 0, bytes - 1  !  reverse byte order: move LSB in myCount to MSB in u
-            call mvbits ( FROM = normal, FROMPOS = k * 8, LEN = 8, TO = byte_flipped, TOPOS = ( bytes - k - 1 ) * 8 )
-        end do
+    function byte_flipper ( input ) result ( byte_flipped )  ! flip bytes: sequences with small changes become
+                                                             !             sequences with large changes
+
+        integer ( ip ), intent ( in ) :: input
+
+        integer ( ip ) :: byte_flipped
+        integer        :: nBytes
+
+            nBytes = bit_size ( input ) / 8 ! count bytes
+            do k = 0, bytes - 1  !  reverse byte order: move LSB in myCount to MSB in byte_flipped
+                call mvbits ( FROM = input, FROMPOS = k * 8, LEN = 8, TO = byte_flipped, TOPOS = ( nBytes - k - 1 ) * 8 )
+            end do
     end function byte_flipper
 
     !   https://stackoverflow.com/questions/23057213/how-to-generate-integer-random-number-in-fortran-90-in-the-range-0-5
@@ -33,9 +39,9 @@ contains ! methods: subroutines and functions
     function random_integer_fcn ( UpperBound ) result ( RandomInteger )
 
         integer ( ip ), intent ( in ) :: UpperBound
-        integer ( ip )                :: RandomInteger
 
-        real    ( rp )                :: RandomReal
+        integer ( ip ) :: RandomInteger
+        real    ( rp ) :: RandomReal
 
             call random_number ( RandomReal )           ! 0 <= r < 1
             RandomReal = RandomReal * UpperBound        ! 0 <= r < UpperBound
@@ -102,10 +108,10 @@ contains ! methods: subroutines and functions
             ! Useful for parallel applications.
             call system_clock ( count = myCount )
 
-            u = byte_flipper ( myCount )
+            input = byte_flipper ( myCount )
 
             pid = getpid ( )  ! get process id
-            u = ieor ( u, int ( pid, kind ( u ) ) )
+            u = ieor ( input, int ( pid, kind ( input ) ) )
             do k = 1, n
                 seed ( k ) = lcg ( u )
             end do
