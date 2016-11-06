@@ -11,6 +11,9 @@ module mRandoms
 
     integer, parameter, private :: ip = INT64 ! large integers in this scope
 
+    integer :: seed_size ! seed
+    integer, allocatable, :: SeedUsed ( : )
+
     integer,        private          :: k = 0              ! counter for this scope
     integer ( ip ), private          :: alloc_status  = 0  ! error handling
     character ( len = 512 ), private :: alloc_message = '' ! error handling
@@ -29,7 +32,7 @@ contains ! methods: subroutines and functions
         integer        :: nBytes
 
             nBytes = bit_size ( input ) / 8 ! count bytes
-            do k = 0, bytes - 1  !  reverse byte order: move LSB in myCount to MSB in byte_flipped
+            do k = 0, nBytes - 1  !  reverse byte order: move LSB in myCount to MSB in byte_flipped
                 call mvbits ( FROM = input, FROMPOS = k * 8, LEN = 8, TO = byte_flipped, TOPOS = ( nBytes - k - 1 ) * 8 )
             end do
     end function byte_flipper
@@ -43,46 +46,53 @@ contains ! methods: subroutines and functions
         integer ( ip ) :: RandomInteger ! output
         real    ( rp ) :: RandomReal    ! input
 
-            call random_number ( RandomReal )           ! 0 <= r < 1
-            RandomReal = RandomReal * UpperBound        ! 0 <= r < UpperBound
-            RandomInteger = ceiling ( RandomReal, ip )  ! 1 <= RandomInteger <= UpperBound
+            call random_number ( RandomReal )                 ! 0 <= r < 1
+            RandomReal = RandomReal * real ( UpperBound, rp ) ! 0 <= r < UpperBound
+            RandomInteger = ceiling ( RandomReal, ip )        ! 1 <= RandomInteger <= UpperBound
 
     end function random_integer_fcn
 
     ! https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fSEED.html
 
-    subroutine init_random_seed_sub ( FlagCheckOS, mySeed )
-    ! If mySeed is passed, use it to seed rng and return
+    subroutine init_random_seed_sub ( SeedIn, SeedOut, FlagCheckOS )
+    ! If SeedIn is passed, use it to seed rng and return
     ! Otherwise, create a new seed
 
-        use iso_fortran_env, only: ip
+        !use iso_fortran_env, only: ip
 
-        integer, intent ( IN ), optional :: mySeed ( : )
-        logical, intent ( IN ), optional :: FlagCheckOS
+        integer, intent ( IN ),  optional :: SeedIn  ( : )
+        integer, intent ( OUT ), optional :: SeedOut ( : )
+        logical, intent ( IN ),  optional :: FlagCheckOS
 
         ! rank 1
         integer, allocatable  :: seed ( : )
 
         ! rank 0
-        integer        :: array_size = 0, io_urandom = 0, io_stat = 0, pid = 0, bytes = 0
-        integer        :: dt ( 8 ) = 0
-        integer ( ip ) :: myCount = 0, byte_flipper = 0
+        integer        :: seed_size = 0, io_urandom = 0, io_stat = 0, pid = 0!, nBytes = 0
+        integer ( ip ) :: myCount = 0, input = 0
 
-        character ( len = 512 )          :: err_msg ! for now this message is not reported
+        ! logical :: FlagReturnSeed ! should the seed be returned?
+
+        character ( len = 512 )          :: io_msg ! for now this message is not reported
         character ( len = * ), parameter :: me_subroutine = 'subroutine init_random_seed_sub'  ! self-identification
         character ( len = * ), parameter :: stop_msg = 'Fatal error: ' // me_module // ', ' // me_subroutine
 
-            if ( present ( mySeed ) ) then  ! check for user-supplied seed
-                call random_seed ( put = mySeed )
+            ! FlagReturnSeed = .false.
+            ! if ( present ( SeedOut ) ) FlagReturnSeed = .true.
+
+            if ( present ( SeedIn ) ) then  ! check for user-supplied seed
+                call random_seed ( put = SeedIn )  ! rng is now seeded
+                !if ( FlagReturnSeed ) SeedOut = SeedIn
+                SeedOut = SeedIn
                 return
-            end if  ! present ( mySeed )
+            end if  ! present ( SeedIn )
 
             ! interogate for size of seed vector and allocate memory
-            call random_seed ( size = array_size )  ! measure seed size for allocation
-            allocate ( seed ( n ), stat = alloc_status, errmsg = alloc_message )
+            call random_seed ( size = seed_size )  ! measure seed size for allocation
+            allocate ( seed ( 1 : seed_size ), stat = alloc_status, errmsg = alloc_message )
             if ( alloc_status /= 0 ) then
                 write ( *, 100 ) "integer", "seed"
-                write ( *, 110 ) array_size
+                write ( *, 110 ) seed_size
                 write ( *, 120 ) alloc_status
                 write ( *, 130 ) trim ( alloc_message )
                 stop stop_msg
@@ -92,12 +102,14 @@ contains ! methods: subroutines and functions
             present_FlagCheckOS: if ( present ( FlagCheckOS ) ) then
                 if ( FlagCheckOS ) then
                     open ( newunit = io_urandom, file = "/dev/urandom", access = "stream", form = "unformatted", action = "read", &
-                                                 status = "old",  iostat = io_stat, errmsg = err_msg )
+                                                 status = "old",  iostat = io_stat, iomsg = io_msg )
                     if ( io_stat == 0 ) then ! able to access urandom
                         read  ( io_urandom ) seed
                         close ( io_urandom )
-                        call random_seed ( put = seed )
-                        return  ! success - return seed generated by urandom
+                        call random_seed ( put = seed )  ! rng is now seeded
+                        !if ( FlagReturnSeed ) SeedOut = seed
+                        SeedOut = seed
+                        return  ! success - use seed generated by urandom
                     else
                         exit present_FlagCheckOS ! can't use urandom; use the system clock to create a seed
                     end if ! io_stat == 0
@@ -109,15 +121,17 @@ contains ! methods: subroutines and functions
             ! Useful for parallel applications.
             call system_clock ( count = myCount )
 
-            input = byte_flipper ( myCount )
+            input = byte_flipper ( myCount ) ! flip bytes to disperse first random number
 
             pid = getpid ( )  ! get process id
-            u = ieor ( input, int ( pid, kind ( input ) ) )
-            do k = 1, n
-                seed ( k ) = lcg ( u )
+            input = ieor ( input, int ( pid, kind ( input ) ) )
+            do k = 1, seed_size
+                seed ( k ) = lcg ( input )
             end do
 
-            call random_seed ( put = seed )
+            call random_seed ( put = seed )  ! rng is now seeded
+            !if ( FlagReturnSeed ) SeedOut = seed
+            SeedOut = seed
 
             return
 
@@ -127,7 +141,7 @@ contains ! methods: subroutines and functions
             130  format (    "  errmsg = ", g0, "." )
 
         contains
-            ! Simplistic PRNG, sufficient for seeding a better PRNG.
+            ! Rustic linear congruential generator, adequate for seeding a better PRNG.
             function lcg ( seed ) result ( random_integer )
                 integer        :: random_integer
                 integer ( ip ) :: seed
@@ -138,7 +152,7 @@ contains ! methods: subroutines and functions
                         seed = mod ( seed, 4294967296_ip )
                     end if
 
-                    seed   = mod ( seed * 279470273_ip, 4294967291_ip )
+                    seed = mod ( seed * 279470273_ip, 4294967291_ip )
                     random_integer = int ( mod ( seed, int ( huge ( 0 ), ip ) ), kind ( 0 ) )
             end function lcg
 
