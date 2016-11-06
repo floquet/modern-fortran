@@ -4,7 +4,7 @@
 
 module mRandoms
 
-    use, intrinsic :: iso_fortran_env, only : INT64 ! can't be changed gracefullt
+    use, intrinsic :: iso_fortran_env, only : INT64 ! can't be changed gracefully
     use mSetPrecision,                 only : rp
 
     implicit NONE
@@ -40,8 +40,8 @@ contains ! methods: subroutines and functions
 
         integer ( ip ), intent ( in ) :: UpperBound
 
-        integer ( ip ) :: RandomInteger
-        real    ( rp ) :: RandomReal
+        integer ( ip ) :: RandomInteger ! output
+        real    ( rp ) :: RandomReal    ! input
 
             call random_number ( RandomReal )           ! 0 <= r < 1
             RandomReal = RandomReal * UpperBound        ! 0 <= r < UpperBound
@@ -68,6 +68,7 @@ contains ! methods: subroutines and functions
         integer        :: dt ( 8 ) = 0
         integer ( ip ) :: myCount = 0, byte_flipper = 0
 
+        character ( len = 512 )          :: err_msg ! for now this message is not reported
         character ( len = * ), parameter :: me_subroutine = 'subroutine init_random_seed_sub'  ! self-identification
         character ( len = * ), parameter :: stop_msg = 'Fatal error: ' // me_module // ', ' // me_subroutine
 
@@ -91,7 +92,7 @@ contains ! methods: subroutines and functions
             present_FlagCheckOS: if ( present ( FlagCheckOS ) ) then
                 if ( FlagCheckOS ) then
                     open ( newunit = io_urandom, file = "/dev/urandom", access = "stream", form = "unformatted", action = "read", &
-                                                 status = "old",  iostat = io_stat )
+                                                 status = "old",  iostat = io_stat, errmsg = err_msg )
                     if ( io_stat == 0 ) then ! able to access urandom
                         read  ( io_urandom ) seed
                         close ( io_urandom )
