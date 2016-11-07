@@ -1,5 +1,5 @@
 !     open namelist
-      open  ( unit = io_unit_nml, file = file_name_param_update, delim = 'apostrophe', iostat = io_status )      
+      open  ( unit = io_unit_nml, file = file_name_param_update, delim = 'apostrophe', iostat = io_status )
       if ( io_status /= 0 ) then                               ! can't open file
         write ( *,  * )
         write ( *,  * ) 'unable to open file ', file_name_param_update
