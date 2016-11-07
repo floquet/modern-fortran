@@ -1,0 +1,124 @@
+dantopa@Muntz-Szasz.local:beta $ date
+Sun Nov  6 18:19:47 CST 2016
+dantopa@Muntz-Szasz.local:beta $ pwd
+/Users/dantopa/Documents/hpc/fortran/open/topics/rng/beta
+dantopa@Muntz-Szasz.local:beta $ ls -alh
+total 88
+drwxr-xr-x  7 dantopa  staff   238B Nov  6 18:19 .
+drwxr-xr-x  5 dantopa  staff   170B Nov  6 16:42 ..
+-rw-r--r--@ 1 dantopa  staff   1.7K Nov  6 18:18 makefile
+-rw-r--r--@ 1 dantopa  staff   6.9K Nov  6 18:19 mod_randoms.f08
+-rw-r--r--@ 1 dantopa  staff   789B Nov  4 16:23 mod_set_precision.f08
+-rwxr-xr-x  1 dantopa  staff    20K Nov  6 18:18 random_number_tester
+-rw-r--r--@ 1 dantopa  staff   1.6K Nov  6 18:14 random_number_tester.f08
+dantopa@Muntz-Szasz.local:beta $
+dantopa@Muntz-Szasz.local:beta $ make debug
+PROGRAM  = random_number_tester
+PRG_OBJ  = random_number_tester.o
+SRCS     = mod_randoms.f08 mod_set_precision.f08 random_number_tester.f08
+OBJS     = mod_randoms.o mod_set_precision.o random_number_tester.o
+MODS     = mod_randoms.f08 mod_set_precision.f08
+MOD_OBJS = mod_randoms.o mod_set_precision.o
+dantopa@Muntz-Szasz.local:beta $ make
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_set_precision.o mod_set_precision.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_randoms.o mod_randoms.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o random_number_tester.o random_number_tester.f08
+gfortran -g -o random_number_tester mod_randoms.o mod_set_precision.o random_number_tester.o
+dantopa@Muntz-Szasz.local:beta $ ./random_number_tester
+ myRandomInteger =                     6 ; upper bound =                    10
+ 10 random numbers:
+   1. 0.41856697410977384
+   2. 0.30518311256984554
+   3. 0.77332079076634475
+   4. 0.24646039728381330
+   5. 0.68086856342228663
+   6. 0.79938679414162017
+   7. 0.21117846671749674
+   8. 0.67941632069055569E-001
+   9. 0.48261909712565465
+  10. 0.26424493864192422
+ seed_size =           33
+ rng seeded with OS seed
+seed (1) = -1246478313
+seed (2) = 1575408610
+seed (3) = -254160946
+seed (4) = -1430201992
+seed (5) = 1877264357
+seed (6) = -1331674657
+seed (7) = 1385811678
+seed (8) = -1220860545
+seed (9) = 1425335016
+seed (10) = -1135314440
+seed (11) = -1996665273
+seed (12) = -767799378
+seed (13) = -1536701586
+seed (14) = 15103010
+seed (15) = -1935067590
+seed (16) = 561489292
+seed (17) = 389317690
+seed (18) = 1537170355
+seed (19) = 770095607
+seed (20) = 2109398307
+seed (21) = -1131982754
+seed (22) = 1733714306
+seed (23) = 1620095167
+seed (24) = -1613143095
+seed (25) = 1797053384
+seed (26) = 1580087281
+seed (27) = 842703060
+seed (28) = -2013015535
+seed (29) = -1920759019
+seed (30) = 528026220
+seed (31) = 104533510
+seed (32) = 2122042164
+seed (33) = 693435656
+
+ 10 more random numbers:
+   1. 0.27146796998330569
+   2. 0.90757462386082000
+   3. 0.93526433783291474
+   4. 0.72928059417345781
+   5. 0.36261653754716283
+   6. 0.16788890263916967
+   7. 0.30856542871201031
+   8. 0.20794148030009441
+   9. 0.28502702578613204
+  10. 0.56644219236066407
+ rng seeded with native routine
+seed (1) = 1826671041
+seed (2) = 338778628
+seed (3) = 757383773
+seed (4) = 1447947238
+seed (5) = 758502917
+seed (6) = 399882940
+seed (7) = 1900639340
+seed (8) = 1069861096
+seed (9) = 1269935076
+seed (10) = 1470663327
+seed (11) = 1743103229
+seed (12) = 1121076553
+seed (13) = 1478955496
+seed (14) = 2031721543
+seed (15) = 216511295
+seed (16) = 863017769
+seed (17) = 1975039254
+seed (18) = 1625662132
+seed (19) = 1338610981
+seed (20) = 153400249
+seed (21) = 745695319
+seed (22) = 1626289557
+seed (23) = 1640025640
+seed (24) = 1773676016
+seed (25) = 1659921136
+seed (26) = 1241847189
+seed (27) = 1623636418
+seed (28) = 994294115
+seed (29) = 2144596933
+seed (30) = 1712313817
+seed (31) = 45793634
+seed (32) = 964719203
+seed (33) = 1902455715
+compiler version: GCC version 7.0.0 20161030 (experimental)
+compiler options: -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.12.1 -mtune=core2 -auxbase-strip random_number_tester.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace
+STOP successful completion for random_number_tester...
+dantopa@Muntz-Szasz.local:beta $ 
