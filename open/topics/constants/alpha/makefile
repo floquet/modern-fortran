@@ -55,6 +55,5 @@ clean:
 $(PRG_OBJ) : $(MOD_OBJS)
 
 # Blocks and allocations depends on shared
-# mod_file_handling.o         :
 mod_set_precision.o    :
 mod_global_constants.o : mod_set_precision.o
