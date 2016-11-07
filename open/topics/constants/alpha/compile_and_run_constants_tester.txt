@@ -1,7 +1,16 @@
 dantopa@Muntz-Szasz.local:alpha $ date
-Sun Nov  6 22:00:05 CST 2016
+Sun Nov  6 22:06:52 CST 2016
 dantopa@Muntz-Szasz.local:alpha $ pwd
 /Users/dantopa/Documents/hpc/fortran/open/topics/constants/alpha
+dantopa@Muntz-Szasz.local:alpha $ ls -alh
+total 40
+drwxr-xr-x  7 dantopa  staff   238B Nov  6 22:06 .
+drwxr-xr-x  4 dantopa  staff   136B Nov  6 22:02 ..
+-rw-r--r--@ 1 dantopa  staff   3.0K Nov  6 22:01 compile_and_run_constants_tester.txt
+-rw-r--r--@ 1 dantopa  staff   648B Nov  6 22:06 constants_tester.f08
+-rw-r--r--@ 1 dantopa  staff   1.7K Nov  6 21:58 makefile
+-rw-r--r--@ 1 dantopa  staff   3.2K Nov  6 21:43 mod_global_constants.f08
+-rw-r--r--@ 1 dantopa  staff   789B Nov  6 18:49 mod_set_precision.f08
 dantopa@Muntz-Szasz.local:alpha $ make debug
 PROGRAM  = constants_tester
 PRG_OBJ  = constants_tester.o
@@ -9,21 +18,14 @@ SRCS     = constants_tester.f08 mod_global_constants.f08 mod_set_precision.f08
 OBJS     = constants_tester.o mod_global_constants.o mod_set_precision.o
 MODS     = mod_global_constants.f08 mod_set_precision.f08
 MOD_OBJS = mod_global_constants.o mod_set_precision.o
-dantopa@Muntz-Szasz.local:alpha $ ls -alh
-total 64
-drwxr-xr-x  7 dantopa  staff   238B Nov  6 22:00 .
-drwxr-xr-x  3 dantopa  staff   102B Nov  6 18:49 ..
--rwxr-xr-x  1 dantopa  staff    15K Nov  6 21:59 constants_tester
--rw-r--r--@ 1 dantopa  staff   518B Nov  6 21:59 constants_tester.f08
--rw-r--r--@ 1 dantopa  staff   1.7K Nov  6 21:58 makefile
--rw-r--r--@ 1 dantopa  staff   3.2K Nov  6 21:43 mod_global_constants.f08
--rw-r--r--@ 1 dantopa  staff   789B Nov  6 18:49 mod_set_precision.f08
 dantopa@Muntz-Szasz.local:alpha $ make
 gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_set_precision.o mod_set_precision.f08
 gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_global_constants.o mod_global_constants.f08
 gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o constants_tester.o constants_tester.f08
 gfortran -g -o constants_tester constants_tester.o mod_global_constants.o mod_set_precision.o
 dantopa@Muntz-Szasz.local:alpha $ ./constants_tester
+0.12246467991473532E-015 = sin pi (ideal =  0)
+-1.0000000000000000 = cos pi (ideal = -1)
 
 List of parameters in mod_global_constants:
 selected_real_kind = 8
@@ -45,4 +47,4 @@ selected_real_kind = 8
 compiler version: GCC version 7.0.0 20161030 (experimental)
 compiler options: -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.12.1 -mtune=core2 -auxbase-strip constants_tester.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace
 STOP * * * successful completion for constants_tester...
-dantopa@Muntz-Szasz.local:alpha $ 
+dantopa@Muntz-Szasz.local:alpha $
