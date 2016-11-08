@@ -13,7 +13,7 @@ program namelist_tester
         real ( rp ) :: equator_radius = radius_earth_equitorial
 
         character ( len = * ), parameter :: nml_file = 'sample_namelist.txt'
-        character ( len = * ) :: path = 'myPath'
+        character ( len = 16 )           :: path = 'myPath'
 
         namelist / nml_constants / polar_radius, equator_radius, path
 

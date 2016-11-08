@@ -1,0 +1,24 @@
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ date
+Tue Nov  8 13:59:39 CST 2016
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ cn
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ date
+Tue Nov  8 14:01:15 CST 2016
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ pwd
+/Users/rditldmt/hpc/fortran/open/topics/command_line_arguments
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ echo $gflags
+-g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -Wuse-without-only
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ gfortran $gflags -o harvest_command_line harvest_command_line.f08
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $ ./harvest_command_line mydata thesemodules title_for_run
+
+The launch command was ./harvest_command_line mydata thesemodules title_for_run.
+There are 3 arguments.
+command line argument 1 is "mydata", length = 6
+command line argument 2 is "thesemodules", length = 12
+command line argument 3 is "title_for_run", length = 13
+STOP successful completion for harvest_command_line...
+rditldmt@ITLDMT-MD-O2034:command_line_arguments $
