@@ -13,9 +13,9 @@ program namelist_tester
         real ( rp ) :: equator_radius = radius_earth_equitorial
 
         character ( len = * ), parameter :: nml_file = 'sample_namelist.txt'
-        character ( len = * ) :: path = 'sample_namelist.txt'
+        character ( len = * ) :: path = 'myPath'
 
-        namelist / nml_constants / polar_radius, equator_radius, nml_file
+        namelist / nml_constants / polar_radius, equator_radius, path
 
             ! open namelist
             open  ( unit = io_nml, file = nml_file, delim = 'apostrophe', iostat = io_status )
