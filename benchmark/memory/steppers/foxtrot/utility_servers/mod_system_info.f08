@@ -127,10 +127,10 @@ contains
 
             open ( unit = io_summary,  file = trim ( myFileNames % FileNameSummary  ), action = 'write', status = 'new' )
             open ( unit = io_sequence, file = trim ( myFileNames % FileNameSequence ), action = 'write', status = 'new' )
-            open ( unit = io_version,  file = file_fortran_version,                    action = 'write', status = 'new' )
+            open ( unit = io_version,  file = file_fortran_version,                    action = 'read' )
             print *, 'io_summary = ', io_summary
             print *, 'io_sequence = ', io_sequence
-            
+
             ! grab command line output for gfortran --version
             !print *, 'io_summary = ', io_summary
             !print *, 'io_sequence = ', io_sequence
