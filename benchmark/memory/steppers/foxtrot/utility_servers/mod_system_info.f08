@@ -9,7 +9,7 @@ module mSystemInfo
 
     implicit none ! protects all methods in scope (module and submodules)
 
-    character ( len = * ), parameter :: myPath = '/transporter/memtimes/'
+    character ( len = * ), parameter :: myPath = 'transporter/memtimes/'
 
     type :: environment_variables
         character ( len = 512 ) :: wdhpc, pbs_jobnumber, machine_name, pbs_jobid, pbs_jobname
@@ -115,16 +115,24 @@ contains
             p => null ()
             call myFileNames % build_names ( )
 
-            io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
-            io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
+            !io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
+            !io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
+
+            !print *, 'io_summary = ', io_summary
+            !print *, 'io_sequence = ', io_sequence
+
+            io_summary  = 1
+            io_sequence = 2
+            io_version  = 3
 
             print *, 'io_summary = ', io_summary
             print *, 'io_sequence = ', io_sequence
-
             ! grab command line output for gfortran --version
+            !print *, 'io_summary = ', io_summary
+            !print *, 'io_sequence = ', io_sequence
             write ( io_summary, '( ''gfortran --version:'' )' )
             call execute_command_line ( 'gfortran --version >> ' // file_fortran_version )
-            io_version = safeopen_readonly ( file_fortran_version )
+            !io_version = safeopen_readonly ( file_fortran_version )
             do
                 read  ( unit = io_version, fmt = 100, iostat = io_status, iomsg = io_message ) str_fortran_version
                 if ( io_status /= 0 ) exit ! EOF
