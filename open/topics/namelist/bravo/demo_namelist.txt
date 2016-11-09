@@ -1,0 +1,47 @@
+dantopa@Muntz-Szasz:bravo $ date
+Tue Nov  8 22:37:15 CST 2016
+dantopa@Muntz-Szasz:bravo $ pwd
+/Users/dantopa/Documents/hpc/fortran/open/topics/namelist/bravo
+dantopa@Muntz-Szasz:bravo $ ls -alh
+total 72
+drwxr-xr-x  8 dantopa  staff   272B Nov  8 22:33 .
+drwxr-xr-x  4 dantopa  staff   136B Nov  8 22:04 ..
+-rw-r--r--@ 1 dantopa  staff   1.7K Nov  6 22:26 makefile
+-rw-r--r--@ 1 dantopa  staff   3.2K Nov  6 22:40 mod_global_constants.f08
+-rw-r--r--@ 1 dantopa  staff   789B Nov  6 22:26 mod_set_precision.f08
+-rwxr-xr-x  1 dantopa  staff    16K Nov  8 22:05 namelist_tester
+-rw-r--r--@ 1 dantopa  staff   2.2K Nov  8 22:32 namelist_tester.f08
+-rw-r--r--  1 dantopa  staff   492B Nov  8 22:05 sample_namelist.txt
+dantopa@Muntz-Szasz:bravo $
+dantopa@Muntz-Szasz:bravo $ make debug
+PROGRAM  = namelist_tester
+PRG_OBJ  = namelist_tester.o
+SRCS     = mod_global_constants.f08 mod_set_precision.f08 namelist_tester.f08
+OBJS     = mod_global_constants.o mod_set_precision.o namelist_tester.o
+MODS     = mod_global_constants.f08 mod_set_precision.f08
+MOD_OBJS = mod_global_constants.o mod_set_precision.o
+dantopa@Muntz-Szasz:bravo $ make
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_set_precision.o mod_set_precision.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o mod_global_constants.o mod_global_constants.f08
+gfortran -c -g -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Og -pedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace -o namelist_tester.o namelist_tester.f08
+gfortran -g -o namelist_tester mod_global_constants.o mod_set_precision.o namelist_tester.o
+dantopa@Muntz-Szasz:bravo $
+dantopa@Muntz-Szasz:bravo $ ./namelist_tester
+ successful write to sample_namelist.txt
+compiler version: GCC version 7.0.0 20161030 (experimental)
+compiler options: -fPIC -feliminate-unused-debug-symbols -mmacosx-version-min=10.12.1 -mtune=core2 -auxbase-strip namelist_tester.o -g -Og -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Wuse-without-only -Wpedantic -fcheck=bounds -fmax-errors=5 -ffpe-trap=denormal -fbacktrace
+STOP * * * successful completion for namelist_tester...
+dantopa@Muntz-Szasz:bravo $
+dantopa@Muntz-Szasz:bravo $ cat sample_namelist.txt
+&NML_SAMPLE
+ MYID3=  1.0000000000000000     , 3*0.0000000000000000       ,  1.0000000000000000     , 3*0.0000000000000000       ,  1.0000000000000000     ,
+
+ I=              (0.0000000000000000,1.0000000000000000),
+ MYPI=  3.1415926535897931     ,
+ POLAR_RADIUS=  6356.7520000000004     ,
+ EQUATOR_RADIUS=  6378.1369999999997     ,
+ PATH_TO_INPUT='~/dir1/dir2/input_data          ',
+ PATH_TO_OUTPUT='../dirA/dirB/output_data        ',
+ PATH_TO_MODULES='${myModules}/modules            ',
+ /
+dantopa@Muntz-Szasz:bravo $
