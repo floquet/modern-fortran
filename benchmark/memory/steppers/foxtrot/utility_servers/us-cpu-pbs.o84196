@@ -1,0 +1,78 @@
+Info: '84196.viutill-0003.erdc.hpc.mil' is a serial run setting up env
+Info: User dantopa is not in sshd_config, adding
+node: viutilc-0021
+Welcome dantopa to ~/.bashrc on us
+Welcome dantopa to ~/.myBash on us: Wed Nov 9 08:51:53 CST 2016
+Welcome 902108 to ~/.myBash on us-erdc
+tput: No value for $TERM and no -T specified
+tput: No value for $TERM and no -T specified
+/u/home/dantopa/.myBash: line 33: pearl_white: command not found
+/u/home/dantopa/.myBash: line 34: myprompt: command not found
+Welcome dantopa to ~/.bash_profile on us-erdc
+
+* * * pbs_pulse begin * * *
+
+PBS environment variables
+84196.viutill-0003.erdc.hpc.mil: PBS_JOBID
+us-cpu-pbs: PBS_JOBNAME - job name from user
+viutill-0002.erdc.hpc.mil: PBS_O_HOST - host name where qsub was launched
+/bin/bash: PBS_O_SHELL - value of $ SHELL
+/u/home/dantopa/hpc/fortran/benchmark/memory/steppers/foxtrot/utility_servers: PBS_O_WORKDIR - absolute path of directory where qsub was executed
+/app/totalview/8.9/toolworks/totalview.8.9.0-1/bin:/app/cwjm/20111123/bin:/opt/pbs/default/etc:/app/openmpi/pgi/1.6.3/bin:/app/java/jdk1.8.0_72-64/bin:/app/pgi/linux86-64/13.7/bin:/app/SLB:/usr/KRB5/bin:/opt/pbs/default/bin:/usr/local/bin:/app/bin:/app/pbstools/bin:/app:/app/local/bin:/usr/local/FTA/bin:/usr/KRB5/bin:/usr/lib64/qt-3.3/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/adm/krb5.20150828/bin:/usr/local/sbin:/opt/ibutils/bin:/app/mpscp/mpscp-1.3a/bin:/u/home/dantopa/bin: PBS_O_PATH from submission environment
+PBS_BATCH: PBS_ENVIRONMENT - job type
+serial: PBS_QUEUE - which queue?
+/var/spool/pbs/aux/84196.viutill-0003.erdc.hpc.mil: PBS_NODEFILE - file of assigned vnodes
+PBS_BATCH: PBS_ENVIRONMENT - interactive or batch
+
+other environment variables
+: HOST - node
+/u/home/dantopa: HOME - absolute path, home directory
+/u/work/dantopa: WORKDIR - absolute path, work directory
+/p/cwfs/dantopa: CENTER - directory on the Center-Wide File System (CWFS)
+us-erdc: BC_HOST - generic name
+16: BC_CORES_PER_NODE - number of cores per node
+128000: BC_MEM_PER_NODE - approximate maximum user-accessible memory per node (integer MBytes)
+16: BC_MPI_TASKS_ALLOC - MPI tasks allocated
+1: BC_NODE_ALLOC - nodes allocated
+16: OMP_NUM_THREADS - OpenMP threads per node
+: MPI_DSM_DISTRIBUTE - ensures memory is assigned closest to physical core where each MPI process runs
+
+https://www.erdc.hpc.mil/docs/topazPbsGuide.html#envVars
+
+* * * pbs_pulse end * * *
+
+Wed Nov  9 08:51:54 CST 2016
+executing: module switch
+switching compiler_default: compiler/pgi
+with compiler_gnu: compiler/gcc/4.9.2
+
+module list:
+Currently Loaded Modulefiles:
+  1) compiler/gcc/4.9.2      5) cwjm/20111123
+  2) java64/jdk/1.8u72       6) mpscp/1.3a
+  3) mpi/pgi/openmpi/1.6.3   7) totalview/8.9
+  4) pbs
+
+
+gflags = -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5
+
+make
+gfortran -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_set_precision.o mod_set_precision.f08
+gfortran -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_allocation_times.o mod_allocation_times.f08
+gfortran -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_file_handling.o mod_file_handling.f08
+gfortran -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -o mod_system_info.o mod_system_info.f08
+gfortran -c -g -ffpe-trap=denormal -fbacktrace -Wall -Waliasing -Wconversion-extra -Wextra -Wsurprising -Wimplicit-procedure -Wintrinsics-std -Og -pedantic -fcheck=bounds -fmax-errors=5 -o allocation_times.o allocation_times.f08
+gfortran -g -o allocation_times allocation_times.o mod_allocation_times.o mod_file_handling.o mod_set_precision.o mod_system_info.o
+
+run: mpirun
+one: -n 1
+executing: ${run} ${one} ./allocation_times
+Fortran runtime warning: IEEE 'denormal number' exception not supported.
+mkdir: cannot create directory `/u/home/dantopa/hpc/transporter/memtimes/us-erdc/': File exists
+ io_summary =            1
+ io_sequence =            2
+STOP fatal program error during allocation
+
+Wed Nov  9 09:12:20 CST 2016
+Stopping KRB5 opensshd
+Starting KRB5 opensshd
