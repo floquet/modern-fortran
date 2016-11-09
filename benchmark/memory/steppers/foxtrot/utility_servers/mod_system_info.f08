@@ -118,9 +118,6 @@ contains
             !io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
             !io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
 
-            !print *, 'io_summary = ', io_summary
-            !print *, 'io_sequence = ', io_sequence
-
             io_summary  = 1
             io_sequence = 2
             io_version  = 3
@@ -128,12 +125,8 @@ contains
             open ( unit = io_summary,  file = trim ( myFileNames % FileNameSummary  ), action = 'write', status = 'new' )
             open ( unit = io_sequence, file = trim ( myFileNames % FileNameSequence ), action = 'write', status = 'new' )
             open ( unit = io_version,  file = file_fortran_version,                    action = 'read' )
-            print *, 'io_summary = ', io_summary
-            print *, 'io_sequence = ', io_sequence
 
             ! grab command line output for gfortran --version
-            !print *, 'io_summary = ', io_summary
-            !print *, 'io_sequence = ', io_sequence
             write ( io_summary, '( ''gfortran --version:'' )' )
             call execute_command_line ( 'gfortran --version >> ' // file_fortran_version )
             !io_version = safeopen_readonly ( file_fortran_version )
