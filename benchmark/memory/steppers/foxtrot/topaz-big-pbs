@@ -4,7 +4,9 @@
 # #PBS -A ARLAP96070PET
 #PBS -q standard
 #PBS -l select=1:ncpus=32:mpiprocs=32:bigmem=1
-#PBS -l walltime=24:00:00
+#PBS -l min_walltime=01:00:01
+#PBS -l max_walltime=08:00:00
+#PBS -l     walltime=08:00:00
 #PBS -j oe
 #PBS -V
 
