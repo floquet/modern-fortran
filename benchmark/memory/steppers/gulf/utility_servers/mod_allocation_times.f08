@@ -4,7 +4,6 @@ module mAllocationTimes
 
     implicit none
 
-    ! parameters
     integer,        parameter :: measurements = 5 ! repeat measurements
     integer ( ip ), parameter :: gigabytes = 1024 * 1024 * 1024
 
@@ -12,8 +11,6 @@ module mAllocationTimes
     !real ( rp ) :: ticks_clock = 0.0_rp
 
     character ( len = * ), parameter :: data_type = 'R64' ! match rp
-
-    real ( rp ) :: cum_time
 
     type :: ticks
         integer ( ip ) :: array_size
@@ -26,7 +23,7 @@ module mAllocationTimes
 
     type :: seconds
         real ( rp ), dimension ( 1 : measurements ) :: sequence
-        real ( rp ) :: mean, variance, max, min, loop_time, cum_time
+        real ( rp ) :: mean, variance, max, min
     contains
         private
         procedure, public :: analyze_seconds => analyze_seconds_sub
@@ -49,7 +46,7 @@ contains
 
             call myTicks % record_allocation_times ( array_size, io_summary, mySeconds )
 
-            call mySeconds % analyze_seconds ( ) ! mean, variance, max, min
+            call mySeconds % analyze_seconds ( )
 
             call post_results ( myTicks, mySeconds, io_summary, io_sequence )
 
@@ -63,23 +60,24 @@ contains
         type ( ticks )   :: thoseTicks
         type ( seconds ) :: thoseSeconds
 
-        character ( len = * ), parameter :: fmt_gb = 'g0', fmt_time = ' g0', fmt_elem = ' g0'
+        character ( len = * ), parameter :: fmt_gb = 'E17.8', fmt_time = 'E15.5', fmt_elem = 'I15'
         character ( len = 128 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
 
             ! summary data
-            !write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
-            write ( unit = io_summary, fmt = 100 ) thoseTicks % array_size, thoseTicks % total_gbytes, &
-                thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max,  &
-                thoseSeconds % loop_time, thoseSeconds % cum_time
+            write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
+            !print *, 'fmt_str = ', fmt_str
+            write ( unit = io_summary, fmt = trim ( fmt_str ) ) thoseTicks % array_size, thoseTicks % total_gbytes, &
+                thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max
             flush ( io_summary )
 
             ! list the sequence of recorded times
             write ( fmt_str, 200 ) fmt_elem, fmt_gb, fmt_time, measurements - 1, fmt_time
+            !print *, 'fmt_str = ', fmt_str
             write ( unit = io_sequence, fmt = fmt_str ) thoseTicks % array_size, thoseTicks % total_gbytes, &
                                                       ( thoseSeconds % sequence ( k ), k = 1, measurements )
             flush ( io_sequence )
 
-        100 format ( g0, ', ', 7 ( ', ', g0 ) )
+        100 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ',    "3 ( ', ', ", g0, " ) )" )
         200 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
 
     end subroutine post_results
@@ -96,9 +94,7 @@ contains
             me % min = minval ( me % sequence )
 
             ! mean and variance
-            me % loop_time = sum ( me % sequence )
-            me % cum_time  = me % cum_time + me % loop_time
-            me % mean      = me % loop_time / real ( measurements, rp )
+            me % mean       = sum ( me % sequence ) / real ( measurements, rp )
 
             sum_squares_ave = dot_product ( me % sequence, me % sequence ) / real ( measurements, rp )
             root   = sum_squares_ave - me % mean ** 2
@@ -153,9 +149,9 @@ contains
                 thoseSeconds % sequence ( k_measurements ) = real ( me % stop - me % start, rp )  / real ( me % rate, rp ) ! sec
             end do ! k_measurement repeat measurement
 
-        100 format ( 'Mortal error during ', g0, 'allocation...' )
-        110 format ( 'requested size is ',  g0, ' elements (', F15.5,' GB); kind = ', g0 )
-        120 format ( 'errmsg = ', g0, '.' )
+        100 format ( 'Mortal error during ', A, 'allocation...' )
+        110 format ( 'requested size is ', I15, ' elements (', F15.5,' GB); kind = ', A )
+        120 format ( 'errmsg = ', A, '.' )
         130 format ( 'stat = ', I10 )
 
     end subroutine record_allocation_times_sub

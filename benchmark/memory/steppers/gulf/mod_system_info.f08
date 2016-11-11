@@ -150,19 +150,19 @@ contains
             write ( io_summary, 310 ) trim ( myFileNames % FileNameSequence )
             write ( io_summary, 320 )
 
-        100 format ( g0 )
-        110 format ( /, 'Fortran compiler version: ', g0 )
-        120 format (    'Fortran compiler options: ', g0, / )
+        100 format ( A )
+        110 format ( /, 'Fortran compiler version: ', A )
+        120 format (    'Fortran compiler options: ', A, / )
 
-        200 format ( 'Machine: ', g0, ', node: ', g0 )
-        210 format ( 'PBS job ID:     ', g0 )
-        220 format ( 'PBS job name:   ', g0 )
-        230 format ( 'PBS job number: ', g0 )
-        240 format ( "Program launched via ", g0, "." )
-        250 format ( "Date: ", g0, " - ", g0, " - ", g0, ", time: ", g0, ":", g0, ":", g0, / )
+        200 format ( 'Machine: ', A, ', node: ', A )
+        210 format ( 'PBS job ID:     ', A )
+        220 format ( 'PBS job name:   ', A )
+        230 format ( 'PBS job number: ', A )
+        240 format ( "Program launched via ", A, "." )
+        250 format ( "Date: ", A, " - ", A, " - ", A, ", time: ", A, ":", A, ":", A, / )
 
         300 format ( 'Number of times each measurement is repeated: ', I5 )
-        310 format ( 'Measurements written to file ', g0, / )
+        310 format ( 'Measurements written to file ', A, / )
         320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max, ' &
                                                                         // 'time loop, time cum', / )
 

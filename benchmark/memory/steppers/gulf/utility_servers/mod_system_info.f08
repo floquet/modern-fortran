@@ -4,8 +4,8 @@ module mSystemInfo
     use, intrinsic :: iso_fortran_env,  only : compiler_version, compiler_options
 
     use mFileHandling,                  only : safeopen_writereplace, safeopen_readonly
-    use mSetPrecision,                  only : ip, rp
-    use mAllocationTimes,               only : data_type, measurements, cum_time
+    use mSetPrecision,                  only : ip
+    use mAllocationTimes,               only : data_type, measurements
 
     implicit none ! protects all methods in scope (module and submodules)
 
@@ -112,18 +112,24 @@ contains
         type ( file_names ), target  :: myFileNames
         type ( file_names ), pointer :: p
 
-            cum_time = 0.0_rp ! zero cumulative time
-
             p => null ()
             call myFileNames % build_names ( )
 
-            io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
-            io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
+            !io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
+            !io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
+
+            io_summary  = 1
+            io_sequence = 2
+            io_version  = 3
+
+            open ( unit = io_summary,  file = trim ( myFileNames % FileNameSummary  ), action = 'write', status = 'new' )
+            open ( unit = io_sequence, file = trim ( myFileNames % FileNameSequence ), action = 'write', status = 'new' )
+            open ( unit = io_version,  file = file_fortran_version,                    action = 'read' )
 
             ! grab command line output for gfortran --version
             write ( io_summary, '( ''gfortran --version:'' )' )
             call execute_command_line ( 'gfortran --version >> ' // file_fortran_version )
-            io_version = safeopen_readonly ( file_fortran_version )
+            !io_version = safeopen_readonly ( file_fortran_version )
             do
                 read  ( unit = io_version, fmt = 100, iostat = io_status, iomsg = io_message ) str_fortran_version
                 if ( io_status /= 0 ) exit ! EOF
@@ -150,21 +156,20 @@ contains
             write ( io_summary, 310 ) trim ( myFileNames % FileNameSequence )
             write ( io_summary, 320 )
 
-        100 format ( g0 )
-        110 format ( /, 'Fortran compiler version: ', g0 )
-        120 format (    'Fortran compiler options: ', g0, / )
+        100 format ( A )
+        110 format ( /, 'Fortran compiler version: ', A )
+        120 format (    'Fortran compiler options: ', A, / )
 
-        200 format ( 'Machine: ', g0, ', node: ', g0 )
-        210 format ( 'PBS job ID:     ', g0 )
-        220 format ( 'PBS job name:   ', g0 )
-        230 format ( 'PBS job number: ', g0 )
-        240 format ( "Program launched via ", g0, "." )
-        250 format ( "Date: ", g0, " - ", g0, " - ", g0, ", time: ", g0, ":", g0, ":", g0, / )
+        200 format ( 'Machine: ', A, ', node: ', A )
+        210 format ( 'PBS job ID:     ', A )
+        220 format ( 'PBS job name:   ', A )
+        230 format ( 'PBS job number: ', A )
+        240 format ( "Program launched via ", A, "." )
+        250 format ( "Date: ", A, " - ", A, " - ", A, ", time: ", A, ":", A, ":", A, / )
 
         300 format ( 'Number of times each measurement is repeated: ', I5 )
-        310 format ( 'Measurements written to file ', g0, / )
-        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max, ' &
-                                                                        // 'time loop, time cum', / )
+        310 format ( 'Measurements written to file ', A, / )
+        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max', / )
 
     end subroutine write_header_sub
 

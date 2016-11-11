@@ -63,13 +63,13 @@ contains
         type ( ticks )   :: thoseTicks
         type ( seconds ) :: thoseSeconds
 
-        character ( len = * ), parameter :: fmt_gb = 'g0', fmt_time = ' g0', fmt_elem = ' g0'
+        character ( len = * ), parameter :: fmt_gb = 'E17.8', fmt_time = 'E15.5', fmt_elem = 'I15'
         character ( len = 128 )  :: fmt_str = '' ! format descriptor, e.g. 5( E8.3 )
 
             ! summary data
-            !write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
-            write ( unit = io_summary, fmt = 100 ) thoseTicks % array_size, thoseTicks % total_gbytes, &
-                thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max,  &
+            write ( fmt_str, 100 ) fmt_elem, fmt_gb, fmt_time, fmt_time
+            write ( unit = io_summary, fmt = trim ( fmt_str ) ) thoseTicks % array_size, thoseTicks % total_gbytes, &
+                thoseSeconds % mean, thoseSeconds % variance, thoseSeconds % min, thoseSeconds % max,               &
                 thoseSeconds % loop_time, thoseSeconds % cum_time
             flush ( io_summary )
 
@@ -79,7 +79,7 @@ contains
                                                       ( thoseSeconds % sequence ( k ), k = 1, measurements )
             flush ( io_sequence )
 
-        100 format ( g0, ', ', 7 ( ', ', g0 ) )
+        100 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ',    "5 ( ', ', ", g0, " ) )" )
         200 format ( "( ", g0, ", ',     ', ", g0, ", ',     ', ", g0, ', ', g0, " ( ', ', ", g0, " ) )" )
 
     end subroutine post_results
@@ -153,9 +153,9 @@ contains
                 thoseSeconds % sequence ( k_measurements ) = real ( me % stop - me % start, rp )  / real ( me % rate, rp ) ! sec
             end do ! k_measurement repeat measurement
 
-        100 format ( 'Mortal error during ', g0, 'allocation...' )
-        110 format ( 'requested size is ',  g0, ' elements (', F15.5,' GB); kind = ', g0 )
-        120 format ( 'errmsg = ', g0, '.' )
+        100 format ( 'Mortal error during ', A, 'allocation...' )
+        110 format ( 'requested size is ', I15, ' elements (', F15.5,' GB); kind = ', A )
+        120 format ( 'errmsg = ', A, '.' )
         130 format ( 'stat = ', I10 )
 
     end subroutine record_allocation_times_sub
