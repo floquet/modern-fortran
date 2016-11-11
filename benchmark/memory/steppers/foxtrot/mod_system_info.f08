@@ -4,12 +4,12 @@ module mSystemInfo
     use, intrinsic :: iso_fortran_env,  only : compiler_version, compiler_options
 
     use mFileHandling,                  only : safeopen_writereplace, safeopen_readonly
-    use mSetPrecision,                  only : ip
-    use mAllocationTimes,               only : data_type, measurements
+    use mSetPrecision,                  only : ip, rp
+    use mAllocationTimes,               only : data_type, measurements, cum_time
 
     implicit none ! protects all methods in scope (module and submodules)
 
-    character ( len = * ), parameter :: myPath = '/transporter/memtimes/'
+    character ( len = * ), parameter :: myPath = 'transporter/memtimes/'
 
     type :: environment_variables
         character ( len = 512 ) :: wdhpc, pbs_jobnumber, machine_name, pbs_jobid, pbs_jobname
@@ -112,14 +112,13 @@ contains
         type ( file_names ), target  :: myFileNames
         type ( file_names ), pointer :: p
 
+            cum_time = 0.0_rp ! zero cumulative time
+
             p => null ()
             call myFileNames % build_names ( )
 
             io_summary  = safeopen_writereplace ( trim ( myFileNames % FileNameSummary ) )
             io_sequence = safeopen_writereplace ( trim ( myFileNames % FileNameSequence ) )
-
-            print *, 'io_summary = ', io_summary
-            print *, 'io_sequence = ', io_sequence
 
             ! grab command line output for gfortran --version
             write ( io_summary, '( ''gfortran --version:'' )' )
@@ -164,7 +163,8 @@ contains
 
         300 format ( 'Number of times each measurement is repeated: ', I5 )
         310 format ( 'Measurements written to file ', A, / )
-        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max', / )
+        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max, ' &
+                                                                        // 'time loop, time cum', / )
 
     end subroutine write_header_sub
 

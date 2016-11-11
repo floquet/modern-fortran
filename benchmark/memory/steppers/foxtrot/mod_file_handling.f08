@@ -139,7 +139,6 @@ CONTAINS
         INTEGER                                       :: io_err
         LOGICAL                                       :: opened, exists
 
-            print *, 'filename = ', filename, '.'
             INQUIRE(FILE=filename, EXIST=exists, OPENED=opened)
             IF(.NOT.exists) THEN
                 WRITE(stderr,'(A,A,A)') "Warning: ",TRIM(filename)," doesn't exist; new empty file will be created."
@@ -154,7 +153,6 @@ CONTAINS
                 WRITE(stderr,'(A)') io_message
                 STOP
             END IF
-            print *, 'unit handle = ', fd
     END FUNCTION safeopen_writereplace
 
     FUNCTION safeopen_scratchfile() RESULT(fd)
