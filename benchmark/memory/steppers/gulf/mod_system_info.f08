@@ -163,8 +163,8 @@ contains
 
         300 format ( 'Number of times each measurement is repeated: ', I5 )
         310 format ( 'Measurements written to file ', A, / )
-        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max, ' &
-                                                                        // 'time loop, time cum', / )
+        320 format ( 'column order: array size (elements), array size (GB), time mean, time s.d., time min, time max, ', &
+                                                                           'time loop, time cum', / )
 
     end subroutine write_header_sub
 
