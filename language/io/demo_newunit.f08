@@ -1,4 +1,6 @@
 program demo_newunit
+  
+    use iso_fortran_env, only : compiler_options, compiler_version
 
     implicit none
 
